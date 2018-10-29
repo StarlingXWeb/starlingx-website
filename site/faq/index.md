@@ -59,7 +59,7 @@ StarlingX is a top-level pilot project supported by the OpenStack Foundation, bu
 
 #### How does the StarlingX community collaborate with other open source projects?
 
-The StarlingX team is actively working with a number of other projects and communities, both within and outside of theOpenStack Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects withinOpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
+The StarlingX team is actively working with a number of other projects and communities, both within and outside of the OpenStack Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects withinOpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
 
 #### When is the first release of StarlingX?
 
