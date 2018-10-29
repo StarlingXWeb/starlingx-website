@@ -1,0 +1,37 @@
+/* ------------------------------------------------------------ *\
+	Widget
+\* ------------------------------------------------------------ */
+
+.widget {
+  margin-bottom: 35px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #d4d4d4;
+
+  .widget-title {
+    margin-bottom: 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #959595;
+  }
+
+  .widget-list {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: $dark-light;
+
+    li + li {
+      margin-top: 5px;
+    }
+
+    a {
+      color: inherit;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "sections": [
+    {
+      "title": "About",
+      "nav": [
+        {
+          "text": "Learn",
+          "link": "/learn/"
+        },
+        {
+          "text": "Community",
+          "link": "/community/"
+        }
+      ]
+    },
+    {
+      "title": "Connect",
+      "nav": [
+        {
+          "text": "Blog",
+          "link": "/blog/"
+        },
+        {
+          "text": "Mailing Lists",
+          "link": "http://lists.starlingx.io"
+        },
+        {
+          "text": "Twitter",
+          "link": "//twitter.com/starlingx"
+        },
+        {
+          "text": "IRC: #starlingx",
+          "link": "//freenode.net"
+        }
+      ]
+    },
+    {
+      "title": "Software",
+      "nav": [
+        {
+          "text": "Code",
+          "link": "//git.starlingx.io/cgit"
+        },
+        {
+          "text": "Releases",
+          "link": "//wiki.openstack.org/wiki/StarlingX#Releases"
+        },
+        {
+          "text": "Documentation",
+          "link": "//wiki.openstack.org/wiki/StarlingX"
+        }
+      ]
+    }
+  ]
+}
