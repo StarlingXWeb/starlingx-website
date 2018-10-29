@@ -23,7 +23,7 @@ You can find example [use cases for StarlingX here](/learn).
 
 #### How does StarlingX integrate with other open source technologies?
 
-StarlingX integrates a number of upstream projects: CentOS, OvS-DPDK, Ceph, Kubernetes, OpenStack and so forth, usingindustry standard APIs and management tools to provide a turn key cloud solution for edge deployments
+StarlingX integrates a number of upstream projects: CentOS, OvS-DPDK, Ceph, Kubernetes, OpenStack and so forth, usingindustry standard APIs and management tools to provide a turn key cloud solution for edge deployments.
 
 #### What is the operating system
 
