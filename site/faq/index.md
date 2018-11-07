@@ -2,7 +2,6 @@
 description: Frequently Asked Questions about StarlingX
 title: FAQs
 ---
-
 #### What are the advantages of StarlingX?
 
 <ul class="list-disc">
@@ -53,13 +52,17 @@ The proposed governance for StarlingX is here:[wiki.openstack.org/wiki/Starlingx
 
 Yes, StarlingX has a weekly project and Technical Steering Committee meeting and a number of sub-project team weeklymeetings. For more information see:[wiki.openstack.org/wiki/Starlingx/Meetings](//wiki.openstack.org/wiki/Starlingx/Meetings).
 
+#### I'm giving a presentation about StarlingX. Are there any templates I can use?
+
+Yes, here are links to a templates for both [Keynote](https://www.starlingx.io/templates/StarlingX_SlideDeck_Template_a.key/) and [PowerPoint](https://www.starlingx.io/templates/StarlingX_SlideDeck_Template_a.pptx/). The templates are just a place for you to start, so feel free to adjust the layouts to fit you needs.
+
 #### Is this an OpenStack project?
 
 StarlingX is a top-level pilot project supported by the OpenStack Foundation, but is not a part of the OpenStack cloudinfrastructure project. From a technical perspective StarlingX is both a development and integration project, whichincludes and uses many of the OpenStack services as well as other open source projects. Some of those projects areenhanced in the StarlingX build. The StarlingX community is actively working with upstream communities to contributethese changes.
 
 #### How does the StarlingX community collaborate with other open source projects?
 
-The StarlingX team is actively working with a number of other projects and communities, both within and outside of theOpenStack Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects withinOpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
+The StarlingX team is actively working with a number of other projects and communities, both within and outside of the OpenStack Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects withinOpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
 
 #### When is the first release of StarlingX?
 
@@ -67,4 +70,4 @@ The first release will be in October 2018. The project will release on a 4 month
 
 #### Are there any commercial distributions of StarlingX?
 
-Wind River Titanium Cloud is currently based on StarlingX, and we are actively building a broad commercial ecosystem. Please contact [info@starlingx.io](mailto:info@starlingx.io) if you are interested in getting involved from a commercial perspective.
+Wind River Titanium Cloud is currently based on StarlingX, and we are actively building a broad commercial ecosystem. Please contact <mailto:info@starlingx.io> if you are interested in getting involved from a commercial perspective.
