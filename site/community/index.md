@@ -44,7 +44,7 @@ The StarlingX project is governed according to the “four opens”:
   <li>Open Community</li>
 </ul>
 
-Technical decisions will be made by technical contributors and a representative Technical Steering Committee. The community is committed to diversity, openness, encouraging new contributors and leaders to rise up. Current information is available at [wiki.openstack.org/wiki/Starlingx/Initial_Governance](https://docs.starlingx.io/governance/index.html).
+Technical decisions will be made by technical contributors and a representative Technical Steering Committee. The community is committed to diversity, openness, encouraging new contributors and leaders to rise up. Current information is available in the [Governance section of the StarlingX Documentation website](https://docs.starlingx.io/governance/index.html).
 
 ---
 

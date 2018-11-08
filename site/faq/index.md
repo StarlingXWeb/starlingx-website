@@ -46,7 +46,7 @@ The [StarlingX wiki](https://wiki.openstack.org/wiki/StarlingX) contains documen
 
 #### How is StarlingX governed?
 
-The proposed governance for StarlingX is here:[wiki.openstack.org/wiki/Starlingx/Initial_Governance](https://docs.starlingx.io/governance/index.html).
+The information about governance including the TSC charter is available in the [Governance section of the StarlingX Documentation website](https://docs.starlingx.io/governance/index.html).
 
 #### Are there StarlingX meetings?
 
