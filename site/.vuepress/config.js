@@ -8,5 +8,6 @@ module.exports = {
     docsDir: "site",
     nav: json.nav,
     footer: footer
-  }
+  },
+  head: [["link", { rel: "icon", href: "/favicons/favicon.ico" }]]
 };
