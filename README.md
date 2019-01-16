@@ -17,7 +17,7 @@ To request changes, [submit an issue](https://github.com/StarlingXWeb/starlingx-
 
 ## Install locally
 
-## Prerequesites
+### Prerequesites
 
 Node
 
