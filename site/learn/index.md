@@ -10,7 +10,7 @@ Rather than reference platforms and gap definition for edge use cases, StarlingX
 and highly reliable edge infrastructure software platform to build mission critical edge clouds. Tested and released as
 a complete stack, StarlingX ensures compatibility among diverse open source components. Its unique project components
 provide fault management and service management among others to ensure high availability of user applications. The
-StarlingX community has optimized the solution for security, ulta-low latency, extremely high service uptime, and
+StarlingX community has optimized the solution for security, ultra-low latency, extremely high service uptime, and
 streamlined operation.
 
 **[View this overview document for helpful information](/collateral/StarlingX_OnePager_Web-102318.pdf)**
