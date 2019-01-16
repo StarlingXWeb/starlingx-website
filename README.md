@@ -1,6 +1,6 @@
 # StarlingX website
 
-This is the public repo to mantain the StarlingX website at starlingx.io.
+This is the public repo to mantain the StarlingX website at [starlingx.io](starlingx.io).
 
 ## Overview
 
@@ -8,10 +8,10 @@ Starlingx.io is based on Vuepress + Netlify CMS.
 
 Vuepress is a minimalistic Vue-powered static site generator. Netlify CMS is unique type of CMS that edits site content as static markdown files via git, but using a friendly and familair CMS interface. (CMS users do not have to use or understand git directly.) Bulma is used for CSS, extended with Buefy for lightweight UI components.
 
-[Vuepress](https://vuepress.vuejs.org/)
-[Netlify CMS](https://www.netlifycms.org)
-[Bulma](https://bulma.io)
-[Beufy](https://buefy.github.io)
+- [Vuepress](https://vuepress.vuejs.org/)
+- [Netlify CMS](https://www.netlifycms.org)
+- [Bulma](https://bulma.io)
+- [Beufy](https://buefy.github.io)
 
 To request changes, [submit an issue](https://github.com/StarlingXWeb/starlingx-website/issues) or [submit a pull request](https://github.com/StarlingXWeb/starlingx-website/pulls).
 
