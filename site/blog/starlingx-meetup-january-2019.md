@@ -23,10 +23,10 @@ For most people, this is one one of the least interesting topics but it's crucia
 
 Here's the team’s near-term priority list:
 
-* API Guide
-* Build Guide
-* Install Guide
-* Deployment Guide
+- API Guide
+- Build Guide
+- Install Guide
+- Deployment Guide
 
 Longer-term plans include documents such as an Operations Guide. Most of the above documents already exist but there's always room for improvement and they also need to be kept up to date with regard to the feature development activity. Meetup attendees discussed review culture and ways to ensure documentation coverage along with the code changes. You can find existing guides on the [StarlingX documentation web page](https://docs.starlingx.io) and open tasks to work on in [StoryBoard](https://storyboard.openstack.org/#!/project/1046).
 
@@ -59,7 +59,6 @@ It's a high priority item for the community to reach out to new users as well as
 ## Elections
 
 As the community is setting up the governance models, members decided to choose leaders through an election process. The first election is scheduled for the second quarter of 2019 where five of the Technical Steering Committee (TSC) seats will be up for election. If you're interested in running for the TSC elections, make sure that you are actively participating so the community gets to know you. We're still working on the election process and exact dates, you can check the [governance web page](https://docs.starlingx.io/governance/reference/tsc/index.html) for updates.
-
 
 That's all for my summary. While it may seem like a long list, we had even more discussions and brainstorming sessions over the two days of the meetup. If you have any questions to the above items or if you're interested in trying out the software or getting involved in the community please [reach out](https://www.starlingx.io/community/) on the mailing list or IRC or join one of the weekly community meetings. You can find further details and pointers on the [StarlingX website](https://www.starlingx.io).
 
