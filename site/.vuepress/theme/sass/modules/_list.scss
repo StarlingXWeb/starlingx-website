@@ -9,6 +9,7 @@
   color: $dark-light;
   ul {
     list-style-type: none;
+    margin: 0;
   }
 
   .list-numeric-title {
@@ -98,6 +99,7 @@
 ul {
   counter-reset: number;
   list-style-type: disc;
+  margin: 0 0 19px 19px;
   .list-disc {
     list-style: disc;
     li {

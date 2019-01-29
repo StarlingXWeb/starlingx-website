@@ -3,7 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .widget {
-  margin-bottom: 35px;
+  margin: 0 0 35px 0;
   padding-bottom: 28px;
   border-bottom: 1px solid #d4d4d4;
   list-style-type: none;
@@ -20,6 +20,7 @@
     font-size: 14px;
     font-weight: 500;
     color: $dark-light;
+    margin: 0;
 
     li + li {
       margin-top: 5px;
