@@ -17,6 +17,8 @@ During the two-day event the attendees discussed - both in person and remotely -
 
 The StarlingX community is switching to two releases per year, with the next one targeted for the end of May, 2019 -- closer than you think. With this in mind, it's very important to keep both the release timelines and goals under review as well as careful planning to keep the roadmap on track.
 
+ Hereby I would like to note that the upcoming release will include the Stein version of the integrated OpenStack services. Along with this move the release cadence will also align with OpenStack from there onwards to ensure that the StarlingX platform incorporates the latest features, fixes, and enhancements of the upstream projects.
+
 During the meetup, we went through the items planned for the release and also checked the milestone plans to see if there's anything to fine tune. A few of the bigger items under discussion for the upcoming releases were containerization both for control plane services as well as supporting mixed workloads, multi-operating system (multi-OS) support, and the status of upstream work items. You can find more details about the planned items on the [StarlingX Release Plan wiki page]([https://wiki.openstack.org/wiki/StarlingX/Release_Plan]).
 
 ## Documentation
