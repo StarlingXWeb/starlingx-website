@@ -15,7 +15,7 @@ Vuepress is a minimalistic Vue-powered static site generator. Netlify CMS is uni
 
 To request changes, [submit an issue](https://github.com/StarlingXWeb/starlingx-website/issues) or [submit a pull request](https://github.com/StarlingXWeb/starlingx-website/pulls).
 
-If you need to escalate a pull request, email [jimmy@openstack.org](mailto:jimmy@openstack.org).
+If you need to escalate a pull request, email [jimmy@openstack.org](mailto:jimmy@openstack.org) or [ildiko@openstack.org](mailto:ildiko@openstack.org).
 
 ## Install locally
 
