@@ -9,6 +9,8 @@ Check out the main discussion topics from the first StarlingX face to face plann
 
 As the StarlingX project is still in its infancy, it's crucial to have face time that developers as well as leaders can use to discuss both technical and process related matters to ensure the community has a balanced ecosystem and clear roadmap to execute on. To start the year with a clear focus, the community held its first [Contributor Meetup](https://etherpad.openstack.org/p/stx-chandler-meetup) event hosted by Intel in Chandler, Arizona on January 15-16.
 
+![alt text](/images/StarlingX_Contributor_Meetup_January_2019.jpg)
+
 During the two-day event the attendees discussed - both in person and remotely -  a wide range of topics from release planning through documentation and testing to onboarding. I'd like to give you a short summary of the main topics (as I remember them!) so that you can get up to speed and get involved.
 
 ## Release Planning
