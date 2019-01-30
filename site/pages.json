@@ -9,6 +9,10 @@
       "link": "/software/"
     },
     {
+      "text": "Documentation",
+      "link": "//docs.starlingx.io"
+    },
+    {
       "text": "Community",
       "link": "/community/"
     },
