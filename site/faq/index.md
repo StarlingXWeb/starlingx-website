@@ -14,7 +14,7 @@ title: FAQs
 
 #### Who uses StarlingX?
 
-StarlingX is suitable for a wide range of edge use cases and applications from Telecom, through retail to industrialIoT.
+StarlingX is suitable for a wide range of edge use cases and applications from Telecom, through retail to industrial IoT.
 
 #### What are the use cases for StarlingX?
 
@@ -22,11 +22,11 @@ You can find example [use cases for StarlingX here](/learn).
 
 #### How does StarlingX integrate with other open source technologies?
 
-StarlingX integrates a number of upstream projects: CentOS, OvS-DPDK, Ceph, Kubernetes, OpenStack and so forth, usingindustry standard APIs and management tools to provide a turn key cloud solution for edge deployments.
+StarlingX integrates a number of upstream projects: CentOS, OvS-DPDK, Ceph, Kubernetes, OpenStack and so forth, using industry standard APIs and management tools to provide a turn key cloud solution for edge deployments.
 
 #### What is the operating system
 
-StarlingX is integrating and tested with CentOS and team is already working on multiOS support. Contributions arewelcome!
+StarlingX is integrating and tested with CentOS and team is already working on multiOS support. Contributions are welcome!
 
 #### How do I get started testing StarlingX?
 
@@ -50,7 +50,7 @@ The information about governance including the TSC charter is available in the [
 
 #### Are there StarlingX meetings?
 
-Yes, StarlingX has a weekly project and Technical Steering Committee meeting and a number of sub-project team weeklymeetings. For more information see:[wiki.openstack.org/wiki/Starlingx/Meetings](//wiki.openstack.org/wiki/Starlingx/Meetings).
+Yes, StarlingX has a weekly project and Technical Steering Committee meeting and a number of sub-project team weekly meetings. For more information see:[wiki.openstack.org/wiki/Starlingx/Meetings](//wiki.openstack.org/wiki/Starlingx/Meetings).
 
 #### I'm giving a presentation about StarlingX. Are there any templates I can use?
 
@@ -58,15 +58,15 @@ Yes, here are links to templates for both [Keynote](https://www.starlingx.io/tem
 
 #### Is this an OpenStack project?
 
-StarlingX is a top-level pilot project supported by the OpenStack Foundation, but is not a part of the OpenStack cloudinfrastructure project. From a technical perspective StarlingX is both a development and integration project, whichincludes and uses many of the OpenStack services as well as other open source projects. Some of those projects areenhanced in the StarlingX build. The StarlingX community is actively working with upstream communities to contributethese changes.
+StarlingX is a top-level pilot project supported by the OpenStack Foundation, but is not a part of the OpenStack cloudinfrastructure project. From a technical perspective StarlingX is both a development and integration project, which includes and uses many of the OpenStack services as well as other open source projects. Some of those projects are enhanced in the StarlingX build. The StarlingX community is actively working with upstream communities to contribute these changes.
 
 #### How does the StarlingX community collaborate with other open source projects?
 
-The StarlingX team is actively working with a number of other projects and communities, both within and outside of the OpenStack Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects withinOpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
+The StarlingX team is actively working with a number of other projects and communities, both within and outside of the OpenStack Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects within OpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
 
 #### When is the first release of StarlingX?
 
-The first release will be in October 2018. The project will release on a 4 month cadence each March, July and Novemberin 2019. Releases are time based.
+The first release will be in October 2018. The project will release on a 4 month cadence each March, July and November in 2019. Releases are time based.
 
 #### Are there any commercial distributions of StarlingX?
 
