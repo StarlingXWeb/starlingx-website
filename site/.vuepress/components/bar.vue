@@ -7,10 +7,10 @@
 				</div><!-- /.bar-logo -->
 
 				<div class="bar-entry">
-					<p>Meet the StarlingX Community at the OpenStack Summit, November 13-15 in Berlin, Germany!</p>
+					<p>Join the StarlingX Community at the Open Infrastructure Summit, April 29 - May 1 in Denver, CO. Register before prices increase on February 27 at 11:59pm PT</p>
 				</div><!-- /.bar-entry -->
 
-				<a href="//openstack.org/summit" target="_blank" class="bar-btn">Learn More</a>
+				<a href="//openstack.org/summit/denver-2019/" target="_blank" class="bar-btn">Learn More</a>
 			</div><!-- /.bar-inner -->
 		</div><!-- /.container -->
 	</div><!-- /.bar -->
