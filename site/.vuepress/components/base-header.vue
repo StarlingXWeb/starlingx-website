@@ -1,7 +1,6 @@
 <template>
 	<div class="header">
-		<!-- <bar /> Hiding top announcement bar-->
-
+		<bar />
 		<navigation />
 	</div><!-- /.header -->
 </template>
