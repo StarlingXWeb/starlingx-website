@@ -1,2 +1,4 @@
 node_modules
 docs/.vuepress/dist/*
+
+site/\.vuepress/public/images/\.DS_Store
