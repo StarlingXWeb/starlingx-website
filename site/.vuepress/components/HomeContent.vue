@@ -12,7 +12,7 @@
       </template>
     </hero>
 
-    <base-article :image="require('../theme/images/StarlingX_Diagram_SimplifiedArchitecture_rev0319.jpg')">
+    <base-article :image="require('../theme/images/StarlingX_Diagram_SimplifiedArchitecture.jpg')">
       <slot name="about"></slot>
     </base-article>
 
