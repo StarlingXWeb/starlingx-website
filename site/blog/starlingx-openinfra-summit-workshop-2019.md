@@ -24,6 +24,8 @@ AIO-SX is a single server STX deployment that combines control plane and data pl
 
 At the conclusion of the workshop, students will have a good understanding of what STX is and hands-on experience deploying STX in All-In-One Simplex mode.
 
+If you are interested in joining don't forget to [RSVP](https://www.openstack.org/summit/denver-2019/summit-schedule/events/23630/starlingx-hands-on-workshop) to the workshop to secure your seat. See you in Denver!
+
 ***
 
 Curtis Collicutt is an OpenStack Architect at [Interdynamix](http://www.interdynamix.com), a boutique systems integrator in Canada with a focus on Network Function Virtualization.
