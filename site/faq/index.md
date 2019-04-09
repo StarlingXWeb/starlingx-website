@@ -50,7 +50,7 @@ The information about governance including the TSC charter is available in the [
 
 #### Are there StarlingX meetings?
 
-Yes, StarlingX has a weekly project and Technical Steering Committee meeting and a number of sub-project team weekly meetings. For more information see:[wiki.openstack.org/wiki/Starlingx/Meetings](//wiki.openstack.org/wiki/Starlingx/Meetings).
+Yes, StarlingX has a weekly project and Technical Steering Committee meeting and a number of sub-project team weekly meetings. For more information see:[wiki.openstack.org/wiki/Starlingx/Meetings](https://wiki.openstack.org/wiki/Starlingx/Meetings).
 
 #### I'm giving a presentation about StarlingX. Are there any templates I can use?
 
