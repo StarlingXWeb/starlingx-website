@@ -48,12 +48,12 @@ getInvolvedSteps:
   - title: Weekly calls
     entry: Updates from the community on a weekly basis.
     link:
-      url: //wiki.openstack.org/wiki/Starlingx/Meetings
+      url: https://wiki.openstack.org/wiki/Starlingx/Meetings
       title: wiki.openstack.org/wiki/StarlingX/Meetings
   - title: Freenode IRC
     entry: Chat with the project team and others using StarlingX.
     link:
-      url: //freenode.net
+      url: https://webchat.freenode.net/?channels=starlingx
       title: "#starlingx"
 ---
 
