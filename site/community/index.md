@@ -22,7 +22,7 @@ The StarlingX community has a very active schedule of regular meetings. Details 
 
 ## Contribute
 
-- Developer guide: [docs.starlingx.io/developer_guide](https://docs.starlingx.io/developer_guide)
+- Developer guide: [docs.starlingx.io/developer_resources](https://docs.starlingx.io/developer_resources/index.html)
 - Contribute guides: [docs.starlingx.io/contributor/index.html](https://docs.starlingx.io/contributor)
 - Gerrit repo: [git.starlingx.io/cgit](https://git.starlingx.io/cgit)
 
