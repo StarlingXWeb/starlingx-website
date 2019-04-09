@@ -1,36 +1,36 @@
 ---
+description: 'Join to contribute code, documentation, and use cases'
 title: Community
-description: Join to contribute code, documentation, and use cases
 ---
 
 StarlingX is an open source project supported by an open community. Anyone is welcome to join and contribute code, documentation, and use cases.
 
 ## Standing Meetings
 
-The StarlingX community has a very active schedule of regular meetings. Details are available at [wiki.openstack.org/wiki/Starlingx/Meetings](//wiki.openstack.org/wiki/Starlingx/Meetings).
+The StarlingX community has a very active schedule of regular meetings. Details are available at [wiki.openstack.org/wiki/Starlingx/Meetings](https://wiki.openstack.org/wiki/Starlingx/Meetings).
 
 ---
 
 ## Communications
 
-- Freenode IRC: #starlingx
+- Freenode IRC: [#starlingx](https://webchat.freenode.net/?channels=starlingx)
 - Mailing Lists: [lists.starlingx.io](http://lists.starlingx.io)
 - E-mail: [info@starlingx.io](mailto:info@starlingx.io)
-- Twitter: [@starlingx](//twitter.com/starlingx)
+- Twitter: [@starlingx](https://twitter.com/starlingx)
 
 ---
 
 ## Contribute
 
-- Developer guide: [docs.starlingx.io/developer_guide](//docs.starlingx.io/developer_guide)
-- Contribute guides: [docs.starlingx.io/contributor/index.html](//docs.starlingx.io/contributor)
-- Gerrit repo: [git.starlingx.io/cgit](//git.starlingx.io/cgit)
+- Developer guide: [docs.starlingx.io/developer_guide](https://docs.starlingx.io/developer_guide)
+- Contribute guides: [docs.starlingx.io/contributor/index.html](https://docs.starlingx.io/contributor)
+- Gerrit repo: [git.starlingx.io/cgit](https://git.starlingx.io/cgit)
 
 ---
 
 ## Wiki
 
-Community documentation and other resources are available at [wiki.openstack.org/wiki/StarlingX](//wiki.openstack.org/wiki/StarlingX)
+Community documentation and other resources are available at [wiki.openstack.org/wiki/StarlingX](https://wiki.openstack.org/wiki/StarlingX)
 
 ---
 
