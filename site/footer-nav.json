@@ -26,11 +26,11 @@
         },
         {
           "text": "Twitter",
-          "link": "//twitter.com/starlingx"
+          "link": "https://twitter.com/starlingx"
         },
         {
           "text": "IRC: #starlingx",
-          "link": "//freenode.net"
+          "link": "https://webchat.freenode.net/?channels=starlingx"
         }
       ]
     },
@@ -39,15 +39,15 @@
       "nav": [
         {
           "text": "Code",
-          "link": "//git.starlingx.io/cgit"
+          "link": "https://git.starlingx.io/cgit"
         },
         {
           "text": "Releases",
-          "link": "//wiki.openstack.org/wiki/StarlingX#Releases"
+          "link": "https://wiki.openstack.org/wiki/StarlingX#Releases"
         },
         {
           "text": "Documentation",
-          "link": "//wiki.openstack.org/wiki/StarlingX"
+          "link": "https://wiki.openstack.org/wiki/StarlingX"
         }
       ]
     }
