@@ -1,4 +1,9 @@
-StarlingX: “What’s in it for me?” and “How would I get started?”
+---
+title: StarlingX: “What’s in it for me?” and “How would I get started?”
+author: jeff-gowan
+date: 2019-04-12T01:32:05.627Z
+category: news
+---
 
 You’ve heard something about StarlingX. Maybe you know StarlingX is a Fully-featured open source cloud for the distributed edge. Perhaps you are aware it has features like ultra-low deterministic latency, high availability, strong security, and lowers the cost of deploying and managing a distributed system through simplified installation, maintenance, and operations. You might also understand that it is ideal for telco use cases such as virtualized RAN, universal CPE, MEC and beyond into other use cases in transportation, healthcare, and industry 4.0.
 
@@ -18,20 +23,18 @@ Does one of these sound familiar or perhaps some combination fits you?
 
 Here is what to do next:
 
-First stop is right here, at www.starlingx.io. Take a look at the website, spend some time reading through the use cases, if you see a link that says, “learn more” click there. Review the overview document and the onboarding deck, peruse some of the documents on docs.starlingx.io . Do you like what you see? Do you think there’s something there for you?
+First stop is right here, at [www.starlingx.io](http://www.starlingx.io/). Take a look at the website, spend some time reading through the use cases, if you see a link that says, “learn more” click there. Review the overview document and the onboarding deck, peruse some of the documents on [docs.starlingx.io](https://docs.starlingx.io/). Do you like what you see? Do you think there’s something there for you?
 
 From there if you want to jump in the deep end you can certainly download the code, but perhaps these steps might help you ease in a bit.
 
 * Join the mailing list (be warned there’s lots of activity, but you might find it interesting)
-* Join one of the weekly calls
-* Check out the StarlingX Wiki page where you can
+* Join one of the [weekly calls](https://wiki.openstack.org/wiki/Starlingx/Meetings)
+* Check out the [StarlingX Wiki page](https://wiki.openstack.org/wiki/StarlingX#Welcome_to_the_StarlingX_Project) where you can
 * Download the code
-* Read the storyboard to see what’s being worked on
-* Roll up your sleeves and contribute some bug fixes
+* Read the [storyboard](https://storyboard.openstack.org/#!/project_group/86) to see what’s being worked on
+* Roll up your sleeves and [contribute bug fixes](https://bugs.launchpad.net/starlingx)
 
-However you want to engage, if you have something you can offer to, or something you need from, the 5G edge – we want you to be involved. You can also meet the team in person at the Open Infrastructure Summit in Denver, April 29 – May 2. Wind River will have a StarlingX dedicated booth and there will be at least 15 sessions that will touch on StarlingX in some way. There will even be a StarlingX Hands-on Workshop designed for people new to the project which will cover installation, how OpenStack works on top of Kubernetes, StarlingX services and components and other topics. 
+However you want to engage, if you have something you can offer to, or something you need from, the 5G edge – we want you to be involved. You can also meet the team in person at the Open Infrastructure Summit in Denver, April 29 – May 2. Wind River and others will provide StarlingX materials in their booth and there will be at least [15 sessions](https://www.openstack.org/summit/denver-2019/summit-schedule/global-search?t=starlingx) that will touch on StarlingX in some way. There will even be a [StarlingX Hands-on Workshop](https://www.openstack.org/summit/denver-2019/summit-schedule/events/23630/starlingx-hands-on-workshop) designed for people new to the project which will cover installation, how OpenStack works on top of Kubernetes, StarlingX services and components and other topics. 
 
 So, you’ve just been given a bunch of options to get started take the first step now!
 
--Jeff Gowan
-Wind River
