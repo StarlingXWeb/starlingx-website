@@ -4,7 +4,7 @@ author: ildiko-vancsa
 date: 2019-02-20T01:32:05.627Z
 category: news
 ---
-Leran more about the Open Infrastructure Summit Denver agenda and program. <!-- more -->
+Learn more about the Open Infrastructure Summit Denver agenda and program. <!-- more -->
 
 You can meet the StarlingX community at the upcoming [Open Infrastructure Summit](https://www.openstack.org/summit/denver-2019/) in Denver, April 29 - May 1. They will join 30 other open source projects attending the Summit to collaborate in the open. If you want to be part of it too [register now](https://openinfrasummitandptgdenver.eventbrite.com/) before prices increase on February 27.
 
