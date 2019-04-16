@@ -1,5 +1,5 @@
 ---
-title: Starlingx: What’s in it for you and how to get started
+title: What is in Starlingx for you and how to get started
 author: jeff-gowan
 date: 2019-04-15T01:32:05.627Z
 category: news
