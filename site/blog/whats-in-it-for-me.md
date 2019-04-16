@@ -4,7 +4,7 @@ author: jeff-gowan
 date: 2019-04-15T01:32:05.627Z
 category: news
 ---
-You’ve heard something about StarlingX but not sure it is for you yet? Learn more about opportunities and the first steps of staring to contribute. <!-- more -->
+You’ve heard about StarlingX but not sure it is for you yet? Learn more about opportunities and the first steps of staring to contribute. <!-- more -->
 
 Maybe you already know that StarlingX is a fully-featured open source cloud for the distributed edge. Perhaps you are aware it has features like ultra-low deterministic latency, high availability, strong security, and lowers the cost of deploying and managing a distributed system through simplified installation, maintenance, and operations. You might also understand that it is ideal for telco use cases such as virtualized RAN, universal CPE, MEC and beyond into other use cases in transportation, health care, and industry 4.0.
 
