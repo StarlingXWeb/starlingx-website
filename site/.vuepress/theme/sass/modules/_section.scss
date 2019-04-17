@@ -3,7 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .section {
-	padding: 78px 0 54px;
+	padding: 0px 0 54px;
 
 	@each $name, $pair in $colors {
 		$color: nth($pair, 1);
