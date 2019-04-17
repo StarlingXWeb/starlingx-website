@@ -4,8 +4,7 @@ description: Advancing StarlingX and growing the community
 ---
 
 <section class="section section-padding-top-0">
-
-<<a href="mailto:info@starlingx.io" class="button is-primary-dark is-rounded"><span>SUPPORT StarlingX</span>
+<a href="mailto:info@starlingx.io" class="button is-primary-dark is-rounded"><span>SUPPORT StarlingX</span>
   <span class="ico">
     <img src="../.vuepress/theme/svg/arrow-left.svg" alt="Learn More" />
   </span></a>
