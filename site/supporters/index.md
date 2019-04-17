@@ -31,8 +31,8 @@ description: Advancing StarlingX and growing the community
     <div class="column columns-sponsors">  <img class="img-sponsor-l4" src="/images/logo-windriver.svg" alt="title"  /></div>
   </div>
   <div class="columns">
-    <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-packet.svg" alt="title"  /></div>
-    <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-cengn.svg" alt="title"  /></div>
+    <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-packetcloud.svg" alt="title"  /></div>
+    <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-cengn.png" alt="title"  /></div>
     <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-opendev.svg" alt="title"  /></div>
   </div>
 </div>
