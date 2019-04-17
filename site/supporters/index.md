@@ -4,11 +4,8 @@ description: Advancing StarlingX and growing the community
 ---
 
 <section class="section section-padding-top-0">
-<a href="mailto:info@starlingx.io" class="button is-primary-dark is-rounded"><span>SUPPORT StarlingX</span>
-  <span class="ico">
-    <img src="../.vuepress/theme/svg/arrow-left.svg" alt="Learn More" />
-  </span></a>
-<br/><br/>
+
+Thank you to the companies listed below that are actively involved in making the StarlingX project successful.
 
 <div class="container1">
   <h2 class="features">Thank you to the employers of Contributors to the 1.0 Release</h2>
@@ -29,11 +26,9 @@ description: Advancing StarlingX and growing the community
   </div>
   <div class="columns">
     <div class="column columns-sponsors">  <img class="img-sponsor-l4" src="/images/logo-windriver.svg" alt="title"  /></div>
-  </div>
-  <div class="columns">
-    <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-packetcloud.svg" alt="title"  /></div>
-    <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-cengn.png" alt="title"  /></div>
-    <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-opendev.svg" alt="title"  /></div>
+    <div class="column columns-sponsors">  </div>
+    <div class="column columns-sponsors">  </div>
+    <div class="column columns-sponsors">  </div>
   </div>
 </div>
 
@@ -44,26 +39,20 @@ description: Advancing StarlingX and growing the community
 
 <div class="container container-center">
   <div class="columns">
-    <div class="column">  <a href="https://cloud.google.com/" target="_blank"><img class="img-sponsor-l3" src="/images/logo-google-cloud.svg" alt="title"  /></a></div>
-    <div class="column">  <a href="https://www.microsoft.com/" target="_blank"><img class="img-sponsor-l3" src="/images/logo-microsoft.svg" alt="title"  /></a></div>
-    <div class="column">  <a href="https://vexxhost.com/" target="_blank"><img class="img-sponsor-l3" src="/images/logo-vexxhost.svg" alt="title"  /></a></div>
-  </div>
-  <div class="columns">
-    <div class="column">  <a href="https://aws.amazon.com/" target="_blank"><img class="img-sponsor-l3" src="/images/logo-amazon.svg" alt="title"  /></a></div>
-    <div class="column">  <a href="https://packagecloud.io/" target="_blank"><img class="img-sponsor-l3" src="/images/logo-packagecloud.svg" alt="title"  /></a></div>
-    <div class="column">  </div>
+    <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-packetcloud.svg" alt="title"  /></div>
+    <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-cengn.png" alt="title"  /></div>
+    <div class="column columns-sponsors">  <img class="img-sponsor-l3-last" src="/images/logo-opendev.svg" alt="title"  /></div>
+    <div class="column columns-sponsors">  </div>
   </div>
 </div>
-
-StarlingX is an open source community stewarded by the OpenStack Foundation (OSF).
-
-Above are companies that are actively involved in making the StarlingX project successful.
 
 <a href="mailto:info@starlingx.io" class="button is-primary-dark is-rounded"><span>SUPPORT StarlingX</span>
   <span class="ico">
     <img src="../.vuepress/theme/svg/arrow-left.svg" alt="Learn More" />
   </span></a>
 <br/><br/>
+
+StarlingX is an open source community stewarded by the OpenStack Foundation (OSF). 
 
 <ul>
   <li>Support the StarlingX community and enable it to grow and thrive</li>
