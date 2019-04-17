@@ -54,13 +54,6 @@ description: Advancing StarlingX and growing the community
 
 StarlingX is an open source community stewarded by the OpenStack Foundation (OSF). 
 
-<ul>
-  <li>Support the StarlingX community and enable it to grow and thrive</li>
-  <li>Recognition of your support with Supporter logo placement on starlingx.io</li> 
-  <li>Notification of StarlingX project news and updates</li> 
-  <li>Marketing support from OpenStack Foundation via press releases and providing quotes when your company promotes Kata Containers</li>
-</ul>
-
 <a href="mailto:info@starlingx.io" class="button is-primary-dark is-rounded"><span>SUPPORT StarlingX</span>
   <span class="ico">
     <img src="../.vuepress/theme/svg/arrow-left.svg" alt="Learn More" />
