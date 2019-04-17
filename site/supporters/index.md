@@ -10,6 +10,10 @@ description: Advancing StarlingX and growing the community
   <span>Contact us at <a href="#">info@starlingx.io</a></span>
 </div>
 
+<div class="container1">
+  <h2 class="features">Thank you to the employers of Contributors to the 1.0 Release</h2>
+</div>
+
 <div class="container container-center">
   <div class="columns" style="align-items: center;justify-content: center;">
     <div class="column columns-sponsors">  <img class="img-sponsor-l4" src="/images/logo-99cloud.svg" alt="title"  /></div>
