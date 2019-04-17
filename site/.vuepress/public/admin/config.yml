@@ -82,6 +82,15 @@ collections:
           - { label: "Title", name: title, widget: string }
           - { label: "Body", name: body, widget: markdown }
 
+      - label: "Sponsors"
+        name: "sponsors"
+        file: "site/sponsors/index.md"
+
+        fields:
+          - { label: "Description", name: description, widget: string }
+          - { label: "Title", name: title, widget: string }
+          - { label: "Body", name: body, widget: markdown }
+
       - label: "Community"
         name: "community"
         file: "site/community/index.md"
