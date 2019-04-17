@@ -8,6 +8,7 @@ description: Advancing StarlingX and growing the community
 <div class="container1">
   <h3 class="search-content-title">Interested in supporting StarlingX?</h3>
   <span>Contact us at <a href="#">info@starlingx.io</a></span>
+  <p>&nbp;</p>
 </div>
 
 <div class="container1">
