@@ -1,9 +1,10 @@
 ---
-title: Starlingx: What’s in it for you and how to get started
+title: What's in Starlingx for you and how to get started
 author: jeff-gowan
 date: 2019-04-15T01:32:05.627Z
 category: news
 ---
+
 You’ve heard something about StarlingX. Maybe you know StarlingX is a fully-featured open source cloud for the distributed edge. Perhaps you are aware it has features like ultra-low deterministic latency, high availability, strong security, and lowers the cost of deploying and managing a distributed system through simplified installation, maintenance, and operations. You might also understand that it is ideal for telco use cases such as virtualized RAN, universal CPE, MEC and beyond into other use cases in transportation, health care, and industry 4.0.
 
 Now you probably think, “OK, fine. But what about ME? Why should I care about this open source project?” The answer: It depends.
