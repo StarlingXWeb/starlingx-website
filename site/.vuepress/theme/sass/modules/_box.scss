@@ -84,3 +84,41 @@
 .box-flex {
   display: flex;
 }
+
+.container1 {
+
+  background-color: $primary-blue;
+
+  max-width: $container-max-width + $container-gutter * 2;
+  width: auto;
+  padding-right: $container-gutter;
+  padding-left: $container-gutter;
+  
+  height: 59px;
+  margin-bottom: 30px;
+
+
+  &-small {
+    max-width: $container-small-max-width + $container-gutter * 2;
+  }
+
+  &-medium {
+    max-width: $container-medium-max-width + $container-gutter * 2;
+  }
+
+  &-thin {
+    max-width: $container-thin-max-width + $container-gutter * 2;
+  }
+
+  &-thin-alt {
+    max-width: $container-thin-alt-max-width + $container-gutter * 2;
+  }
+  
+  h2.features {
+    margin-bottom: 25px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    font-size: 26px;
+    color: $white;
+    text-align: center;
+}
