@@ -1,6 +1,6 @@
 <template>
 	<div class="header">
-		<bar />
+		<!-- <bar /> -->
 		<navigation />
 	</div><!-- /.header -->
 </template>
