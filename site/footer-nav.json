@@ -39,7 +39,7 @@
       "nav": [
         {
           "text": "Code",
-          "link": "https://git.starlingx.io/cgit"
+          "link": "https://opendev.org/starlingx"
         },
         {
           "text": "Releases",

@@ -6,7 +6,7 @@ hero:
   headline: A fully featured cloud for the distributed edge
   button:
     title: View The Code
-    url: //git.starlingx.io
+    url: //opendev.org/starlingx
 
 values:
   - title: Reliability
