@@ -38,11 +38,11 @@ StarlingX is open source and licensed under the Apache 2.0 license, which means 
 
 #### Where is the code?
 
-StarlingX is free and open source software available through Git at [git.starlingx.io](https://git.starlingx.io/cgit).
+StarlingX is free and open source software available through Git at [opendev.org/starlingx](https://opendev.org/starlingx).
 
 #### Can I contribute to it? How?
 
-The [StarlingX wiki](https://wiki.openstack.org/wiki/StarlingX) contains documentation for how to download the sourcecode and build it in the "Documentation" section. Code contributions can be made through our [gerrit](https://git.starlingx.io/cgit) site.
+The [StarlingX wiki](https://wiki.openstack.org/wiki/StarlingX) contains documentation for how to download the sourcecode and build it in the "Documentation" section. Code contributions can be made through our [gerrit](https://opendev.org/starlingx) site.
 
 #### How is StarlingX governed?
 
