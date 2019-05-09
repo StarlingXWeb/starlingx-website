@@ -1,6 +1,6 @@
 # StarlingX website
 
-This is the public repo to mantain the StarlingX website at [starlingx.io](starlingx.io).
+This is the public repo to mantain the StarlingX website at [starlingx.io](https://starlingx.io).
 
 ## Overview
 
