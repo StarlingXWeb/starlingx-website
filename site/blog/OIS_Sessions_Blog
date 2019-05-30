@@ -6,13 +6,13 @@ category: news
 ---
 Did you miss out on seeing some of the StarlingX sessions at Open Infrastructure Summit? If so, don’t worry about it because this blog has you covered. 
 
-StarlingX was a hot topic at OIS this year. There were more than 15 sessions that included StarlingX in some manner. The project even got some good coverage in the keynote from Intel’s Melissa Evers-Hood. When she displayed a logo chart of contributors she shared an anecdote about one of them. She said one of the contributors told her, “I was going to do a competitive analysis of StarlingX…vs. the other projects that provide a hardened edge cloud…then realized [there are no comparisons](https://www.youtube.com/watch?v=lRR3mJrg6t8&feature=youtu.be&t=343).” This is a great illustration that helps explain why StarlingX was so popular at the event. 
+StarlingX made a strong showing at the Summit this year, with more than 15 sessions that covered aspects of the project from general overview down to technical details and community building. It even garnered a mention in the keynote from Intel’s Melissa Evers-Hood. When she displayed a logo chart of contributors she shared an anecdote about one of them. She said one of the contributors told her, “I was going to do a competitive analysis of StarlingX…vs. the other projects that provide a hardened edge cloud…then realized [there are no comparisons](https://www.youtube.com/watch?v=lRR3mJrg6t8&feature=youtu.be&t=343).”  
 
-Fortunately, the team at OIS recorded a bunch of the sessions. Here are 5 of them for you to view on-demand. As you view these we invite you to dig in to the topics that you find most interesting. Here’s a couple of ways you can join the conversation:
-- Join the mailing list
+Fortunately the conference recorded many sessions at the Summit and they are available online. Below are 5 StarlingX sessions for you to view on-demand. As you view these we invite you to dig in to the topics that you find most interesting. Here’s a couple of ways you can join the conversation:
+- [Join the mailing list](http://lists.starlingx.io/cgi-bin/mailman/listinfo)
 - Join one of the [weekly calls](https://wiki.openstack.org/wiki/Starlingx/Meetings)
 - Check out the [StarlingX Wiki page](https://wiki.openstack.org/wiki/StarlingX#Welcome_to_the_StarlingX_Project) where you can
-- Download the code
+- [Download the code](https://opendev.org/starlingx)
 - Read the [storyboard](https://storyboard.openstack.org/#!/project_group/86) to see what’s being worked on
 - Roll up your sleeves and [contribute bug fixes](https://bugs.launchpad.net/starlingx)
 
@@ -20,8 +20,8 @@ Now here are the sessions recorded for you. Enjoy
 
 [StarlingX: Hardened Managed Kubernetes Platform for the Edge](https://www.youtube.com/watch?v=Wg095dkagBc&feature=youtu.be)
 
-StarlingX has evolved to provide a hardened managed kubernetes platform targeted for Edge-computing.
-This presentation will provide an overview of the solution including: integration with StarlingX platform services for deployment and life cycle management of the kubernetes cluster, integration with openstack keystone for authentication/authorization, the StarlingX one and two node solutions, two node master implementation and integrated ceph cluster. The reduced footprint offerings are a key enabler for Edge use cases.
+StarlingX has evolved to provide a hardened managed Kubernetes platform targeted for Edge-computing.
+This presentation will provide an overview of the solution including: integration with StarlingX platform services for deployment and life cycle management of the Kubernetes cluster, integration with OpenStack Keystone for authentication/authorization, the StarlingX one and two node solutions, two node master implementation and integrated Ceph cluster. The reduced footprint offerings are a key enabler for Edge use cases.
 Optional deployment of a containerized openstack application on top of this hardened Kubernetes Platform for hosting VM-based applications will also be covered.
 The presentation will be followed by a demo of the platform capabilities.
 
