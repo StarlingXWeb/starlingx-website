@@ -7,10 +7,10 @@
 				</div><!-- /.bar-logo -->
 
 				<div class="bar-entry">
-					<p>Join the StarlingX Community at the Open Infrastructure Summit, April 29 - May 1 in Denver, CO.</p>
+					<p>Get involved with the StarlingX community at the Open Infrastructure Summit Shanghai.</p>
 				</div><!-- /.bar-entry -->
 
-				<a href="//openstack.org/summit/denver-2019/" target="_blank" class="bar-btn">Learn More</a>
+				<a href="//starlingx.io/blog/starlingx-shanghai-schedule-blog.html" target="_blank" class="bar-btn">View Sessions</a>
 			</div><!-- /.bar-inner -->
 		</div><!-- /.container -->
 	</div><!-- /.bar -->
