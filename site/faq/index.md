@@ -66,7 +66,7 @@ The StarlingX team is actively working with a number of other projects and commu
 
 #### When is the first release of StarlingX?
 
-The first release will be in October 2018. The project will release on a 4 month cadence each March, July and November in 2019. Releases are time based.
+The first release was in October 2018, the second release was available in August 2019, and approximately the third release would be in November 2019. After these 3 releases, the project will follow a 6-month release cadence, or in another word, a time based release model, similar to other Open Source projects, such as OpenStack.
 
 #### Are there any commercial distributions of StarlingX?
 
