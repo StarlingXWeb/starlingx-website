@@ -11,7 +11,11 @@
 			<div :class="['container', containerClass]">
 				<div class="hero-content">
 					<h3 class="hero-title">{{ title }}</h3><!-- /.hero-title -->
-
+					<div class="hero-subhead"
+						v-if="['Home'].includes($page.title)"
+			          >Solve the operational problem of deploying and 
+			            <br>managing distributed networks.
+			        </div>
 					<div v-if="withEntry" class="hero-entry">
 						<slot name="entry" />
 					</div><!-- /.hero-entry -->

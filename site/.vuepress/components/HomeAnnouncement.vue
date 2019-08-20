@@ -1,5 +1,5 @@
 <template>
-  <box withActions title="First Release of StarlingX Open Source Edge Cloud Software Now Available">
+  <box withActions title="StarlingX 2.0 Available Now">
 
     <slot></slot>
 

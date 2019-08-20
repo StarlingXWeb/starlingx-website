@@ -17,7 +17,7 @@ streamlined operation.
 
 **[Read the StarlingX Project Overview deck](/collateral/StarlingX-Onboarding-Deck-for-Web-February-2019.pdf)**
 
-**[Watch the OSF Community Webinar dedicated to StarlingX onboarding](https://www.youtube.com/watch?v=G9uwGnKD6tM&t)**
+**[StarlingX Videos](https://www.youtube.com/playlist?list=PLKqaoAnDyfgp7KWad7EAHnZ30Mdg3Ejqf)**
 
 ---
 

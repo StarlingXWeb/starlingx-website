@@ -3,22 +3,37 @@ description: Development activities in StarlingX
 title: Software
 ---
 
+<div class="video-wrapper">
+  <iframe width="835 px" height="469.687 px" src="https://www.youtube.com/embed/ImoTABqtdF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<br>
+<br>
+
 StarlingX is an integration and development project to provide a full software stack suitable to fulfill the strict requirements of edge computing use cases from security to high availability. Beyond integrating well known open source components such as OpenStack modules, Kubernetes, Ceph, OVS-DPDK, and so forth the community is working on new services to fill in the gaps in the open source ecosystem to enhance deployment, maintainability and operation of the software components.
 
 <div class="columns">
   <div class="column">
     <div class="box is-purple">
-      <h3>Get StarlingX</h3>
-      <a href="https://opendev.org/starlingx">
-        Go to opendev.org/starlingx >
+      <h3>Install the latest image</h3>
+      <a href="http://mirror.starlingx.cengn.ca/mirror/starlingx/release/">
+        mirror.starlingx.cengn.ca
       </a>
     </div>
   </div>
   <div class="column">
     <div class="box is-purple">
-      <h3>View the Documentation</h3>
+      <h3>Get the source code</h3>
+      <a href="https://opendev.org/starlingx">
+        opendev.org/starlingx
+      </a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="box is-purple">
+      <h3>View the documentation</h3>
       <a href="https://docs.starlingx.io">
-        Go to docs.starlingx.io >
+        docs.starlingx.io
       </a>
     </div>
   </div>

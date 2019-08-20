@@ -1,20 +1,20 @@
 ---
 layout: Home
-title: StarlingX
+title: Home
 
 hero:
-  headline: A fully featured cloud for the distributed edge
+  headline: Deploy your edge cloud now
   button:
-    title: View The Code
-    url: //opendev.org/starlingx
+    title: Get Started Now
+    url: /software/
 
 values:
-  - title: Reliability
+  - title: Reliabile
     icon: check-large.svg
     copy: |
       Fault management, fast secure VM failover and live migration minimizes downtime
 
-  - title: Scalability
+  - title: Scalable
     icon: scale.svg
     copy: |
       Deployable on one to thousands of distributed nodes allowing for a single system to be used from edge to core
@@ -29,7 +29,7 @@ values:
     copy: |
       Deterministic, tunable performance optimized for the use case
 
-  - title: Edge security
+  - title: Secure
     icon: lock.svg
     copy: |
       Software security to avoid tampering at the edge, where physical security may be limited
@@ -63,7 +63,7 @@ getInvolvedSteps:
 
 ## About StarlingX
 
-StarlingX is a complete cloud infrastructure software stack for the edge used by the most demanding applications in industrial IOT, telecom, video delivery and other ultra-low latency use cases. Based on mature software deployed for mission critical applications, newly open sourced StarlingX code is the base for edge implementations in scalable solutions that is ready for production now.
+StarlingX is a complete cloud infrastructure software stack for the edge used by the most demanding applications in industrial IOT, telecom, video delivery and other ultra-low latency use cases. With deterministic low latency required by edge applications, and tools that make distributed edge manageable, StarlingX provides a container-based infrastructure for edge implementations in scalable solutions that is ready for production now.
 
 <a href="/learn/" class="link is-primary">Learn More ></a>
 
@@ -71,7 +71,7 @@ StarlingX is a complete cloud infrastructure software stack for the edge used by
 
 <home-announcement slot="announcement" button-name="Read the blog post" link="/blog/starlingx-initial-release.html">
 
-StarlingX—the open source edge computing and IoT cloud platform optimized for low latency and high performance applications—is now available in its first release. The project was established in May as a pilot project supported by the OpenStack Foundation (OSF) and builds on code contributed by Wind River and Intel.
+StarlingX Release 2.0 is now available. The open source edge computing and IoT cloud platform optimized for low latency and high performance applications is now a container based platfom for hosting OpenStack and other cloud native applications.
 
 </home-announcement>
 
