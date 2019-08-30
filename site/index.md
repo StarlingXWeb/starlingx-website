@@ -5,11 +5,11 @@ title: Home
 hero:
   headline: Deploy your edge cloud now
   button:
-    title: Get Started Now
+    title: Get Started
     url: /software/
 
 values:
-  - title: Reliabile
+  - title: Reliable
     icon: check-large.svg
     copy: |
       Fault management, fast secure VM failover and live migration minimizes downtime

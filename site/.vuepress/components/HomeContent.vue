@@ -17,7 +17,7 @@
     </base-article>
 
     <base-section class="section-watermark is-dark" containerClass="container-small" withFoot :image="require('../theme/images/watermark.png')">
-      <div class="columns is-multiline">
+      <div class="columns is-multiline" style="padding-top:50px;">
         <div class="column is-one-third values" v-for="value in $page.frontmatter.values">
           <article-small :title="value.title" :image="require('../theme/svg/' + value.icon )">
             <p>{{ value.copy }}</p>
