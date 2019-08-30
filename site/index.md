@@ -69,7 +69,7 @@ StarlingX is a complete cloud infrastructure software stack for the edge used by
 
 </template>
 
-<home-announcement slot="announcement" button-name="Read the blog post" link="/blog/starlingx-initial-release.html">
+<home-announcement slot="announcement" button-name="Read the blog post" link="/blog/starlingx-second-release-intro-blog.html">
 
 StarlingX Release 2.0 is now available. The open source edge computing and IoT cloud platform optimized for low latency and high performance applications is now a container based platform for hosting OpenStack and other cloud native applications.
 
