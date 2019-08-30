@@ -3,6 +3,13 @@ description: An overview of the StarlingX project
 title: Learn
 ---
 
+<div class="video-wrapper">
+  <iframe width="835 px" height="469.687 px" src="https://www.youtube.com/embed/videoseries?list=PLKqaoAnDyfgp7KWad7EAHnZ30Mdg3Ejqf" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<br>
+<br>
+
 The StarlingX virtualization platform focuses on easy deployment, low touch manageability, rapid response to events and
 fast recovery -- think control at the edge, control between IoT and cloud, and control over your virtual machines.
 
