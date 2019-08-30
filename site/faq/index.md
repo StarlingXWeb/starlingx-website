@@ -64,9 +64,9 @@ StarlingX is a top-level pilot project supported by the OpenStack Foundation, bu
 
 The StarlingX team is actively working with a number of other projects and communities, both within and outside of the OpenStack Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects within OpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
 
-#### When is the next release of StarlingX?
+#### What is the release cadence for StarlingX?
 
-The first release was in October 2018. The next release is in August 2019. 
+The initial (beta) StarlingX release was released in October 2018. In 2019 and moving forward, StarlingX releases will align with OpenStack releases. StarlingX will have two releases a year, following a cycle-trailing model relative to the OpenStack release cycle.
 
 #### Are there any commercial distributions of StarlingX?
 
