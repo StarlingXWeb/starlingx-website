@@ -7,11 +7,11 @@ category: news
 Learn more about the new StarlingX 2.0 release. <!-- more -->
 
 
-The StarlingX is a relatively new open source project - launched in May of 2018 and things have changed, grown and evolved very quickly. It is a very different project now than when we started for sure.
+The StarlingX is a relatively new open source project - announced in May of 2018 and things have changed, grown and evolved very quickly. It is a very different project now than when we started for sure.
 
-In the past year we have made a tremendous amount of progress as a community. We have fully operationalized community governance, attracted new contributors from around the world and elected a diverse set of members to the Technical Steering Committee from four different companies. There are a wide range of opportunities for people to contribute to the project, please reach out to us if you are looking to learn more. We have a group of people in our First Contact SIG working to improve the on boarding experience.
+In the past year we have made a tremendous amount of progress as a community. We have fully operationalized community governance, attracted new contributors from around the world, and elected a diverse set of members to the Technical Steering Committee from four different companies. There are a wide range of opportunities for people to contribute to the project; please reach out to us if you are looking to learn more. We have a group of people in our First Contact SIG working to improve the on boarding experience.
 
-At the same time the community has made huge strides in evolving the architecture of the project. In the first release, the platform services ran on bare metal. In this release, the platform has evolved to a Kubernetes based Cloud Native platform, integrating Kubernetes with the StarlingX services. OpenStack components are also leveraged, such as Keystone, Barbican, and Horizon. The containers are deployed via a local docker registry. We now have an ecosystem of components with the StarlingX services ready to drive the convergence of the 5G world. This is a great example of the power of open infrastructure components coming together to solve real problems.
+At the same time the community has made huge strides in evolving the architecture of the project. In the first release, the platform services ran on bare metal. In this release, the platform has evolved to a Kubernetes-based Cloud Native platform, integrating Kubernetes with the StarlingX services. OpenStack components are also leveraged, such as Keystone, Barbican, and Horizon. The containers are deployed via a local docker registry. We now have an ecosystem of components with the StarlingX services ready to drive the convergence of the 5G world. This is a great example of the power of open infrastructure components coming together to solve real problems.
 
 As new technologies emerge it is important to adapt and change to take advantage of the possibilities they bring to the table. At the edge, the solutions are power and space constrained, latency and timing are critical. StarlingX now gives users choice to deploy containers or VM’s or both. OpenStack services are deployed in containers and can be deployed as required for the particular environment. We can now provide an edge optimized solution that brings together Kubernetes and OpenStack.
 
@@ -24,7 +24,7 @@ The project brings together:
 4.    High performance networking
 5.    Support for highly accurate synchronous timing 
 
-Below are some of the 2.0 updates in these areas:
+Below are some of the StarlingX 2.0 updates in these areas:
 
 - We have added significantly to our [documentation](https://docs.starlingx.io) suite and completely refreshed our [wiki](https://wiki.openstack.org/wiki/StarlingX). We have made good progress, and this is an area of continued focus for the project.
 - Support for TPM devices to store secrets, and UEFI secure boot are some examples of the easy ways to leverage security capabilities that are critical at the edge.
