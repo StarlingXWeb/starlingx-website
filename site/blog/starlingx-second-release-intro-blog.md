@@ -4,7 +4,7 @@ author: ian-jolliffe
 date: 2019-09-03T01:32:05.627Z
 category: news
 ---
-Learn more about the StarlingX Hands-On Workshop at Open Infrastructure Summit Denver. <!-- more -->
+Learn more about the new StarlingX 2.0 release. <!-- more -->
 
 
 The StarlingX is a relatively new open source project - launched in May of 2018 and things have changed, grown and evolved very quickly. It is a very different project now than when we started for sure.
