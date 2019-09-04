@@ -6,9 +6,9 @@ title: FAQs
 
 <ul class="list-disc">
   <li>A fully open source solution that is ready to deploy</li>
-  <li>StarlingX's is optimizing cloud services for edge solutions</li>
-  <li>StarlingX focuses on security, ultra-low latency, extremely high service uptime, small-footprint deployments and streamlined operations.</li>
-  <li>The open source origins of StarlingX derive from a proven, deployed, broad-scale commercial offering that has been open sourced</li>
+  <li>Flexibility to run on containers, VMs, and/or Bare Metal</li>
+  <li>Optimize cloud services for edge solutions</li>
+  <li>Security, ultra-low latency, extremely high service uptime, small-footprint deployments and streamlined operations</li>
   <li>Suitable for a wide range of edge applications</li>
 </ul>
 
@@ -26,11 +26,11 @@ StarlingX integrates a number of upstream projects: CentOS, OvS-DPDK, Ceph, Kube
 
 #### What is the operating system
 
-StarlingX is integrating and tested with CentOS and team is already working on multiOS support. Contributions are welcome!
+StarlingX is integrating and tested with CentOS and the team is already working on multiOS support. Contributions are welcome!
 
 #### How do I get started testing StarlingX?
 
-The [StarlingX wiki](https://wiki.openstack.org/wiki/StarlingX) contains documentation for how to download the sourcecode, build and test it in the "Documentation" section.
+The [StarlingX wiki](https://wiki.openstack.org/wiki/StarlingX) contains documentation for how to download the source code, then build and test it, in the "Documentation" section.
 
 #### What's the license for StarlingX?
 
@@ -38,7 +38,7 @@ StarlingX is open source and licensed under the Apache 2.0 license, which means 
 
 #### Where is the code?
 
-StarlingX is free and open source software available through Git at [opendev.org/starlingx](https://opendev.org/starlingx).
+StarlingX is free and open source software. Start here: [opendev.org/starlingx](https://opendev.org/starlingx)
 
 #### Can I contribute to it? How?
 
@@ -64,9 +64,9 @@ StarlingX is a top-level pilot project supported by the OpenStack Foundation, bu
 
 The StarlingX team is actively working with a number of other projects and communities, both within and outside of the OpenStack Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects within OpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
 
-#### When is the first release of StarlingX?
+#### What is the release cadence for StarlingX?
 
-The first release will be in October 2018. The project will release on a 4 month cadence each March, July and November in 2019. Releases are time based.
+The initial (beta) StarlingX release was released in October 2018. In 2019 and moving forward, StarlingX releases will align with OpenStack releases. StarlingX will have two releases a year, following a cycle-trailing model relative to the OpenStack release cycle.
 
 #### Are there any commercial distributions of StarlingX?
 

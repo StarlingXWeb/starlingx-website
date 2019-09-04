@@ -47,7 +47,7 @@
         },
         {
           "text": "Documentation",
-          "link": "https://wiki.openstack.org/wiki/StarlingX"
+          "link": "https://docs.starlingx.io/"
         }
       ]
     }
