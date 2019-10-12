@@ -11,7 +11,7 @@ As we drive compute to the edge of the network many things change and become mor
 
 Security is always an important consideration in any deployment. It gets more interesting when we no longer have the high level of physical security in the data center where there are retinal scanners at the doors. As we move to the edge we have an environment where there may be less physical security and nodes that are geographically distributed also make maintenance activities difficult.
 
-Within the StarlingX community, these are challenges we have recognized and have been working on solutions for a while. The key approaches start with security enabled at the lowest level of the stack and build up from there. The key challenges we have tackled so far are:
+Within the StarlingX community, these are challenges we have recognized and have been working on solutions. The key approaches start with security enabled at the lowest level of the stack and build up from there. The key challenges we have tackled so far are:
 
 - **UEFI secure boot**: Can be used to securely boot from the lowest levels of the stack such that the operating system can be booted from BIOS to GRUB in a secure way.
 - **TPM device enablement**: StarlingX provides the ability to leverage a TPM device when it is available on a server. TPM devices can be used to store secrets, such as private keys for HTTPS. Once they are in the TPM device, the secret can only be read by authorized users and can never be modified. Another important use of TPM devices is to leverage entropy built into the device to ensure more randomness of any generated keys. 
