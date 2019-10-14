@@ -1,6 +1,6 @@
 ---
 title: News from the StarlingX Deep Dive Meetup in Beijing
-author: ildiko-vancsa
+author: hai-tao-wang; yong-hu
 date: 2019-10-21T01:32:05.627Z
 category: news
 ---
