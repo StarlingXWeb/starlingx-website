@@ -1,5 +1,5 @@
 ---
-name: Hai Tao Wang, Yong Hu
+name: Hai Tao Wang,Yong Hu
 company: Intel
 ---
 
