@@ -20,7 +20,7 @@ provide fault management and service management among others to ensure high avai
 StarlingX community has optimized the solution for security, ultra-low latency, extremely high service uptime, and
 streamlined operation.
 
-**[View this overview document for helpful information](/collateral/StarlingX_OnePager_Web-102318.pdf)**
+**[View this overview document for helpful information](/collateral/StarlingX_OnePager_082019_Web.pdf)**
 
 **[Read the StarlingX Project Overview deck](/collateral/StarlingX-Onboarding-Deck-for-Web-February-2019.pdf)**
 
