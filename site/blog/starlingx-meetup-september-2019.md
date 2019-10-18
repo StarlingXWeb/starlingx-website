@@ -9,6 +9,8 @@ Learn more about the recent StarlingX meetup in China. <!-- more -->
 
 The community had the first StarlingX meetup held in China in Beijing on September 20, 2019.
 
+![alt text](/images/stx-beijing-meetup-september.png)
+
 More than 80 participants from 22 companies enrolled in this gathering with representatives from all major telecom operators, Cloud Service Providers and edge computing solution providers from the region. Experts from Intel, China Unicom, FiberHome, Wind River, 99Cloud, China UnionPay and China Mobile shared their use case of edge computing, and their experiences of the deploying and testing the software the community has been working on.
 
 And there is more! 4 demo showcases were performed to highlight different use cases, while the participants also engaged in an enthusiastic group discussion that turned the meetup into a collaborative environment to share current demands and challenges in the area of edge computing.
