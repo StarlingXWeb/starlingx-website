@@ -9,11 +9,11 @@ Learn more about the recent StarlingX meetup in China. <!-- more -->
 
 The community had the first StarlingX meetup held in China in Beijing on September 20, 2019.
 
-![alt text](/images/stx-beijing-meetup-september.png)
-
 More than 80 participants from 22 companies enrolled in this gathering with representatives from all major telecom operators, Cloud Service Providers and edge computing solution providers from the region. Experts from Intel, China Unicom, FiberHome, Wind River, 99Cloud, China UnionPay and China Mobile shared their use case of edge computing, and their experiences of the deploying and testing the software the community has been working on.
 
 And there is more! 4 demo showcases were performed to highlight different use cases, while the participants also engaged in an enthusiastic group discussion that turned the meetup into a collaborative environment to share current demands and challenges in the area of edge computing.
+
+![alt text](/images/stx-beijing-meetup-september.png)
 
 ## Case Studies
 
@@ -46,5 +46,9 @@ You can learn more about the contactless payment system use case and deployment 
 Such as other carriers, China Mobile is also aligning their edge platform with the ESTI MEC framework and reference architecture, though there is a certain level of difference in implementation details. Facing the natural complexity of edge clouds, in terms of multiple locations (cross regions), heterogeneousness, collaboration, and autonomy, the audience could learn about China Mobile's experience about working with these challenges that they learned from their practice. StarlingX was presented on the the infrastructure layer covering the NFVI and VIM components with integrating services from open source projects such as OpenStack and Kubernetes to fulfill edge requrements.
 
 In summary, the 6 case studies above covered several typical edge computing scenarios. StarlingX fits well in the designs mentioned due to the highlighted features, such as low latency, high availability and hardened security, dedicated for edge computing use cases. However, during the afternoon sessions the participants started deeper discussions and analysis where they collected a lot of feedback, comments, and recommendations on several aspects, like smaller footprint and system overhead and better usability (easy-to-use) and some items that are more relevant to the community's structure and way of working.
+
+## Special Thanks to the Organizers
+
+Special thanks to the community members who organized the event: Hu Wei, Hu Yong, Wang Haitao, Wang Yu, Liu Yuan, Wu Xiaowei, Qi Mingyuan, Shane Wang, Ding Jianfeng, Yang Ailin, Jin Yuntong, Suzie Yang, Cindy Xie, and Maggie Liang.
 
 Learn more about the details of these discussions in a follow up blog post!
