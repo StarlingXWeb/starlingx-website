@@ -26,6 +26,8 @@ TSN is a set of standards defined by IEEE to support the transmission of time-se
 
 There are several other use cases that were mentioned, but were not demonstarted at the meetup this time, like Big Data, Robotics and so forth. During this section Wei highlighted the concept of a demo lab which provides the StarlingX community with access to the aforementioned demo projects for further evaluation and collaboration.
 
+![alt text](/images/stx-beijing-meetup-september-2.png)
+
 ## Group Discussion
 
 This section looked into areas of the project that need improvements. Below you can find note from the working sessions including an outline of the discussions as well as gaps that the community is looking into to fix.
