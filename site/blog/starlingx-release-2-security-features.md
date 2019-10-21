@@ -1,7 +1,7 @@
 ---
 title: Securing the Edge with StarlingX
 author: ian-jolliffe
-date: 2019-10-20T01:32:05.627Z
+date: 2019-10-19T01:32:05.627Z
 category: features-and-updates
 ---
 Security on the edge is crucial. Learn more about how the StarlingX 2.0 release helps addressing this challenge. <!-- more -->
