@@ -7,7 +7,7 @@ category: news
 
 Continue to read about the recent StarlingX meetup in China. <!-- more -->
 
-If you are interested in reading about the case studies that were presented at the meetup check out the [first blog post]() about the event.
+If you are interested in reading about the case studies that were presented at the meetup check out the [first blog post](https://www.starlingx.io/blog/starlingx-meetup-september-2019.html) about the event.
 
 ## Demo Showcase
 The demo showcase block started with a short introduction to paint the picture of the different use cases and scenarios that StarlingX was featured in. The projects are in different stages, but are all results of joint collaboration between active members of the ecosystem. Hu Wei also emphasized the need and importance of having more individuals and organizations participating in the community to further support innovation, knowledge sharing and the evolution of the software.
