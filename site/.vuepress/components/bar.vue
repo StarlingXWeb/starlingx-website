@@ -7,10 +7,10 @@
 				</div><!-- /.bar-logo -->
 
 				<div class="bar-entry">
-					<p>Get involved with the StarlingX community at the Open Infrastructure Summit Shanghai.</p>
+					<p>If your organization is using or evaluating StarlingX, share your feedback in the StarlingX User Survey.</p>
 				</div><!-- /.bar-entry -->
 
-				<a href="//starlingx.io/blog/starlingx-shanghai-schedule-blog.html" target="_blank" class="bar-btn">View Sessions</a>
+				<a href="https://www.surveymonkey.com/r/StarlingX" target="_blank" class="bar-btn">View Sessions</a>
 			</div><!-- /.bar-inner -->
 		</div><!-- /.container -->
 	</div><!-- /.bar -->
