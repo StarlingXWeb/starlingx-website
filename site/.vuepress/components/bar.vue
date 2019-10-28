@@ -10,7 +10,7 @@
 					<p>If your organization is using or evaluating StarlingX, share your feedback in the StarlingX User Survey.</p>
 				</div><!-- /.bar-entry -->
 
-				<a href="https://www.surveymonkey.com/r/StarlingX" target="_blank" class="bar-btn">View Sessions</a>
+				<a href="https://www.surveymonkey.com/r/StarlingX" target="_blank" class="bar-btn">Take the Survey</a>
 			</div><!-- /.bar-inner -->
 		</div><!-- /.container -->
 	</div><!-- /.bar -->
