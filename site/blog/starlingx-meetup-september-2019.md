@@ -51,4 +51,4 @@ In summary, the 6 case studies above covered several typical edge computing scen
 
 Special thanks to the community members who organized the event: Hu Wei, Hu Yong, Wang Haitao, Wang Yu, Liu Yuan, Wu Xiaowei, Qi Mingyuan, Shane Wang, Ding Jianfeng, Yang Ailin, Jin Yuntong, Suzie Yang, Cindy Xie, and Maggie Liang.
 
-Learn more about the details of these discussions in a follow up blog post!
+Learn more about the details of these discussions in a follow up [blog post](https://www.starlingx.io/blog/starlingx-meetup-september-2019-2.html)!
