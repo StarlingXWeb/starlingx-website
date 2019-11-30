@@ -15,7 +15,7 @@ StarlingX was featured during the keynotes on Monday with a short [project updat
 
 Similarly to former Summits we had the Forum running in parallel to the conference with  40 minutes long sessions with users, operators and developers in the rooms to discuss feedback, new ideas and next steps. StarlingX and the OSF Edge Computing Group had a [joint session](https://etherpad.openstack.org/p/PVG-edge-wg-forum) to talk about reference architectures and gather new use cases from the attendees. The session discussed use cases related to Content Delivery Networks (CDN) and running workloads on bare metal on the edge and further items such as networking and bare metal provisioning on the solutions side.
 
-The conference sessions were recorded and the slides and videos are being uploaded to the [event website](https://www.openstack.org/videos/search?search=starlingx) as you read this this article.
+The conference sessions were recorded and the slides and videos are being uploaded to the [event website](https://www.openstack.org/videos/search?search=starlingx) as you read this article.
 
 The StarlingX community also participated in the PTG which was overlapping with the Summit this time around. The project had one and a half days to split between [onboarding activities and technical discussions](https://etherpad.openstack.org/p/starlingX-ptg-agenda-shanghai).
 
