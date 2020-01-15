@@ -1,9 +1,9 @@
 ---
-description: 'Join to contribute code, documentation, and use cases'
+description: 'Join to get help, contribute code, documentation, and use cases'
 title: Community
 ---
 
-StarlingX is an open source project supported by an open community. Anyone is welcome to join and contribute code, documentation, and use cases.
+StarlingX is an open source project supported by an open community. Anyone is welcome to join, ask for help, and contribute code, documentation, and use cases. The best way to reach the community is to attend the weekly community call (see “Standing Meetings”.) You can also join the mailing list and submit your questions (See “Communications”.)
 
 ## Standing Meetings
 
