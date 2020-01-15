@@ -7,7 +7,7 @@ hero:
   button:
     title: Get Started
     url: /software/
-  button:
+  button2:
     title: Get Help
     url: /community/
 

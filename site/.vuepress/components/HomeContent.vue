@@ -9,6 +9,13 @@
             <img :src="require('../theme/svg/arrow-left.svg')" alt="View the Code" />
           </span>
         </a>
+        <a :href="$page.frontmatter.hero.button2.url" class="button is-primary-dark is-rounded">
+          <span>{{ $page.frontmatter.hero.button2.title }}</span>
+
+          <span class="ico">
+            <img :src="require('../theme/svg/arrow-left.svg')" alt="Get Help" />
+          </span>
+        </a>
       </template>
     </hero>
 
