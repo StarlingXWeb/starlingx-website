@@ -7,6 +7,9 @@ hero:
   button:
     title: Get Started
     url: /software/
+  button:
+    title: Get Help
+    url: /community/
 
 values:
   - title: Reliable
