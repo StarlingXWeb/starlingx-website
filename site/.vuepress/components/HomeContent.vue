@@ -19,7 +19,7 @@
       </template>
     </hero>
 
-    <base-article :image="require('../theme/images/StarlingX_Diagram_SimplifiedArchitecture.jpg')">
+    <base-article :image="require('../theme/images/StarlingX_Diagram_DistributedEdgeCloudNative_v2.jpg')">
       <slot name="about"></slot>
     </base-article>
 
