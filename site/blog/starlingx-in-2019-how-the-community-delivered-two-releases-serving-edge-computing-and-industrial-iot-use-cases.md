@@ -27,3 +27,5 @@ The code is hosted on Github under the Apache 2 license. Learn about the project
 * [GitHub](https://git.starlingx.io/cgit)
 * IRC: #starlingx on Freenode
 * [Mailing list](https://lists.starlingx.io/)
+
+The OpenStack Foundation (OSF) just published its [2019 annual report](https://www.openstack.org/foundation/2019-openstack-foundation-annual-report). Learn more about other OSF projects and how you can get involved.
