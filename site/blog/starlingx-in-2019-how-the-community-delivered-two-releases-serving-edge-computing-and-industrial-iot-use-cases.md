@@ -6,7 +6,7 @@ author: ildiko-vancsa
 date: 2020-01-28T16:23:52.741Z
 category: annual report
 ---
-StarlingX is a pilot project supported by the OpenStack Foundation that was announced May 2018. The project integrates well-known open source project including OpenStack, Ceph, Kubernetes, and more to create a cloud platform that is fine tuned for edge and IoT use cases. 
+StarlingX is a pilot project supported by the OpenStack Foundation that was announced May 2018. The project integrates well-known open source project including OpenStack, Ceph, Kubernetes, and more to create a cloud platform that is fine tuned for edge and IoT use cases.<!-- more --> 
 
 During 2019 the community was working on creating a fusion between OpenStack and Kubernetes services to provide infrastructure software that creates a flexible environment to support virtual, containerized, or bare metal workloads.
 
