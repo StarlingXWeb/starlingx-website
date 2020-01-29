@@ -2,7 +2,7 @@
 title: >-
   StarlingX in 2019: How the community delivered two releases serving edge
   computing and industrial IoT use cases
-author: 'Ildiko Vancsa '
+author: ildiko-vancsa
 date: 2020-01-28T16:23:52.741Z
 category: annual report
 ---
