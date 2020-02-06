@@ -22,7 +22,7 @@ streamlined operation.
 
 **[View this overview document for helpful information](/collateral/StarlingX_OnePager_082019_Web.pdf)**
 
-**[Read the StarlingX Project Overview deck](/collateral/StarlingX_Onboarding_Deck_for_Web_February_2020.pdf)**
+**[Read the StarlingX Project Overview deck](/collateral/StarlingX_Onboarding_Deck_for_Web.pdf)**
 
 **[StarlingX Videos](https://www.youtube.com/playlist?list=PLKqaoAnDyfgp7KWad7EAHnZ30Mdg3Ejqf)**
 
