@@ -1,5 +1,5 @@
 <template>
-  <box withActions title="StarlingX 2.0 Available Now">
+  <box withActions title="StarlingX 3.0 Available Now">
 
     <slot></slot>
 
