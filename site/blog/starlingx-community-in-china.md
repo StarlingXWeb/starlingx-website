@@ -1,7 +1,7 @@
 ---
-title: StarlingX community interview: how StarlingX shines in the starry sky of open-source projects in China
+title: StarlingX community interview: How StarlingX shines in the starry sky of open source projects in China
 author: sunny-cai
-date: 2020-02-25
+date: 2020-02-25T01:32:05.627Z
 category: features-and-updates
 ---
 
