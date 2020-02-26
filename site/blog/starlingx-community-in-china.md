@@ -1,5 +1,5 @@
 ---
-title: StarlingX community interview: How StarlingX shines in the starry sky of open source projects in China
+title: 	StarlingX community interview&#58; How StarlingX shines in the starry sky of open source projects in China
 author: sunny-cai
 date: 2020-02-25T01:32:05.627Z
 category: features-and-updates
@@ -32,7 +32,8 @@ In addition, it would be great to have a sandbox environment available for devel
 
 What are some highlights of the StarlingX 4.0 release? Things you are looking forward to?
 Based on my observation from the community discussions, enhancements to the Distributed Cloud feature will be definitely the number one highlight. Other than that, we will also have some exciting features like [Kata Containers](https://katacontainers.io/) support and containerized Ceph in 4.0.
-All these cool stuff will make StarlingX a better solution and satisfy more of our partners and customers in the ecosystem.
+
+All these cool things will make StarlingX a better solution and satisfy more of our partners and customers in the ecosystem.
 
 Learn about the project, how to contribute and support the community at [starlingx.io](http://starlingx.io). Join these channels to get involved and contribute:
 
