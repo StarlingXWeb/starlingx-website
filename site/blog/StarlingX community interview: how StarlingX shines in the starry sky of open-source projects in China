@@ -2,7 +2,7 @@
 title: StarlingX community interview: how StarlingX shines in the starry sky of open-source projects in China
 author: sunny-cai
 date: 2020-02-25
-category: community-interview
+category: features-and-updates
 ---
 
 StarlingX is a pilot project supported by the OpenStack Foundation that was announced in May 2018. The project integrates well-known open source projects including OpenStack, Ceph, Kubernetes, and more to create a cloud platform that is fine tuned for edge and IoT use cases.
