@@ -11,7 +11,7 @@ description: Advancing StarlingX and growing the community
 <br/><br/>
 
 <div class="container1">
-  <h2 class="features">Thank you to the employers of Contributors to the 1.0 and 2.0 releases</h2>
+  <h2 class="features">Supporting Companies</h2>
 </div>
 
 <div class="container container-center">
