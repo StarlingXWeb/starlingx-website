@@ -1,0 +1,36 @@
+{
+  "title": "Blog",
+  "subTitle": "StarlingX news, announcements, best practices, use cases and more.",
+  "categories": [
+    {
+      "text": "News & Announcements",
+      "id": "category-A7fnZYrE1"
+    },
+    {
+      "text": "Features & Updates",
+      "id": "category-p92F9JYj5"
+    },
+    {
+      "text": "Annual Report",
+      "id": "category-ONbhvyhgs"
+    }
+  ],
+  "connect": [
+    {
+      "text": "Mailing Lists",
+      "link": "http://lists.starlingx.io/"
+    },
+    {
+      "text": "Weekly Calls",
+      "link": "https://wiki.openstack.org/wiki/StarlingX#Meetings"
+    },
+    {
+      "text": "Freenode IRC: #starlingx",
+      "link": "https://freenode.net/"
+    },
+    {
+      "text": "Twitter",
+      "link": "https://twitter.com/starlingx"
+    }
+  ]
+}
