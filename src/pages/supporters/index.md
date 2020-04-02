@@ -11,7 +11,7 @@ title: Supporters
 subTitle: Advancing StarlingX and growing the community
 buttons:
   - text: support starlingx
-    link: info@starlingx.io
+    link: mailto:info@starlingx.io
 supporting:
   title: Supporting Companies
   list:
