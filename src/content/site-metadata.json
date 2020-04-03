@@ -1,0 +1,11 @@
+{
+  "siteMetadata": {
+    "title": "StarlingX",
+    "titleTemplate": "%s | StarlingX",
+    "description": "StarlingX",
+    "url": "https://starlingx.io/",
+    "image": "/img/og-image.jpg",
+    "twitterUsername": "@starlingx",
+    "themeColor": "#685bc7"
+  }
+}

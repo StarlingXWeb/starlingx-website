@@ -1,0 +1,32 @@
+{
+  "nav": [
+    {
+      "text": "Learn",
+      "link": "/learn/"
+    },
+    {
+      "text": "Software",
+      "link": "/software/"
+    },
+    {
+      "text": "Documentation",
+      "link": "https://docs.starlingx.io/"
+    },
+    {
+      "text": "Community",
+      "link": "/community/"
+    },
+    {
+      "text": "FAQS",
+      "link": "/faq/"
+    },
+    {
+      "text": "Blog",
+      "link": "/blog/"
+    },
+    {
+      "text": "Supporters",
+      "link": "/supporters/"
+    }
+  ]
+}
