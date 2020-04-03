@@ -1,43 +1,47 @@
 ---
 templateKey: learn-page
 seo:
-  title: Learn
-  description: An overview of the StarlingX project
-  url: https://starlingx.io/
+  description: Learn about the StarlingX project
   image: /img/og-image.jpg
-  twitterUsername: "@starlingx"
-path: /learn
+  title: Learn
+  twitterUsername: '@starlingx'
+  url: 'https://starlingx.io/'
 title: Learn
 subTitle: An overview of the StarlingX project
 intro:
-  video: https://www.youtube.com/embed/videoseries?list=PLKqaoAnDyfgp7KWad7EAHnZ30Mdg3Ejqf
+  video: >-
+    https://www.youtube.com/embed/videoseries?list=PLKqaoAnDyfgp7KWad7EAHnZ30Mdg3Ejqf
 useCases:
-  - title: Ultra Low-latency 5G and Industrial IoT (IIoT)
-    columns:
-      - row: Autonomous vehicles (drones, cars and trucks)
-      - row: Industrial automation (robotics and virtual Programmable Logic Controller (vPLC)      
+  - columns:
+      - row: 'Autonomous vehicles (drones, cars and trucks)'
+      - row: >-
+          Industrial automation (robotics and virtual Programmable Logic
+          Controller (vPLC)
       - row: Cloud/virtual Radio Access Network (cRAN/vRAN)
       - row: Smart city/buildings (metering and monitoring)
     image: /img/starlingx_usecases_industrial_automation.svg
-  - title: High Bandwidth, Large Volume Applications
-    columns:
+    title: Ultra Low-latency 5G and Industrial IoT (IIoT)
+  - columns:
       - row: Mobile HD video
       - row: Content delivery
       - row: Healthcare (imaging and diagnostics)
       - row: Caching and surveillance
     image: /img/starlingx_usecases_healthcare.svg
-  - title: Multi-access Edge Computing (MEC)
-    columns:
+    title: 'High Bandwidth, Large Volume Applications'
+  - columns:
       - row: Augmented and virtual reality (AR/VR)
-      - row: Enterprise focused small cell services for stadiums and high-density locations
+      - row: >-
+          Enterprise focused small cell services for stadiums and high-density
+          locations
       - row: Unified Customer Premise Equipment (uCPE) applications
       - row: Retail
     image: /img/starlingx_usecases_uCPE.svg
+    title: Multi-access Edge Computing (MEC)
 endText:
-  text: Looking for more information?
   link:
     text: Read the FAQs.
     url: /faq/
+  text: Looking for more information?
 ---
 
 <br/>
