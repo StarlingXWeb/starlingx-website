@@ -61,7 +61,7 @@ Yes, StarlingX has a weekly project and Technical Steering Committee meeting and
 
 #### I'm giving a presentation about StarlingX. Are there any templates I can use?
 
-Yes, here are links to templates for both [Keynote](/collateral/templates/StarlingX_SlideDeck_Template_a.key/) and [PowerPoint](/collateral/StarlingX_SlideDeck_Template_a.pptx/). The templates are just a place for you to start, so feel free to adjust the layouts to fit you needs.
+Yes, here are links to templates for both [Keynote](/collateral/StarlingX_SlideDeck_Template_a.key/) and [PowerPoint](/collateral/StarlingX_SlideDeck_Template_a.pptx/). The templates are just a place for you to start, so feel free to adjust the layouts to fit you needs.
 
 #### Is this an OpenStack project?
 
