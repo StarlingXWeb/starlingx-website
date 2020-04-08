@@ -4,6 +4,8 @@ import { withPrefix, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import metadata from '../content/site-metadata.json'  
 
@@ -60,10 +62,16 @@ export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture
                     return (
                       <div className="column" key={index}>
                       <div className="box is-purple">
-                        <h3>{col.title}</h3> 
-                        <a href={col.link.url}>
-                          {col.link.text}
-                        </a>
+                        <h3>{col.title}</h3>
+                        {col.link.url.match(/^https?:\/\//) ? 
+                          <OutboundLink href={col.link.url} target="_blank" rel="noopener noreferrer">
+                            {col.link.text}
+                          </OutboundLink>
+                          :
+                          <Link to={col.link.url}>
+                            {col.link.text}
+                          </Link>
+                        }
                       </div>
                     </div>
                     )
