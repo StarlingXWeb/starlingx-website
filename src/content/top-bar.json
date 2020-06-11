@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "If your organization is using or evaluating StarlingX, share your feedback in the StarlingX User Survey.",
-    "link": "https://www.surveymonkey.com/r/StarlingX",
-    "button": "take the survey"
+    "text": "The StarlingX project has been confirmed as a top-level Open Infrastructure Project supported by the OSF! ",
+    "link": "https://www.starlingx.io/blog/starlingx-confirmation/",
+    "button": "Learn more"
   }
 }
