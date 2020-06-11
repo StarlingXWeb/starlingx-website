@@ -1,23 +1,21 @@
 ---
-templateKey: 'faq-page'
-path: /faq
+templateKey: faq-page
 seo:
-  title: FAQs
   description: Frequently Asked Questions about StarlingX
-  url: https://starlingx.io/
   image: /img/og-image.jpg
-  twitterUsername: "@starlingx"
+  title: FAQs
+  twitterUsername: '@starlingx'
+  url: 'https://starlingx.io/'
 title: FAQs
 subTitle: Frequently Asked Questions about StarlingX
 ---
-
 #### What are the advantages of StarlingX?
 
-- A fully open source solution that is ready to deploy
-- Flexibility to run on containers, VMs, and/or Bare Metal
-- Optimize cloud services for edge solutions
-- Security, ultra-low latency, extremely high service uptime, small-footprint deployments and streamlined operations
-- Suitable for a wide range of edge applications
+* A fully open source solution that is ready to deploy
+* Flexibility to run on containers, VMs, and/or Bare Metal
+* Optimize cloud services for edge solutions
+* Security, ultra-low latency, extremely high service uptime, small-footprint deployments and streamlined operations
+* Suitable for a wide range of edge applications
 
 #### Who uses StarlingX?
 
@@ -65,7 +63,7 @@ Yes, here are links to templates for both [Keynote](https://www.starlingx.io/col
 
 #### Is this an OpenStack project?
 
-StarlingX is a top-level pilot project supported by the OpenStack Foundation, but is not a part of the OpenStack cloudinfrastructure project. From a technical perspective StarlingX is both a development and integration project, which includes and uses many of the OpenStack services as well as other open source projects. Some of those projects are enhanced in the StarlingX build. The StarlingX community is actively working with upstream communities to contribute these changes.
+StarlingX is a top-level Open Infrastructure project supported by the OpenStack Foundation, but is not a part of the OpenStack cloud infrastructure project. From a technical perspective StarlingX is both a development and integration project, which includes and uses many of the OpenStack services as well as other open source projects. Some of those projects are enhanced in the StarlingX build. The StarlingX community is actively working with upstream communities to contribute these changes.
 
 #### How does the StarlingX community collaborate with other open source projects?
 
