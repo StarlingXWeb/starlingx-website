@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "The StarlingX project has been confirmed as a top-level Open Infrastructure Project supported by the OSF! ",
-    "link": "https://www.starlingx.io/blog/starlingx-confirmation/",
-    "button": "Learn more"
+    "text": "StarlingX is mentioned in the latest OSF Edge Computing Group's white paper! ",
+    "link": "https://www.openstack.org/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing",
+    "button": "Read here"
   }
 }
