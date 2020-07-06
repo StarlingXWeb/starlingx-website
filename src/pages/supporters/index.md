@@ -46,6 +46,27 @@ supporting:
     - alt: China Unicom
       class: img-sponsor-l4
       image: /img/china-unicom-logo.svg
+    - alt: CDAC
+      class: img-sponsor-l4
+      image: /img/c-dac_logotransp.png
+    - alt: AWCloud
+      class: img-sponsor-l4
+      image: /img/awcloud.png
+    - alt: Click2Cloud
+      class: img-sponsor-l4
+      image: /img/click2cloud.jpg
+    - alt: JITStack
+      class: img-sponsor-l4
+      image: /img/jitstack-logo-lg.jpg
+    - alt: Vexxhost
+      class: img-sponsor-l4
+      image: /img/vexxhost.svg
+    - alt: Whitestack
+      class: img-sponsor-l4
+      image: /img/whitestack_google.png
+    - alt: Windriver
+      class: img-sponsor-l4
+      image: /img/logo-windriver-lg.svg
   title: Supporting Companies
 contributors:
   list:
