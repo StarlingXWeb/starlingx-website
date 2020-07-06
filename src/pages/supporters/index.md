@@ -76,6 +76,9 @@ contributors:
     - alt: Wind
       class: img-sponsor-l4
       image: /img/logo-windriver.svg
+    - alt: blank
+      class: img-sponsor-l4
+      image: /img/simple.svg
   title: Thank you to the employers of Contributors to the 1.0 and 2.0 releases
 donors:
   list:
