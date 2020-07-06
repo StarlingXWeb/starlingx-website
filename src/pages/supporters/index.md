@@ -67,6 +67,12 @@ supporting:
     - alt: Windriver
       class: img-sponsor-l4
       image: /img/logo-windriver-lg.svg
+    - alt: blank
+      class: img-sponsor-l4
+      image: /img/compatibiity-badge.svg
+    - alt: blank
+      class: img-sponsor-l4
+      image: /img/performance-growth.svg
   title: Supporting Companies
 contributors:
   list:
