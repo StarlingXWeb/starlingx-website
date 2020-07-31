@@ -67,10 +67,10 @@ tables:
         text: >
           <p>Chat with the project team and others using StarlingX.</p> <a href="https://webchat.freenode.net/?channels=starlingx">#starlingx</a>
   rightTable:
-    title: StarlingX 3.0 Available Now
+    title: StarlingX 4.0 Available Now
     text: >
-      StarlingX Release 3.0 is now available. The open source edge computing and IoT cloud platform optimized for low latency and high performance applications is now a container based platform for hosting OpenStack and other cloud native applications.
+      StarlingX Release 4.0 is now available. The open source edge computing and IoT cloud platform optimized for low latency and high performance applications is now a container based platform for hosting OpenStack and other cloud native applications.
     button:
       text: Read the Blog Post
-      link: https://www.starlingx.io/blog/starlingx-release-3.html
+      link: https://www.starlingx.io/blog/starlingx-release-4.html
 ---
