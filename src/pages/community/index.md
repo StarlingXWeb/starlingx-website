@@ -2,10 +2,10 @@
 templateKey: 'community-page'
 path: /community
 seo:
-  title: Community
-  description: Join to get help, contribute code, documentation, and use cases
-  url: https://starlingx.io/
-  image: /img/og-image.jpg
+  title: Community - Join to get help and contribute to StarlingX
+  description: StarlingX is an open source project supported by an open community. Join to get help, contribute code, documentation, and use cases
+  url: https://starlingx.io/community/
+  image: /img/android-chrome-192x192.png
   twitterUsername: "@starlingx"
 title: Community
 subTitle: Join to get help, contribute code, documentation, and use cases

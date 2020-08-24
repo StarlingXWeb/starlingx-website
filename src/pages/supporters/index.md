@@ -1,11 +1,11 @@
 ---
 templateKey: supporters-page
 seo:
-  description: Advancing StarlingX and growing the community
-  image: /img/og-image.jpg
-  title: Supporters
+  description: The StarlingX community is supported by a global group of organizations and infrastructure donors.
+  image: /img/android-chrome-192x192.png
+  title: Supporters - Advancing StarlingX and growing the community
   twitterUsername: '@starlingx'
-  url: 'https://starlingx.io/'
+  url: 'https://starlingx.io/supporters/'
 title: Supporters
 subTitle: Advancing StarlingX and growing the community
 buttons:

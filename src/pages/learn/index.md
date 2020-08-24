@@ -1,11 +1,11 @@
 ---
 templateKey: learn-page
 seo:
-  description: Learn about the StarlingX project
-  image: /img/og-image.jpg
-  title: Learn
+  description: The StarlingX virtualization platform focuses on easy deployment, low touch manageability, rapid response to events and fast recovery
+  image: /img/android-chrome-192x192.png
+  title: Learn About StarlingX - Open Source Server Virtualization Software
   twitterUsername: '@starlingx'
-  url: 'https://starlingx.io/'
+  url: 'https://starlingx.io/learn/'
 title: Learn
 subTitle: An overview of the StarlingX project
 intro:

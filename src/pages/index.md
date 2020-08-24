@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
 seo:
-  title: Home
-  description: StarlingX
+  title: Open Source Edge Cloud Computing Architecture - StarlingX
+  description: StarlingX is a complete, open source cloud infrastructure software stack for the edge computing workloads, used by the most demanding applications.
   url: https://starlingx.io/
   image: /img/og-image.jpg
   twitterUsername: "@starlingx"  

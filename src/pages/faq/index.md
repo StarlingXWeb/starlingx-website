@@ -1,11 +1,11 @@
 ---
 templateKey: faq-page
 seo:
-  description: Frequently Asked Questions about StarlingX
-  image: /img/og-image.jpg
-  title: FAQs
+  description: Get answers to your questions about StarlingX
+  image: /img/android-chrome-192x192.png
+  title: Frequently Asked Questions - StarlingX
   twitterUsername: '@starlingx'
-  url: 'https://starlingx.io/'
+  url: 'https://starlingx.io/faq/'
 title: FAQs
 subTitle: Frequently Asked Questions about StarlingX
 ---
