@@ -2,7 +2,7 @@
 templateKey: 'software-page'
 path: /software
 seo:
-  title: StarlingX: Open Source Industrial IoT Cloud Platform
+  title: StarlingX - Open Source Industrial IoT Cloud Platform
   description: StarlingX is an open source project integrating OpenStack, Kubernetes, Ceph, and more to fulfill the requirements of edge computing use cases
   url: https://starlingx.io/software/
   image: /img/android-chrome-192x192.png
