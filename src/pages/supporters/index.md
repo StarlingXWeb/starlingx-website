@@ -1,7 +1,9 @@
 ---
 templateKey: supporters-page
 seo:
-  description: The StarlingX community is supported by a global group of organizations and infrastructure donors.
+  description: >-
+    The StarlingX community is supported by a global group of organizations and
+    infrastructure donors.
   image: /img/android-chrome-192x192.png
   title: Supporters - Advancing StarlingX and growing the community
   twitterUsername: '@starlingx'
@@ -87,7 +89,7 @@ contributors:
       image: /img/logo-fujitsu.svg
     - alt: Intel
       class: img-sponsor-l4
-      image: /img/logo-intel-lg.svg
+      image: /img/intel-lg.png
     - alt: Suse
       class: img-sponsor-l4
       image: /img/logo-suse.svg
