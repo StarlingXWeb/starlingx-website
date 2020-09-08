@@ -1,76 +1,92 @@
 ---
 templateKey: index-page
 seo:
+  description: >-
+    StarlingX is a complete, open source cloud infrastructure software stack for
+    the edge computing workloads, used by the most demanding applications.
+  image: /img/android-chrome-192x192.png
   title: Open Source Edge Cloud Computing Architecture - StarlingX
-  description: StarlingX is a complete, open source cloud infrastructure software stack for the edge computing workloads, used by the most demanding applications.
-  url: https://starlingx.io/
-  image: /img/og-image.jpg
-  twitterUsername: "@starlingx"  
+  twitterUsername: '@starlingx'
+  url: 'https://starlingx.io/'
 header:
-  title: Deploy your edge cloud now
-  subTitle:
-    - text: Solve the operational problem of deploying and  
-    - text: managing distributed networks.
-  image: /img/hero-image.png
   buttons:
-    - text: Get Started
-      link: /software/
-    - text: Get Help
-      link: /community/
+    - link: /software/
+      text: Get Started
+    - link: /community/
+      text: Get Help
+  image: /img/hero-image.png
+  subTitle:
+    - text: Solve the operational problem of deploying and
+    - text: managing distributed networks.
+  title: Deploy your edge cloud now
 mainpitch:
-  title: About StarlingX
-  image: /img/StarlingX_Diagram_DistributedEdgeCloudNative_v2.jpg
   description:
-    - text: StarlingX is a complete cloud infrastructure software stack for the edge used by 
-        the most demanding applications in industrial IOT, telecom, video delivery and other 
-        ultra-low latency use cases. With deterministic low latency required by edge applications, 
-        and tools that make distributed edge manageable, StarlingX provides a container-based 
-        infrastructure for edge implementations in scalable solutions that is ready for production now.
-values:  
+    - text: >-
+        StarlingX is a complete cloud infrastructure software stack for the edge
+        used by the most demanding applications in industrial IOT, telecom,
+        video delivery and other ultra-low latency use cases. With deterministic
+        low latency required by edge applications, and tools that make
+        distributed edge manageable, StarlingX provides a container-based
+        infrastructure for edge implementations in scalable solutions that is
+        ready for production now.
+  image: /img/StarlingX_Diagram_DistributedEdgeCloudNative_v2.jpg
+  title: About StarlingX
+values:
   rows:
     - image: /img/check-large.svg
+      text: >
+        Fault management, fast secure VM failover and live migration minimizes
+        downtime
       title: Reliable
-      text: >
-        Fault management, fast secure VM failover and live migration minimizes downtime
     - image: /img/scale.svg
+      text: >
+        Deployable on one to thousands of distributed nodes allowing for a
+        single system to be used from edge to core
       title: Scalable
-      text: >
-        Deployable on one to thousands of distributed nodes allowing for a single system to be used from edge to core
     - image: /img/footprint.svg
+      text: >
+        Providing a platform for edge and IoT use cases even for environments
+        with tight resource constraints
       title: Small footprint
-      text: >
-        Providing a platform for edge and IoT use cases even for environments with tight resource constraints
     - image: /img/clock.svg
-      title: Ultra-low latency
-      text: >
+      text: |
         Deterministic, tunable performance optimized for the use case
+      title: Ultra-low latency
     - image: /img/lock.svg
+      text: >
+        Software security to avoid tampering at the edge, where physical
+        security may be limited
       title: Secure
-      text: >
-        Software security to avoid tampering at the edge, where physical security may be limited
     - image: /img/lifecycle.svg
-      title: Lifecycle management
       text: >
-        Simplified deployment and operations with full system management through comprehensive orchestration suited for the edge
+        Simplified deployment and operations with full system management through
+        comprehensive orchestration suited for the edge
+      title: Lifecycle management
 tables:
   leftTable:
-    title: How to Get Involved.
     rows:
-      - title: Join us on the mailing list
-        text: >
-          <p>Receive email announcements and interact with the community.</p> <a href="http://lists.starlingx.io">lists.starlingx.io</a>
-      - title: Weekly calls
-        text: >
-          <p>Updates from the community on a weekly basis.</p> 
-          <a href="https://wiki.openstack.org/wiki/Starlingx/Meetings">wiki.openstack.org/wiki/StarlingX/Meetings</a>
-      - title: Freenode IRC
-        text: >
-          <p>Chat with the project team and others using StarlingX.</p> <a href="https://webchat.freenode.net/?channels=starlingx">#starlingx</a>
+      - text: >
+          <p>Receive email announcements and interact with the community.</p> <a
+          href="http://lists.starlingx.io">lists.starlingx.io</a>
+        title: Join us on the mailing list
+      - text: >
+          <p>Updates from the community on a weekly basis.</p>  <a
+          href="https://wiki.openstack.org/wiki/Starlingx/Meetings">wiki.openstack.org/wiki/StarlingX/Meetings</a>
+        title: Weekly calls
+      - text: >
+          <p>Chat with the project team and others using StarlingX.</p> <a
+          href="https://webchat.freenode.net/?channels=starlingx">#starlingx</a>
+        title: Freenode IRC
+    title: How to Get Involved.
   rightTable:
-    title: StarlingX 4.0 Available Now
-    text: >
-      StarlingX Release 4.0 is now available. The open source edge computing and IoT cloud platform optimized for low latency and high performance applications is now a container based platform for hosting OpenStack and other cloud native applications.
     button:
+      link: 'https://www.starlingx.io/blog/starlingx-release-4.html'
       text: Read the Blog Post
-      link: https://www.starlingx.io/blog/starlingx-release-4.html
+    text: >
+      StarlingX Release 4.0 is now available. The open source edge computing and
+      IoT cloud platform optimized for low latency and high performance
+      applications is now a container based platform for hosting OpenStack and
+      other cloud native applications.
+    title: StarlingX 4.0 Available Now
 ---
+
