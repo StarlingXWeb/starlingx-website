@@ -129,5 +129,5 @@ donors:
 
 ---
 
-StarlingX is an open source community stewarded by the Open Infrastructure Foundation.
+StarlingX is an open source community stewarded by the Open Infrastructure Foundation (OIF).
 
