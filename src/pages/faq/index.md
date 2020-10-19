@@ -63,11 +63,11 @@ Yes, here are links to templates for both [Keynote](https://www.starlingx.io/col
 
 #### Is this an OpenStack project?
 
-StarlingX is a top-level Open Infrastructure project supported by the OpenStack Foundation, but is not a part of the OpenStack cloud infrastructure project. From a technical perspective StarlingX is both a development and integration project, which includes and uses many of the OpenStack services as well as other open source projects. Some of those projects are enhanced in the StarlingX build. The StarlingX community is actively working with upstream communities to contribute these changes.
+StarlingX is a top-level Open Infrastructure project supported by the Open Infrastructure Foundation, but is not a part of the OpenStack cloud infrastructure project. From a technical perspective StarlingX is both a development and integration project, which includes and uses many of the OpenStack services as well as other open source projects. Some of those projects are enhanced in the StarlingX build. The StarlingX community is actively working with upstream communities to contribute these changes.
 
 #### How does the StarlingX community collaborate with other open source projects?
 
-The StarlingX team is actively working with a number of other projects and communities, both within and outside of the OpenStack Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects within OpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
+The StarlingX team is actively working with a number of other projects and communities, both within and outside of the Open Infrastructure Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects within OpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
 
 #### What is the release cadence for StarlingX?
 

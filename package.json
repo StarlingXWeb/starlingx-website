@@ -2,7 +2,7 @@
   "name": "starlingx-website",
   "description": "www.starlingx.io",
   "version": "1.0.0",
-  "author": "OpenStack Foundation",
+  "author": "Open Infrastructure Foundation",
   "dependencies": {
     "@ncwidgets/file-relation": "^0.5.0",
     "@ncwidgets/id": "^0.5.1",

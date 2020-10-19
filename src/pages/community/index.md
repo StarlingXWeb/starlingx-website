@@ -59,6 +59,6 @@ Technical decisions will be made by technical contributors and a representative 
 
 ## Code of Conduct
 
-Our community follows the OpenStack Foundation [Code of Conduct](https://www.openstack.org/legal/community-code-of-conduct/).
+Our community follows the Open Infrastructure Foundation [Code of Conduct](https://www.openstack.org/legal/community-code-of-conduct/).
 
 
