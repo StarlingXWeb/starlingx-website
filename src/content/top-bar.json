@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "StarlingX is mentioned in the latest OSF Edge Computing Group's white paper! ",
-    "link": "https://www.openstack.org/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing",
-    "button": "Read here"
+    "text": "Join the StarlingX community at the Open Infrastructure Summit happening this week! ",
+    "link": "https://summit.openinfra.dev/",
+    "button": "Join us! "
   }
 }
