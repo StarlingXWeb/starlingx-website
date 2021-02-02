@@ -25,7 +25,7 @@ export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture
           <meta property="og:description" content={seo.description} />
         )}
         {seo.image && seo.url && <meta property="og:image" content={`${seo.url}${seo.image.publicURL}`} />}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
         {seo.twitterUsername && (
           <meta name="twitter:creator" content={seo.twitterUsername} />
         )}        
