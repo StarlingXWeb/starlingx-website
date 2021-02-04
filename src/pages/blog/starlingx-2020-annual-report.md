@@ -1,7 +1,6 @@
 ---
 templateKey: blog-post
-title: >-
-  StarlingX 2020 Annual Report
+title: StarlingX 2020 Annual Report
 author: Ildiko Vancsa    
 date: 2021-01-28T16:23:52.741Z
 category: 
