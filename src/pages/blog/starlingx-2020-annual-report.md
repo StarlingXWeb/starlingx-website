@@ -25,7 +25,7 @@ The project had 2237 changes committed by 111 authors from 7 organizations durin
 
 The StarlingX code is hosted on Github under the Apache 2 license. Learn about the project, how to contribute and support the community at starlingx.io. Join these channels to get involved:
 
-* [GitHub](https://git.starlingx.io/cgit)
+* [Source code](opendev.org/starlingx)
 * IRC: #starlingx on Freenode
 * [Mailing list](https://lists.starlingx.io/)
 
