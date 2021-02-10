@@ -4,7 +4,7 @@
     "titleTemplate": "%s | StarlingX",
     "description": "StarlingX",
     "url": "https://starlingx.io/",
-    "image": "/img/og-image.jpg",
+    "image": "/img/android-chrome-192x192.png",
     "twitterUsername": "@starlingx",
     "themeColor": "#685bc7"
   }
