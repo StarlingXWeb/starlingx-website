@@ -50,9 +50,13 @@
 
   .button.no-border-search-submit {
 
+    background-color: #330072;
     height: 42px;
-    border-radius: 0 50px 50px 0;
+    border-radius: 50px;
     top: 0px;
+    a {
+      color: $white;
+    }
   }
   
   @media (max-width: 767px) {
