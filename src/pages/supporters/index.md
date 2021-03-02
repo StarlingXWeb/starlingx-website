@@ -68,7 +68,7 @@ supporting:
       image: /img/whitestack_google.png
     - alt: Windriver
       class: img-sponsor-l4
-      image: /img/logo-windriver-lg.svg
+      image: /img/windriver-lg.png
     - alt: blank
       class: img-sponsor-l4
       image: /img/compatibiity-badge.svg
