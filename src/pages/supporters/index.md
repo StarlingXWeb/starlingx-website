@@ -104,7 +104,7 @@ contributors:
       image: /img/logo-fiberhome.png
     - alt: Wind
       class: img-sponsor-l4
-      image: /img/logo-windriver.svg
+      image: /img/windriver-lg.png
     - alt: blank
       class: img-sponsor-l4
       image: /img/simple.svg
