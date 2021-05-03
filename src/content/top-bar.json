@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "Register to attend Project Teams Gathering April 19-23, 2021!",
-    "link": "https://april2021-ptg.eventbrite.com/?_ga=2.159781117.1134036425.1614794318-1959379910.1582216179",
-    "button": "REGISTER NOW!"
+    "text": "Contribute your use case to the StarlingX blog!",
+    "link": "https://github.com/StarlingXWeb/starlingx-website/tree/master/src/pages/blog ",
+    "button": "LEARN MORE"
   }
 }
