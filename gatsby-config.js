@@ -3,10 +3,73 @@ module.exports = {
     title: 'StarlingX',
     description:
       'StarlingX',
+    url: 'https://starlingx.io/'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                url
+                site_url: url
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.frontmatter.seo?.description,
+                  date: edge.node.frontmatter.date,
+                  url: edge.node.frontmatter.seo?.url,
+                  guid: edge.node.frontmatter.seo?.url,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+                ) {
+                  edges {
+                    node {
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                        seo {
+                          description
+                          url
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "StarlingX RSS Feed",
+            // optional configuration to insert feed reference in pages:
+            // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // current page satisfied this regular expression;
+            // if not provided or `undefined`, all pages will have feed reference inserted
+            match: "^/blog/",
+            // optional configuration to specify external rss feed, such as feedburner
+            // link: "https://feeds.feedburner.com/gatsby/blog",
+          },
+        ],
+      },
+    },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -77,7 +140,7 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
-        respectDNT: true,        
+        respectDNT: true,
       },
     },
     {
@@ -89,7 +152,7 @@ module.exports = {
         ],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
-        gtagConfig: {          
+        gtagConfig: {
           anonymize_ip: true,
           cookie_expires: 0,
         },
@@ -119,7 +182,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, `/faq/*`,`/learn/*`, `/software/*`, `/community/*`, `/supporters/*`],
+        precachePages: [`/`, `/faq/*`, `/learn/*`, `/software/*`, `/community/*`, `/supporters/*`],
       },
     },
     {
@@ -140,8 +203,8 @@ module.exports = {
       options: {
         enableIdentityWidget: true,
         htmlTitle: `StarlingX | Content Manager`,
-        includeRobots: false, 
+        includeRobots: false,
       }
-    }    
+    }
   ],
 }
