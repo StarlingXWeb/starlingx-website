@@ -2,27 +2,27 @@
 templateKey: blog-post
 title: Taking timing to the Edge with PTP and TSN – Part 2
 author: Udi Schwager   
-date: 2021-04-05T01:32:05.627Z
+date: 2021-05-17T01:32:05.627Z
 category:
   - label: Features & Updates
     value: category-A7fnZYrE1
 ---
 
-Learn more about how to configure StarlingX to use it with Precision Time Protocol (PTP) and Time Sensitive Networking (TSN).<!-- more -->
+Learn more about how to configure StarlingX to use it with Precision Time Protocol (PTP).<!-- more -->
 
 As we described in the [first blog post](https://www.starlingx.io/blog/starlingx-ptp-part-1.html) of this series, PTP is a very important part of our increasingly automated and autonomous future.  In this post we will share more details about the background technology and show how StarlingX makes it easy to configure and leverage these important capabilities.
 
 To enable PTP, the StarlingX community chose to integrate the linuxptp package. For more information about the package, you can check the high-level [overview documentation](https://docs.fedoraproject.org/en-US/fedora/rawhide/system-administrators-guide/servers/Configuring_PTP_Using_ptp4l/) that was created by the Fedora community. PTP is easy to consume and configure in the StarlingX platform both via CLI and the GUI to use with both VM’s and containers running in your edge clouds. You can find more information about this feature in the [StarlingX documentation](https://docs.starlingx.io/system_configuration/kubernetes/index.html#ptp-server-configuration).
 
 Some terminology to remember:
-- **PTP grandmaster**: is the master clock for the system that is connected to the highly accurate timing source. In today’s mobile networks this is typically a GPS source.
-- **Boundary clock**: is the local time synch for the cluster and can provide time synchronization to nodes within the cluster.  With the right NIC’s and switches in the local ecosystem, the time can be synchronized on each node to within hundreds of nanoseconds.
+- **PTP grandmaster**: is the master clock for the system that is connected to the highly accurate timing source. In today’s mobile networks this is typically a GNSS source.
+- **Boundary clock**: is the local time synch for the cluster and can provide time synchronization to nodes within the cluster. With the right NIC’s and switches in the local ecosystem, the time can be synchronized on each node to within hundreds of nanoseconds.
 
 For the configuration steps, let’s start by using the Horizon interface to configure PTP.
 
 As a reminder, the Precision Time Protocol (PTP) is a protocol used to synchronize clocks in a network. You can use the web administration interface to configure these services on the host.
 
-First you need to put the PTP master on the OAM network, broadcasting PTP time messages. 
+First you need to connect your cloud on the network that has the PTP master, broadcasting PTP time messages. 
 
 Please note that NTP and PTP are configured per host. You need to lock/unlock the host when updating clock_synchronization for that host. 
 
