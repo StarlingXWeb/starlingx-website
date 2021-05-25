@@ -16,11 +16,11 @@ The StarlingX platform is fine tuned for edge computing and IoT use cases and th
 
 One of the emerging use cases is Industrial IoT and the increased automation of factory floors. This use demands solutions that provide the possibility to manage industrial PCs and devices and sensors in these environments. To address this need, the StarlingX community introduced a new feature called ‘edgeworker’ node, that is a new personality distinguished from 'worker' nodes. Edgeworker nodes are usually deployed close to an edge device, such as an I/O device, a camera, a servo motor or a sensor, to manage host-based enrollment. The 'edgeworker' personality is particularly suitable when a lightweight approach is a priority, that is achieved by deploying only a few agents on the nodes.
 
-Hardware acceleration is also becoming increasingly popular to provide high performance and encreased computing power for edge use cases with high demands. This area is a priority for the StarlingX community as well with new options introduced in the 5.0 release.
+Hardware acceleration is also becoming increasingly popular to provide high performance and increased computing power for edge use cases with high demands. This area is a priority for the StarlingX community as well with new options introduced in the 5.0 release.
 
 The community added support for Nvidia GPUs, enabling operators to do additional offload for those particular workloads that require GPU interacting, such as machine learning or other image-based processing.
 
-Another key enhancement in this area is the ability to orchestrate FPGA image updates. FPGA and acceleration are important features of edge systems and this new functionlity improves operations with supporting automation across the distributed cluster. This gives you the option to deploy FPGA with orchestrations that are automated from end to end.
+Another key enhancement in this area is the ability to orchestrate FPGA image updates. FPGA and acceleration are important features of edge systems and this new functionality improves operations with supporting automation across the distributed cluster. This gives you the option to deploy FPGA with orchestrations that are automated from end to end.
 
 StarlingX has already added support for the Precision Time Protocol (PTP) in the previous release to support time-sensitive applications. To improve the usability of the feature the community implemented a PTP notification framework as well. You can now receive notifications about the PTP state and take action in case the system time is no longer in sync with the PTP clock source which is critical for time-sensitive applications.
 
