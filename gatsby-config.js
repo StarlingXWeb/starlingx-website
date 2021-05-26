@@ -26,10 +26,10 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.frontmatter.seo?.description,
+                  description: edge.node.frontmatter.seo ? edge.node.frontmatter.seo.description : null,
                   date: edge.node.frontmatter.date,
-                  url: edge.node.frontmatter.seo?.url,
-                  guid: edge.node.frontmatter.seo?.url,
+                  url: edge.node.frontmatter.seo ? edge.node.frontmatter.seo.url : null,
+                  guid: edge.node.frontmatter.seo ? edge.node.frontmatter.seo.url : null,
                   custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
