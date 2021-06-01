@@ -35,4 +35,4 @@ If you install the latest version of the platform you will also get features and
 
 For the complete list of updates and new features in StarlingX R5.0, check out the [release notes](https://docs.starlingx.io/releasenotes/r5_release.html) and the [project documentation](https://docs.starlingx.io).
 
-Visit the StarlingX website today for further information about the project, check out the [code](https://opendev.org/starlingx), or download the [latest image](http://mirror.starlingx.cengn.ca/mirror/starlingx/release/) to try out the new features.
+Visit the StarlingX website today for further information about the project, check out the [code](https://opendev.org/starlingx), or download the [image](http://mirror.starlingx.cengn.ca/mirror/starlingx/release/5.0.0/centos/flock/outputs/) to try out the new features.
