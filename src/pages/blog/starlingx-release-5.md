@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX R5.0 is here!
 author: Ildiko Vancsa
-date: 2020-06-01T01:32:05.627Z
+date: 2021-06-02T01:32:05.627Z
 category: 
   - label: News & Announcements
     id: category-A7fnZYrE1
