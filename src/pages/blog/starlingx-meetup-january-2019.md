@@ -55,7 +55,7 @@ While StarlingX is still a young community, it already has a large code base, ma
 
 Documentation came up during this section as a base criteria to help people understand how StarlingX works both as software as well as a community. Furthermore, we talked about visualizing easy tasks or bugs to fix as potential [starting points](http://lists.starlingx.io/pipermail/starlingx-discuss/2019-January/002647.html) to contribute.
 
-Beyond documenting better how to get started with the software and the community, we also discussed providing office hours where experts could answer any questions that newcomers have in a more synchronous way. The attendees voted for IRC as a platform to experiment with this idea by using the #starlingx channel on Freenode for the purpose. Stay tuned for further information on this while the community works out the hours.
+Beyond documenting better how to get started with the software and the community, we also discussed providing office hours where experts could answer any questions that newcomers have in a more synchronous way. The attendees voted for IRC as a platform to experiment with this idea by using the #starlingx channel on OFTC for the purpose. Stay tuned for further information on this while the community works out the hours.
 
 For a more hands-on experience, the community is planning to provide a workshop during the Open Infrastructure Summit in Denver to show you how to deploy StarlingX and introduce a few of its features. Stay tuned for further information on the [Denver Summit schedule](https://www.openstack.org/summit/denver-2019/).
 

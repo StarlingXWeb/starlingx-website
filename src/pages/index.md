@@ -75,8 +75,8 @@ tables:
         title: Weekly calls
       - text: >
           <p>Chat with the project team and others using StarlingX.</p> <a
-          href="https://webchat.freenode.net/?channels=starlingx">#starlingx</a>
-        title: Freenode IRC
+          href="https://webchat.oftc.net/?channels=starlingx">#starlingx</a>
+        title: OFTC IRC
     title: How to Get Involved.
   rightTable:
     button:
