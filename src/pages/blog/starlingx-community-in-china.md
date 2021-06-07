@@ -26,7 +26,7 @@ Why do you think organizations use StarlingX?
 In my point of view, StarlingX is not just an open-source project, it's more like a close-to-product-ready solution. If users need to have a software platform to manage their edge sites, they can take advantage of StarlingX from day-0 installation and provisioning, day-1 operation and day-N administration and maintenance. On the other hand, StarlingX is open to everybody, so users can participate in the community, bring their requirements and feedback, and partner with other members to drive StarlingX moving forward.
 
 How can interested contributors get started/get involved in StarlingX?
-As said all the time, StarlingX welcomes everyone and many kinds of contributions, from code to documentation, from reports to user/dev experience feedback, from testing to sharing case stories. There are many ways, and here I just named a few. StarlingX provides many communication channels, including regular [project meetings](https://wiki.openstack.org/wiki/Starlingx/Meetings), [mailing list](http://lists.starlingx.io/) and [IRC](https://webchat.freenode.net/?channels=starlingx).
+As said all the time, StarlingX welcomes everyone and many kinds of contributions, from code to documentation, from reports to user/dev experience feedback, from testing to sharing case stories. There are many ways, and here I just named a few. StarlingX provides many communication channels, including regular [project meetings](https://wiki.openstack.org/wiki/Starlingx/Meetings), [mailing list](http://lists.starlingx.io/) and [IRC](https://webchat.oftc.net/?channels=starlingx).
 
 How do you help others to connect the Chinese community with the global community? What challenges have you overcome? 
 Our team is in China, so one of our missions is to help the Chinese community to develop the software, contribute code, documentation, and more.  Most of the StarlingX project meetings are held late at night in China, so the presence and participation for the Chinese community members are quite challenging. To overcome these obstacles, together with other community members (like friends in 99cloud) in China, we made some initiatives, such as engaging with other Chinese community members at the meet-ups, hands-on workshops ad-hoc tech meetings in Chinese, translating some documents to Chinese, and continuously interacting in WeChat groups (just like a 24/7 on-call services for and by everyone)
@@ -42,7 +42,7 @@ All these cool things will make StarlingX a better solution and satisfy more of 
 
 Learn about the project, how to contribute and support the community at [starlingx.io](http://starlingx.io). Join these channels to get involved and contribute:
 
-* IRC: [#starlingx](https://webchat.freenode.net/?channels=starlingx) on Freenode
+* IRC: [#starlingx](https://webchat.oftc.net/?channels=starlingx) on OFTC
 * [Mailing list](https://lists.starlingx.io/)
 * [Developer guide](http://docs.starlingx.io/developer_resources)
 * [Contributor guides](http://docs.starlingx.io/contributor/index.html)

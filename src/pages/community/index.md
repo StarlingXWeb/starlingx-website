@@ -22,7 +22,7 @@ The StarlingX community has a very active schedule of regular meetings. Details 
 
 ## Communications
 
-- Freenode IRC: [#starlingx](https://webchat.freenode.net/?channels=starlingx)
+- OFTC IRC: [#starlingx](https://webchat.oftc.net/?channels=starlingx)
 - Mailing Lists: [lists.starlingx.io](http://lists.starlingx.io)
 - E-mail: [info@starlingx.io](mailto:info@starlingx.io)
 - Twitter: [@starlingx](https://twitter.com/starlingx)

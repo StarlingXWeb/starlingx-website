@@ -28,7 +28,7 @@ The project had 3359 changes committed by 147 authors from more than 10 organiza
 The code is hosted on Github under the Apache 2 license. Learn about the project, how to contribute and support the community at starlingx.io. Join these channels to get involved:
 
 * [GitHub](https://git.starlingx.io/cgit)
-* IRC: #starlingx on Freenode
+* IRC: #starlingx on OFTC
 * [Mailing list](https://lists.starlingx.io/)
 
 The OpenStack Foundation (OSF) just published its [2019 annual report](https://www.openstack.org/foundation/2019-openstack-foundation-annual-report). Learn more about other OSF projects and how you can get involved.
