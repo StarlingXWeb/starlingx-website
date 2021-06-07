@@ -35,7 +35,7 @@ supporting:
       image: /img/click2cloud.jpg
     - alt: Component Soft
       class: img-sponsor-l4
-      image: /img/componentsoft-lg.jpg
+      image: /img/componentsoft-starlingx-lg.jpg
     - alt: China Unicom
       class: img-sponsor-l4
       image: /img/china-unicom.png
