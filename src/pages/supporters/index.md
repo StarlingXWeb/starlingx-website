@@ -15,15 +15,12 @@ buttons:
     text: support starlingx
 supporting:
   list:
-    - alt: Suse
-      class: img-sponsor-l4
-      image: /img/logo-suse.svg
-    - alt: Tencent Cloud
-      class: img-sponsor-l4
-      image: /img/logo-tencent.jpg
     - alt: 99 Cloud
       class: img-sponsor-l4
       image: /img/logo-99cloud.svg
+    - alt: AWCloud
+      class: img-sponsor-l4
+      image: /img/awcloud.png
     - alt: Ubuntu
       class: img-sponsor-l4
       image: /img/logo-ubuntu.svg
@@ -33,36 +30,39 @@ supporting:
     - alt: City Networks
       class: img-sponsor-l4
       image: /img/logo-citynetwork.svg
+    - alt: Click2Cloud
+      class: img-sponsor-l4
+      image: /img/click2cloud.jpg
     - alt: Component Soft
       class: img-sponsor-l4
       image: /img/componentsoft-lg.jpg
-    - alt: Inspur
-      class: img-sponsor-l4
-      image: /img/logo-inspur.svg
-    - alt: Dell EMC
-      class: img-sponsor-l4
-      image: /img/logo-dell.svg
-    - alt: Fiberhome
-      class: img-sponsor-l4
-      image: /img/logo-fiberhome.png
-    - alt: Troila
-      class: img-sponsor-l4
-      image: /img/troila-new-lg.jpg
     - alt: China Unicom
       class: img-sponsor-l4
       image: /img/china-unicom-logo.svg
     - alt: CDAC
       class: img-sponsor-l4
       image: /img/c-dac_logotransp.png
-    - alt: AWCloud
+    - alt: Dell EMC
       class: img-sponsor-l4
-      image: /img/awcloud.png
-    - alt: Click2Cloud
+      image: /img/logo-dell.svg
+    - alt: Fiberhome
       class: img-sponsor-l4
-      image: /img/click2cloud.jpg
+      image: /img/logo-fiberhome.png
+    - alt: Inspur
+      class: img-sponsor-l4
+      image: /img/logo-inspur.svg
     - alt: JITStack
       class: img-sponsor-l4
       image: /img/jitstack-logo-lg.jpg
+    - alt: Suse
+      class: img-sponsor-l4
+      image: /img/logo-suse.svg
+    - alt: Tencent Cloud
+      class: img-sponsor-l4
+      image: /img/tencent-horiz-lg.png
+    - alt: Troila
+      class: img-sponsor-l4
+      image: /img/troila-new-lg.jpg
     - alt: Vexxhost
       class: img-sponsor-l4
       image: /img/vexxhost.svg
