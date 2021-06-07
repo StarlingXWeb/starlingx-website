@@ -80,13 +80,13 @@ tables:
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://www.starlingx.io/blog/starlingx-release-4.html'
+      link: 'https://www.starlingx.io/blog/starlingx-release-5.html'
       text: Read the Blog Post
     text: >
-      StarlingX Release 4.0 is now available. The open source edge computing and
+      StarlingX Release 5.0 is now available. The open source edge computing and
       IoT cloud platform optimized for low latency and high performance
       applications is now a container based platform for hosting OpenStack and
       other cloud native applications.
-    title: StarlingX 4.0 Available Now
+    title: StarlingX 5.0 Available Now
 ---
 
