@@ -35,7 +35,7 @@ supporting:
       image: /img/logo-citynetwork.svg
     - alt: Component Soft
       class: img-sponsor-l4
-      image: /img/component-soft-logo_vector_slogan_square_big.jpg
+      image: /img/componentsoft-lg.jpg
     - alt: Inspur
       class: img-sponsor-l4
       image: /img/logo-inspur.svg
