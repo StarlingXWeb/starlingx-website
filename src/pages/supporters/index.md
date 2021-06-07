@@ -38,10 +38,10 @@ supporting:
       image: /img/componentsoft-lg.jpg
     - alt: China Unicom
       class: img-sponsor-l4
-      image: /img/china-unicom-logo.svg
+      image: /img/china-unicom.png
     - alt: CDAC
       class: img-sponsor-l4
-      image: /img/c-dac_logotransp.png
+      image: /img/cdac-lg.jpg
     - alt: Dell EMC
       class: img-sponsor-l4
       image: /img/logo-dell.svg
