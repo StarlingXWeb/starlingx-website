@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "Contribute your use case to the StarlingX blog!",
-    "link": "https://github.com/StarlingXWeb/starlingx-website/tree/master/src/pages/blog ",
+    "text": "StarlingX Release 5.0 is here!",
+    "link": "https://www.starlingx.io/blog/starlingx-release-5/",
     "button": "LEARN MORE"
   }
 }
