@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Taking timing to the Edge with PTP and TSN – Part 3
+title: Taking timing to the Edge with PTP – Part 3
 author: Udi Schwager   
 date: 2021-07-26T01:32:05.627Z
 category:
@@ -16,9 +16,9 @@ Beyond ensuring the proper synchronization of the clocks around the system it is
 
 To describe the use case the best, let's take a look at the the telecom market as synchronizing mobile phone tower transmissions is one of the primary use cases for PTP. A virtualized Radio Access Network (vRAN) environment contains disaggregated functions compared to a traditional RAN setup which allows to move real time functions, combined in the virtual distributed unit (vDU) out to the edge while keeping the more compute-intensive, non-real-time ones in a central data center as part of the virtual central unit (vCU).
 
-In this setup, if a vDU application transitions to the 'FREERUN' state, because the synchronizing network delivers unacceptable synchronization quality, it should immediately disable radio frequency (RF) transmission and keep it turned off until proper synchronization is reacquired. But here comes the obstacle, just like other functionality in the applications, PTP also relies on a hardware resource, namely the physical hardware clock (PHC). In order to follow the state of the synchronization system the application would need to have access to the underlying hardware layer which is ncan get complicated in virtualized and cloud environments. On one hand, he application needs to know what mechanism is offered by the cloud in order to monitor the synchronization state (e.g. ptp4l, ts2phc). On the other hand, t needs to have privileged access that is typically a level that admins hold and that does not get provided to the application layer in a cloud solution.
+In this setup, if a vDU application transitions to the 'FREERUN' state, because the synchronizing network delivers unacceptable synchronization quality, it should immediately disable radio frequency (RF) transmission and keep it turned off until proper synchronization is reacquired. But here comes the obstacle, just like other functionality in the applications, PTP also relies on a hardware resource, namely the physical hardware clock (PHC). In order to follow the state of the synchronization system the application would need to have access to the underlying hardware layer which can get complicated in virtualized and cloud environments. On one hand, he application needs to know what mechanism is offered by the cloud in order to monitor the synchronization state (e.g. ptp4l, ts2phc). On the other hand, it needs to have privileged access that is typically a level that admins hold and that does not get provided to the application layer in a cloud solution.
 
-StralingX addressed the above challenges by providing a subscription framework that gives the hosted applications the ability to subscribe and receive PTP status notifications. This framework is used as an abstraction layer between the application and the platform, keeping the platform secure and provides an easy way for the applications to request PTP notifications. This functionality is accessible via [REST API](https://docs.starlingx.io/api-ref/ptp-notification-armada-app/index.html). Please note that this API only covers subscription to PTP status notifications but may expand in the future to provide status notifications for other resources as well, such as FPGAs.
+StralingX addressed the above challenges by providing a subscription framework that gives the hosted applications the ability to subscribe and receive PTP status notifications. This framework is used as an abstraction layer between the workload and the platform, keeping the platform secure and providing better interoperability for the applications as well as an easy way to request PTP notifications. This functionality is accessible via [REST API](https://docs.starlingx.io/api-ref/ptp-notification-armada-app/index.html). Please note that this API only covers subscription to PTP status notifications but may expand in the future to provide status notifications for other resources as well, such as FPGAs.
 
 The subscription mechanism provides the following features and values to applications:
 - Subscription triggers the readiness of the application to receive the notifications
@@ -27,7 +27,7 @@ The subscription mechanism provides the following features and values to applica
 - The subscription mechanism requires an endpoint URI (callback URI) which provides a safe method for multiple applications to subscribe to the same notifications 
 - This new component can report to the applications in case the requested notifications are not available in which case the platform will deny the subscription request
 
-Please note that in addition to subscription StarlingX also provides the applications the ability to pull the status notification on demand.
+Please note that in addition to subscription, StarlingX also provides the applications the ability to pull the status notification on demand.
 
 Below you can find an examples that describe how an application subscribes to PTP status notifications, receives an event when there is a change to the PTP synchronization state and how it can pull for the current PTP status.
 
