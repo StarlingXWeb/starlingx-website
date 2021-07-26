@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Taking timing to the Edge with PTP and TSN – Part 2
+title: Taking timing to the Edge with PTP – Part 2
 author: Udi Schwager   
 date: 2021-05-17T01:32:05.627Z
 category:
@@ -82,4 +82,4 @@ Use the following PMC command to see the port’s state:
 
 ![alt text](/img/PTP_Blog_P2_Alarm2.jpg)
 
-PTP is becoming a key functionality for critical infrastructure on the edge as digital transformation is impacting more and more industries. Stay tuned for the last part of the series to learn how applications running on top of StarlingX can utilize this feature.
+PTP is becoming a key functionality for critical infrastructure on the edge as digital transformation is impacting more and more industries. The [last part of the series](https://www.starlingx.io/blog/starlingx-ptp-part-3.html) to learn how applications running on top of StarlingX can utilize this feature.
