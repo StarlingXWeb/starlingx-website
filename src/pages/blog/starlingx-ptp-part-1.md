@@ -34,4 +34,4 @@ As discussed, time is a resource that must be closely managed. In a factory, thi
 
 Who thought time could be so interesting? We all see how time can pass us by quickly in our lives. And, time is also so critical to our increasingly automated future to ensure these complex solutions can be delivered reliably and with the needed performance. 
 
-Stay tuned for part 2 where I will walk you through how to use PTP in StarlingX.
+If you jump to [part 2](https://www.starlingx.io/blog/starlingx-ptp-part-2/) it will walk you through how to use PTP in StarlingX.
