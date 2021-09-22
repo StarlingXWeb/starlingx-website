@@ -1,14 +1,15 @@
 ---
-templateKey: 'community-page'
-path: /community
+templateKey: community-page
 seo:
-  title: Community - Join to get help and contribute to StarlingX
-  description: StarlingX is an open source project supported by an open community. Join to get help, contribute code, documentation, and use cases
-  url: https://starlingx.io/community/
+  description: >-
+    StarlingX is an open source project supported by an open community. Join to
+    get help, contribute code, documentation, and use cases
   image: /img/android-chrome-192x192.png
-  twitterUsername: "@starlingx"
+  title: Community - Join to get help and contribute to StarlingX
+  twitterUsername: '@starlingx'
+  url: 'https://starlingx.io/community/'
 title: Community
-subTitle: Join to get help, contribute code, documentation, and use cases
+subTitle: 'Join to get help, contribute code, documentation, and use cases'
 ---
 
 
@@ -59,6 +60,6 @@ Technical decisions will be made by technical contributors and a representative 
 
 ## Code of Conduct
 
-Our community follows the Open Infrastructure Foundation [Code of Conduct](https://www.openstack.org/legal/community-code-of-conduct/).
+Our community follows the Open Infrastructure Foundation [Code of Conduct](https://openinfra.dev/legal/code-of-conduct/).
 
 
