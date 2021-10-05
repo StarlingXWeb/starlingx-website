@@ -38,7 +38,7 @@ supporting:
       image: /img/component-soft-logo_black_nobackground.png
     - alt: China Unicom
       class: img-sponsor-l4
-      image: /img/china-unicom.png
+      image: /img/china-unicom-sm.png
     - alt: CDAC
       class: img-sponsor-l4
       image: /img/cdac-lg.jpg
