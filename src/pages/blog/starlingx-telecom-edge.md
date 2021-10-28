@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: StarlingX: Open-source Software at the Cutting Edge
+title: StarlingX - Open-source Software at the Cutting Edge
 author: Kevin Gray
 date: 2021-10-26T01:32:05.627Z
 category: 
