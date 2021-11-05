@@ -79,6 +79,16 @@ export default class BlogIndexPage extends React.Component {
                         </ul>
                       </div>
                     </li>
+                    <li className="widget item-no-bullet">
+                      <div className="widget-head">
+                        <h6 className="widget-title">Share Your Story</h6>
+                      </div>
+                      <div className="widget-body">
+                        <ul className="widget-list">
+                          {blogConfig.share.map(link => <li><a href={link.link} target="_blank" rel="noopener noreferrer">{link.text}</a></li>)}
+                        </ul>
+                      </div>
+                    </li>
                   </ul>
                 </aside>            
               </div>

@@ -32,5 +32,11 @@
       "text": "Twitter",
       "link": "https://twitter.com/starlingx"
     }
+  ],
+  "share": [
+    {
+      "text": "How to Contribute a Blog Post",
+      "link": "https://docs.starlingx.io/contributor/blog_contribute_guide.html"
+    }
   ]
 }
