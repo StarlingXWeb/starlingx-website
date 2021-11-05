@@ -109,4 +109,4 @@ To request changes, [submit an issue](https://github.com/StarlingXWeb/starlingx-
 
 ## Contributing Blog Posts
 
-If you have a story to share on the StarlingX Blog please follow the guidance in this documentation to contribute your blog post: https://docs.starlingx.io/contributor/blog_contribute_guide.html
+If you have a story to share on the StarlingX Blog please follow the guidance in this documentation to contribute it as a blog post: https://docs.starlingx.io/contributor/blog_contribute_guide.html
