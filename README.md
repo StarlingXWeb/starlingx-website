@@ -106,3 +106,7 @@ yarn format
 ## Pull Requests
 
 To request changes, [submit an issue](https://github.com/StarlingXWeb/starlingx-website/issues) or [submit a pull request](https://github.com/StarlingXWeb/starlingx-website/pulls).
+
+## Contributing Blog Posts
+
+If you have a story to share on the StarlingX Blog please follow the guidance in this documentation to contribute your blog post: https://docs.starlingx.io/contributor/blog_contribute_guide.html
