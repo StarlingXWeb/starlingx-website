@@ -10,6 +10,8 @@ category:
 
 The StarlingX User Survey is open year around to collect feedback from those who use the platform. Find out more about the results below. <!-- more -->
 
+![alt text](/img/StarlingX_User_Survey.png)
+
 The StarlingX User Survey launched in March 2019 and has received over 30 responses. Of those organizations, 34% are interested in StarlingX, 46% are running a proof of concept, 15% are testing, and 4% are running StarlingX in production.
 
 **The edge use cases that organizations are turning to StarlingX for are:**
@@ -25,8 +27,6 @@ The StarlingX User Survey launched in March 2019 and has received over 30 respon
 Among the organizations selecting ‘Other,’ use cases included research in edge computing, uCPE, IoT nodes and gateways, and edge compute for very small clusters.
 
 Organizations who have completed the StarlingX User Survey have requested to remain anonymous.
-
-![alt text](/img/StarlingX_User_Survey.png)
 
 If you are already evaluating or using the software and haven't filled out the user survey yet, you can find it [here](https://www.surveymonkey.com/r/StarlingX) to provide information about your plans and activities and help the community improve the project based on your feedback.
 
