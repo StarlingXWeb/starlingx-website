@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: StarlingX User Survey Report
-author: Sunny Cai
+author: Allison Price
 date: 2021-12-06T01:32:05.627Z
 category: 
   - label: News & Announcements
