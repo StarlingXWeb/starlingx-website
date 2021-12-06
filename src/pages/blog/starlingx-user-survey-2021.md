@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: The Road Towards Confirmation
+title: StarlingX User Survey Report
 author: Sunny Cai
 date: 2021-12-06T01:32:05.627Z
 category: 
