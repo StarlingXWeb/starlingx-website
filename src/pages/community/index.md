@@ -33,6 +33,7 @@ The StarlingX community has a very active schedule of regular meetings. Details 
 ## Contribute
 
 - Developer guide: [docs.starlingx.io/developer_resources](https://docs.starlingx.io/developer_resources/index.html)
+- How to Contribute to StarlingX: [https://youtu.be/oHmx0M3cYlE](https://youtu.be/oHmx0M3cYlE)
 - Contributor guides: [docs.starlingx.io/contributor/index.html](https://docs.starlingx.io/contributor)
 - Gerrit repo: [opendev.org/starlingx](https://opendev.org/starlingx)
 - Contributor metrics: [StarlingX.Biterg.io](https://starlingx.biterg.io/)
