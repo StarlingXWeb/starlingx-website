@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX 2021 Annual Report
 author: Ildiko Vancsa    
-date: 2021-01-26T16:23:52.741Z
+date: 2022-01-26T16:23:52.741Z
 category: 
   - label: Annual Report
     id: category-ONbhvyhgs
