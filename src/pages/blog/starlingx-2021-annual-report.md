@@ -24,7 +24,7 @@ Beyond the above, the release also contained features and enhancements like:
 - Improvements to certification management to enhance automation
 - Precision Time Protocol (PTP) Notification Framework
 - Containerized Ceph storage by using Rook
-- Support for Net-SNMP v3 for the fault management service
+- Support for Net-SNMP v3 for the Fault Management service
 - CephFS for cluster storage
 - Container Image Signature Validation
 
