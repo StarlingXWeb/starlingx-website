@@ -83,10 +83,11 @@ tables:
       link: 'https://www.starlingx.io/blog/starlingx-release-5.html'
       text: Read the Blog Post
     text: >
-      StarlingX Release 5.0 is now available. The open source edge computing and
+      StarlingX Release 6.0 is now available. The open source edge computing and
       IoT cloud platform optimized for low latency and high performance
-      applications is now a container based platform for hosting OpenStack and
-      other cloud native applications.
-    title: StarlingX 5.0 Available Now
+      applications is creating a fusion between OpenStack and Kubernetes and
+      integrating further open source building blocks to host edge and cloud
+      native applications.
+    title: StarlingX 6.0 Available Now
 ---
 
