@@ -60,7 +60,21 @@
 .section-watermark {
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: contain;
+	background-size: contain; 
+	position: relative
+}
+
+img.watermark {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	width: 50%;
+	max-width: 600px;
+	opacity: 0.8;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
 }
 
 /* ------------------------------------------------------------ *\

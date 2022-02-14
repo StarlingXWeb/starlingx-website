@@ -24,3 +24,9 @@
 		max-width: $container-thin-alt-max-width + $container-gutter * 2;
 	}
 }
+
+.icon-container {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}

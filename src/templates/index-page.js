@@ -9,6 +9,7 @@ import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import VideoPlayer from '../components/VideoPlayer'
 import VideoLink from '../components/VideoLink'
+import Watermark from '../../static/img/watermark.png'
 
 import 'react-medium-image-zoom/dist/styles.css'
 
@@ -73,8 +74,8 @@ export const IndexPageTemplate = ({
       </div>
     </section>
 
-    <section className="section section-watermark is-dark" containerClassName="container-small" style={{backgroundImage: 'url(/img/watermark.png)'}}>
-      <div className="container container-small">
+    <section className="section section-watermark is-dark" containerClassName="container-small">
+      <div className="container container-small icon-container" >
         <div className="section section-body">
           <div className="columns is-multiline" style={{paddingTop:'50px'}}>
             {values.rows.map((value, index) => {
@@ -109,6 +110,7 @@ export const IndexPageTemplate = ({
           <footer className="section-foot"></footer>
         </div>
       </div>
+      <img className="watermark" src={Watermark} alt="Logo Watermark" />
     </section>    
     <section className="section section-modified">
       <div className="container">
