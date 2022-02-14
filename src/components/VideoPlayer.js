@@ -5,6 +5,7 @@ function VideoPlayer(props) {
     return (
       <div className="videoWrapper">
         <iframe 
+            id={props.id}
             width="560" 
             height="315" 
             src={props.src} 

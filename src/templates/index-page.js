@@ -8,6 +8,7 @@ import Header from '../components/Header'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import VideoPlayer from '../components/VideoPlayer'
+import VideoLink from '../components/VideoLink'
 
 import 'react-medium-image-zoom/dist/styles.css'
 
@@ -91,6 +92,9 @@ export const IndexPageTemplate = ({
                       <h6 className="article-small__title">{value.title}</h6>
                       <div className="article-small__entry">              
                         {value.text}
+                        <br />
+                        <br />
+                        <VideoLink href={value.link} />
                       </div>
                     </div>
                   </div>
@@ -99,8 +103,8 @@ export const IndexPageTemplate = ({
             })}
 
           </div>
-          <div className='video-container'>
-            <VideoPlayer src="https://www.youtube.com/embed/B3uGlKLNoRE" />
+          <div className="video-container">
+            <VideoPlayer id="video-player" src="https://www.youtube.com/embed/B3uGlKLNoRE" />
           </div>
           <footer className="section-foot"></footer>
         </div>
