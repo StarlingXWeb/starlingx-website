@@ -94,7 +94,7 @@ export const IndexPageTemplate = ({
                         {value.text}
                         <br />
                         <br />
-                        <VideoLink link="https://www.youtube.com/embed/1PHnzrhAnfw" href="/#video-player" linkText="Watch Video" />
+                        <VideoLink link={value.link} href="/#video-player" linkText={value.linkText} />
                       </div>
                     </div>
                   </div>
@@ -255,6 +255,8 @@ export const pageQuery = graphql`
             }
             title
             text
+            link
+            linkText
           }
         }
         tables {
