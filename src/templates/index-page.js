@@ -94,7 +94,7 @@ export const IndexPageTemplate = ({
                         {value.text}
                         <br />
                         <br />
-                        <VideoLink href={value.link} />
+                        <VideoLink link="https://www.youtube.com/embed/1PHnzrhAnfw" href="/#video-player" linkText="Watch Video" />
                       </div>
                     </div>
                   </div>
