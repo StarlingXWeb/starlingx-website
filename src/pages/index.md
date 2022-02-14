@@ -52,8 +52,8 @@ values:
         Providing a platform for edge and IoT use cases even for environments
         with tight resource constraints
       title: Small footprint
-      link: 
-      linkText: 
+      link: https://www.youtube.com/embed/G9uwGnKD6tM
+      linkText: Load New Video
     - image: /img/clock.svg
       text: |
         Deterministic, tunable performance optimized for the use case
