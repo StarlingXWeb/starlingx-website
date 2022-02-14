@@ -7,6 +7,7 @@ import Subscribe from '../components/Subscribe'
 import Header from '../components/Header'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import VideoPlayer from '../components/VideoPlayer'
 
 import 'react-medium-image-zoom/dist/styles.css'
 
@@ -97,6 +98,9 @@ export const IndexPageTemplate = ({
               )          
             })}
 
+          </div>
+          <div className='video-container'>
+            <VideoPlayer src="https://www.youtube.com/embed/B3uGlKLNoRE" />
           </div>
           <footer className="section-foot"></footer>
         </div>
