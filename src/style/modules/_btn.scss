@@ -10,6 +10,10 @@
 
   &.is-rounded {
     padding: 11px 43px;
+    margin: 0 15px;
+     @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   &.is-large {
