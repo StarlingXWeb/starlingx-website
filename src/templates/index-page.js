@@ -7,6 +7,9 @@ import Subscribe from '../components/Subscribe'
 import Header from '../components/Header'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import VideoPlayer from '../components/VideoPlayer'
+import VideoLink from '../components/VideoLink'
+import Watermark from '../../static/img/watermark.png'
 
 import 'react-medium-image-zoom/dist/styles.css'
 
@@ -71,8 +74,8 @@ export const IndexPageTemplate = ({
       </div>
     </section>
 
-    <section className="section section-watermark is-dark" containerClassName="container-small" style={{backgroundImage: 'url(/img/watermark.png)'}}>
-      <div className="container container-small">
+    <section className="section section-watermark is-dark" containerClassName="container-small">
+      <div className="container container-small icon-container" >
         <div className="section section-body">
           <div className="columns is-multiline" style={{paddingTop:'50px'}}>
             {values.rows.map((value, index) => {
@@ -90,6 +93,9 @@ export const IndexPageTemplate = ({
                       <h6 className="article-small__title">{value.title}</h6>
                       <div className="article-small__entry">              
                         {value.text}
+                        <br />
+                        <br />
+                        <VideoLink link={value.link} href="/#video-player" linkText={value.linkText} />
                       </div>
                     </div>
                   </div>
@@ -98,9 +104,13 @@ export const IndexPageTemplate = ({
             })}
 
           </div>
+          <div className="video-container">
+            <VideoPlayer id="video-player" src="https://www.youtube.com/embed/B3uGlKLNoRE" />
+          </div>
           <footer className="section-foot"></footer>
         </div>
       </div>
+      <img className="watermark" src={Watermark} alt="Logo Watermark" />
     </section>    
     <section className="section section-modified">
       <div className="container">
@@ -247,6 +257,8 @@ export const pageQuery = graphql`
             }
             title
             text
+            link
+            linkText
           }
         }
         tables {

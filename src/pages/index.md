@@ -38,30 +38,42 @@ values:
         Fault management, fast secure VM failover and live migration minimizes
         downtime
       title: Reliable
+      link: 
+      linkText:
     - image: /img/scale.svg
       text: >
         Deployable on one to thousands of distributed nodes allowing for a
         single system to be used from edge to core
       title: Scalable
+      link: https://www.youtube.com/embed/B3uGlKLNoRE
+      linkText: Watch Video
     - image: /img/footprint.svg
       text: >
         Providing a platform for edge and IoT use cases even for environments
         with tight resource constraints
       title: Small footprint
+      link: 
+      linkText: 
     - image: /img/clock.svg
       text: |
         Deterministic, tunable performance optimized for the use case
       title: Ultra-low latency
+      link: 
+      linkText: 
     - image: /img/lock.svg
       text: >
         Software security to avoid tampering at the edge, where physical
         security may be limited
       title: Secure
+      link: 
+      linkText: 
     - image: /img/lifecycle.svg
       text: >
         Simplified deployment and operations with full system management through
         comprehensive orchestration suited for the edge
       title: Lifecycle management
+      link: 
+      linkText: 
 tables:
   leftTable:
     rows:

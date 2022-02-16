@@ -140,6 +140,8 @@ collections:
                 {label: Icon, name: image, widget: image},
                 {label: Title, name: title, widget: string},
                 {label: Text, name: text, widget: text},
+                {label: Link, name: link, widget: text, required: false},
+                {label: Link Text, name: linkText, widget: text, required: false},
               ]}
           ]}
           - {label: Tables, name: tables, widget: object, fields: [

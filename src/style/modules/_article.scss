@@ -58,6 +58,17 @@
     font-weight: 500;
   }
 
+  .article-small__entry {
+    line-height: 20px;
+    a.text-link {
+      color: #C0A9F7;
+      text-decoration: underline;
+      font-weight: bold;
+      display: none; //Change to display: unset; to show links
+    }
+  }
+
+
   @media (max-width: 768px) {
     & {
       max-width: 375px;
