@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import content from '../content/top-bar.json'
-import barLogo from '../img/svg/bar-logo.svg'
 
 const TopBar = class extends React.Component {
   constructor(props) {
@@ -18,9 +17,6 @@ const TopBar = class extends React.Component {
         <div className="bar is-dark-gray">
           <div className="container">
             <div className="bar-inner">
-              <div className="bar-logo">
-                <img src={barLogo} />
-              </div> 
               <div className="bar-entry">
                 <p>{content.bar.text}</p>
               </div>
