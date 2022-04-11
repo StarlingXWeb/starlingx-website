@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX Subcloud Rehoming and Distributed Cloud Scalability Enhancements
 author: Yuxing Jiang
-date: 2022-01-13T14:26:09.627Z
+date: 2022-04-11T14:26:09.627Z
 category:
   - label: Features & Updates
     id: category-A7fnZYrE1
