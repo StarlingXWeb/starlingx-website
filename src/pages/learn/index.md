@@ -10,7 +10,7 @@ title: Learn
 subTitle: An overview of the StarlingX project
 intro:
   video: >-
-    https://www.youtube.com/embed/videoseries?list=PLKqaoAnDyfgp7KWad7EAHnZ30Mdg3Ejqf
+    https://www.youtube.com/embed/oHmx0M3cYlE?list=PLKqaoAnDyfgp7KWad7EAHnZ30Mdg3Ejqf
 useCases:
   - columns:
       - row: 'Autonomous vehicles (drones, cars and trucks)'
