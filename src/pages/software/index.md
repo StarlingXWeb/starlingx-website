@@ -10,7 +10,7 @@ seo:
 title: Software
 subTitle: Development activities in StarlingX
 intro:
-  video: https://www.youtube.com/embed/Hs8bp8NSYAM?list=PLKqaoAnDyfgo5sOi98QlbMVMhgI_lxFPA?t=20m
+  video: https://www.youtube.com/embed/Hs8bp8NSYAM?list=PLKqaoAnDyfgo5sOi98QlbMVMhgI_lxFPA&start=1200
   text: >
     StarlingX is an integration and development project to provide a full software stack suitable 
     to fulfill the strict requirements of edge computing use cases from security to high 
