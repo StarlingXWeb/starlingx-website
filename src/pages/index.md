@@ -58,8 +58,8 @@ values:
       text: |
         Deterministic, tunable performance optimized for the use case
       title: Ultra-low latency
-      link: 
-      linkText: 
+      link: https://www.youtube.com/embed/ZfFdnaQB8eE
+      linkText: Watch Video
     - image: /img/lock.svg
       text: >
         Software security to avoid tampering at the edge, where physical
