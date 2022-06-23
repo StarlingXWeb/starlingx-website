@@ -44,7 +44,7 @@ supporting:
       image: /img/cdac-lg.jpg
     - alt: Dell EMC
       class: img-sponsor-l4
-      image: /img/logo-dell.svg
+      image: /img/dell-tech-sm.png
     - alt: Fiberhome
       class: img-sponsor-l4
       image: /img/logo-fiberhome.png
@@ -54,9 +54,6 @@ supporting:
     - alt: JITStack
       class: img-sponsor-l4
       image: /img/jitstack-logo-lg.jpg
-    - alt: Suse
-      class: img-sponsor-l4
-      image: /img/logo-suse.svg
     - alt: Tencent Cloud
       class: img-sponsor-l4
       image: /img/tencent-horiz-lg.png
