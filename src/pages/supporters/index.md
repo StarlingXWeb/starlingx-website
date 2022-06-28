@@ -126,6 +126,9 @@ donors:
     - alt: OpenDev
       class: img-sponsor-l3-last
       image: /img/logo-opendev.svg
+    - alt: blank
+      class: img-sponsor-l3-last
+      image: /img/arrow-left.svg
   title: Infrastructure Donors
 ---
 
