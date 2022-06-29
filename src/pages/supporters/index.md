@@ -69,12 +69,6 @@ supporting:
     - alt: Windriver
       class: img-sponsor-l4
       image: /img/windriver-lg.png
-    - alt: blank
-      class: img-sponsor-l4
-      image: /img/compatibiity-badge.svg
-    - alt: blank
-      class: img-sponsor-l4
-      image: /img/performance-growth.svg
   title: Supporting Companies
 contributors:
   list:
@@ -105,15 +99,6 @@ contributors:
     - alt: Wind
       class: img-sponsor-l4
       image: /img/windriver-lg.png
-    - alt: blank
-      class: img-sponsor-l4
-      image: /img/simple.svg
-    - alt: blank
-      class: img-sponsor-l4
-      image: /img/compatibiity-badge.svg
-    - alt: blank
-      class: img-sponsor-l4
-      image: /img/arrow-left.svg
   title: Thank you to the employers of Contributors to the 1.0 and 2.0 releases
 donors:
   list:
@@ -126,9 +111,6 @@ donors:
     - alt: OpenDev
       class: img-sponsor-l3-last
       image: /img/logo-opendev.svg
-    - alt: blank
-      class: img-sponsor-l3-last
-      image: /img/arrow-left.svg
   title: Infrastructure Donors
 ---
 
