@@ -93,7 +93,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
         <div className="container container-thin">
           <div className="section-body">
             <article className="article-simple default-page">
-              <section className="section section-padding-top-0">
+              <section className="section section-padding-top-0 section-sponsors">
                 {buttons.map((b, index) => {
                   return (
                     <a href={b.link} className="button is-primary-dark is-rounded" key={index}><span>{b.text}</span>
@@ -106,7 +106,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                 <br/><br/>
                 <div className="container1"><h2 className="features">{supporting.title}</h2>
                 </div>
-                <div className="container container-center">
+                <div className="container container-center container-center-sponsors">
                   {
                     supportingList.map((d, listIndex) => {
                       return(                    
@@ -132,7 +132,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                 <p>&nbsp;</p>
                 <div className="container1"><h2 className="features">{contributors.title}</h2>
                 </div>
-                <div className="container container-center">
+                <div className="container container-center container-center-sponsors">
                   {
                     contributorsList.map((d, listIndex) => {
                       return(                    
@@ -161,7 +161,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                     {donors.title}
                   </h2>
                 </div>
-                <div className="container container-center">
+                <div className="container container-center container-center-sponsors container-infra-donors">
                   {
                     donorList.map((d, listIndex) => {
                       return(                    
