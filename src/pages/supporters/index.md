@@ -30,9 +30,6 @@ supporting:
     - alt: City Networks
       class: img-sponsor-l4
       image: /img/logo-citynetwork.svg
-    - alt: Click2Cloud
-      class: img-sponsor-l4
-      image: /img/click2cloud.jpg
     - alt: Component Soft
       class: img-sponsor-l4
       image: /img/component-soft-logo_black_nobackground.png
@@ -51,9 +48,6 @@ supporting:
     - alt: Inspur
       class: img-sponsor-l4
       image: /img/logo-inspur.svg
-    - alt: JITStack
-      class: img-sponsor-l4
-      image: /img/jitstack-logo-lg.jpg
     - alt: Tencent Cloud
       class: img-sponsor-l4
       image: /img/tencent-horiz-lg.png
