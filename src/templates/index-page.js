@@ -45,7 +45,45 @@ export const IndexPageTemplate = ({
       {seo.image && seo.url && <meta name="twitter:image" content={`${seo.url}${seo.image.publicURL}`} />}
     </Helmet>
     }
-    <Header title={header.title} subTitle={header.subTitle} image={header.image} buttons={header.buttons} />
+    <section className="hero-main is-primary hero hero-image" 
+      style={{
+        backgroundImage: `url(${
+          !!header.image.childImageSharp ? header.image.childImageSharp.fluid.src : header.image
+        })`,        
+      }}>
+      <div className="hero-body">
+        <div className="container">
+          <div className="hero-content">
+            <h3 className="hero-title">{header.title}</h3> 
+            <div className="hero-subhead">
+              {header.subTitle.map((line, index) => {
+                return (
+                  <React.Fragment>
+                    <span>{line.text}</span>
+                    {index === header.subTitle.length -1 ? '': <br/>}
+                  </React.Fragment>
+                )
+              })}
+            </div> 
+            <div className="hero-actions">
+              {header.buttons.map((button, index) => {
+                return(
+                  <React.Fragment>
+                    <a href={button.link} className="button is-primary-dark is-rounded" key={index}>
+                      <span>{button.text}</span> <span className="ico">
+                        <img src={leftArrow} alt="Learn More" />
+                      </span>
+                    </a>
+                    {index === header.buttons.length -1 ? '':'\u00A0'}
+                  </React.Fragment>
+                )
+              })}                
+            </div>
+            <p className="home-survey-link">Are you using or evaluating StarlingX for your project? <a target="_blank" href="https://www.surveymonkey.com/r/StarlingX">Take the user survey.</a></p>
+          </div>
+        </div>
+      </div>
+    </section>      
     <section className="section-article">
       <div className="container">
         <article className="article level">
