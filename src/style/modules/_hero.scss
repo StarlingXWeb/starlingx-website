@@ -146,3 +146,17 @@
 	padding-bottom: 35px;
 	font-size: 18px;
 }
+
+.hero-body {
+	.home-survey-link {
+		margin-top: 45px;
+		font-size: 18px;
+		@media screen and (max-width: 767px) {
+			margin-top: 20px;
+		}
+		a {
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+	}
+}
