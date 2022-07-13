@@ -6,8 +6,15 @@ import SEO from '../components/SEO'
 import '../style/style.scss'
 import { withPrefix } from 'gatsby'
 import TopBar from './TopBar'
+import NavigationWidget from 'navigation-widget/dist';
+import 'navigation-widget/dist/index.css';
+import { getEnvVariable, SPONSORED_PROJECT_ID } from '../utils/envVariables'
+import sponsoredProjects from "../content/sponsored-projects.json";
 
 const TemplateWrapper = ({ children }) => {
+
+  const currentProject = parseInt(getEnvVariable(SPONSORED_PROJECT_ID));
+
   return (
     <div>
       <Helmet>
@@ -32,9 +39,10 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <SEO />
+      <NavigationWidget projects={sponsoredProjects} currentProject={currentProject} />
       <TopBar />
       <Navbar />
-      <div>{children}</div>      
+      <div>{children}</div>
       <Footer />
     </div>
   )
