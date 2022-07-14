@@ -39,7 +39,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <SEO />
-      <NavigationWidget projects={sponsoredProjects} currentProject={currentProject} />
+      <NavigationWidget projects={sponsoredProjects} currentProject={currentProject} containerClass="container" />
       <TopBar />
       <Navbar />
       <div>{children}</div>
