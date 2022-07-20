@@ -45,7 +45,6 @@ endText:
 ---
 
 <br/>
-<br/>
 
 The StarlingX virtualization platform focuses on easy deployment, low touch manageability, rapid response to events and
 fast recovery -- think control at the edge, control between IoT and cloud, and control over your virtual machines.

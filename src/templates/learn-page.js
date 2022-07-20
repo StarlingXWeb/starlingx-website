@@ -46,13 +46,32 @@ export const LearnPageTemplate = ({ seo, title, subTitle, intro, content, useCas
         </div>
       </section>
       <section className="section section-article-simple">
+        <div className="container video-container">
+          <div className="video-wrapper learn-video-wrapper">
+            <div className="video-item">
+              <div className="video-item-wrapper">
+                <iframe width="835 px" height="469.687 px" src="https://www.youtube.com/embed/oHmx0M3cYlE?list=PLKqaoAnDyfgp7KWad7EAHnZ30Mdg3Ejqf&start=15" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <h3>How to Contribute to StarlingX</h3>
+            </div>
+            <div className="video-item">
+              <div className="video-item-wrapper">
+              <iframe width="835 px" height="469.687 px" src="https://www.youtube.com/embed/R9mifPEaums" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <h3>StarlingX 101</h3>
+            </div>
+            <div className="video-item">
+              <div className="video-item-wrapper">
+              <iframe width="835 px" height="469.687 px" src="https://www.youtube.com/embed/0wnK24MuftI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <h3>If Your Future is on the Edge, StarlingX Wants You</h3>
+            </div>
+          </div>
+        </div>
         <div className="container container-thin">
           <div className="section-body">
             <article className="article-simple default-page">
               <div className="content">
-                <div className="video-wrapper">
-                  <iframe width="835 px" height="469.687 px" src={intro.video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
-                </div>
                 <PageContent content={content} />
                 {useCases.map((useCase, index) => {
                   if (index % 2 == 0) {

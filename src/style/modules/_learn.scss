@@ -1,0 +1,38 @@
+.section .video-container {
+    padding: 0 20px;
+    margin-bottom: 0;
+     .learn-video-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 0;
+        .video-item {
+            width: 32.5%;
+            position: relative;
+            .video-item-wrapper {
+                height: 0;
+                overflow: hidden;
+                padding-bottom: 56.7%;
+                position: relative;
+            }
+            @media screen and (max-width: 1000px) {
+                width: 49%;
+                margin: 20px auto;
+            }
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
+            iframe {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
+            h3 {
+                padding-top: 10px;
+            }
+        }
+    }
+}
