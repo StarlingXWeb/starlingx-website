@@ -124,3 +124,12 @@
     }
   }
 }
+
+.footer-inner {
+  .columns {
+    margin-right: 0;
+    @media screen and (max-width: 1200px) {
+      margin-left: 0
+    }
+  }
+}
