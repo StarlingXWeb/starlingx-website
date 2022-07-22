@@ -150,7 +150,7 @@ export const IndexPageTemplate = ({
       </div>
       <img className="watermark" src={Watermark} alt="Logo Watermark" />
     </section>    
-    <section className="section section-modified">
+    <section className="section section-modified section-margin-adjust">
       <div className="container">
         <div className="section-body">
           <div className="section-inner">

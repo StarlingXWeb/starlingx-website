@@ -1,0 +1,13 @@
+/* ------------------------------------------------------------ *\
+	Sidebar
+\* ------------------------------------------------------------ */
+
+
+.subscribe-bottom-banner {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 0;
+        .button.no-border-search-submit {
+            min-width: 200px;
+        }
+    }
+}

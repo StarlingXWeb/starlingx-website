@@ -17,7 +17,7 @@ const Subscribe = class extends React.Component {
 
     if (content.subscribe) {
       return (
-        <section className="section search-content">
+        <section className="section search-content subscribe-bottom-banner">
           <div className="search-content">
             <h3 className="search-content-title">
               {content.subscribe.title}
