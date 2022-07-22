@@ -6,14 +6,3 @@
 	position: relative;
 	z-index: 50;
 }
-
-nav[class^="navbar"] {
-	div[class^="container"] {
-		div[class^="project"] {
-			img {
-				height: 20px;
-				width: 20px;
-			}
-		}
-	}
-}
