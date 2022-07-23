@@ -65,8 +65,8 @@ values:
         Software security to avoid tampering at the edge, where physical
         security may be limited
       title: Secure
-      link: 
-      linkText: 
+      link: https://www.youtube.com/embed/o6fWd4eRbRI
+      linkText: Watch Video
     - image: /img/lifecycle.svg
       text: >
         Simplified deployment and operations with full system management through
