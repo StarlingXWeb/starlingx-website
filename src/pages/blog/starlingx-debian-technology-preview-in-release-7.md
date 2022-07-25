@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Debian Technology Preview in Release 7
+title: Debian Technology Preview in StarlingX 7.0
 author: Frank Miller and Eric Macdonald
 date: 2022-07-28T16:23:52.741Z
 category:
@@ -8,7 +8,7 @@ category:
     id: category-A7fnZYrE1
 ---
 
-With support for the CentOS Distribution being discontinued, StarlingX will move
+With support for the CentOS Distribution being discontinued, StarlingX is moving
 to the Debian OS Distribution. Here's how to get ready.<!– more –>
 
 Debian is a well-established Linux Distribution supported by a large and mature
@@ -18,217 +18,23 @@ functional equivalence to the current CentOS-based versions of StarlingX.
 
 # Rollout
 
-The planned rollout for the transition to Debian is as follows:
-
-## StarlingX release 6.0 (RELEASED)
-
-* General Availability (GA) Release of CentOS7 StarlingX (for production
-  deployments)
-
-* Moved to 5.10 kernel, which will be used by the upcoming Debian-based release.
-
-## StarlingX release 7.0
-
-* StarlingX release 7.0 is a general Availability (GA) Release of CentOS7
-  StarlingX for production deployments. It will be the last release of a
-  CentOS7–based StarlingX.
-
-* StarlingX release 7.0 inherits the 5.10 version of the Linux kernel introduced
-  in StarlingX release 6.0.
-
-* StarlingX release 7.0 is also a technology Preview Release of Debian StarlingX
-  for evaluation purposes.
-
-* StarlingX release 7.0 release runs Debian Bullseye (11.3). It is limited in
-  scope to the AIO-SX configuration. Duplex, and standard configurations are not
-  available.
-
-See [Technology Preview Reduced Scope](#technology-preview-reduced-scope) for details.
-
-## Debian StarlingX General Availability
-
-An upcoming release will make Debian StarlingX generally available for
-production deployments.
-
-This upcoming release will run Debian Bullseye 11.3 or later with full
-functional equivalence to the CentOS-based StarlingX.
-
-The StarlingX release 7.0 Debian Technology Preview allows you to evaluate and
-prepare for the upcoming Debian-based General Availability release while
-continuing to run your production deployment on CentOS-based StarlingX. It is
-strongly recommended that you perform a complete assessment of StarlingX and
-your application running on StarlingX in a lab setting to fully understand and
-plan for any changes that may be required to your application when you migrate
-to the StarlingX Debian General Availability release in a production
-environment.
-
-Major features of Debian-based StarlingX will include:
-
-* Linux 5.10 Yocto-based kernel (see <https://www.yoctoproject.org/>).
-
-* The Yocto Project Kernel:
-
-  * tracks stable kernel updates very closely; staying very current with the
-    stable kernel,
-
-  * provides a reliable implementation of the pre-empt-rt patchset (see
-    <https://rt.wiki.kernel.org/index.php/Main_Page>), and provides predictable
-    and searchable CVE handling.
-
-    StarlingX will also leverage its existing relationships with the Yocto
-    Project to enhance development, bug fixes and other activities in the Yocto
-    Project kernel to drive StarlingX quality and feature content.
-
-* Debian Bullseye (11.3)
-
-  Debian is a well-established Linux Distribution supported by a large and
-  mature open-source community.
-
-* OSTree <https://ostree.readthedocs.io/en/stable/manual/introduction/>
-
-  OSTree provides for robust and efficient versioning, packaging and upgrading
-  of Linux-based systems.
-
-* An updated Installer to seamlessly adapt to Debian and OSTree
-
-  Updated software patching and upgrades for Debian and OSTree.
+Due to the scope of changes involved, the transition to Debian is being
+completed in stages, begining with migration to the 5.10 kernel in release 6.0,
+followed by a Debian technology preview in release 7.0, and full transition to
+Debian in a future release. See
+<https://docs.starlingx.io/debian/kubernetes/overview-234a36ffe9fb.html> for
+details.
 
 # Operational Impacts
 
-The operational impact of Debian-based StarlingX is small:
-
-*  Functional equivalence with CentOS-based StarlingX
-
-*  Use of the StarlingX CLIs and APIs will remain the same:
-
-   *  StarlingX on Debian will provide the same CLIs and APIs as StarlingX on
-      CentOS.
-
-   *  StarlingX on Debian will run the same 5.10 kernel version as StarlingX on
-      CentOS.
-
-   *  StarlingX on Debian will support the same set of Kubernetes APIs used in
-      StarlingX on CentOS.
-
-   *  The procedure to install hosts will be unchanged by the migration from
-      CentOS to Debian. Only the `grub` menu has been modified.
-
-   *  The CLIs used for software updates (patching) will be unchanged by
-      the migration from CentOS to Debian.
-
-*  User applications running in containers on CentOS should run on Debian
-   without modification. Re-validation of containers on Debian is encouraged to
-   identify any exceptions.
-
-*  A small subset of operating system-specific commands will differ. Some of
-   these changes result from the switch in distributions while others are
-   generic changes that have accumulated since the release of the CentOS
-   distribution currently used. For example:
-
-
-   *  The Debian installation requires new pxeboot grub menus. See
-      [Technology Preview Installation](#technology-preview-installation).
-
-   *  Some prompt strings will be slightly different (for example: ssh login,
-      passwd command, and others).
-
-   *  Many 3rd-party software packages are running a newer version in Debian
-      and this may lead to minor changes in syntax, output, config files, and
-      logs.
-
-   *  The URL to expose keystone service does not have the version appended.
-
-   *  On Debian, interface and static routes need to be handled using
-      system-API.
-
-      *  Do not edit configuration files in `/etc/network/` as they are
-         regenerated from sysinv database after a system reboot. Any changes
-         directly done there will be lost.
-
-      *  The static routes configuration file is `/etc/network/routes`
-
-      *  Interface configuration files are located in
-         `/etc/network/interfaces.d/`
-
-   *   Debian stores network information in `/etc/network` instead of the
-       `/etc/sysconfig/network-scripts` location used in CentOS. However, the
-       StarlingX `system …` commands are unchanged. 
-
-   *   Patching on Debian is done using ostree commits rather than individual
-       RPMs.
-
-       You can see which packages are updated by ostree using the `dpkg
-       -l` command instead of `rpm -qa` used on CentOS.
-
-   *   Patching is done via reboot required patches. In-service patching is not
-       supported in the Technology Preview release.
-
-   *   The patching CLI commands and Horizon interactions are the same as for
-       CentOS.
-
-       The supported patching CLI commands for  are:
-
-       * `sw-patch upload`
-       * `sw-patch upload-dir`
-       * `sw-patch apply`
-       * `sw-patch remove`
-       * `sw-patch delete`
-       * `sw-patch query`
-       * `sw-patch show`
-       * `sw-patch query-hosts`
-       * `sw-patch host-install`
-       * `sw-patch host-install-async`
-       * `sw-patch install-local`
-
-       However, since Debian patches work with ostree commits rather than
-       RPMs, the patch contents visible on Horizon and CLI are different.
-
-       Running the `sw-patch show <patch-ID>` CLI command or selecting
-       **Software Management** and the patch name in Horizon displays details
-       about the contents of a Debian patch including:
-
-       * The number of ostree commits in this patch.
-
-       * The base commit on which the patch can be applied.
-
-       * The commit IDs that are associated with this patch.
-
-       **CLI**
-
-       Sample `sw-patch show <patch-ID>` output:
-
-
-           DEBIAN_RR:
-           Release:        22.06
-           Patch State:    Available
-           Status:         DEV
-           Unremovable:    N
-           RR:             Y
-           Summary:        Reboot Required Patch 0015
-           Description:    Reboot Required Patch for resolving subcloud unlock issue
-           Install Instructions:
-                           Please ensure that there is 450MB minimum available space in the directory where the patch is going to be placed.
-           Warnings:       This patch requires PATCH_0014 to be installed first.
-           Contents:
-
-           No. of commits: 2
-           Base commit:    d0a0d5ad78746c86ab477fb5ccb98d7e813484a9cb1c0a780363233794655fdc
-           Commit1:        a386e76d6430f7fd6693d40379cccc838445f4abd409f158b919c010da80cb83
-           Commit2:        647dcef3f32d61b3d341fab905f5267c5614d804cae5d295693a6098db6e4e6d
-
-
-       **Horizon**
-
-       Sample **Software Management** > *patch name* output.
-
-       ![Debian patching details in Horizon](figures/debian_patching_details_horizon.png)
-
+The operational impact of Debian-based StarlingX is small. For a list of
+differences between Debian and CentOS-based StarlingX, see
+<https://docs.starlingx.io/debian/kubernetes/operational-impacts-9cf2e610b5b3.html>.
+(Differences that are specific to release 7.0 are noted).
 
 # Technology Preview Reduced Scope
 
-
-The StarlingX release 7.0 Debian Technology Preview release will have reduced
-scope:
+The StarlingX release 7.0 Debian Technology Preview release has reduced scope:
 
 *    Only AIO-SX deployments are supported. Duplex, Standard and Distributed
      Cloud configurations are not available in this release.
@@ -246,7 +52,7 @@ upcoming StarlingX Debian General Availability release.
 
 # Technology Preview Installation
 
-In general, the installation of StarlingX  Debian Technology Preview on
+In general, the installation of StarlingX 7.0 Debian Technology Preview on
 All-in-one Simplex is unchanged.
 
 There are no changes to:
@@ -267,14 +73,14 @@ on controller-0.
 
 There is a single install menu to choose between an AIO-Controller with the
 Standard Kernel and an AIO-Controller with the Low-Latency Kernel. Of course,
-the actual console log output of the software install will be different due to
+the actual console log output of the software install is different due to
 OSTree and Debian details.
 
 The Debian installation requires configuration of the new pxeboot grub menus;
 one for servers with Legacy BIOS support and another for servers with UEFI
 firmware.
 
-During PXE boot configuration setup, as described in
+During PXE boot configuration set-up, as described in
 <https://docs.starlingx.io/deploy_install_guides/r6_release/bare_metal/configuring-a-pxe-boot-server.html>,
 additional steps are required to collect configuration information and create a
 grub menu to install StarlingX AIO controller-0 function on the target server.
@@ -491,9 +297,14 @@ grub menu to install StarlingX AIO controller-0 function on the target server.
 The remaining install steps are also completely unchanged. You can find them
 here:
 
-<https://docs.starlingx.io/deploy_install_guides/r6_release/bare_metal/aio_simplex_install_kubernetes.html>
+<https://docs.starlingx.io/deploy_install_guides/r7_release/bare_metal/aio_simplex_install_kubernetes.html>
 
 # Technology Preview Known Issues
 
 Known issues and workarounds with the StarlingX release 7.0 are the same as
 those for StarlingX release 7.0 based on CentOS.
+
+
+For the complete list of updates and new features in StarlingX R7.0, check out the [release notes](https://docs.starlingx.io/releasenotes/r7-0-release-notes-bc72d0b961e7.html) and the [project documentation](https://docs.starlingx.io/).
+
+Visit the StarlingX website today for further information about the project, check out the [code](https://opendev.org/starlingx), or download the [latest image](http://mirror.starlingx.cengn.ca/mirror/starlingx/release/) to try out the new features.
