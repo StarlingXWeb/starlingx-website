@@ -1,3 +1,33 @@
+[[redirects]]
+  from="*starlingedge.io*"
+  to="https://www.starlingx.io/"
+  status=301
+  force=true
+[[redirects]]
+  from="*starlingx.org*"
+  to="https://www.starlingx.io/"
+  status=301
+  force=true
+[[redirects]]
+  from="https://starlingedge.io"
+  to="https://www.starlingx.io/"
+  status=301
+  force=true
+[[redirects]]
+  from="https://www.starlingedge.io"
+  to="https://www.starlingx.io/"
+  status=301
+  force=true
+[[redirects]]
+  from="https://starlingx.org"
+  to="https://www.starlingx.io/"
+  status=301
+  force=true
+[[redirects]]
+  from="https://www.starlingx.org"
+  to="https://www.starlingx.io/"
+  status=301
+  force=true
 [build]
   publish = "public"
   command = "npm run build"
