@@ -28,6 +28,6 @@ Further improvements to the StarlingX platform include scalability to increase t
 
 The community has also been focusing on security enhancements, such as the support for audit logging. An initial version of Pod Security Admission (PSA) controller is also available in the latest release. This component will replace Pod Security Policies in a future release to enhance the security of Kubernetes.
 
-For the complete list of updates and new features in StarlingX R7.0, check out the [release notes](https://docs.starlingx.io/releasenotes/r7-0-release-notes-bc72d0b961e7.html) and the [project documentation](https://docs.starlingx.io/).
+For the complete list of updates and new features in StarlingX R7.0, check out the [release notes](https://docs.starlingx.io/releasenotes/r7-0-release-notes-85446867da2a.html) and the [project documentation](https://docs.starlingx.io/).
 
 Visit the StarlingX website today for further information about the project, check out the [code](https://opendev.org/starlingx), or download the [latest image](http://mirror.starlingx.cengn.ca/mirror/starlingx/release/) to try out the new features.
