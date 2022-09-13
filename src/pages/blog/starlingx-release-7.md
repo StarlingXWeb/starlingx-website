@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX R7.0 is here!
 author: Ildiko Vancsa
-date: 2022-08-01T01:32:05.627Z
+date: 2022-09-13T01:32:05.627Z
 category: 
   - label: News & Announcements
     id: category-A7fnZYrE1
