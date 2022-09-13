@@ -29,7 +29,7 @@ mainpitch:
         distributed edge manageable, StarlingX provides a container-based
         infrastructure for edge implementations in scalable solutions that is
         ready for production now.
-  image: /img/StarlingX_Diagram_DistributedEdgeCloudNative_v2.jpg
+  image: /img/StarlingX_Diagram_Distributed_Edge_Cloud_Native_v3.jpg
   title: About StarlingX
 values:
   rows:
@@ -92,14 +92,14 @@ tables:
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://www.starlingx.io/blog/starlingx-release-6.html'
+      link: 'https://www.starlingx.io/blog/starlingx-release-7.html'
       text: Read the Blog Post
     text: >
-      StarlingX Release 6.0 is now available. The open source edge computing and
+      StarlingX Release 7.0 is now available. The open source edge computing and
       IoT cloud platform optimized for low latency and high performance
       applications is creating a fusion between OpenStack and Kubernetes and
       integrating further open source building blocks to host edge and cloud
       native applications.
-    title: StarlingX 6.0 Available Now
+    title: StarlingX 7.0 Available Now
 ---
 
