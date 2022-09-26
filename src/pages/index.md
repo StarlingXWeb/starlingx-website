@@ -12,6 +12,8 @@ header:
   buttons:
     - link: /software/
       text: Get Started
+    - link: http://mirror.starlingx.cengn.ca/mirror/starlingx/release/
+      text: Download ISO
     - link: /community/
       text: Get Help
   image: /img/hero-image.png
