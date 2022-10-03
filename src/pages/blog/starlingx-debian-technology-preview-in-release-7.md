@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Debian Technology Preview in StarlingX 7.0
 author: Frank Miller and Eric Macdonald
-date: 2022-07-28T16:23:52.741Z
+date: 2022-10-03T16:23:52.741Z
 category:
   - label: News & Announcements
     id: category-A7fnZYrE1
