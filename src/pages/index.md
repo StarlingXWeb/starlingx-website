@@ -94,7 +94,7 @@ tables:
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://openinfra.dev/summit/vancouver-2023'
+      link: 'https://www.openinfra.dev/summit/vancouver-2023'
       text: Learn More
     text: >
       Submit your open source demos and production use cases across categories ranging from private, hybrid and public cloud to containers, hardware enablement, and 5G.
