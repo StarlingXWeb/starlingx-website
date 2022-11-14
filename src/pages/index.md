@@ -94,14 +94,10 @@ tables:
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://www.starlingx.io/blog/starlingx-release-7.html'
-      text: Read the Blog Post
+      link: 'https://openinfra.dev/summit/vancouver-2023'
+      text: Learn More
     text: >
-      StarlingX Release 7.0 is now available. The open source edge computing and
-      IoT cloud platform optimized for low latency and high performance
-      applications is creating a fusion between OpenStack and Kubernetes and
-      integrating further open source building blocks to host edge and cloud
-      native applications.
-    title: StarlingX 7.0 Available Now
+      Submit your open source demos and production use cases across categories ranging from private, hybrid and public cloud to containers, hardware enablement, and 5G.
+    title: OpenInfra Summit Vancouver Call for Presentations is now Open!
 ---
 
