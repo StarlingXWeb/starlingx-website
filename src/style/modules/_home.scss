@@ -10,3 +10,16 @@
         }
     }
 }
+
+.homepage-box-news {
+    .box-title {
+        color: #000;
+        font-weight: 700;
+    }
+    .button.is-rounded {
+        background-color: #e61e24;
+        &:hover {
+            background-color: #9a0c28;
+        }
+    }
+}
