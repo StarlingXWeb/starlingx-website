@@ -5096,9 +5096,9 @@ decode-named-character-reference@^1.0.0:
     character-entities "^2.0.0"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 decompress-response@^3.2.0, decompress-response@^3.3.0:
   version "3.3.0"
@@ -11451,10 +11451,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-navigation-widget@^1.0.14:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/navigation-widget/-/navigation-widget-1.0.14.tgz#8a00b09d861482c5fdf80e14765694b099ccc9f7"
-  integrity sha512-q3NukJInay6yWwmkJe7wdsBX4SrRKeyxaueVnVZqJbdwZYpHxWRMZqoGSDBXtNZAe5p35iruWZ5F7m6RfqCIlQ==
+navigation-widget@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/navigation-widget/-/navigation-widget-1.0.16.tgz#a86a2dc1a6e5232b6893e7dfc479ff5f6ffb6dc8"
+  integrity sha512-qQLvhKgGMBfZTTLrmVtSlHqWWXI0H1iCBd2R5lSSgqbwX4x83pZ/E2FXlsT1j4jj2XqW3NEWafsfer02yg1aFA==
 
 needle@^2.5.2:
   version "2.9.1"
