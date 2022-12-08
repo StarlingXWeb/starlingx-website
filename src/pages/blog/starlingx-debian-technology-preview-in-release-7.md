@@ -16,7 +16,7 @@ open-source community and used by hundreds of commercial organizations,
 including Google. When fully transitioned to Debian, StarlingX will have full
 functional equivalence to the current CentOS-based versions of StarlingX.
 
-# Rollout
+## Rollout
 
 Due to the scope of changes involved, the transition to Debian is being
 completed in stages, begining with migration to the 5.10 kernel in release 6.0,
@@ -25,14 +25,14 @@ Debian in a future release. See
 <https://docs.starlingx.io/debian/kubernetes/overview-234a36ffe9fb.html> for
 details.
 
-# Operational Impacts
+## Operational Impacts
 
 The operational impact of Debian-based StarlingX is small. For a list of
 differences between Debian and CentOS-based StarlingX, see
 <https://docs.starlingx.io/debian/kubernetes/operational-impacts-9cf2e610b5b3.html>.
 (Differences that are specific to release 7.0 are noted).
 
-# Technology Preview Reduced Scope
+## Technology Preview Reduced Scope
 
 The StarlingX release 7.0 Debian Technology Preview release has reduced scope:
 
@@ -50,7 +50,7 @@ The StarlingX release 7.0 Debian Technology Preview release has reduced scope:
 Full equivalency of configurations and features will be supported in the
 upcoming StarlingX Debian General Availability release.
 
-# Technology Preview Installation
+## Technology Preview Installation
 
 In general, the installation of StarlingX 7.0 Debian Technology Preview on
 All-in-one Simplex is unchanged.
@@ -85,7 +85,7 @@ During PXE boot configuration set-up, as described in
 additional steps are required to collect configuration information and create a
 grub menu to install StarlingX AIO controller-0 function on the target server.
 
-#. Wipe the install device prior to Debian installation.
+##. Wipe the install device prior to Debian installation.
 
        $ sudo wipedisk --force --include-backup
        $ sudo sgdisk -o /dev/sda
@@ -93,20 +93,20 @@ grub menu to install StarlingX AIO controller-0 function on the target server.
    Repeat the `sudo sgdisk -o` command for all disks, such as `dev/sdb`,
    `/dev/sdc`, and so-on.
 
-#. **Option 1:** Install controller-0 from a USB device containing the
+##. **Option 1:** Install controller-0 from a USB device containing the
    Debian ISO image.
 
    Use this method to install locally from a physical or virtual media USB
    device/ISO.
 
-   #. Add the Debian ISO image to a USB device and make the target server.
+   ###. Add the Debian ISO image to a USB device and make the target server.
       boot the ISO image from that USB device.
 
-   #. During installation, select the install type from the presented
+   ###. During installation, select the install type from the presented
       menu. For a UEFI installation, the menu options are prefixed with
       "UEFI ".
 
-#. **Option 2:** Install controller-0 from a PXEboot install feed.
+##. **Option 2:** Install controller-0 from a PXEboot install feed.
 
    This method uses a network PXEboot install from a remote PXEboot server and
    'feed' directory.
@@ -122,16 +122,16 @@ grub menu to install StarlingX AIO controller-0 function on the target server.
 
    **Direct ISO mount** method:
 
-   #. Mount the ISO at the feed directory location on the pxeboot server.
+   ##. Mount the ISO at the feed directory location on the pxeboot server.
 
-   #. Copy the ISO to the 'feed' directory location pxeboot server.
+   ##. Copy the ISO to the 'feed' directory location pxeboot server.
 
       **Note:**
 
       This can be a common location for installing many servers or a
       unique location for a specific server.
 
-   #. Mount the ISO as the 'feed' directory.
+   ##. Mount the ISO as the 'feed' directory.
 
       **Note:** 
 	  
@@ -144,15 +144,15 @@ grub menu to install StarlingX AIO controller-0 function on the target server.
    **Copy ISO contents** method:
 
 
-   #. Create a tarball containing the mounted ISO content.
+   ##. Create a tarball containing the mounted ISO content.
 
-   #. Copy the Debian ISO to a location where the ISO can be mounted.
+   ##. Copy the Debian ISO to a location where the ISO can be mounted.
 
-   #. Mount the ISO, tar it up and copy the feed tarball to the PXEboot
+   ##. Mount the ISO, tar it up and copy the feed tarball to the PXEboot
       server.
 
 
-   #. Untar the feed tarball at the feed directory location on your
+   ##. Untar the feed tarball at the feed directory location on your
       PXEboot server.
 
       An example of the above commands:
@@ -169,7 +169,7 @@ grub menu to install StarlingX AIO controller-0 function on the target server.
           $ tar -xzf ${IMAGENAME}_feed.tgz
           $ rm ${IMAGENAME}_feed.tgz
 
-   #. Optionally, link your new feed directory to the name the pxeboot
+   ##. Optionally, link your new feed directory to the name the pxeboot
       server translates the incoming MAC based DHCP request to.
 
           $ ln -s ${IMAGENAME}_feed feed
@@ -203,7 +203,7 @@ grub menu to install StarlingX AIO controller-0 function on the target server.
 
       Note that many files and directories have been omitted for clarity.
 
-   #. Set up the PXEboot grub menus.
+   ##. Set up the PXEboot grub menus.
 
       The ISO contains a `pxeboot/sample` directory with controller-0
       install grub menus.
@@ -299,7 +299,7 @@ here:
 
 <https://docs.starlingx.io/deploy_install_guides/r7_release/bare_metal/aio_simplex_install_kubernetes.html>
 
-# Technology Preview Known Issues
+## Technology Preview Known Issues
 
 Known issues and workarounds with the StarlingX release 7.0 are the same as
 those for StarlingX release 7.0 based on CentOS.
