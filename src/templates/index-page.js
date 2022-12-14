@@ -79,7 +79,7 @@ export const IndexPageTemplate = ({
                 )
               })}                
             </div>
-            <p className="home-survey-link">Are you using or evaluating StarlingX for your project? <a target="_blank" href="https://www.surveymonkey.com/r/StarlingX">Take the user survey.</a></p>
+            <p className="home-survey-link">Are you using or evaluating StarlingX for your project? <a target="_blank" href="https://openinfrafoundation.formstack.com/forms/starlingx_user_survey">Take the user survey.</a></p>
           </div>
         </div>
       </div>
