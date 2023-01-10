@@ -171,7 +171,7 @@ export const IndexPageTemplate = ({
                 </div>
               </div> 
               <div className="column">
-                <div className="box is-primary-blue homepage-box-news">
+                <div className="box is-primary-blue">
                   <h4 className="box-title">{tables.rightTable.title}</h4> 
                   <div className="box-entry">
                     <div dangerouslySetInnerHTML={{__html: tables.rightTable.text}} />
