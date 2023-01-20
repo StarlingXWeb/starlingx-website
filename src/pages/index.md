@@ -73,7 +73,7 @@ values:
       text: >
         Simplified deployment and operations with full system management through
         comprehensive orchestration suited for the edge
-      title: Lifecycle management
+      title: Lifecycle management 
       link: 
       linkText: 
 tables:
