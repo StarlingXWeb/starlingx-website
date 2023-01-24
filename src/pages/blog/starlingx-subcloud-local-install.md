@@ -50,8 +50,12 @@ This is the case when both the System Controller and the edge cloud have the sam
 In the case of Factory install, the installer identifies the prestaged artifacts at the prestage location and avoids downloading the artifacts when the edge cloud installation procedures are invoked. This is instrumental in managing network bandwidth use, as data transfers happen only when required. Since data transfer requirements still exist for upgrades/reinstall, this will reduce the installation time during the maintenance window, potentially reducing server downtime.
 In the remaining two cases, the artifacts can be transferred to the edge cloud servers through an out-of-band mechanism prior to scheduled maintenance times to prestage the system for install. Additionally, only new software versions can be transferred to reduce the amount of data transfer required. To avoid disrupting current network traffic, the data transfer can limit the bandwidth utilization during the transfer to the live system. 
 
-Once the artifacts are prestaged in the appropriate location, upgrade and reinstall API can be invoked to complete the procedure while availing of the benefits of prestage.
+Once the artifacts are prestaged at the appropriate location, the upgrade and reinstall API can be invoked to complete the procedure while availing of the benefits of prestaging.
+
 With this enhancement, the efficiency of installing, upgrading or re-installing is vastly improved.
+
+## Conclusion
+Subcloud Local Install offers a very powerful mechanism to optimally deploy edge clouds, efficiently using network bandwidth and minimizing the load on the network. 
 
 ## Credits
 I would like to thank Matt Peters, Ramaswamy Subramanian, Kyle MacLeod and Tee Ngo for their inputs, comments and suggestions.
