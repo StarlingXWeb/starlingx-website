@@ -9,7 +9,7 @@ category:
 ---
 
 Learn more about the new feature in StarlingX called Subcloud Local Install. <!-- more -->
-StarlingX Distributed Cloud system supports a scalable number of geographically distributed StarlingX edge systems, centrally managed and synchronized over L3 networks from a StarlingX central region. Each edge system is also highly scalable, from a single StarlingX Simplex deployment to a full Standard Cloud configuration with storage nodes.
+The Distributed Cloud architecture in StarlingX supports a scalable number of geographically distributed systems or in other words, edge sites, centrally managed and synchronized over L3 networks from a central region. Each edge site is also highly scalable, from a single StarlingX Simplex deployment to a full standard cloud configuration with storage nodes.
 
 [StarlingX Cloud Deployment](/img/StarlingX_CloudDeployment.png)
 
