@@ -14,7 +14,7 @@ The Distributed Cloud architecture in StarlingX supports a scalable number of ge
 [StarlingX Cloud Deployment](/img/StarlingX_CloudDeployment.png)
 
 Figure 1 illustrates an example where the network is distributed over a vast area. Each region is a geographical grouping, or an area on a map. The edge clouds provide computing power closer to the users, who can be located in cities or more rural areas, to try and decrease latency. The network connecting the different edge sites often suffer from delays and losses over most links in the deployment.
-This naturally brings up the question of deployment of the clouds. We need to deploy as many edge clouds as possible while keeping in mind that data will be transmitted over possibly low-bandwidth, unreliable and unpredictable networks. 
+This naturally brings up the question of how to deploy the end-to-end infrastructure on a predictable schedule. We would like to deploy the edge clouds as quick as possible, but we need to keep in mind that data will be transmitted over possibly low-bandwidth, unreliable and unpredictable networks. 
 
 A typical deployment will involve the transfer of a few gigabytes of data, which will be used in the installation process. Transmitting a few gigabytes over a possibly low-bandwidth network will consume a significant amount of time.
 A typical edge cloud deployment may consist of multiple controllers and potentially compute and storage nodes, connected over a network that is designed per the user’s specifications. This implicitly means that there are potential multiple points of delay and latency for network traffic.
