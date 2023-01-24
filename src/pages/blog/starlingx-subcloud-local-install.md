@@ -59,7 +59,7 @@ I would like to thank Matt Peters, Ramaswamy Subramanian, Kyle MacLeod and Tee N
 ## Get Involved
 
 If you would like to learn more about the project and get involved check the website for more information or download the code and start to experiment with the platform.
-If you are already evaluating or using the software and haven't filled out the user survey yet, you can find it here to provide information about your plans and activities and help the community improve the project based on your feedback.
+If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io) for more information or [download the code](https://opendev.org/starlingx) and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
 
 
 
