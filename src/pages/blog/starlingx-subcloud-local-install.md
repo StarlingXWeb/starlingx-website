@@ -27,7 +27,7 @@ The Subcloud Local Install feature aims to mitigate these issues and improve the
 
 To deploy an edge cloud, the installation artifacts have to be available to the physical machine. Typically, the most optimal way to do this is to provide them over the network. However, the size of these artifacts could be over 3 GBs, which could cause a problem if we try to distribute them to a large number of sites.
 
-However, , StarlingX supports larger numbers of edge clouds, as illustrated in Figure 2.
+StarlingX supports a larger number of edge clouds, as illustrated on Figure 2, therefore, the above practice will not always work.
 
 [StarlingX Edge Cloud Improvements](/img/StarlingX_EdgeCloud_Improvements)
 
