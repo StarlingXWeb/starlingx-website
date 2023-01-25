@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX Subcloud Local Install Enhancements
 author: Shrikumar Sharma
-date: 2022-04-11T14:26:09.627Z
+date: 2023-01-25T09:00:09.627Z
 category:
   - label: Features & Updates
     id: category-A7fnZYrE1
