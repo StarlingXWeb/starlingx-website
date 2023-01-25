@@ -40,7 +40,7 @@ Deploying the edge clouds can be enhanced, if the installation artifacts were al
 We will look into three scenarios where this feature can come handy. The first is where a physical machine comes “prestaged” with installation artifacts right from the factory; the second is when the user wants to upgrade an edge cloud, and the third, when the user wants to reinstall.
 
 ### Factory installation
-The artifacts for installation are copied to a persistent storage location on the machine at the factory. When adding an edge cloud, the system utilizes the prestaged artifacts instead of downloading them.
+The installation artifacts are copied to a persistent storage location on the machine at the factory. When adding an edge cloud, the system utilizes the pre-staged images instead of downloading them from a remote location.
 The artifacts can also be used by an in-field technician in the form of an ISO image to enable prestaging on the edge cloud. 
 Upgrade
 In this case, the edge cloud is already up and running with a release version of StarlingX that is older than the one on the System Controller. A new version of StarlingX must be installed on the edge cloud, essentially an upgrade.
