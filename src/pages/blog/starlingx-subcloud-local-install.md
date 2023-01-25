@@ -44,7 +44,7 @@ The installation artifacts are copied to a persistent storage location on the ma
 The artifacts can also be used by an in-field technician in the form of an ISO image to enable prestaging on the edge cloud. 
 ### Upgrade
 In this case, the edge cloud is already up and running a version of StarlingX that is older than the one on the System Controller. A new version of StarlingX must be installed on the edge cloud, the site essentially needs to be upgraded.
-Reinstall
+### Reinstall
 This is the case when both the System Controller and the edge cloud have the same version of StarlingX, and the user wants to re-install the edge cloud. At the end of the procedure, the edge cloud will have the same version as prior to the operation.
 
 In the case of Factory install, the installer identifies the prestaged artifacts at the prestage location and avoids downloading the artifacts when the edge cloud installation procedures are invoked. This is instrumental in managing network bandwidth use, as data transfers happen only when required. Since data transfer requirements still exist for upgrades/reinstall, this will reduce the installation time during the maintenance window, potentially reducing server downtime.
