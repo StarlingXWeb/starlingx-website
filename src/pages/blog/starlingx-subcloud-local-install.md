@@ -37,7 +37,7 @@ As mentioned earlier, transferring huge amounts of data simultaneously to numero
 What if the artifacts could be made available on the edge cloud already, when the System Controller starts the deployment process? In other words, can we avoid downloading artifacts from a remote location at installation time?
 The answer is yes!
 Deploying the edge clouds can be enhanced, if the installation artifacts were already present on the physical machines that make up the edge clouds, prior to the deployment operations, in persistent storage. This, in essence, is local install.
-Local Install consists of three scenarios. The first is where a physical machine comes “prestaged” with installation artifacts right from the factory; the second is when the user wants to upgrade an edge cloud, and the third, when the user wants to reinstall.
+We will look into three scenarios where this feature can come handy. The first is where a physical machine comes “prestaged” with installation artifacts right from the factory; the second is when the user wants to upgrade an edge cloud, and the third, when the user wants to reinstall.
 
 ### Factory Installation:
 The artifacts for installation are copied to a persistent storage location on the machine at the factory. When adding an edge cloud, the system utilizes the prestaged artifacts instead of downloading them.
