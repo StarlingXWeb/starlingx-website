@@ -23,7 +23,7 @@ When packet losses occur during data transfer, as may be the case depending on t
 Now imagine a system where there are over a thousand edge clouds and multiple system controllers. It is obvious, therefore, that the cost of deployment failures is high, especially since the entire process must be restarted after a failure, and network issues are very difficult to debug. 
 The Subcloud Local Install feature aims to mitigate these issues and improve the deployment success rate.
 
-## What Happens when edge clouds are deployed
+## Edge clouds deployment challenges
 
 To deploy an edge cloud, the installation artifacts must be made available to the physical machine. The most optimal way to do this is to provide them over the network. However, the size of these artifacts is over 3 GBs. This is not a problem for a very small system.
 
