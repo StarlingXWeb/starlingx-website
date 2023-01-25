@@ -31,7 +31,7 @@ StarlingX supports a larger number of edge clouds, as illustrated on Figure 2, t
 
 [StarlingX Edge Cloud Improvements](/img/StarlingX_EdgeCloud_Improvements)
 
-As mentioned earlier, transferring huge amounts of data simultaneously to numerous remote machines in one go will stress the network and potentially quality compromise network quality of service. This forms the motivation for an enhancement in the way we approach the problem of deployment.
+As mentioned earlier, transferring huge amounts of data simultaneously to numerous remote machines in one go will stress the network and potentially compromise network quality of service. This forms the motivation for an enhancement in the way we approach the deployment challenges.
 
 ## What if?
 What if the artifacts could be made available on the edge cloud already, when the System Controller begins deployment? In other words, can we avoid downloading artifacts at the time of deployment?
