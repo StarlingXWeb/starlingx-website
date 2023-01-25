@@ -18,7 +18,7 @@ This naturally brings up the question of how to deploy the end-to-end infrastruc
 
 A typical deployment will require to transfer installation images to the remote locations, possibly a few gigabytes of data. When the network is unreliable or low-bandwidth or both, this process can consume a significant amount of time.
 A typical edge cloud deployment may consist of multiple controllers and potentially compute and storage nodes, connected over a network that is designed for the user’s specifications. This can lead to a complex environment to build out with multiple failure points.
-When there are packet losses during this data transfer, as may be the case depending on the network conditions at deployment time, then the system attempts to correct the losses through retransmissions, thereby increasing the deployment duration. If the data transfer is interrupted, for some reason, then the deployment may fail, and the server might require manual intervention.
+When packet losses occur during data transfer, as may be the case depending on the network conditions at deployment time, the system attempts to correct the losses through retransmissions; thereby increasing the deployment duration. If the data transfer is interrupted, for some reason, the deployment may fail, and the server could require manual intervention.
 
 Now imagine a system where there are over a thousand edge clouds and multiple system controllers. It is obvious, therefore, that the cost of deployment failures is high, especially since the entire process must be restarted after a failure, and network issues are very difficult to debug. 
 The Subcloud Local Install feature aims to mitigate these issues and improve the deployment success rate.
