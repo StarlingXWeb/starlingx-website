@@ -39,7 +39,7 @@ The answer is yes!
 Deploying the edge clouds can be enhanced, if the installation artifacts were already present on the physical machines that make up the edge clouds, prior to the deployment operations, in persistent storage. This, in essence, is local install.
 We will look into three scenarios where this feature can come handy. The first is where a physical machine comes “prestaged” with installation artifacts right from the factory; the second is when the user wants to upgrade an edge cloud, and the third, when the user wants to reinstall.
 
-### Factory Installation:
+### Factory installation
 The artifacts for installation are copied to a persistent storage location on the machine at the factory. When adding an edge cloud, the system utilizes the prestaged artifacts instead of downloading them.
 The artifacts can also be used by an in-field technician in the form of an ISO image to enable prestaging on the edge cloud. 
 Upgrade
