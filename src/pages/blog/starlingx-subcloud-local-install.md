@@ -75,7 +75,7 @@ Subcloud Local Install offers a very powerful mechanism to optimally deploy edge
 
 ## Credits
 
-I would like to thank Matt Peters, Ramaswamy Subramanian, Kyle MacLeod and Tee Ngo for their inputs, comments and suggestions.
+I would like to thank Matt Peters, Ramaswamy Subramanian, Kyle MacLeod, Tee Ngo and Ildiko Vancsa for their inputs, comments and suggestions.
 
 ## Get Involved
 
