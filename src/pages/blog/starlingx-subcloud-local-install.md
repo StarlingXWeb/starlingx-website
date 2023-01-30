@@ -12,7 +12,7 @@ Learn more about the new feature in StarlingX called Subcloud Local Install. <!-
 
 The Distributed Cloud architecture in StarlingX supports a scalable number of geographically distributed systems or in other words, edge sites, centrally managed and synchronized over L3 networks from a central region. Each edge site is also highly scalable, from a single StarlingX Simplex deployment to a full standard cloud configuration with storage nodes.
 
-[StarlingX Cloud Deployment](/img/StarlingX_CloudDeployment.png)
+![StarlingX Cloud Deployment](/img/StarlingX_CloudDeployment.png)
 
 Figure 1 illustrates an example where the network is distributed over a vast area. Each region is a geographical grouping, or an area on a map. The edge clouds provide computing power closer to the users, who can be located in cities or more rural areas, to try and decrease latency. The network connecting the different edge sites often suffers from delays and losses over most links in the deployment.
 
@@ -33,7 +33,7 @@ To deploy an edge cloud, the installation artifacts have to be available to the 
 
 StarlingX supports a larger number of edge clouds, as illustrated on Figure 2, therefore, the above practice will not always work.
 
-[StarlingX Edge Cloud Improvements](/img/StarlingX_EdgeCloud_Improvements)
+![StarlingX Edge Cloud Improvements](/img/StarlingX_EdgeCloud_Improvements.png)
 
 As mentioned earlier, transferring huge amounts of data simultaneously to numerous remote machines in one go will stress the network and potentially compromise network quality of service. This forms the motivation for an enhancement in the way we approach the deployment challenges.
 
@@ -80,6 +80,4 @@ I would like to thank Matt Peters, Ramaswamy Subramanian, Kyle MacLeod, Tee Ngo 
 ## Get Involved
 
 If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io) for more information or [download the code](https://opendev.org/starlingx) and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
-
-
 
