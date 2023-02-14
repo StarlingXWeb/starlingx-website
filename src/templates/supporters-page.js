@@ -8,6 +8,10 @@ import Content, { HTMLContent } from '../components/Content'
 import leftArrow from '../img/svg/arrow-left.svg'
 import metadata from '../content/site-metadata.json'  
 
+import sponsoredProjects from "../content/sponsored-projects.json";
+import { getSubProjectById } from '../utils/sponsoredProjects';
+import { getEnvVariable, MEMBERS_SUBPROJECT_ID } from '../utils/envVariables'
+
 export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons, contributors, donors, supporting, contentComponent }) => {
   const PageContent = contentComponent || Content
     
@@ -53,6 +57,8 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
 
     return resultArray
   }, [])
+
+  const subProject = getSubProjectById(sponsoredProjects, parseInt(getEnvVariable(MEMBERS_SUBPROJECT_ID)));
 
   return (
 
@@ -104,85 +110,27 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                   )
                 })}
                 <br/><br/>
-                <div className="container1"><h2 className="features">{supporting.title}</h2>
-                </div>
-                <div className="container container-center container-center-sponsors">
-                  {
-                    supportingList.map((d, listIndex) => {
-                      return(                    
-                        <div className='columns' style={{alignItems: 'center', justifyContent: 'center'}} key={listIndex}>
-                          {d.map((i, index) => {  
-                            return (
-                              <div className="column columns-sponsors" key={index}>
-                                {i.image ? i.image.extension === 'svg' && !i.image.childImageSharp ? 
-                                <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt} className={i.class} />
-                                :
-                                <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} className={i.class} alt={i.alt} />
-                                :
-                                ''
-                                }                                
-                              </div>
-                            )
-                          })}                          
+                {subProject.sponsorship_types.sort((a, b) => a.order - b.order).map((t, tierIndex) => {
+                  return (
+                    <div key={`company-tier-${tierIndex}`}>
+                    <div className="container1"><h2 className="features">{t.name}</h2></div>
+                    <div className="container container-center container-center-sponsors" key={`company-tier-${tierIndex}`}>
+                        <div className='columns' style={{alignItems: 'center', justifyContent: 'center'}} key={tierIndex}>
+                            {t.supporting_companies.sort((a, b) => a.order - b.order).map(({company}, index) => {
+                                return (
+                                  <div className="column columns-sponsors" key={`company-tier-${tierIndex}-${index}`}>
+                                    <img
+                                        src={company.big_logo ? company.big_logo : company.logo} alt={company.name} />
+                                  </div>
+                                )
+                            })}
                         </div>
-                      )
-                    })                   
-                  }
-                </div>
-                <p>&nbsp;</p>
-                <div className="container1"><h2 className="features">{contributors.title}</h2>
-                </div>
-                <div className="container container-center container-center-sponsors">
-                  {
-                    contributorsList.map((d, listIndex) => {
-                      return(                    
-                        <div className='columns' style={{alignItems: 'center', justifyContent: 'center'}} key={listIndex}>
-                          {d.map((i, index) => {  
-                            return (
-                              <div className="column columns-sponsors" key={index}>
-                                {i.image ? i.image.extension === 'svg' && !i.image.childImageSharp ? 
-                                <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt} className={i.class} />
-                                :
-                                <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} className={i.class} alt={i.alt} />
-                                :
-                                ''
-                                }                                
-                              </div>
-                            )
-                          })}                          
-                        </div>
-                      )
-                    })                   
-                  }
-                </div>
-                <p>&nbsp;</p>
-                <div className="container1">
-                  <h2 className="features">
-                    {donors.title}
-                  </h2>
-                </div>
-                <div className="container container-center container-center-sponsors container-infra-donors">
-                  {
-                    donorList.map((d, listIndex) => {
-                      return(                    
-                        <div className='columns' style={{alignItems: 'center', justifyContent: 'center'}} key={listIndex}>
-                          {d.map((i, index) => {
-                            return (
-                              <div className="column columns-sponsors" key={index}>                                
-                                {i.image ? i.image.extension === 'svg' && !i.image.childImageSharp ? 
-                                <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt} className={i.class} />
-                                :
-                                <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} className={i.class} alt={i.alt} />
-                                : 
-                                ''}                                
-                              </div>
-                            )
-                          })}                          
-                        </div>
-                      )
-                    })
-                  }             
-                </div> 
+                    </div>
+                    <p>&nbsp;</p>
+                    </div>
+                    
+                  )
+                })}
               <PageContent className="content" content={content} />
               <br />
               {buttons.map((b, index) => {
