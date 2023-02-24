@@ -42,6 +42,9 @@ supporting:
     - alt: Dell EMC
       class: img-sponsor-l4
       image: /img/dell-tech-sm.png
+    - alt: Encora
+      class: img-sponsor-l4
+      image: /img/encora-lg.jpg
     - alt: Inspur
       class: img-sponsor-l4
       image: /img/logo-inspur.svg
@@ -57,9 +60,6 @@ supporting:
     - alt: Windriver
       class: img-sponsor-l4
       image: /img/windriver-lg.png
-    - alt: Encora
-      class: img-sponsor-l4
-      image: /img/encora-lg.jpg
   title: Supporting Companies
 contributors:
   list:
