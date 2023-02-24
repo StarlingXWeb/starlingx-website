@@ -42,18 +42,12 @@ supporting:
     - alt: Dell EMC
       class: img-sponsor-l4
       image: /img/dell-tech-sm.png
-    - alt: Fiberhome
-      class: img-sponsor-l4
-      image: /img/logo-fiberhome.png
     - alt: Inspur
       class: img-sponsor-l4
       image: /img/logo-inspur.svg
     - alt: Tencent Cloud
       class: img-sponsor-l4
       image: /img/tencent-horiz-lg.png
-    - alt: Troila
-      class: img-sponsor-l4
-      image: /img/troila-new-lg.jpg
     - alt: Vexxhost
       class: img-sponsor-l4
       image: /img/vexxhost.svg
@@ -63,6 +57,9 @@ supporting:
     - alt: Windriver
       class: img-sponsor-l4
       image: /img/windriver-lg.png
+    - alt: Encora
+      class: img-sponsor-l4
+      image: /img/encora-lg.jpg
   title: Supporting Companies
 contributors:
   list:
