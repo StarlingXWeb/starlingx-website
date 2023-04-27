@@ -12,7 +12,7 @@ Get the highlights of StarlingX discussions and project updates at the 2023 Spri
 
 The StarlingX community had sessions on two consecutive days at the event to discuss use cases, go through project team updates, talk about the 9.0 release and further roadmap, and more. This article provides a highlight of the first day of conversations the community had at the event.
 
-# Introductions and Use Cases
+## Introductions and Use Cases
 
 The first PTG session started with a short introduction of the project to provide an overview for newcomers. You can check out the [project's website](https://www.starlingx.io) to find the resources that were mentioned during the session.
 
@@ -97,8 +97,8 @@ This concludes the highlights of the first day of discussions at the PTG. Stay t
 
 For further notes of the discussions at the event please refer to the session [etherpad](https://etherpad.opendev.org/p/r.a1706afa3252f8b2e6e6650a2f785002) or check out the [recordings](https://lists.starlingx.io/pipermail/starlingx-discuss/2023-April/013941.html) of the discussions.
 
-# About StarlingX
+## About StarlingX
 
 If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io) for more information or [download the code](https://opendev.org/starlingx) and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
 
-Meet the community at the upcoming [Open Infrastructure Summit](https://openinfra.dev/summit/vancouver-2023) on June 13-15, in Vancouver, Canada! The event features presentations and a hands-on workshop where you can learn more about the platform. You can also meet StarlingX contributors face-to-face throughout the event as well as during the co-located, in-person [PTG](https://openinfra.dev/ptg/). 
+Meet the community at the upcoming [Open Infrastructure Summit](https://openinfra.dev/summit/vancouver-2023) on June 13-15, in Vancouver, Canada! The event features presentations and a hands-on workshop where you can learn more about the platform. You can also meet StarlingX contributors face-to-face throughout the event as well as during the co-located, in-person [PTG](https://openinfra.dev/ptg/)!
