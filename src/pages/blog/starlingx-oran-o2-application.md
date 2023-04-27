@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: O-RAN O2 Application in StarlingX
 author: Litao Gao
-date: 2023-03-23T16:58:05.627Z
+date: 2023-05-01T16:58:05.627Z
 category: 
   - label: Features & Updates
     id: category-A7fnZYrE1
@@ -15,37 +15,42 @@ The [StarlingX 8.0](https://www.starlingx.io/blog/starlingx-release-8/) release 
 
 Open Radio Access Network (Open RAN) is a global initiative that aims to create an open and interoperable radio access network for the next generation of wireless technologies. It promotes the use of software-defined networking (SDN), network functions virtualization (NFV), and cloud-native architectures to enable a more flexible, scalable, and efficient network infrastructure.
 
-An open RAN ecosystem gives network operators more choice in RAN elements. With a multi-vendor catalog of technologies, network operators have the flexibility to tailor the functionality of their RANs to the operators' needs. Total vendor lock-in is no longer an issue when organizations are able to go outside of one RAN vendor's equipment and software stack.
+An open RAN ecosystem gives network operators more choices in RAN elements. With a multi-vendor catalog of technologies, network operators have the flexibility to tailor the functionality of their RANs to the operators' needs. Total vendor lock-in is no longer an issue when organizations are able to go outside of one RAN vendor's equipment and software stack.
 
 ### What are O-RAN O2 Interfaces?
 
-O-RAN, a term introduced by the O-RAN Alliance, a global community of network operators, vendors, and research institutions that are collaborating to develop open standards for the RAN. O-RAN Alliance is one of top two organizations working on Open RAN. The [O-RAN specifications](https://orandownloadsweb.azurewebsites.net/specifications) define a set of open and modular interfaces between different elements of the RAN, allowing for interoperability and flexibility in building RAN solutions.
+O-RAN, a term introduced by the [O-RAN Alliance](https://www.o-ran.org), a global community of network operators, vendors, and research institutions that are collaborating to develop open standards for the RAN. O-RAN Alliance is one of top two organizations working on Open RAN. The [O-RAN specifications](https://orandownloadsweb.azurewebsites.net/specifications) define a set of open and modular interfaces between different elements of the RAN, allowing for interoperability and flexibility in building RAN solutions.
 
-O-RAN compliant interfaces are critical for enabling interoperability between different network elements from different vendors. This interoperability is essential for creating a flexible and scalable network infrastructure that can support the requirements of 5G and beyond.
+O-RAN-compliant interfaces are critical for enabling interoperability between different network elements from different vendors. This interoperability is essential for creating a flexible and scalable network infrastructure that can support the requirements of 5G and beyond.
 
 The O2 interface is a key component of the O-RAN architecture, providing a standard interface between Service Management and Orchestration (SMO) Framework and Infrastructure Management (O-Cloud) Framework supporting O-RAN virtual network functions.
 
-As depicted in the diagram below, the O2 interface is an open logical interface within O-RAN architecture providing secured communication between the Service Management and Orchestration (SMO) Framework and O-Cloud which is the role of StarlingX. It enables the management of O-Cloud infrastructures and the deployment life cycle management of O-RAN cloudified NFs that run on O-Cloud. The O2 interface is defined in an extensible way that enables new information or functions to be added without necessarily needing to change the protocol or the procedures. This interface enables a multi-vendor environment and is independent of specific implementations of the SMO and O-Cloud.
+As depicted in the diagram below, the O2 interface is an open, logical interface within O-RAN architecture providing secured communication between the SMO Framework and O-Cloud. The role of StarlingX in this setup is to enable the management of O-Cloud infrastructures and the deployment lifecycle management of O-RAN "cloudified" NFs that run on O-Cloud. The O2 interface is defined in an extensible way that enables new information or functions to be added without necessarily needing to change the protocol or the procedures. This interface enables a multi-vendor environment and is independent of specific implementations of the SMO and O-Cloud.
 
 ![ORAN Diagram](/img/blog-oran-diagram.png)
 
-O-Cloud can consist of multiple Deployment Management Services (DMS). Each DMS can manage leased resources from multiple resource pools and span multiple locations. There is a single Infrastructure Management Services (IMS) for O-Cloud that manages all resources of DMSes as well as resources that are not allocated to any DMS in the O-Cloud.
+O-Cloud can consist of multiple Deployment Management Services (DMS). Each DMS can manage leased resources from multiple resource pools and span multiple locations. There is a single Infrastructure Management Service (IMS) for O-Cloud that manages all resources of DMSs, as well as resources that are not allocated to any DMS in the O-Cloud.
 
-SMO can utilize blueprints or other pre-configuration templates to assign resources to resource pools and to assign resource to a DMS. Once the O-Cloud is operational, following functions can be performed over the O2 interfaces as:
+SMO can utilize blueprints or other pre-configuration templates to assign resources to resource pools and  DMSs. Once the O-Cloud is operational, following functions can be performed over the O2 interfaces as:
 
 - O-Cloud Infrastructure Resource Management
   - O-Cloud infrastructure Discovery and administration
   - O-Cloud infrastructure Scale-In, Scale-Out
-  - O-Cloud infrastructure FCAPS (PM, CM, FM, Communication Surveillance)
+  - O-Cloud infrastructure FCAPS
+    - Fault management involves detecting and diagnosing issues within the infrastructure and quickly resolving them to minimize downtime and disruptions.
+    - Configuration management involves managing the various configurations of the infrastructure, ensuring that it is properly configured to meet the needs of its users.
+    - Accounting management involves tracking resource usage and allocating costs to users based on their usage.
+    - Performance management involves monitoring the performance of the infrastructure and optimizing it to ensure that it is meeting its performance targets.
+    - Security management involves implementing and monitoring security measures to protect the infrastructure and its users from potential security threats.
   - O-Cloud infrastructure Platform Software Management
-- Managing Abstracted Resources and DMSes
-  - Creation, Scale-In, Scale-Out of abstracted assigned O-Cloud infrastructure resources
-  - Deployment FCAPS (PM, FM) for abstracted O-Cloud infrastructure resources
-  - Deployment DMS (Creation, Deletion and Lease of O-Cloud infrastructure)
+- Managing Abstract Resources and DMSs
+  - Creation, Scale-In, Scale-Out of assigned O-Cloud infrastructure resources
+  - Deployment of FCAPS components for O-Cloud infrastructure resources
+  - Deployment of DMS (Creation, Deletion and Lease of O-Cloud infrastructure)
 - NF & Services Deployment Orchestration
   - Deployment Software Management
-  - Deployment, Termination, Scaling, and Healing of NF & Services deployment resources
-  - FCAPS (PM, FM) for NF & Services deployment resources
+  - Deployment, Termination, Scaling, and Healing of NF & Services resources
+  - FCAPS, for instance PM and FM, for NF & Services deployment resources
 
 ### How Does StarlingX Enable O-RAN Specification Compliant O2 Interfaces?
 
@@ -53,7 +58,7 @@ The O-RAN specification compliant O2 Interfaces feature in StarlingX is designed
 
 With this new feature, telecom providers can leverage StarlingX's powerful cloud infrastructure capabilities while maintaining the flexibility to choose their preferred network functions from different vendors. This allows them to easily customize their 5G network to meet their specific needs and requirements, without being locked into a single vendor's solution.
 
-StarlingX's O-RAN specification compliant O2 interfaces feature is built on top of the[ O2 Service in G release](https://docs.o-ran-sc.org/projects/o-ran-sc-pti-o2/en/g-release/overview.html) of Open RAN Software Community (ORAN-SC) INF project, where *O-RAN O2ims Interface Specification 3.0* and *O-RAN O2dms Interface Specification: Kubernetes Native API Profile for Containerized NFs 2.0* are the specifications which are compliant to, and these are publised in October 2022 and are the latest version of the specification when this blogpost is being written.
+StarlingX's O-RAN specification compliant O2 interfaces feature is built on top of the [O2 Service in G release](https://docs.o-ran-sc.org/projects/o-ran-sc-pti-o2/en/g-release/overview.html) of Open RAN Software Community (ORAN-SC) INF project. At the time of publishing this blog post, the latest version of the compliant specifications are *O-RAN O2ims Interface Specification 3.0* and *O-RAN O2dms Interface Specification: Kubernetes Native API Profile for Containerized NFs 2.0*.
 
 The O-RAN O2 service includes a set of software components that enable the functionality of O-RAN compliant O2 interfaces:
 
@@ -63,13 +68,13 @@ The O-RAN O2 service includes a set of software components that enable the funct
 * Watcher: This component provides the capability of O-Cloud resource audit.
 * PubSub: This component handles notification related logics, like subscribe and notify.
 
-The O-RAN O2 service is integrated into StarlingX as a system application. With the [StarlingX Application Package Manager](https://docs.starlingx.io/system_configuration/kubernetes/system-configuration-starlingx-application-package-manager.html), O-RAN O2 service application's lifecycle can be managed easily, including managing overrides to the helm charts within the application.
+The O-RAN O2 service is integrated into StarlingX as a system application. With the [StarlingX Application Package Manager](https://docs.starlingx.io/system_configuration/kubernetes/system-configuration-starlingx-application-package-manager.html), the O-RAN O2 service application's lifecycle can be managed easily, including managing overrides to the helm charts within the application.
 
 A StarlingX application package is a compressed tarball containing a metadata.yaml file, a manifest.yaml FluxCD manifest file, and a charts directory containing helm charts and a checksum.md5 file. The metadata.yaml file contains the application name, version, and optional helm repository and disabled charts information.
 
 The O-RAN O2 application package is saved in StarlingX during system installation, but it is not applied by default. When system administrators plan to integrate StarlingX with a SMO application that performs management of O-Cloud infrastructure and the deployment lifecycle management of O-RAN cloudified NFs, they can just apply and put O-RAN O2 application into service by using a small number of `system` CLI commands.
 
-Please refer to the detailed [procedure for how to install and uninstall O-RAN O2 application in StarlingX](https://docs.starlingx.io/admintasks/kubernetes/oran-o2-application-b50a0c899e66.html).
+Please refer to the detailed [procedure for how to install and uninstall the O-RAN O2 application in StarlingX](https://docs.starlingx.io/admintasks/kubernetes/oran-o2-application-b50a0c899e66.html).
 
 ### Conclusion
 
