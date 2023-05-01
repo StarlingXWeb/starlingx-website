@@ -7,7 +7,7 @@ category:
   - label: Features & Updates
     id: category-A7fnZYrE1
 ---
-Learn more about O-RAN O2 Application in the StarlingX 8.0 release. `<!-- more -->`
+Learn more about O-RAN O2 Application in the StarlingX 8.0 release. <!-- more -->
 
 The [StarlingX 8.0](https://www.starlingx.io/blog/starlingx-release-8/) release came out recently with many new features providing new functionality while also increasing compliance to O-RAN specifications. In this blog post, we will explore the O-RAN specification compliant O2 Interfaces feature in StarlingX.
 
