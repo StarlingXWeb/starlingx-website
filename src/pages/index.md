@@ -18,8 +18,8 @@ header:
       text: Get Help
   image: /img/hero-image.png
   subTitle:
-    - text: Solve the operational problem of deploying and
-    - text: managing distributed networks.
+    - text: Empower organizations to deploy and manage high-performance,
+    - text: distributed cloud infrastructure at scale.
   title: Deploy your edge cloud now
 mainpitch:
   description:
