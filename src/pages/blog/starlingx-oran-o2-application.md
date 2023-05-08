@@ -37,11 +37,11 @@ SMO can utilize blueprints or other pre-configuration templates to assign resour
   - O-Cloud infrastructure Discovery and administration
   - O-Cloud infrastructure Scale-In, Scale-Out
   - O-Cloud infrastructure FCAPS
-    - Fault management involves detecting and diagnosing issues within the infrastructure and quickly resolving them to minimize downtime and disruptions.
-    - Configuration management involves managing the various configurations of the infrastructure, ensuring that it is properly configured to meet the needs of its users.
-    - Accounting management involves tracking resource usage and allocating costs to users based on their usage.
-    - Performance management involves monitoring the performance of the infrastructure and optimizing it to ensure that it is meeting its performance targets.
-    - Security management involves implementing and monitoring security measures to protect the infrastructure and its users from potential security threats.
+      - Fault management involves detecting and diagnosing issues within the infrastructure and quickly resolving them to minimize downtime and disruptions.
+      - Configuration management involves managing the various configurations of the infrastructure, ensuring that it is properly configured to meet the needs of its users.
+      - Accounting management involves tracking resource usage and allocating costs to users based on their usage.
+      - Performance management involves monitoring the performance of the infrastructure and optimizing it to ensure that it is meeting its performance targets.
+      - Security management involves implementing and monitoring security measures to protect the infrastructure and its users from potential security threats.
   - O-Cloud infrastructure Platform Software Management
 - Managing Abstract Resources and DMSs
   - Creation, Scale-In, Scale-Out of assigned O-Cloud infrastructure resources
