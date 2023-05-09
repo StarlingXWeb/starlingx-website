@@ -20,7 +20,7 @@ header:
   subTitle:
     - text: Empower organizations to deploy and manage high-performance,
     - text: distributed cloud infrastructure at scale.
-  title: Deploy your edge cloud now
+  title: Empower organizations to deploy and manage high-performance, distributed cloud infrastructure at scale.
 mainpitch:
   description:
     - text: >-

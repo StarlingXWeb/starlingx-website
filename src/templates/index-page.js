@@ -45,7 +45,7 @@ export const IndexPageTemplate = ({
       {seo.image && seo.url && <meta name="twitter:image" content={`${seo.url}${seo.image.publicURL}`} />}
     </Helmet>
     }
-    <section className="hero-main is-primary hero hero-image" 
+    <section className="hero-main home-hero is-primary hero hero-image" 
       style={{
         backgroundImage: `url(${
           !!header.image.childImageSharp ? header.image.childImageSharp.fluid.src : header.image
@@ -55,7 +55,7 @@ export const IndexPageTemplate = ({
         <div className="container">
           <div className="hero-content">
             <h3 className="hero-title">{header.title}</h3> 
-            <div className="hero-subhead">
+            {/* <div className="hero-subhead">
               {header.subTitle.map((line, index) => {
                 return (
                   <React.Fragment>
@@ -64,7 +64,7 @@ export const IndexPageTemplate = ({
                   </React.Fragment>
                 )
               })}
-            </div> 
+            </div>  */}
             <div className="hero-actions">
               {header.buttons.map((button, index) => {
                 return(
