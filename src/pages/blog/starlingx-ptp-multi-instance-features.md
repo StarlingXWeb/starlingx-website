@@ -10,14 +10,18 @@ category:
 
     id: category-A7fnZYrE1
 ---
-In an earlier series of blog posts, we looked at the use cases for Precision Time Protocol and its 
+Learn more about the continuously evolving Precision Time Protocol (PTP) support in StarlingX. <!-- more -->
+
+Precise timing in a system is crucial, especially for use cases such as 5G and industrial automation. The StarlingX community has been adding functionality, like Time Sensitive Networking (TSN) and PTP, since the 4.0 release to fulfill strict requirements.  If you're interested in learning more about the initial use cases and implementation, you check out an earlier [blog post series](https://www.starlingx.io/blog/starlingx-ptp-part-1/) about the topic.
+
 
 
 
 
 Starting with the StarlingX 7.0 release, the community has worked on broadening the PTP configuration options 
 
-and introduced several features that extend the types of PTP deployments possible. In this blog 
+and introduced several features that extend PTP deployment types. In this blog 
+
 post, we will examine the following enhancements to PTP support:
 
 - Multi-instance PTP configurations
@@ -31,15 +35,16 @@ post, we will examine the following enhancements to PTP support:
 
 # Multi-instance PTP Configurations
 There are two applications used when a StarlingX host is configured as a PTP node. The first is 
-ptp4l, which is responsible for running the Best Master Clock Algorithm to select the highest 
-quality incoming time source and to determine the role of each configured port (timeTransmitter vs 
+ptp4l, which is responsible for running the Best Master Clock Algorithm (BMCA). BMC selects the highest 
+
+quality incoming time source and determines the role of each configured port (timeTransmitter vs 
+
 timeReceiver). In addition, ptp4l is also disciplining the oscillator on the NIC according to the incoming PTP 
 
 timestamps. The second application is phc2sys, which reads the time from a disciplined NIC and 
 
 synchronize the system clock with it. Both of these applications are part of the [linuxptp project](https://linuxptp.sourceforge.net/).
 
-https://linuxptp.sourceforge.net/
 
 StarlingX provides the ability to configure multiple instances of ptp4l in support of several 
 
@@ -61,7 +66,8 @@ If you're interested in learning more, check out the [documentation](https://doc
 
 # Local GNSS Time Sources
 
-For performant PTP operation, the Grand Master clock requires a highly accurate timing source which 
+For performant PTP operation, the Grand Master clock requires a highly accurate timing source, which 
+
 it can use to distribute time across the network. The StarlingX platform integrates the ts2phc application, 
 
 which takes the timestamps from an incoming GNSS signal and synchronizes the configured NICs with 
