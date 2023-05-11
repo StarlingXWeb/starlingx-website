@@ -35,7 +35,8 @@ post, we will examine the following enhancements to PTP support:
 
 # Multi-instance PTP Configurations
 There are two applications used when a StarlingX host is configured as a PTP node. The first is 
-ptp4l, which is responsible for running the Best Master Clock Algorithm (BMCA). BMC selects the highest 
+ptp4l, which is responsible for running the Best Master Clock Algorithm (BMCA). The BMC selects the highest 
+
 
 quality incoming time source and determines the role of each configured port (timeTransmitter vs 
 
