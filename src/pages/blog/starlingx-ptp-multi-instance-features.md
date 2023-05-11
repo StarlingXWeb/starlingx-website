@@ -8,7 +8,6 @@ category:
     id: category-A7fnZYrE1
 ---
 In an earlier series of blog posts, we looked at the use cases for Precision Time Protocol and its 
-support in StarlingX:
 
 https://www.starlingx.io/blog/starlingx-ptp-part-1/
 
