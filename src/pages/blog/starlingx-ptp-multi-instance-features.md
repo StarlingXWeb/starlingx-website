@@ -122,7 +122,6 @@ You can configure syncE in StarlingX by using the [“clock”](https://docs.sta
 
 downstream system in order to enable frequency recovery from an upstream source. Stay tuned for 
 additional functionality in future releases which will support syncE features like 
-
 Best Source Selection and advertising the Quality Level of the syncE source.
 
 
