@@ -118,8 +118,6 @@ Please note that the SyncE functionality requires the use of NICs with syncE cap
 
 
 You can configure syncE in StarlingX by using the [“clock”](https://docs.starlingx.io/system_configuration/kubernetes/instance-specific-considerations-d9d9509c79dd.html#clock) ptp-instance type on a 
-```suggestion
-Configuring syncE in StarlingX can be accomplished using the “clock” ptp-instance type on a 
 
 downstream system in order to enable frequency recovery from an upstream source. Stay tuned for 
 additional functionality in future releases which will support syncE features like 
