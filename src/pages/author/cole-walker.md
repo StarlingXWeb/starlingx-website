@@ -1,5 +1,5 @@
 ---
 templateKey: 'tags'
 authorName: 'Cole Walker'
-company: WindRiver
+company: Wind River
 ---

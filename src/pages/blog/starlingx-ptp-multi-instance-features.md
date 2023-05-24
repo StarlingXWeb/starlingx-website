@@ -20,11 +20,8 @@ configuration options and introduced several features that extend PTP deployment
 post, we will examine the following enhancements to PTP support:
 
 - Multi-instance PTP configurations
-
 - Support for local GNSS time sources
-
 - Basic Synchronous Ethernet (SyncE) support
-
 - Compatibility with several Intel E810 NIC variants
 
 # Multi-instance PTP Configurations
@@ -41,10 +38,8 @@ cases:
 
 - Systems with multiple PTP-capable NICs can see timing accuracy improvements by running a dedicated
 ptp4l instance per-NIC rather than a single instance spanning multiple NICs
-
 - Multiple PTP instances can be deployed to serve separate logical domains with different
 configuration requirements
-
 - Systems with mixed NIC types can run separate ptp4l instances with configurations tuned for each 
 NIC
 
