@@ -2,8 +2,11 @@
 templateKey: blog-post
 title: A Deep Dive Into the Precision Time Protocol Configuration Enhancements
 
+
 author: Cole Walker
-date: 2022-06-05
+date: 2023-06-05
+
+
 
 category:
   - label: Features & Updates
@@ -13,6 +16,11 @@ category:
 Learn more about the continuously evolving Precision Time Protocol (PTP) support in StarlingX. <!-- more -->
 
 Precise timing in a system is crucial, especially for use cases such as 5G and industrial automation. The StarlingX community has been adding functionality, like Time Sensitive Networking (TSN) and PTP, since the 4.0 release to fulfill strict requirements.  If you're interested in learning more about the initial use cases and implementation, you check out an earlier [blog post series](https://www.starlingx.io/blog/starlingx-ptp-part-1/) about the topic.
+
+
+
+
+
 
 
 
@@ -61,7 +69,8 @@ configuration requirements
 
 NIC
 
-If you're interested in learning more, check out the [documentation](https://docs.starlingx.io/system_configuration/kubernetes/configuring-ptp-service-using-the-cli.html#ptp-instance-configuration) the describes the multi-instance configuration.
+If you're interested in learning more, check out the [documentation](https://docs.starlingx.io/system_configuration/kubernetes/configuring-ptp-service-using-the-cli.html#ptp-instance-configuration) that describes the multi-instance configuration.
+
 
 
 
