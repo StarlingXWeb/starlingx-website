@@ -47,9 +47,9 @@ Numerous studies have demonstrated that optimal efficiency is achieved when the 
 
 Adjustments have been made to certain parameters of Postgres services. These modifications aim to ensure a harmonious balance between system demand and CPU usage. Specifically, changes have been implemented in the number of workers, autovacuum operators, and the frequency of autovacuum operations. By fine-tuning the tool's configuration, the system can achieve optimal performance while efficiently managing database operations.
 
-## Other optimizations
+## Other Optimizations
 
-As part of the platform optimization efforts, an investigation was conducted to identify services that consumed significant computational resources. As a result, the overall system overhead was reduced by merging related services and removing components that were no longer necessary.
+As part of the platform optimization efforts, an investigation was conducted to identify services that consumed significant computational resources. As a result, the overall system overhead was reduced by merging related services (sysinv-agent and sysinv-fpga-agent) and removing components that were no longer necessary (sm-watchdog).
 
 # Conclusion
 
