@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX Single-Core Platform
 author: Davi Frossard
-date: 2023-05-25T11:14:00.000Z
+date: 2023-07-03T11:14:00.000Z
 category: 
   - label: Features & Updates
     id: category-A7fnZYrE1
@@ -17,19 +17,19 @@ Platforms running on multiple cores often consume significant amounts of computa
 
 ![StarlingX Single-Core Platform Diagram](/img/single-core-diagram.png)
 
-The use of a single physical core for platform function is only suitable for Intel® 4th Generation Xeon® Scalable Processors or above and should not be configured for previous Intel® Xeon® CPU families. For All-In-One systems with older generation processors, two physical cores (or more) must be configured. Moreover, the feature can only be enabled with Hyper-Threading (one single physical core with two logical cores), ensuring proper overall parallelism and robustness for the system.
+The use of a single physical core for platform services is only suitable for Intel® 4th Generation Xeon® Scalable Processors or above and should not be configured for previous Intel® Xeon® CPU families. For All-In-One systems with older generation processors, two physical cores (or more) must be allocated. Moreover, the feature can only be enabled with Hyper-Threading (one single physical core with two logical cores), ensuring proper overall parallelism and robustness for the system.
 
-With the introduction of StarlingX 8.0, the default number of cores assigned to the platform for AIO deployments has been set to 1. This adjustment requires a careful balance to ensure that the performance remains unaffected despite having only one platform core. In the following sections, we will dive into some specific changes made to each service. By examining these modifications, we will gain a comprehensive understanding of how the system can operate in a single-core environment while preserving performance and stability.
+Starting with StarlingX 8.0, the default number of cores assigned to the platform for AIO deployments has been set to 1. This adjustment requires a careful balance to ensure that the performance remains unaffected despite having only one platform core. In the following sections, we will dive into some specific changes made to each service. By examining these modifications, we will gain a comprehensive understanding of how the system can operate in a single-core environment while preserving performance and stability.
 
 # Platform Adjustments
 
 ## System Inventory
 
-System Inventory (sysinv) is a key component of StarlingX, responsible for maintaining a centralized and comprehensive inventory of hardware devices and system configuration data. The sysinv service plays a vital role in the overall orchestration and operation of the StarlingX infrastructure. The sysinv component demands significant computational resources, creating opportunities for optimization.
+System Inventory (sysinv) is a key component of StarlingX, responsible for maintaining a centralized and comprehensive inventory of hardware devices and system configuration data. The sysinv service plays a vital role in the overall orchestration and operation of the StarlingX infrastructure, while it also demands significant computational resources, creating opportunities for optimization.
 
 ### Periodic and Runtime Tasks
 
-Sysinv consists of three main services: sysinv-conductor, sysinv-agent and sysinv-api. These services are designed to monitor system changes at periodic time intervals and take appropriate action as they occur. Some of the sysinv-conductor and sysinv-agent periodic tasks have been redesigned. The primary changes involved refactoring legacy code, extending periodic time intervals, and breaking down large tasks into smaller ones. This allowed for the reassessment of individual time intervals and distribution of their execution over time, aiming to minimize CPU usage spikes.
+Sysinv consists of three main services: sysinv-conductor, sysinv-agent and sysinv-api. These services are designed to monitor system changes at periodic time intervals and take appropriate action as they occur. To optimize for a single-core platform, some of the sysinv-conductor and sysinv-agent periodic tasks have been enhanced. The primary changes involved refactoring legacy code, extending periodic time intervals, and breaking down large tasks into smaller ones. This allowed to minimize CPU usage spikes by reassessing individual time intervals and distributing their execution over time.
 
 ### Remote Procedure Calls (RPC)
 
