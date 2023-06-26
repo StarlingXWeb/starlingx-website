@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX Single-Core Platform
 author: Davi Frossard
-date: 2023-07-03T11:14:00.000Z
+date: 2023-06-27T11:14:00.000Z
 category: 
   - label: Features & Updates
     id: category-A7fnZYrE1
@@ -39,7 +39,7 @@ In previous versions, RPC communication between sysinv-api, sysinv-conductor and
 
 Platform services are typically designed with threads or worker processes that are proportional to the number of available cores on the platform. However, simply reducing the number of cores to just one may not be sufficient, as each service also has a minimum scale requirement. The footprint of certain services was reduced seeking to find a balance between minimum scale and overall performance.
 
-This process of scaling down resource usage involves reducing the number of threads and workers assigned to services such as postgres, etcd, containerd, memcached, armada, keystone, barbican, docker-registry, docker-token-server, kube-apiserver, and kubelet. It is important to note that worker allocation rules remain the same, with the changes affecting only applications that run on single core.
+This process of scaling down resource usage involves reducing the number of threads and workers assigned to services such as postgres, etcd, containerd, memcached, keystone, barbican, docker-registry, docker-token-server, kube-apiserver, and kubelet. It is important to note that worker allocation rules remain the same, with the changes affecting only applications that run on single core.
 
 Numerous studies have demonstrated that optimal efficiency is achieved when the number of threads aligns with the available cores. This approach also helps to prevent any process from monopolizing the CPU, promoting fair resource allocation across the system.
 
