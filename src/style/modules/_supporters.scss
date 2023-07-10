@@ -49,6 +49,7 @@
 .container-center-sponsors {
 	.columns {
 		display: flex;
+        flex-wrap: wrap;
 		.columns-sponsors {
 			flex-basis: 25%;
 			max-width: 25%;
