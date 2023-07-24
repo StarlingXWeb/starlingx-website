@@ -100,6 +100,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
           <div className="section-body">
             <article className="article-simple default-page">
               <section className="section section-padding-top-0 section-sponsors">
+                <p>StarlingX is an open source community supported by the <a href="https://www.openinfra.dev">OpenInfra Foundation</a> and a growing, global community of operators, developers and organizations. Join us as we build the future of high-performance, distributed cloud infrastructure.</p>
                 {buttons.map((b, index) => {
                   return (
                     <a href={b.link} className="button is-primary-dark is-rounded" key={index}><span>{b.text}</span>
@@ -131,9 +132,10 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                     
                   )
                 })}
-              <PageContent className="content" content={content} />
-              <br />
-              {buttons.map((b, index) => {
+              {/* <<PageContent className="content" content={content} /> */}
+              <p className="foundation-tagline">The StarlingX project and community are supported by the OpenInfra Foundation.</p>
+              <a href="https://www.openinfra.dev"><img className="foundation-logo" src="https://openinfra.dev/img/openinfra-logo.jpeg" /></a>
+              {/* {buttons.map((b, index) => {
                 return (
                   <a href={b.link} className="button is-primary-dark is-rounded" key={index}><span>{b.text}</span>
                     <span className="ico">
@@ -141,7 +143,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                     </span>
                   </a>
                 )
-              })}
+              })} */}
               </section>              
             </article>
           </div> 
