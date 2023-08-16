@@ -26,6 +26,8 @@ If you’re looking for proof that StarlingX works, look no further than the tel
  
 So, now that the infrastructure is all sorted out, what do you want to build tomorrow? What kind of applications do you need to support to grow in the future?
 
+To learn more, watch the [StarlingX keynote](https://www.youtube.com/watch?v=sOmoFOLaR7A&list=PLKqaoAnDyfgqsxQDbLj4LVpKiZSDbntuC&index=1&t=1622s) which was delivered by Jeff Gowan at the OpenInfra Summit in Vancouver, BC, June 13-15, 2023. 
+
 # About StarlingX
 
 If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io) for more information or [download the code](https://opendev.org/starlingx) and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
