@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX Is Setting the Trend to Go Distributed
 author: Jeff Gowan
-date: 2023-08-28T01:32:05.627Z
+date: 2023-08-21T01:32:05.627Z
 category:
   - label: Features & Updates
     id: category-A7fnZYrE1
