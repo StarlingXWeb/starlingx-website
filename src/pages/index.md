@@ -89,8 +89,8 @@ tables:
         title: Weekly calls
       - text: >
           <p>Chat with the project team and others using StarlingX.</p> <a
-          href="https://webchat.oftc.net/?channels=starlingx">#starlingx</a>
-        title: OFTC IRC
+          href="https://matrix.to/#/#starlingx:opendev.org">#starlingx:opendev.org</a>
+        title: Matrix
     title: How to Get Involved.
   rightTable:
     button:
