@@ -29,8 +29,8 @@
           "link": "https://twitter.com/starlingx"
         },
         {
-          "text": "IRC: #starlingx",
-          "link": "https://webchat.oftc.net/?channels=starlingx"
+          "text": "Matrix: #starlingx:opendev.org",
+          "link": "https://matrix.to/#/#starlingx:opendev.org"
         }
       ]
     },

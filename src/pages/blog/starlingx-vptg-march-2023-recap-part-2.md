@@ -94,7 +94,7 @@ Conversations about processes and workflows were mainly focusing on the communit
 
 The community's main communication channel is the [starlingx-discuss](https://lists.starlingx.io/cgi-bin/mailman/listinfo/starlingx-discuss) mailing list. While the list is very active, it is often desired to have more synchronous ways for contributors to talk to each other. To ensure the opportunity for that, the community also runs both team meetings as well as a TSC & Community call over an online conference platform. The teams with active meetings are working on implementing the habit to always send out meeting minutes to the mailing list, as it helps those who cannot attend the calls. As it is a new directive that the community implemented since the previous PTG we also collected feedback, which was overall very positive.
 
-The community also has a channel called #starlingx on the OFTC IRC network. There are new contributors who started to hang out in the channel to chat about what they are doing with the platform and ask questions. As many contributors haven't jumped into this channel yet it is still a little quiet overall, which we are working on to change. Th IRC channel is logged, which makes it easy to catch up on any conversation that happened there while someone was offline.
+The community also has a channel called #starlingx on the Matrix. There are new contributors who started to hang out in the channel to chat about what they are doing with the platform and ask questions. As many contributors haven't jumped into this channel yet it is still a little quiet overall, which we are working on to change. The Matrix rooms are logged, which makes it easy to catch up on any conversation that happened there while someone was offline.
 
 ### User Survey
 

@@ -41,7 +41,7 @@ The project had 3,150 changes committed by 148 authors from 5 organizations duri
 The StarlingX code is hosted on Github under the Apache 2 license. Learn about the project, how to contribute and support the community at starlingx.io. Join these channels to get involved:
 
 * [Source code](opendev.org/starlingx)
-* IRC: #starlingx on OFTC
+* [StarlingX space on Matrix](https://matrix.to/#/#starlingx:opendev.org)
 * [Mailing list](https://lists.starlingx.io/)
 
 The Open Infrastructure Foundation just published its [2021 annual report](https://openinfra.dev/annual-report/2021). Learn more about other OpenInfra projects and how you can get involved.
