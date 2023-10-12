@@ -8,11 +8,11 @@ category:
 ---
 
 Deploying your own application to StarlingX is as easy as any other Kubernetes
-deployment out there. In this blog post we'll show you the process with a
-simple demonstration application.<!- more ->
+deployment out there. In this blog post I will show you the process with a
+simple demo app.<!- more ->
 
 It's important to understand that an application can be deployed in many ways
-to the [Kubernetes cluster(s) that StarlingX manages](https://docs.starlingx.io/operations/k8s_cluster.html)
+on the [Kubernetes cluster(s) that StarlingX manages](https://docs.starlingx.io/operations/k8s_cluster.html)
 :
 
 - [raw Kubernetes](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/);
@@ -21,21 +21,21 @@ to the [Kubernetes cluster(s) that StarlingX manages](https://docs.starlingx.io/
 - StarlingX Application, which benefits from tight integration with the
   [StarlingX system](https://opendev.org/starlingx/config).
 
-In this particular demonstration we will focus on [Helm](https://helm.sh/),
+In this particular demonstration I will focus on [Helm](https://helm.sh/),
 which is the most popular package manager for Kubernetes. Future blog posts
 will address other deployment types and their advantages.
 
-We will use a virtual All-In-One Simplex (AIO-SX) setup of StarlingX. If you
-want to follow along, you can install your own with [this guide](https://docs.starlingx.io/deploy_install_guides/release/virtual/automated_install.html#dashboards).
+I will use a virtual All-In-One Simplex (AIO-SX) setup of StarlingX. If you
+want to follow along, you can install your own by following the related 
+[StarlingX install guide](https://docs.starlingx.io/deploy_install_guides/release/virtual/automated_install.html#dashboards).
 
-Any developer that already packages their application with
-[Helm](https://helm.sh/) will be able to deploy their application in
-StarlingX without additional hassle.
+Anyone who already packages their application with
+[Helm](https://helm.sh/) will be able to deploy it on StarlingX without additional hassle.
 
 ## The Demo App
 
-We will use a simple demonstration application for this blog post. We won't
-dive into the use case of the demonstration application, but there will be
+I will use a simple demo app for this blog post. We won't
+dive into the use case of the demo app, but there will be
 additional information about it at the end of the post.
 
 For now, let's focus on dealing with the deployment!
@@ -111,7 +111,7 @@ poc-starlingx-messages  default         1               <date> <time>   deployed
 
 Of course, your application might (and should) [be configurable through the
 environment](https://12factor.net/config) where it is running. The
-demonstration application is no different and exposes several configurations
+demo app is no different and exposes several configurations
 via [Helm values](https://helm.sh/docs/chart_best_practices/values/).
 
 Let's create a user-supplied values file that will override a few default
