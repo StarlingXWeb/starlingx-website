@@ -38,7 +38,7 @@ I will use a simple demo app for this blog post. We won't
 dive into the use case of the demo app, but there will be
 additional information about it at the end of the post.
 
-For now, let's focus on dealing with the deployment!
+Now, let's focus on deploying the app!
 
 ## Deploying the Demo App
 
@@ -47,7 +47,12 @@ For now, let's focus on dealing with the deployment!
 You can simply use the packaged Helm chart from your own source code, and
 use the [Helm CLI](https://helm.sh/docs/intro/install/) to install the package.
 
+Let's see an example below:
+
 #### Package the Helm chart
+
+The following commands will checkout the Demo app, `cd` into the downloaded
+source code and finally use `helm` to generate a Helm chart file.
 
 ```shell
 git clone https://github.com/bmuniz-daitan/poc-starlingx-messages.git
@@ -55,7 +60,8 @@ cd poc-starlingx-messages
 helm package helm-chart/
 ```
 
-The above commands should create a `poc-starlingx-<version>.tgz` file.
+The `poc-starlingx-<version>.tgz` file can be found on the root folder of the
+downloaded repo:
 
 ```shell
 ...
@@ -64,11 +70,16 @@ Successfully packaged chart and saved it to: .../poc-starlingx-messages/poc-star
 
 #### Install the Helm package directly on StarlingX
 
-Once you made the package available on a StarlingX instance, the below command
+Once the package is made available on a StarlingX instance, the below command
 will deploy the application to the StarlingX-managed Kubernetes cluster:
 
 ```shell
-sysadmin@controller-0:~$ helm install poc-starlingx-messages-node poc-starlingx-1.5.2.tgz
+helm install poc-starlingx-messages-node poc-starlingx-1.5.2.tgz
+```
+
+This is the expected output:
+
+```shell
 NAME: poc-starlingx-messages
 LAST DEPLOYED: <date> <time>
 NAMESPACE: default
@@ -97,8 +108,8 @@ NAME                                             DESIRED   CURRENT   READY   AGE
 replicaset.apps/poc-starlingx-85d766894b         1         1         1       40s
 ```
 
-You can also use `helm list` and other Helm commands to check the status of
-your application deployment:
+One can also use `helm list` and other Helm commands to check the status of
+the deployment:
 
 ```shell
 sysadmin@controller-0:~$ helm list
@@ -109,14 +120,14 @@ poc-starlingx-messages  default         1               <date> <time>   deployed
 
 #### Set application configuration via Helm 
 
-Of course, your application might (and should) [be configurable through the
-environment](https://12factor.net/config) where it is running. The
+Of course, applications might (and should) [be configurable through the
+environment](https://12factor.net/config) where they are running on. The
 demo app is no different and exposes several configurations
 via [Helm values](https://helm.sh/docs/chart_best_practices/values/).
 
-Let's create a user-supplied values file that will override a few default
-values to deploy another instance of our application that will act as a
-`central`:
+I will create a user-supplied values file that will override a few default
+values to deploy another instance of the application that will act as a
+`central` (more on what exactly this means at the end of this post):
 
 ```shell
 cat <<EOF > central-overrides.yml
@@ -134,11 +145,16 @@ kube:
 EOF
 ```
 
-And now let's use this overrides file to deploy a new version of the
-application:
+And now I will use this overrides file to deploy a new version of the
+application with the command:
 
 ```shell
-[sysadmin@controller-0 ~(keystone_admin)]$ helm install -f central-overrides.yml poc-starlingx-messages-central poc-starlingx-1.5.2.tgz
+helm install -f central-overrides.yml poc-starlingx-messages-central poc-starlingx-1.5.2.tgz
+```
+
+This is the expected output:
+
+```shell
 NAME: poc-starlingx-messages-central
 LAST DEPLOYED: <date> <time>
 NAMESPACE: default
@@ -175,7 +191,7 @@ poc-starlingx-messages-central  default         1               2023-10-02 23:45
 
 ### Via a Helm Repository
 
-Of course, you can make it even easier by using a
+Of course, one can make it even easier by using a
 [Helm charts repository](https://helm.sh/docs/helm/helm_repo/). The Kubernetes
 Dashboard, for example, is distributed under a public chart repository that you
 can add to StarlingX:
@@ -215,8 +231,8 @@ covered on the [bare metal installation guides](https://docs.starlingx.io/deploy
 
 ## Conclusion
 
-This is what our cluster looks like after everything that we covered on this
-blog post:
+This is what the StarlingX cluster looks like after everything that I covered
+on this blog post:
 
 ```shell
 sysadmin@controller-0:~$ kubectl get all
