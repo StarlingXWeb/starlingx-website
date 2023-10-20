@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Deploying your application to StarlingX
 author: Bruno Muniz
-date: 2023-10-13T12:00:00.042Z
+date: 2023-10-25T12:00:00.042Z
 category:
   - label: Features & Updates
 ---
