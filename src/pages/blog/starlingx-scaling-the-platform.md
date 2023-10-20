@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX - A Simple Approach to Scaling Distributed Clouds
 author: Ram Subramanian, John Kung
-date: 2023-10-21T01:32:05.627Z
+date: 2023-10-23T01:32:05.627Z
 category:
   - label: Features & Updates
     id: category-A7fnZYrE1
