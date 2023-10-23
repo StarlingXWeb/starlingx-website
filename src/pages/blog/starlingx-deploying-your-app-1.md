@@ -232,7 +232,10 @@ covered on the [bare metal installation guides](https://docs.starlingx.io/deploy
 
 ## Conclusion
 
-This is what the StarlingX cluster looks like after everything that I covered
+In less than 5 minutes you learned how easy it is to deploy your existing
+Helm-packaged application to StarlingX. No surprises there!
+
+This is what the StarlingX cluster looks like after everything that I covered:
 on this blog post:
 
 ```shell
@@ -259,9 +262,10 @@ replicaset.apps/poc-starlingx-7775bb7864           1         1         1       4
 replicaset.apps/poc-starlingx-central-5588f46ccb   1         1         1       100m
 ```
 
-In less than 5 minutes you learned how easy it is to deploy your existing
-Helm-packaged application to StarlingX. No surprises there! We will talk about
-Flux and StarlingX Apps on the next installments of this series.
+We will talk about Flux and StarlingX Apps in the next installments of this series.
+# About StarlingX
+
+If you would like to learn more about the project and get involved check the website for more information or download the code and start to experiment with the platform. If you are already evaluating or using the software please fill out the user survey and help the community improve the project based on your feedback.
 
 ## Appendix - Application Demo and Information
 
