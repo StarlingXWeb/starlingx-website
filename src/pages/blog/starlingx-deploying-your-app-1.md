@@ -15,15 +15,15 @@ It's important to understand that an application can be deployed in many ways
 on the [Kubernetes cluster(s) that StarlingX manages](https://docs.starlingx.io/operations/k8s_cluster.html)
 :
 
-- [raw Kubernetes](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/);
-- [Helm](https://helm.sh/docs/intro/using_helm/#helm-install-installing-a-package);
-- [Flux](https://fluxcd.io/); and finally
-- StarlingX Application, which benefits from tight integration with the
+- [with plain Kubernetes](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/) methods;
+- with [Helm](https://helm.sh/docs/intro/using_helm/#helm-install-installing-a-package);
+- with [Flux](https://fluxcd.io/); and finally
+- as a StarlingX Application, which benefits from tight integration with the
   [StarlingX system](https://opendev.org/starlingx/config).
 
-In this particular demonstration I will focus on [Helm](https://helm.sh/),
+In this article I will focus on [Helm](https://helm.sh/),
 which is the most popular package manager for Kubernetes. Future blog posts
-will address other deployment types and their advantages.
+will address other deployment types and their characteristics.
 
 I will use a virtual All-In-One Simplex (AIO-SX) setup of StarlingX. If you
 want to follow along, you can install your own by following the related 
@@ -47,11 +47,9 @@ Now, let's focus on deploying the app!
 You can simply use the packaged Helm chart from your own source code, and
 use the [Helm CLI](https://helm.sh/docs/intro/install/) to install the package.
 
-Let's see an example below:
-
 #### Package the Helm chart
 
-The following commands will checkout the Demo app, `cd` into the downloaded
+The following commands will checkout the demo app, `cd` into the downloaded
 source code and finally use `helm` to generate a Helm chart file.
 
 ```shell
@@ -89,9 +87,11 @@ TEST SUITE: None
 [sysadmin@controller-0 ~(keystone_admin)]$ 
 ```
 
-The demonstration app is conveniently setup with sensible defaults so there's
-no need for additional configuration in order to get a running application,
-as we can see from the `kubectl get all` output below:
+This is the stage when you can log into your application and configure it, in
+order to have it fully functional. The demo app I use does not require
+any additional setup and is currently up and running. You can verify
+this by using the `kubectl get all` command, which should provide the output
+below:
 
 ```shell
 sysadmin@controller-0:~$ kubectl get all
@@ -108,7 +108,7 @@ NAME                                             DESIRED   CURRENT   READY   AGE
 replicaset.apps/poc-starlingx-85d766894b         1         1         1       40s
 ```
 
-One can also use `helm list` and other Helm commands to check the status of
+You can also use `helm list` and other Helm commands to check the status of
 the deployment:
 
 ```shell
@@ -118,16 +118,17 @@ poc-starlingx-messages  default         1               <date> <time>   deployed
 [sysadmin@controller-0 ~(keystone_admin)]$
 ```
 
-#### Set application configuration via Helm 
+#### Modify the app configuration via Helm 
 
 Of course, applications might (and should) [be configurable through the
 environment](https://12factor.net/config) where they are running on. The
-demo app is no different and exposes several configurations
+demo app is no different and exposes several configuration options
 via [Helm values](https://helm.sh/docs/chart_best_practices/values/).
 
-I will create a user-supplied values file that will override a few default
-values to deploy another instance of the application that will act as a
-`central` (more on what exactly this means at the end of this post):
+The demo application has multiple components which are deployed as multiple
+instances that are configured differently. One of these components is called
+`central`, which I will deploy now by creating a user-supplied values file
+that will override a few default values:
 
 ```shell
 cat <<EOF > central-overrides.yml
@@ -145,7 +146,7 @@ kube:
 EOF
 ```
 
-And now I will use this overrides file to deploy a new version of the
+Now I will use the `central-overrides.yml` file to deploy a new version of the
 application with the command:
 
 ```shell
@@ -191,10 +192,10 @@ poc-starlingx-messages-central  default         1               2023-10-02 23:45
 
 ### Via a Helm Repository
 
-Of course, one can make it even easier by using a
-[Helm charts repository](https://helm.sh/docs/helm/helm_repo/). The Kubernetes
-Dashboard, for example, is distributed under a public chart repository that you
-can add to StarlingX:
+Of course, you can make it even easier to deploy an application by using a
+[Helm charts repository](https://helm.sh/docs/helm/helm_repo/). To demonstrate this, I will deploy the Kubernetes
+dashboard application, which is distributed under a public chart repository. You
+can add this application to StarlingX by following the steps below :
 
 ```shell
 helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
