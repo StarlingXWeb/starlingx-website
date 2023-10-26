@@ -262,6 +262,7 @@ replicaset.apps/poc-starlingx-central-5588f46ccb   1         1         1       1
 ```
 
 We will talk about Flux and StarlingX Apps in the next installments of this series.
+
 # About StarlingX
 
 If you would like to learn more about the project and get involved check the website for more information or download the code and start to experiment with the platform. If you are already evaluating or using the software please fill out the user survey and help the community improve the project based on your feedback.
