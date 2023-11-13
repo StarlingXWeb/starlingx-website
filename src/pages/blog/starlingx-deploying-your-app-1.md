@@ -2,12 +2,12 @@
 templateKey: blog-post
 title: Deploying your application to StarlingX
 author: Bruno Muniz
-date: 2023-10-25T12:00:00.042Z
+date: 2023-11-28T12:00:00.042Z
 category:
   - label: Features & Updates
 ---
 
-Deploying your own application to StarlingX is as easy as any other Kubernetes
+Deploying your own application to StarlingX is as easy as in any other Kubernetes
 deployment out there. In this blog post I will show you the process with a
 simple demo app.<!- more ->
 
@@ -37,7 +37,7 @@ Anyone who already packages their application with
 I will use a simple demo app for this blog post, which simulates tasks, like
 antivirus scanning and threat monitoring. If you would like to learn more
 about the app and use it to follow the below deployment steps, please check
-out the documentation and source in the app's [GitHub repo](https://github.com/bmuniz-daitan/poc-starlingx-messages/blob/v1.5.2/Demo.md#application-demo).
+out the documentation and source in the app's [GitHub repo](https://github.com/brunomuniz-encora/poc-starlingx-messages/blob/v1.5.2/Demo.md#application-demo).
 
 ## Deploying the Demo App
 
@@ -52,7 +52,7 @@ The following commands will checkout the demo app, `cd` into the downloaded
 source code and finally use `helm` to generate a Helm chart file.
 
 ```shell
-git clone https://github.com/bmuniz-daitan/poc-starlingx-messages.git
+git clone https://github.com/brunomuniz-encora/poc-starlingx-messages.git
 cd poc-starlingx-messages
 helm package helm-chart/
 ```
@@ -145,7 +145,7 @@ kube:
 EOF
 ```
 
-Now I will use the `central-overrides.yml` file to deploy a new version of the
+Now I will use the `central-overrides.yml` file, that I just created, to deploy a new version of the
 application with the command:
 
 ```shell
@@ -192,7 +192,7 @@ poc-starlingx-messages-central  default         1               2023-10-02 23:45
 ### Via a Helm Repository
 
 Of course, you can make it even easier to deploy an application by using a
-[Helm charts repository](https://helm.sh/docs/helm/helm_repo/). To demonstrate this, I will deploy the Kubernetes
+[Helm charts repository](https://helm.sh/docs/helm/helm_repo/). To demonstrate this, I will deploy a different app, the Kubernetes
 dashboard application, which is distributed under a public chart repository. You
 can add this application to StarlingX by following the steps below :
 
@@ -265,5 +265,5 @@ We will talk about Flux and StarlingX Apps in the next installments of this seri
 
 # About StarlingX
 
-If you would like to learn more about the project and get involved check the website for more information or download the code and start to experiment with the platform. If you are already evaluating or using the software please fill out the user survey and help the community improve the project based on your feedback.
+If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io) for more information or [download the code](https://opendev.org/starlingx) and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
 
