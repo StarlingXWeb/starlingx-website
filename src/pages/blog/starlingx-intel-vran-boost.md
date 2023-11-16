@@ -7,7 +7,7 @@ category:
 ---
 Learn more about Intel vRAN Boost Kubernetes operator support in StarlingX 8.0. <!-- more -->
 
-The [StarlingX 8.0](https://www.starlingx.io/blog/starlingx-release-8/) release includes a new Kubernetes Operator to manage and configure the integrated Intel vRAN Boost accelerator in 4<sup>th</sup> Gen Intel Xeon Scalable processors. In this blog post, we will learn about Intel vRAN Boost Kubernetes Operator functionality in StarlingX.
+The [StarlingX 8.0](https://www.starlingx.io/blog/starlingx-release-8/) release includes a new Kubernetes Operator to manage and configure the integrated Intel vRAN Boost accelerator in 4<sup>th</sup> Gen Intel Xeon Scalable processors. In this blog post, you will learn about Intel vRAN Boost Kubernetes Operator functionality in StarlingX.
 
 ### Integrated Acceleration for High-Performance, Energy-Efficient vRANs
 
