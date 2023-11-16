@@ -73,7 +73,7 @@ StarlingX is more than just a set of services, it also provides you the build to
 Get the first release of StarlingX from:
 
 - Git repositories: [https://git.openstack.org/cgit/?q=stx](https://git.openstack.org/cgit/?q=stx)
-- IRC: #starlingx on OFTC
+- StarlingX space on Matrix: [#starlingx:opendev.org](https://matrix.to/#/#starlingx:opendev.org)
 - Mailing list: [http://lists.starlingx.io](http://lists.starlingx.io/cgi-bin/mailman/listinfo)
 
 You can meet the community in person at the next [OpenStack Open Infrastructure Summit](https://www.openstack.org/summit/berlin-2018/) in Berlin, November 13-15.

@@ -49,6 +49,7 @@
 .container-center-sponsors {
 	.columns {
 		display: flex;
+        flex-wrap: wrap;
 		.columns-sponsors {
 			flex-basis: 25%;
 			max-width: 25%;
@@ -96,4 +97,20 @@
 			}
         }
     }
+}
+
+.section-article-simple {
+    .foundation-logo {
+        display: block;
+        margin: 3rem auto 0;
+        max-width: 280px;
+    }
+    .foundation-tagline {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+section.section.section-padding-top-0.supporters-section {
+    padding-bottom: 0;
 }
