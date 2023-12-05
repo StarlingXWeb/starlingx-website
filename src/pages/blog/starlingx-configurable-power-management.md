@@ -17,11 +17,11 @@ Understanding how and how much energy is being used by the platform and applicat
 
 # Power Metrics
 
-The StarlingX app *power-metrics* encapsulates tools like *Telegraf* and *cAdvisor* to help customers measure and understand their energy use. Container Advisor is an open source agent that exposes resource usage and performance data of containers. InfluxData Telegraf is also an open source agent for collecting and sending metrics from diverse sources as systems, databases and sensors. Data collection is performed through *Intel Powerstat (intel_powerstat)* and *Linux CPU (linux_cpu)* input plugins. Both agents publish metrics in *Prometheus* format.
+The StarlingX app *power-metrics* encapsulates tools like *Telegraf* and *cAdvisor* to help users measure and understand their energy use. Container Advisor is an open source agent that exposes resource usage and performance data of containers. InfluxData Telegraf is also an open source agent for collecting and sending metrics from diverse sources such as systems, databases and sensors. Data collection is performed through *Intel Powerstat (intel_powerstat)* and *Linux CPU (linux_cpu)* input plugins. Both agents publish metrics in *Prometheus* format.
 
 ## Available Metrics
 
-With Power Metrics application, we have access to system and hardware level raw power data.
+With the Power Metrics application, we have access to system and hardware level raw power data.
 
 - Thermal Design Power: The maximum power available, in watts, for the processor.
 - Current Power Consumption: The current power usage of the system in watts.
@@ -43,9 +43,9 @@ The raw data can be better visualized with a dashboard, as the example below.
 
 # Kubernetes Power Manager 
 
-Users increasingly have power management needs with greater scope and higher granularity, focused on containerized applications using power profiles individually by core and/or application. Among users' needs, we can highlight the control of acceptable frequency ranges (minimum and maximum frequency) per core, the behavior of the core in this range (governor), which power levels (C-States) a given core can access, as well as the behavior of the system in the face of workloads with known intervals/demands.
+Users' power management needs are increasing with greater scope and higher granularity, focused on containerized applications using power profiles individually by core and/or application. Among users' needs, we can highlight the control of acceptable frequency ranges (minimum and maximum frequency) per core, the behavior of the core in this range (governor), which power levels (C-States) a given core can access, as well as the behavior of the system in the face of workloads with known intervals/demands.
 
-By controlling CPU performance states (P-States) and CPU idle states (C-States), the tool allows each core to be individually controlled according to the needs of each application's workload. Below, there is a study about Kubernetes Power Manager requirements, components, use cases, operation and impacts on StarlingX Platform.
+By controlling CPU performance states (P-States) and CPU idle states (C-States), the tool allows each core to be individually controlled according to the needs of each application's workload. Below, there is a deep dive Kubernetes Power Manager requirements, components, use cases, operation and impacts on StarlingX Platform.
 
 ## Components
 
@@ -127,17 +127,17 @@ Second step: deploy the *pod_spec.yaml*. Fragment to be deployed:
 
 ## Operation
 
-The Kubernetes Power Manager StarlingX app, when disabled, does not offer any change in StarlingX standard behavior (keeping the system running at maximum performance the entire time). When activated, however, the power management system allows the user to apply power settings as needed under conditions described below.
+The Kubernetes Power Manager StarlingX app, when disabled, does not affect the StarlingX standard behavior (keeping the system running at maximum performance the entire time). When activated, however, the power management system allows the user to apply power settings as needed under conditions described below.
 
-The power manager system is based on four standard power profiles and possible user-customized profiles. The default profiles *performance*, *balanced-performance*, *balanced-power* and *power* are automatically configured during the installation process. Whenever a certain application needs high performance, for example, the power profile *performance* must be declared in its deployment file. The power manager, in turn, configures the profile on the CPU(s) assigned by Kubernetes to the Pod. It is up to the user to create new profiles as needed. All cores not assigned to a Pod, or idle, will have their power profile set to wide frequency (minimum equals the minimum supported by the processor and maximum equals the maximum supported), as currently occurs in the system without power control.
+The power manager system is based on four standard power profiles and possible user-defined profiles. The default profiles *performance*, *balanced-performance*, *balanced-power* and *power* are automatically configured during the installation process. Whenever a certain application needs high performance, for example, the power profile *performance* must be declared in its deployment file. The power manager, in turn, configures the profile on the CPU(s) assigned by Kubernetes to the Pod. It is up to the user to create new profiles as needed. All cores not assigned to a Pod, or idle, will have their power profile set to wide frequency (minimum equals the minimum supported by the processor and maximum equals the maximum supported), as currently occurs in the system without power control.
 
 The user is free to change the C-States individually, indicating which states a certain core can assume, or by group, indicating which states the cores of a certain power profile can assume. All the functionalities accessible to the user can be controlled by applying appropriate yaml files. It is important to note that the user is free to modify the power settings of the cores intended for system support (platform cores), but all these settings are overwritten during the lock/unlock process, to maintain the integrity of the system.
 
 After installing the Kubernetes Power Manager StarlingX app, it is necessary to enable it on the desired hosts by setting the label *power-management=enabled*, which triggers the removal of the limitation of C-State C0 on nodes where the worker function is present.
 
-## End-user impacts
+## Usage Impact
 
-Some SysInv/Horizon commands were deprecated with Kubernetes Power Manager integration (see all user configurable parameters on [Host CPU MHz Parameters Configuration](https://docs.starlingx.io/node_management/kubernetes/host-cpu-mhz-parameters-configuration-d9ccf907ede0.html)).
+With integrating Kubernetes Power Manager some SysInv/Horizon commands got deprecated starting with the 9.0 release of StarlingX (see all user configurable parameters on [Host CPU MHz Parameters Configuration](https://docs.starlingx.io/node_management/kubernetes/host-cpu-mhz-parameters-configuration-d9ccf907ede0.html)).
 
 ## Performance Impact
 
@@ -151,9 +151,11 @@ The exact performance impact will depend on several factors such as workload cha
 
 # Conclusion
 
-In conclusion, with the ability to collect and publish power data and metrics, StarlingX takes a significant step forward in providing users with valuable insights into their energy usage patterns, contributing to more informed decision-making. The introduction of the Kubernetes Power Manager feature enables the system to optimize power usage according to user needs and workload characteristics. This feature offers various capabilities, including the ability to assign power profiles on a per-core or per-application basis, control frequency ranges for individual cores, govern core behavior within these ranges, specify which power levels (C-States) a particular core can access, and determine system behavior in response to workloads with known intervals or demands. Throughout this blog post, we've explored common use cases where the Kubernetes Power Manager can be advantageous, along with considerations regarding its operation and impacts on the platform.
+Throughout this blog post, we've explored common use cases where the Kubernetes Power Manager can be advantageous, along with considerations regarding its operation and impacts on the platform.
 
-For further information about the features, please refer to the documentation provided below:
+In conclusion, with the ability to collect and publish power data and metrics, StarlingX takes a significant step forward in providing users with valuable insights into their energy usage patterns, contributing to more informed decision making. The introduction of the Kubernetes Power Manager feature enables the system to optimize power usage according to user needs and workload characteristics. This feature offers various capabilities, including the ability to assign power profiles on a per-core or per-application basis, control frequency ranges for individual cores, govern core behavior within these ranges, specify which power levels (C-States) a particular core can access, and determine system behavior in response to workloads with known intervals or demands.
+
+For further information about the features, check out the project documentation:
 
 - [Kubernetes Power Manager](https://github.com/intel/kubernetes-power-manager)
 - [Configurable Power Manager](https://docs.starlingx.io/node_management/kubernetes/configurable-power-manager-04c24b536696.html)
