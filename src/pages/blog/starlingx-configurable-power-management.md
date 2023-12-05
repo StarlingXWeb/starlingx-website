@@ -13,7 +13,7 @@ Introducing Power Metrics and Power Manager apps on StarlingX 9.0 <!-- more -->
 
 StarlingX has made significant strides in enhancing its power metrics and power management capabilities. While previous versions had some limitations in this area, the latest updates have introduced more comprehensive features, allowing the collection of power data and individualized control of CPUs/cores power profiles. 
 
-Understanding how and how much energy is being used by the platform and applications is a key factor. In StarlingX, we're introducing a new app called *power-metrics* that collects and sends power data. Another app, called *kubernetes-power-manager*, encapsulates [Kubernetes Power Manager](https://github.com/intel/kubernetes-power-manager), a Kubernetes Operator designed to expose and utilize the power control technologies present in some processors in a Kubernetes cluster.
+Understanding how and how much energy is being used by the platform and applications is a key factor. In StarlingX, we're introducing a new app called *power-metrics* that collects and sends power data. Another app, called *kubernetes-power-manager*, encapsulates [Kubernetes Power Manager](https://github.com/intel/kubernetes-power-manager), a Kubernetes Operator designed to expose and utilize the power control technologies present in Intel processors within a Kubernetes cluster.
 
 # Power Metrics
 
@@ -43,7 +43,7 @@ The raw data can be better visualized with a dashboard, as the example below.
 
 # Kubernetes Power Manager 
 
-Users' power management needs are increasing with greater scope and higher granularity, focused on containerized applications using power profiles individually by core and/or application. Among users' needs, we can highlight the control of acceptable frequency ranges (minimum and maximum frequency) per core, the behavior of the core in this range (governor), which power levels (C-States) a given core can access, as well as the behavior of the system in the face of workloads with known intervals/demands.
+Users' power management needs are increasing with greater scope and higher granularity, using power profiles individually by core and/or application. Among users' needs, we can highlight the control of acceptable frequency ranges (minimum and maximum frequency) per core, the behavior of the core in this range (governor), which power levels (C-States) a given core can access, as well as the behavior of the system in the face of workloads with known intervals/demands.
 
 By controlling CPU performance states (P-States) and CPU idle states (C-States), the tool allows each core to be individually controlled according to the needs of each application's workload. Below, there is a deep dive Kubernetes Power Manager requirements, components, use cases, operation and impacts on StarlingX Platform.
 
