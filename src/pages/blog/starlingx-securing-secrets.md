@@ -7,7 +7,6 @@ category:
   - label: Features & Updates
     id: category-A7fnZYrE1
 ---
-Learn more about O-RAN O2 Application in the StarlingX 8.0 release. <!-- more -->
 
 TLS encryption keys, digital certificates, and authorization tokens all depend upon a root of trust. But what happens when that root is rotten? While a “root of trust” sounds impressive, it’s really no more than a glorified password, often stored as a plain-text file on a hard disk. Even if the file itself is encrypted, it’s still vulnerable to insider attacks or code injection threats. (And, no, using an encryption service like HashiCorp Vault doesn’t automatically protect you, since the passphrase for that service is just as likely to reside in a plain-text file somewhere.)
  
