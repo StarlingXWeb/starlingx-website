@@ -57,9 +57,9 @@ To know more about FluxCD visit the project's [official website](https://fluxcd.
 
 ### Via FluxCD resources
 
-While the StarlingX platform does not have the FluxCD CLI, it does have its
-resources. An application can be easily deployed and managed by means of the
-resources made available by Flux. For a list of all available Flux resources,
+Tthe StarlingX platform provides access to FluxCD resources without direct access
+ to its CLI, which allow you to easily deploy and manage your
+applications. For a list of all available Flux resources,
 refer to the [official documentation](https://fluxcd.io/flux/components/).
 
 There are many ways of deploying an application using Flux. In this demonstration,
@@ -68,7 +68,7 @@ I will deploy the demo app by creating a Source Controller and a Helm Controller
 #### Source Controller
 
 The Source Controller is a FluxCD component responsible for providing a common
-interface for the artifact acquisition.
+interface for artifact acquisition.
 
 FluxCD offers 5 types of Source Controllers:
 
@@ -101,7 +101,7 @@ EOF
 ~$ kubectl apply -f gitrepository.yaml
 ```
 
-The command above will create a GitRepository resource called poc-starlingx that
+The command above creates a GitRepository resource called poc-starlingx that
 contains the contents of https://github.com/bmuniz-daitan/poc-starlingx-messages.git
 
 ```shell
@@ -118,7 +118,7 @@ releases in a declarative way. The resource HelmRelease will define the desired
 state of a Helm release, and based on actions upon this resource (creation,
 deletion or mutation) the controller will perform Helm actions.
 
-To deploy the demo app, I will execute the following commands:
+To deploy the demo app, I execute the following commands:
 
 ```shell
 ~$ cat <<EOF > helmrelease.yaml
@@ -159,8 +159,8 @@ EOF
 ~$ kubectl apply -f helmrelease.yaml
 ```
 
-The `kubectl` command above will create two resources. First, it will create a
-HelmChart resource that will hold the Helm Chart itself that will be loaded from
+The `kubectl` command above creates two resources, first, a
+HelmChart resource that holds the Helm Chart itself, which is loaded from
 the GitRepository.
 
 ```shell
@@ -171,9 +171,9 @@ default-poc-starlingx   ./helm-chart   1.5.2     GitRepository   poc-starlingx  
 
 ```
 
-After the HelmChart resource is successfully created, it will create the
-HelmRelease for the deployment of the application with the values informed
-inside the helmrelease.yaml file.
+After the HelmChart resource is successfully created, it moves on to create the
+HelmRelease for the deployment of the application with the values defined in
+the helmrelease.yaml file.
 
 ```shell
 ~$ kubectl get helmreleases
@@ -204,11 +204,11 @@ replicaset.apps/poc-starlingx-5df9c9947f   1         1         1       4m15s
 
 #### Modifying the HelmRelease
 
-As I said before, actions upon the HelmRelease will cause the controller to
-perform Helm actions on the deployment. So you can see these type of actions
+As I said before, actions upon the HelmRelease resource cause the controller to
+perform Helm actions on the deployment. So you can see these type of actions,
 let's modify a value on the HelmRelease file and see what happens.
 
-I will change the value of `replicas` from 1 to 5, this value can be found in
+First, I change the value of `replicas` from 1 to 5, this value can be found in
 `spec.values.kube.replicas` inside the `helmrelease.yaml` file:
 
 ```shell
@@ -220,8 +220,8 @@ kube:
 
 ```
 
-I will, then, run `kubectl apply -f helmrelease.yaml`. A message saying that the
-HelmRelease was configured will be given.
+Then I run the `kubectl apply` command again, and wait for the command line to
+to show that the HelmRelease resource was configured.
 
 ```shell
 ~$ kubectl apply -f helmrelease.yaml
@@ -245,24 +245,26 @@ poc-starlingx-5df9c9947f-rhjjs   1/1     Running   0          17s
 
 #### Additional resources
 
-On the [FluxCD official documentation](https://fluxcd.io/flux/) you can find
-some others resources that Flux provides, that may be better suited for your
-specific use case. For example, another resource available in flux that can be used
-is the `kustomization`. This resource is responsible for defining a pipeline
+In the [FluxCD official documentation](https://fluxcd.io/flux/), you can find
+further resources that Flux provides, which may be better suited for your
+specific use case, such as `kustomization`.
+This resource is responsible for defining a pipeline
 for fetching, decrypting, building, validating and applying kustomize overlays
 or plain Kubernetes manifests.
 
-As I said before, FluxCD allows your application to be deployed in many different
+As a summary, FluxCD allows you to deploy your application in many different
 ways. It is up to you to evaluate the best resources and how to structure them
 so your application can make the most of what FluxCD has to offer.
 
 ## Conclusion
 
 You have just learned how to make use of the resources from FluxCD, made
-available on the StarlingX platform, to deploy, manage and keep the release in
-sync with the source. FluxCD offers much more than it was shown here, make sure
-to visit the [official website](https://fluxcd.io) to learn more about all the
-solutions that FluxCD offers.
+available on the StarlingX platform, to deploy your containerized application.
+For more information about FluxCD, please visit the [official project website](https://fluxcd.io).
 
 Next in this series, you will learn how to package and deploy your application
 as a StarlingX app and the benefits that this type of deployment offers.
+
+# About StarlingX
+
+If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io) for more information or [download the code](https://opendev.org/starlingx) and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
