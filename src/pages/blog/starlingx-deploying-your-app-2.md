@@ -27,7 +27,7 @@ is used to keep Kubernetes clusters in sync with configuration sources.
 
 In this example, I will be using StarlingX in a virtual All-In-One Simplex (AIO-SX) configuration.
 If you want to follow along, you can set up your environment by following
-the related [Starlingx automated install guide](https://docs.starlingx.io/deploy_install_guides/release/virtual/automated_install.html).
+the [Starlingx automated install guide](https://docs.starlingx.io/deploy_install_guides/release/virtual/automated_install.html).
 
 
 ## The Demo App
