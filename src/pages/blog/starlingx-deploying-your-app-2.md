@@ -47,7 +47,7 @@ repository as single source of truth for all of your configuration options, for 
 infrastructure and applications.
 
 FluxCD allows you to use GitOps practices, through a set of tools, to
-enable a reliable and automated approach of deploying and managing infrastructure
+enable a reliable and automated mechanism of deploying and managing infrastructure
 and applications, improving reproducibility and facilitating maintenance and
 scalability of your systems
 
