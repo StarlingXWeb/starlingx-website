@@ -21,7 +21,7 @@ In the first installment of this series, you learned how to deploy an applicatio
 on StarlingX using Helm. If you missed our first demonstration, I suggest you
 take a look at the [blog post](https://www.starlingx.io/blog/starlingx-deploying-your-app-1/).
 
-In this article, I will continue our deployment demonstrations, this time with
+In this article, I will continue demonstrating application deployment options, this time with
 focus on [FluxCD](https://fluxcd.io/), which is a continuous delivery tool that
 is used to keep kubernetes clusters in sync with configuration sources.
 
