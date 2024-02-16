@@ -7,7 +7,7 @@ category:
   - label: Features & Updates
 ---
 
-You as a StarlingX user can deploy your application in many ways on the
+The article is part of a [blog post series](https://www.starlingx.io/blog/starlingx-deploying-your-app-1/) that guides you through the various ways of deploying a containerized application on top of the StarlingX platform. As a reminder, the methods are the following:
 [Kubernetes cluster(s) that StarlingX manages](https://docs.starlingx.io/operations/k8s_cluster.html)
 :
 
