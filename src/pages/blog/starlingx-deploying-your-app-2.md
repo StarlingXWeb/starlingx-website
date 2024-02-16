@@ -39,7 +39,7 @@ more about the demo app, check out the
 
 ## GitOps and FluxCD
 
-One of the greatest benefits of using FluxCD resources, is the possibility to
+One of the greatest benefits of using FluxCD resources is the possibility to
 apply GitOps to your deployments. GitOps is a set of practices, such as version
 control, collaboration, compliance and continuous delivery, and apply them to
 your infrastructure to achieve a certain level of automation. GitOps uses a Git
