@@ -32,7 +32,7 @@ the [Starlingx automated install guide](https://docs.starlingx.io/deploy_install
 
 ## The Demo App
 
-I will use the same application demonstrated in the previous post. If you wish
+For consistency, I will use the same application as in the previous post. To learn
 to know more about the demo app, please visit the
 [demo app repository](https://github.com/bmuniz-daitan/poc-starlingx-messages)
 
