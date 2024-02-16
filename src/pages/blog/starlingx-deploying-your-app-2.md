@@ -51,7 +51,7 @@ enable a reliable and automated mechanism of deploying and managing infrastructu
 and applications, improving reproducibility and facilitating maintenance and
 scalability of your system.
 
-To know more about FluxCD visit the [official website](https://fluxcd.io).
+To know more about FluxCD visit the project's [official website](https://fluxcd.io).
 
 ## Deploying the Demo App
 
