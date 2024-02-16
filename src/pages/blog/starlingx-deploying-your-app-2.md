@@ -7,19 +7,15 @@ category:
   - label: Features & Updates
 ---
 
-The article is part of a [blog post series](https://www.starlingx.io/blog/starlingx-deploying-your-app-1/) that guides you through the various ways of deploying a containerized application on top of the StarlingX platform. As a reminder, the methods are the following:
-[Kubernetes cluster(s) that StarlingX manages](https://docs.starlingx.io/operations/k8s_cluster.html)
-:
+The article is part of a [blog post series](https://www.starlingx.io/blog/starlingx-deploying-your-app-1/)
+that guides you through the various ways of deploying a containerized application on
+top of the StarlingX platform. As a reminder, the methods are the following:
 
-- [with plain Kubernetes](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/) methods;
-- with [Helm](https://helm.sh/docs/intro/using_helm/#helm-install-installing-a-package);
-- with [Flux](https://fluxcd.io/); and finally
-- as a StarlingX Application, which benefits from tight integration with the
+- [Plain Kubernetes](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/) methods;
+- [Helm](https://helm.sh/docs/intro/using_helm/#helm-install-installing-a-package);
+- [FluxCD](https://fluxcd.io/); and finally
+- As a StarlingX Application, which benefits from tight integration with the
   [StarlingX system](https://opendev.org/starlingx/config).
-
-In the first installment of this series, you learned how to deploy an application
-on StarlingX using Helm. If you missed our first demonstration, I suggest you
-take a look at the [blog post](https://www.starlingx.io/blog/starlingx-deploying-your-app-1/).
 
 In this article, I will continue demonstrating application deployment options, this time with
 focus on [FluxCD](https://fluxcd.io/), which is a continuous delivery tool that
@@ -116,7 +112,10 @@ poc-starlingx   https://github.com/bmuniz-daitan/poc-starlingx-messages.git   49
 The Helm Controller is an operator that allows the management of Helm Chart
 releases in a declarative way. The resource HelmRelease will define the desired
 state of a Helm release, and based on actions upon this resource (creation,
-deletion or mutation) the controller will perform Helm actions.
+deletion or mutation) the controller will perform Helm actions. In this scenario,
+before the HelmRelease is created, it will create a resource HelmChart.
+The HelmChart is a FluxCD resource responsible for holding the Helm charts with the
+specific set of values defined by you.
 
 To deploy the demo app, I execute the following commands:
 
@@ -159,9 +158,8 @@ EOF
 ~$ kubectl apply -f helmrelease.yaml
 ```
 
-The `kubectl` command above creates two resources, first, a
-HelmChart resource that holds the Helm Chart itself, which is loaded from
-the GitRepository.
+As mentioned, the `kubectl` command above creates two resources, first, a
+HelmChart resource, which is loaded from the GitRepository.
 
 ```shell
 ~$ kubectl get helmcharts
