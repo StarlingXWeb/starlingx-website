@@ -23,7 +23,7 @@ take a look at the [blog post](https://www.starlingx.io/blog/starlingx-deploying
 
 In this article, I will continue demonstrating application deployment options, this time with
 focus on [FluxCD](https://fluxcd.io/), which is a continuous delivery tool that
-is used to keep kubernetes clusters in sync with configuration sources.
+is used to keep Kubernetes clusters in sync with configuration sources.
 
 In this example, I will be using a virtual All-In-One Simplex (AIO-SX) setup of
 StarlingX. If you want to follow along, you can install your own by following
