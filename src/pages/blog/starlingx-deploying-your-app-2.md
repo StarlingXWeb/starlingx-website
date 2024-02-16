@@ -46,7 +46,7 @@ your infrastructure to achieve a certain level of automation. GitOps uses a Git
 repository as single source of truth for all of your configuration options, for both
 infrastructure and applications.
 
-With the use of GitOps through FluxCD you have a set of tools that allows you to
+FluxCD allows you to use GitOps practices, through a set of tools, to
 enable a reliable and automated approach of deploying and managing infrastructure
 and applications, improving reproducibility and facilitating maintenance and
 scalability of your systems
