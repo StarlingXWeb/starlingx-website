@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Deploying your application to StarlingX with FluxCD
 author: Daniel Caires
-date: 2024-20-02T12:00:00.042Z
+date: 2024-02-20T12:00:00.042Z
 category:
   - label: Features & Updates
 ---
