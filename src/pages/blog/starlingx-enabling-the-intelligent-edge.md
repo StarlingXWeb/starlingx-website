@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Enabling the Intelligent Edge with StarlingX
 author: Warren Bayek
-date: 2024-08-01T16:58:05.627Z
+date: 2024-01-08T16:58:05.627Z
 category: 
   - label: Features & Updates
     id: category-A7fnZYrE1
