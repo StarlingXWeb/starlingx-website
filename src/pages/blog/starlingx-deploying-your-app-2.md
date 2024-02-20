@@ -30,13 +30,13 @@ the [Starlingx automated install guide](https://docs.starlingx.io/deploy_install
 
 For consistency, I will use the same application as in the previous post. To learn
 more about the demo app, check out the
-[demo app repository](https://github.com/bmuniz-daitan/poc-starlingx-messages)
+[demo app repository](https://github.com/bmuniz-daitan/poc-starlingx-messages).
 
 
 ## GitOps and FluxCD
 
 One of the greatest benefits of using FluxCD resources is the possibility to
-utilize GitOps methods to your deployments. GitOps is a set of practices, such as version
+utilize GitOps methods for your deployments. GitOps is a set of practices, such as version
 control, collaboration, compliance and continuous delivery, and apply them to
 your infrastructure to achieve a certain level of automation. GitOps uses a Git
 repository as single source of truth for all of your configuration options, for both
@@ -49,19 +49,17 @@ scalability of your system.
 
 To know more about FluxCD visit the project's [official website](https://fluxcd.io).
 
-## Deploying the Demo App
+## Deploying the Demo App via FluxCD resources
 
-### Via FluxCD resources
-
-Tthe StarlingX platform provides access to FluxCD resources without direct access
- to its CLI, which allow you to easily deploy and manage your
+The StarlingX platform provides access to FluxCD resources without direct access
+to its CLI, which allow you to easily deploy and manage your
 applications. For a list of all available Flux resources,
 refer to the [official documentation](https://fluxcd.io/flux/components/).
 
 There are many ways of deploying an application using Flux. In this demonstration,
 I will deploy the demo app by creating a Source Controller and a Helm Controller.
 
-#### Source Controller
+### Source Controller
 
 The Source Controller is a FluxCD component responsible for providing a common
 interface for artifact acquisition.
@@ -107,7 +105,7 @@ NAME            URL                                                           AG
 poc-starlingx   https://github.com/bmuniz-daitan/poc-starlingx-messages.git   49s   True
 ```
 
-#### Helm Controller
+### Helm Controller
 
 The Helm Controller is an operator that allows the management of Helm Chart
 releases in a declarative way. The resource HelmRelease will define the desired
@@ -200,7 +198,7 @@ replicaset.apps/poc-starlingx-5df9c9947f   1         1         1       4m15s
 
 ```
 
-#### Modifying the HelmRelease
+### Modifying the HelmRelease
 
 As I said before, actions upon the HelmRelease resource cause the controller to
 perform Helm actions on the deployment. So you can see these type of actions,
@@ -241,7 +239,7 @@ poc-starlingx-5df9c9947f-rhjjs   1/1     Running   0          17s
 
 ```
 
-#### Additional resources
+### Additional resources
 
 In the [FluxCD official documentation](https://fluxcd.io/flux/), you can find
 further resources that Flux provides, which may be better suited for your
