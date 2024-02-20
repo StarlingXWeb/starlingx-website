@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Securing Secrets in a StarlingX World 
 author: Luis Huapaya
-date: 2024-29-01T16:58:05.627Z
+date: 2024-01-29T16:58:05.627Z
 category: 
   - label: Features & Updates
     id: category-A7fnZYrE1
