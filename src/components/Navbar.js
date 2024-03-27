@@ -1,16 +1,17 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import logo from '../img/svg/logo.svg'
-import Menu from "../content/pages.json"
+/* eslint-disable */
+import React from "react";
+import { Link } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
+import logo from "../img/svg/logo.svg";
+import Menu from "../content/pages.json";
 
 const Navbar = class extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: false,
-      navBarActiveClass: '',
-    }
+      navBarActiveClass: "",
+    };
   }
 
   toggleHamburger = () => {
@@ -24,14 +25,14 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: '',
-            })
+              navBarActiveClass: "",
+            });
       }
-    )
-  }
+    );
+  };
 
   render() {
     return (
@@ -46,7 +47,7 @@ const Navbar = class extends React.Component {
               <Link to="/" title="Logo">
                 <img src={logo} alt="StarlingX" />
               </Link>
-              {/* Hamburger menu */}              
+              {/* Hamburger menu */}
             </div>
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -65,23 +66,27 @@ const Navbar = class extends React.Component {
                 {Menu.nav.map((data, index) => {
                   return (
                     <li key={index}>
-                      {data.link.match(/^https?:\/\//) ? 
-                        <OutboundLink href={data.link} target="_blank" rel="noopener noreferrer">{data.text}</OutboundLink>
-                        :
-                        <Link to={data.link}>
+                      {data.link.match(/^https?:\/\//) ? (
+                        <OutboundLink
+                          href={data.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           {data.text}
-                        </Link>
-                      }
-                    </li>                            
-                  )             
+                        </OutboundLink>
+                      ) : (
+                        <Link to={data.link}>{data.text}</Link>
+                      )}
+                    </li>
+                  );
                 })}
-              </ul>    
-            </div>        
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
-    )
+    );
   }
-}
+};
 
-export default Navbar
+export default Navbar;
