@@ -26,7 +26,7 @@ Sustainability has become a very important aspect of building and operating infr
 
 Security is always a priority for the StarlingX community. One of the related features that was added in the 9.0 release cycle is Partial Disk Encryption Support. This feature uses Linux Unified Key Setup (LUKS) to create a new encrypted filesystem automatically, where users can store sensitive files.
 
-StarlingX 9.0 also includes newer versions of open source projects that the platform integrates. This includes OpenStack Antelope, Kubernetes versions between v1.24 to v1.28 and further upgrades such as FEC operator 2.7.1, cert-manager v1.11.1, istio v1.19.4, and more.
+StarlingX 9.0 also includes newer versions of open source projects that the platform integrates. This includes OpenStack Antelope, Kubernetes versions between v1.24 to v1.27 and further upgrades such as FEC operator 2.7.1, cert-manager v1.11.1, istio v1.19.4, and more.
 
 For the complete list of updates and new features in StarlingX R9.0, check out the [release notes](https://docs.starlingx.io/releasenotes/index.html#release-notes) and the [project documentation](https://docs.starlingx.io/).
 
