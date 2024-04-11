@@ -32,4 +32,4 @@ StarlingX is designed for applications where critical systems need to co-exist w
  
 From connecting smartphones to connecting cars, StarlingX has a bright future in front of it. If you have an industry use case that you believe could benefit from StarlingX or if you just want to be part of a growing developer community that’s helping to build a better future, reach out on the [starlingx-discuss mailing list](https://lists.starlingx.io/mailman3/lists/starlingx-discuss.lists.starlingx.io/), or the [StarlingX General chat room on Matrix](https://matrix.to/#/#starlingx:opendev.org).
 
-Visit the StarlingX [website](https://www.starlingx.io) today for further information about the project, check out the [code](https://opendev.org/starlingx), or download the [latest image](https://mirror.starlingx.windriver.com/mirror/starlingx/release/) to try out the new features.
+Visit the StarlingX [website](https://www.starlingx.io) today for further information about the project, check out the [code](https://opendev.org/starlingx), or download the [latest image](http://mirror.starlingx.cengn.ca/mirror/starlingx/release/) to try out the new features.

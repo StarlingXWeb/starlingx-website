@@ -32,4 +32,4 @@ As in all release cycles, there are a few components that have new versions avai
 
 For the complete list of updates and new features in StarlingX R4.0, check out the [release notes](https://docs.starlingx.io/releasenotes/r4_release.html) and the [project documentation](https://docs.starlingx.io).
 
-Visit the StarlingX website today for further information about the project, check out the [code](https://opendev.org/starlingx), or download the [latest image](https://mirror.starlingx.windriver.com/mirror/starlingx/release/) to try out the new features.
+Visit the StarlingX website today for further information about the project, check out the [code](https://opendev.org/starlingx), or download the [latest image](http://mirror.starlingx.cengn.ca/mirror/starlingx/release/) to try out the new features.
