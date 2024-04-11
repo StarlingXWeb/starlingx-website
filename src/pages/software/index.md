@@ -22,7 +22,7 @@ intro:
     - title: Install the latest image
       link:
         text: mirror.starlingx.cengn.ca
-        url: http://mirror.starlingx.cengn.ca/mirror/starlingx/release/
+        url: https://mirror.starlingx.windriver.com/mirror/starlingx/release/
     - title: Get the source code
       link: 
         text: opendev.org/starlingx
