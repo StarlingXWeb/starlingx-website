@@ -21,7 +21,7 @@ intro:
   columns:
     - title: Install the latest image
       link:
-        text: mirror.starlingx.cengn.ca
+        text: mirror.starlingx.windriver.com
         url: https://mirror.starlingx.windriver.com/mirror/starlingx/release/
     - title: Get the source code
       link: 
