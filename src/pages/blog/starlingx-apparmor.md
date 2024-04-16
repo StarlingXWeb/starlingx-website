@@ -1,4 +1,3 @@
-
 ---
 templateKey: blog-post
 title: Securing application using AppArmor
