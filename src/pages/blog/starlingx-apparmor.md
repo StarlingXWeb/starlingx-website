@@ -13,7 +13,7 @@ Learn about securing end user’s hosted containers using AppArmor in the Starli
 AppArmor is a Linux kernel security module that confines programs to a limited set of resources. AppArmor restricts application pods run by the end users by limiting programs’ capabilities with per-program profiles. AppArmor plays a crucial role in mitigating container escape vulnerabilities by confining the actions of containerized processes within predefined security profiles. Further details can be found [here](https://docs.starlingx.io/security/kubernetes/about-apparmor-ebdab8f1ed87.html)
 
 # What can we do with AppArmor
-As an administrator, use AppArmor if you want to make sure that your application(pod/container) is using only intended host resources. Below are several reasons to use AppArmor.
+As an administrator, use AppArmor if you want to make sure that your application (pod/container) is using only intended host resources. Below are several reasons to use AppArmor.
 * Isolation and containment: Containers aim to isolate applications from each other and from the host system. AppArmor adds an extra layer of security by further isolating the containerized processes. It restricts the actions that containerized applications can perform, reducing the potential impact of security breaches or malicious activities within the container.
 * Defense-in-depth strategy: Security experts often recommend using multiple layers of security controls to protect systems and applications. By combining containerization with AppArmor, you create a defense-in-depth strategy that makes it more difficult for attackers to compromise your containerized applications. Even if a container escapes its confinement, AppArmor can prevent it from accessing sensitive resources on the host system.
 * Risk mitigation: No system is immune to security vulnerabilities or attacks. By proactively using security mechanisms like AppArmor in containers, you mitigate the risk of security breaches and minimize the potential impact of successful attacks. AppArmor adds an additional layer of defense, making it harder for attackers to exploit vulnerabilities in containerized applications.
@@ -47,7 +47,7 @@ Let's run below command to enable it.
 ```
 
 We will use nginx image as an example. 
-1. Create a file(nginx-profile) with below content. This profile denies everything. As the mode is 'complain', it will log the request but doesn't actually deny.
+1. Create a file (nginx-profile) with below content. This profile denies everything. As the mode is 'complain', it will log the request but doesn't actually deny.
 
 ```
 #include <tunables/global>
@@ -58,7 +58,7 @@ profile nginx-profile flags=(attach_disconnected, complain) {
 }
 ```
 
-2. apply the profile on the host using apparmor_parser
+2. Apply the profile on the host using apparmor_parser
 
 ```
 sudo apparmor_parser -q /etc/apparmor.d/nginx-profile
@@ -89,12 +89,12 @@ spec:
 ```
 
 
-5. Lets use aa-logprof now to update the profile
+5. Use aa-logprof now to update the profile
 
 ```
 aa-logprof -f <(sed 's/kernel: notice/kernel:/' < /var/log/kern.log)
 ```
-you will get prompts for the denied entris to update the profile, please accept.
+you will get prompts for the denied entries to update the profile, please accept.
 This would update the profile under '/etc/apparmor.d'. Below is an example profile
 generated for above webserver pod.
 ```
@@ -111,7 +111,7 @@ profile nginx-profile flags=(attach_disconnected, complain) {
 ```
 ## Use Security Profiles operator (SPO) to manage the AppArmor profiles
 
-Now we have the updated profile which will be used by the pods in enforced mode. We have a profile manager called Security Profiles operator (SPO) which can be used to manage the profiles accross the hosts. AppArmor profiles can be managed using SPO CRD, a user can load, update and delete a profile. SPO is an optional system application and you should install it by following [Install Security Profiles Operator](https://docs.starlingx.io/security/kubernetes/install-security-profiles-operator-1b2f9a0f0108.html)
+We have the updated profile which will be used by the pods in enforced mode. We have a profile manager called Security Profiles operator (SPO) which can be used to manage the profiles accross the hosts. AppArmor profiles can be managed using SPO CRD, a user can load, update and delete a profile. SPO is an optional system application and you should install it by following [Install Security Profiles Operator](https://docs.starlingx.io/security/kubernetes/install-security-profiles-operator-1b2f9a0f0108.html)
 
 1. Apply the above created profile in complain mode. 
 ```yaml
@@ -127,7 +127,7 @@ spec:
   policy: |
     #include <tunables/global>
 
-	profile nginx-profile flags=(attach_disconnected) {
+    profile nginx-profile flags=(attach_disconnected) {
       #include <abstractions/base>
 
       /usr/bin/find mrix,
