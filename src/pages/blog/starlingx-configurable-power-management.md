@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: New Power Metrics and Power Management capabilities on StarlingX
 author: Davi Frossard
-date: 2023-11-16T11:14:00.000Z
+date: 2024-04-22T11:14:00.000Z
 category: 
   - label: Features & Updates
     id: category-A7fnZYrE1
