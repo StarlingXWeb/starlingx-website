@@ -163,4 +163,4 @@ For further information about the features, check out the project documentation:
 
 For the complete list of updates and new features in StarlingX 9.0, check out the [release notes](https://docs.starlingx.io/releasenotes) and the [project documentation](https://docs.starlingx.io).
 
-Visit the StarlingX [website](https://www.starlingx.io) today for further information about the project, check out the [code](https://opendev.org/starlingx), or download the [latest image](http://mirror.starlingx.cengn.ca/mirror/starlingx/release/) to try out the new features.
+Visit the StarlingX [website](https://www.starlingx.io) today for further information about the project, check out the [code](https://opendev.org/starlingx), or download the [latest image](https://mirror.starlingx.windriver.com/mirror/starlingx/release/) to try out the new features. If you are already evaluating or using the software please fill out the [user survey](https://www.surveymonkey.com/r/StarlingX) and help the community improve the project based on your feedback.
