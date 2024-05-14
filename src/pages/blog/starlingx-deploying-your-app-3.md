@@ -7,9 +7,18 @@ category:
   - label: Features & Updates
 ---
 
-Deploying your application as a StarlingX application is the highest level of integration you can achieve with the platform. It is a step up from deploying an app via [Helm](https://www.starlingx.io/blog/starlingx-deploying-your-app-1/) or [FluxCD](https://www.starlingx.io/blog/starlingx-deploying-your-app-2/). In this post, I will guide you through the process of deploying the [demo app](https://github.com/bmuniz-daitan/poc-starlingx-messages) used in previous deployment posts, along with some basic management commands <!- more ->.
+The article is part of a [blog post series](https://www.starlingx.io/blog/starlingx-deploying-your-app-1/) that guides you through the various ways of deploying a containerized application on top of the StarlingX platform. If you didn't read the previous blog posts, and have interest in reading them, I'll be linking them in the ending of the post. As a reminder, the methods are the following:
 
-It is worth noting that while deploying a containerized app as a StarlingX app has its advantages and is easy to do, transforming a containerized application into a StarlingX app might not be. Therefore, Helm and FluxCD options are more beginner-friendly and are the typical choice for developers and users who don't plan to create an application that will be officially bundled into the StarlingX project.
+- [Plain Kubernetes](https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/) methods;
+- [Helm](https://helm.sh/docs/intro/using_helm/#helm-install-installing-a-package);
+- [FluxCD](https://fluxcd.io/); and finally
+- As a StarlingX Application, which benefits from tight integration with the [StarlingX system](https://docs.starlingx.io/system_configuration/kubernetes/system-configuration-starlingx-application-package-manager.html).
+
+In this example, I will be using StarlingX in a virtual All-In-One Simplex (AIO-SX) and the release 8.0.0. as my configuration.
+
+Deploying your application as a StarlingX application is the highest level of integration you can achieve with the platform. It is a step up from deploying an app via Helm or [FluxCD]. In this post, I will guide you through the process of deploying the [demo app](https://github.com/bmuniz-daitan/poc-starlingx-messages) used in previous deployment posts, along with some basic management commands <!- more ->.
+
+It is worth noting that while deploying a containerized app as a StarlingX app has its advantages and is easy to do, transforming a containerized application into a StarlingX app might not be. “Thus, Helm and FluxCD options represent the standard approaches and are the typical choices for developers and users who do not intend to create an application officially bundled into the StarlingX project.”
  
 ## Prerequisites
 
@@ -17,10 +26,10 @@ This tutorial expects that your application will be containerized and with ready
 
 ## Integration with StarlingX System
 
-Some of the advantages of installing an app via system are:
+Some of the advantages of installing an app via StarlingX Application Package Manager are:
 
 * Once the application tar is built and validated, a user can install and use the application with just two commands, without the need for previous Kubernetes knowledge
-* The FluxCD orchestrates the application of helm charts in a specified order, thus guaranteeing the pods are available before continuing to apply the next helm charts. If you did this by hand, you'd need to verify manually that each pod was correctly applied before proceeding.
+* The FluxCD orchestrates the application of helm charts in a specified order, thus guaranteeing the pods are available before continuing to apply the next helm charts. If you did this without FluxCD (Integrated with the StarlingX Application Package Manager), you'd need to verify manually that each pod was correctly applied before proceeding.
 * You can do the helm-overrides easily and the system will guarantee the disponibility of the images in other hosts (ex: controller, worker and storage), in case they also need to deploy pods of your application.
 * The ApplicationFramework takes care of the needed validations to guarantee that an application is fully compatible with StarlingX.
 * An application can schedule specific Kubernetes commands to execute even before it is installed via the LifeCycle hooks.
@@ -28,7 +37,7 @@ Some of the advantages of installing an app via system are:
 
 ## Building the app
 
-For transforming the application from its helm-chart to a tar package that can be installed in a StarlingX Cluster, I'll use the [app-gen-tool](https://opendev.org/starlingx/app-gen-tool) terminal application.
+For transforming the application from its helm-chart to a tar package that can be installed in a StarlingX Cluster, I'll use the [app-gen-tool](https://opendev.org/starlingx/app-gen-tool) terminal application (now included in the StarlingX release 9.0.0).
 
 First I'll create a python venv and install the app-gen-tool via pip
 
@@ -38,7 +47,7 @@ source ./venv/bin/activate
 pip install git+https://opendev.org/starlingx/app-gen-tool.git#subdirectory=./stx-app-generator/stx-app-generator
 ```
 
-Next. I'll copy the "helm-chart" folder from the poc-starlingx to the directory I'm currently working on and create an empty file called `app_manifest.yaml`. Here's the folder structure till now: 
+Next. I'll copy the "helm-chart" folder from the poc-starlingx (alias to the application that we are building) to the directory I'm currently working on and create an empty file called `app_manifest.yaml`. Here's the folder structure till now: 
 
 ```
 .
@@ -61,8 +70,7 @@ description: A very very very basic messaging exchange app
 appVersion: 1.5.2
 ```
 
-and here's a look at the ```app_manifest.yaml``` after its configuration
-
+Here’s a look at the `app_manifest.yaml` after its configuration. This file contains information about how the app will be named in the StarlingX Application Package Manager, its version for the package manager, the Kubernetes namespace where it will be deployed, and the Helm charts it requires for installation. In this example, only one Helm chart was added, but other applications may contain more. The metadata section provides basic information about the purpose of the application. The content in this section doesn’t matter much as long as it is filled.
 ```sh
 (venv)~$: cat app_manifest.yaml
 
@@ -168,11 +176,11 @@ Alright! We can see the `poc-starlingx-app-1.0.0.tgz`. Now we only have to send 
 
 ## Installing the App
 
-After copying your app package to your StarlingX cluster(in my case a virtual AIO-SX, we can now proceed to install it. But before installing it, please guarantee that your platform-integ-apps application is installed.
+After copying your app package to your StarlingX cluster, we can now proceed to install it. But before installing it, please guarantee that your platform-integ-apps application is installed.
 
 ```
 source /etc/platform/openrc
-system application-show platform-integ-apps | grep applied 
+system application-show platform-integ-apps | grep applieed 
 ```
 if the following output is:
 ```
@@ -248,3 +256,11 @@ In some cases, You'll in the sysinv.log that the application of a pod got create
 kubectl logs podname -n namespace
 ```
 also note that the infos like the prefix of the pod and the namespace where It will be created and running are written in the helm chart of the application.
+
+**Please note** that troubleshooting can get more complicated than this, but I think these are useful commands that help to adress and identify common installation problems.
+
+# Conclusion 
+With this post, we finish our StarlingX Application Deployment series consisting of three blog posts. If you are interested, check out the [blog post 1](https://www.starlingx.io/blog/starlingx-deploying-your-app-1) and the [blog post 2](https://www.starlingx.io/blog/starlingx-deploying-your-app-2/). If you have some suggestion or comment about the post, fell free to contact me trough my e-mail tomas.barros@encora.com
+
+# About StarlingX
+If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io/) for more information or download the code and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
