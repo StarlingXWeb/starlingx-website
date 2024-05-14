@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Deploying your application  as a StarlingX Application
+title: Deploying your application  as a StarlingX Application III
 author: Tomás N. P. Barros
 date: 
 category:
