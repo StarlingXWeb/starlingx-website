@@ -16,13 +16,13 @@ The article is part of a [blog post series](https://www.starlingx.io/blog/starl
 
 In this example, I will be using StarlingX in a virtual All-In-One Simplex (AIO-SX) and the release 8.0.0. as my configuration.
 
-Deploying your application as a StarlingX application is the highest level of integration you can achieve with the platform. It is a step up from deploying an app via Helm or [FluxCD]. In this post, I will guide you through the process of deploying the [demo app](https://github.com/bmuniz-daitan/poc-starlingx-messages) used in previous deployment posts, along with some basic management commands <!- more ->.
+Deploying your application as a StarlingX application is the highest level of integration you can achieve with the platform. It is a step up from deploying an app via Helm or [FluxCD]. In this post, I will guide you through the process of deploying the [demo app](https://github.com/bmuniz-daitan/poc-starlingx-messages) used in our previous deployment posts, along with some basic management commands <!- more ->.
 
 It is worth noting that while deploying a containerized app as a StarlingX app has its advantages and is easy to do, transforming a containerized application into a StarlingX app might not be. “Thus, Helm and FluxCD options represent the standard approaches and are the typical choices for developers and users who do not intend to create an application officially bundled into the StarlingX project.”
  
 ## Prerequisites
 
-This tutorial expects that your application will be containerized and with ready helm-charts. If this is not your case, please read the blog post already mentioned about Helm.
+This tutorial expects that your application will be containerized and with ready helm-charts. If this is not your case, please consult the helm doccumentation.
 
 ## Integration with StarlingX System
 
@@ -154,7 +154,10 @@ output
     └── poc-starlingx-app-1.0.0.tgz
 ``` 
 
-As you can see, the helm chart package was packed under the charts subdirectory. The next step would be to configure the plugins, since this is a complicated process and is application-dependent, we recommend you to read the README.MD of the app-gen-tool and reaching for help with the community in the StarlingX mail lists or in the matrix chat.
+As you can see, the helm chart package was packed under the charts subdirectory. The next step would be to configure the plugins and change the static-overrides, since configuring the plugins is a complicated process and is application-dependent, we recommend you to read the old wiki and reaching for help with the community in the StarlingX mail lists or in the matrix chat. Some of relevant links to understand the big picture about the stx-applications:
+* [how to add a new Armada app] (https://wiki.openstack.org/wiki/StarlingX/Containers/Application/Archive/ConvertingArmadaAppsToFluxCD)
+* [Armada app code structure] (https://wiki.openstack.org/wiki/StarlingX/Containers/Application/Archive/ArmadaAppCodeStructure)
+* [converting from Armada apps to FluxCD](https://wiki.openstack.org/wiki/StarlingX/Containers/Application/Archive/ConvertingArmadaAppsToFluxCD)
 
 Please, pay attention to correctly configure the files in `./output/poc-starlingx-app/plugins/k8sapp_poc_starlingx_app`:
 * **helm/poc_starlingx.py**: this file is responsible for integrating the application with the StarlingX system.
