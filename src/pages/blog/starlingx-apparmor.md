@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Securing application using AppArmor
+title: Securing Applications Using AppArmor
 author: Jagatguru Mishra
 date: 2024-05-20T01:32:05.627Z
 
