@@ -133,7 +133,7 @@ profile nginx-profile flags=(attach_disconnected, complain) {
 The updated profile will be used by the pods in enforced mode. Security Profiles operator (SPO) is a profile manager, which can be used to manage the profiles accross the hosts. AppArmor profiles can be managed using SPO CRD, a user can load, update and delete a profile. SPO is an optional system application and you can install it by following [Install Security Profiles Operator](https://docs.starlingx.io/security/kubernetes/install-security-profiles-operator-1b2f9a0f0108.html)
 
 
-1. Apply the above created profile in complain mode. 
+1. Apply the above created profile in enforce mode. 
 ```yaml
 vi nginxProfile.yaml
 ---
@@ -160,7 +160,7 @@ spec:
 ```
 kubectl apply -f nginxProfile.yaml
 ```
-3. Verify if AppArmor profile is loaded in enforced mode.
+3. Verify if AppArmor profile is loaded in enforce mode.
 
 ```
 sysadmin@controller-0:~$ aa-status
