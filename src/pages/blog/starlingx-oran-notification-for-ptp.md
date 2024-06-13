@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: ORAN Notification for Monitoring System Timing Synchronization
 author: Cole Walker
-date: 2024-03-24
+date: 2024-06-24
 category:
   - label: Features & Updates
     id: category-A7fnZYrE1
@@ -11,7 +11,7 @@ category:
 In previous blog posts, we have explored how Precision Time Protocol is supported and configured in
 StarlingX. Once a system is configured to synchronize time from a local GNSS source or external PTP
 Grandmaster clock and workloads are deployed that depend on precise timing, a new challenge presents
-itself: how can these workloads determine if the timing state healthy and accurate?
+itself: how can these workloads determine if the timing state is healthy and accurate?
 
 On a single StarlingX AIO-SX system, there may be multiple ptp4l and ts2phc instances writing time
 to various PHCs, a phc2sys instance keeping the realtime system clock in sync, multiple GNSS inputs
@@ -20,7 +20,7 @@ significant impacts to the overall precision of the system timing and may requir
 act in response. For example, a 5G radio unit may be configured to stop transmitting until time
 synchronization is restored.
 
-Available in the 9.0 StarlingX release, the ptp-notification application to enables user workloads
+Available starting from the 9.0 StarlingX release, the ptp-notification application to enables user workloads
 to query and be notified of changes to the system timing state. This containerized application
 provides an API that can be used by other applications to query the current synchronization state of
 the various PTP components, as well as providing the ability to subscribe to and receive push
@@ -35,9 +35,9 @@ website](https://orandownloadsweb.azurewebsites.net/specifications).
 # The ptp-notification application
 The ptp-notification application is a system-managed application that is packaged with StarlingX. It
 can be deployed and configured using the various "system application-*" commands. Installing
-ptp-notification is simple process of labelling the specific hosts that should run the application,
+ptp-notification is a simple process of labelling the specific hosts that should run the application,
 uploading the application tarball, specifying a few configuration values and then deploying the
-application. Complete steps for this procedure can be found in the [documentation](https://docs.
+application. Complete steps for this procedure can be found in the [StarlingX PTP documentation](https://docs.
 starlingx.io/admintasks/kubernetes/install-ptp-notifications.html)
 
 The application consists of three logical functions for handling the tracking of timing state, the
@@ -46,12 +46,12 @@ delivery of push notifications and the registration of subscribers for notificat
 ![alt text](/img/ptp-notification-functions.png)
 
 
-# The ptp-notification API
+## The ptp-notification API
 Ptp-notification provides a REST API for user applications to interact with. In the StarlingX
 documentation, it is referred to as the "v2 API", which implements the O-RAN standard. The v1 API
 predates the O-RAN standard and is not recommended for use in new deployments.
 
-The v2 API documentation is available
+Check out the [v2 API](https://docs.starlingx.io/api-ref/ptp-notification-armada-app/api_ptp_notifications_definition_v2.html) documentation for more details.
 [here](https://docs.starlingx.io/api-ref/ptp-notification-armada-app/api_ptp_notifications_definition_v2.html).
 
 The main functions of the API are the following:
@@ -105,7 +105,7 @@ A successful API request returns a JSON response with the state of the component
 
 ### Create and manage subscriptions
 
-User applications can be configured to subscribe to and receive push notification from the
+User applications can be configured to subscribe to and receive push notifications from the
 ptp-notification app.
 
 To create a subscription:
@@ -157,15 +157,13 @@ notification:
 
 # The ptp-notification sidecar
 
-In order to simplify use of the ptp-notification API, StarlingX provides the "notificationclient"
+In order to simplify the use of the ptp-notification API, StarlingX provides the "notificationclient"
 container image which can be deployed as a sidecar alongside user applications. User applications
 can then make their API requests via the notification client. The notification client container
 handles the process of locating the appropriate notification server and tracking active
 subscriptions for the user application.
 
-An example of integrating the notification client as a sidecar is available in the StarlingX
-documentation
-[here](https://docs.starlingx.io/guest_integration/kubernetes/integrate-application-with-notification-client-sidecar.html).
+An example of integrating the notification client as a sidecar is available in the [related StarlingX documentation](https://docs.starlingx.io/guest_integration/kubernetes/integrate-application-with-notification-client-sidecar.html).
 
 A StarlingX system running the ptp-notification application and client sidecar allows user
 applications to have clear and up-to-date picture of the system's timing synchronization state. This
@@ -178,7 +176,7 @@ phc2sys, which allows multiple clock sources to synchronize the system clock.
 If you would like to learn more about the project and get involved check the 
 [website](https://www.starlingx.io) for more information or 
 [download the code](https://opendev.org/starlingx) and start to experiment with the platform.
-
+If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
 
 
 
