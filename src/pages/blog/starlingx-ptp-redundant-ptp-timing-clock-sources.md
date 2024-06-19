@@ -2,16 +2,16 @@
 templateKey: blog-post
 title: Redundant PTP timing clock sources
 author: Andre Mauricio Zelak
-date: 2024-03-25
+date: 2024-07-22
 category:
   - label: Features & Updates
     id: category-A7fnZYrE1
 ---
 In the rapidly evolving telecommunications landscape, 5G stands as a beacon of innovation, promising unparalleled connectivity and transformative capabilities. With its potential to revolutionize industries ranging from healthcare to manufacturing, the rollout of 5G networks has accumulated immense attention and anticipation. Beneath the surface of this technology lies an indispensable element, the Precision Time Protocol (PTP).
 
-And as part of the constant effort to meet the evolving needs of telecommunications industry and to provide a more robust Precision Time Protocol (PTP) deployment, the StarlingX 9.0 introduces the High Availability feature, providing a way to sync multiple Physical Hardware Clock (PHC) in a N+1 redundancy configuration.
+And as part of the constant effort to meet the evolving needs of telecommunications industry and to provide a more robust Precision Time Protocol (PTP) deployment, StarlingX 9.0 introduces the High Availability (HA) feature, providing a way to sync multiple Physical Hardware Clock (PHC) in a N+1 redundancy configuration.
 
-The feature allows, in a t-GM application, multiple GPS clock sources connected, and in a t-BC application, multiple PTP sources connected to redundant NICs, provinding protection against failtures.
+The feature allows, in a t-GM [Grandmaster](https://web.archive.org/web/20100527161310/http://ieee1588.nist.gov/terms.htm) application, multiple GPS clock sources connected, and in a t-BC [Boundary Clock](https://web.archive.org/web/20100527161310/http://ieee1588.nist.gov/terms.htm) application, multiple PTP sources connected to redundant NICs, providing protection against failures.
 
 In the N+1 redundancy configuration, the available clock is selected active and commands the system clock and the downstream PTP clock reference. The remaining clock sources are kept ready to become active when required.
 
@@ -21,9 +21,9 @@ If you're interested in learning more about the initial use cases and implementa
 
 # Configuration
 
-As pointed out in ["A Deep Dive Into the Precision Time Protocol Configuration Enhancements"](https://www.starlingx.io/blog/starlingx-ptp-multi-instance-features/), when a StarlingX host is configured as a PTP node,  there are two applications used: ptp4l and phc2sys. The ptp4l is responsible for running the Best Master Clock Algorithm (BMCA) and to desciplin the oscilator on the NIC according to the incomming PTP timestamps. And the phc2sys reads the time from a disciplined NIC and synchronizes the system clock with it.
+As pointed out in the ["A Deep Dive Into the Precision Time Protocol Configuration Enhancements"](https://www.starlingx.io/blog/starlingx-ptp-multi-instance-features/) article, when a StarlingX host is configured as a PTP node,  there are two applications used: ptp4l and phc2sys. ptp4l is responsible for running the Best Master Clock Algorithm (BMCA) and to discipline the oscillator on the NIC according to the incoming PTP timestamps. And phc2sys reads the time from a disciplined NIC and synchronizes the system clock with it.
 
-Up to StarlingX version 8.0, the Linux real-time system clock was synchronized to only a single time source (PHC) through static configuration of the phc2sys instance. From release 9.0 and up, when the HA feature enabled, the phc2sys configuration will accept association to multiple ptp4l instances, providing redundancy protection to the clock sources.
+Up to StarlingX version 8.0, the Linux real-time system clock was synchronized to only a single time source (PHC) through static configuration of the phc2sys instance. From release 9.0 and up, when the HA feature is enabled, the phc2sys configuration will accept association to multiple ptp4l instances, providing redundancy protection to the clock sources.
 
 When the HA feature enabled, the real-time system clock is synchronized with the best time source available. The operator configure the following clock status values to control the source selection algorithm:
 * GM clock class
@@ -77,16 +77,20 @@ The "selected lower priority clock source" alarm raises when phc2sys is configur
 
 The "automatic source selection disabled" alarm raises when an operator locks the system real-time clock to an interface. See "status & debuging" below.
 
-The "selected new active source" event raises when phc2sys switches between sources for any reason.
+The "selected new active source" event is raised when phc2sys switches between sources for any reason.
 
-The ["StarlingX Documentation"](https://docs.starlingx.io/system_configuration/kubernetes/configuring-ptp-service-using-the-cli.html#ptp-instance-configuration) contains additional information about these alarms and also how to investigate them.
+The [PTP instance configuration](https://docs.starlingx.io/system_configuration/kubernetes/configuring-ptp-service-using-the-cli.html#ptp-instance-configuration) section in the StarlingX documentation contains additional information about these alarms and how to investigate them.
 
-# status & debuging
+# Status & debugging
 
 The HA feature provides an interface for maintenance, deemed for the host admin to retrieve status and control the clock list and selection. The admin can:
 * Display the current clock status, including all the values used by the clock selection algorithm;
-* List the eligible for selection clocks;
+* List the eligible clocks for selection;
 * Disable and re-enable a clock source;
 * Lock to a single clock source and unlock.
 
 You can find more information about this feature in the ["StarlingX Documentation"](https://docs.starlingx.io/system_configuration/kubernetes/configuring-ptp-service-using-the-cli.html#ptp-instance-configuration).
+
+# About StarlingX
+
+If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io) for more information or [download the code](https://opendev.org/starlingx) and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
