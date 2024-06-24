@@ -31,7 +31,7 @@ mainpitch:
         distributed edge manageable, StarlingX provides a container-based
         infrastructure for edge implementations in scalable solutions that is
         ready for production now.
-  image: /img/StarlingX_Diagram_Distributed_Edge_Cloud_Native_v3.jpg
+  image: /img/StarlingX_Diagram_Distributed_Edge_Cloud_Native.jpg
   title: About StarlingX
 values:
   rows:
