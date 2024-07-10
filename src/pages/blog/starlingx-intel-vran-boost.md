@@ -31,7 +31,7 @@ The Intel vRAN Boost Kubernetes Operator is integrated in StarlingX as a system 
 
 A StarlingX application package is a compressed tarball containing a metadata.yaml file, a manifest.yaml, FluxCD manifest files, and a charts directory containing helm charts and a checksum.md5 file. The metadata.yaml file contains reference to the application name, version, references to StarlingX maintained docker images for Intel vRAN Boost Kubernetes Operator.
 
-The Intel vRAN Boost Kubernetes Operator application package is saved in StarlingX Operating System during system installation, but not applied by default. When system administrators plan to configure StarlingX Cloud Platform for vRAN application deployments, they can deploy the Intel vRAN Boost Kubernetes Operator system application by using `system` CLI commands. 
+The Intel vRAN Boost Kubernetes Operator application package is saved on the StarlingX system during installation, but not applied by default. When system administrators configure the StarlingX platform for vRAN application deployments, they can deploy the Intel vRAN Boost Kubernetes Operator application by using `system` CLI commands. 
 
 Please refer to the detailed [procedure for how to deploy and validate Intel vRAN Boost Kubernetes Operator](https://docs.starlingx.io/node_management/kubernetes/hardware_acceleration_devices/configure-sriov-fec-operator-to-enable-hw-accelerators-for-hosted-vran-containarized-workloads.html) in StarilngX documentation.
 
