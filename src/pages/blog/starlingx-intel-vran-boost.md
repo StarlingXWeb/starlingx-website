@@ -33,7 +33,7 @@ A StarlingX application package is a compressed tarball containing a metadata.ya
 
 The Intel vRAN Boost Kubernetes Operator application package is saved on the StarlingX system during installation, but not applied by default. When system administrators configure the StarlingX platform for vRAN application deployments, they can deploy the Intel vRAN Boost Kubernetes Operator application by using `system` CLI commands. 
 
-Please refer to the detailed [procedure for how to deploy and validate Intel vRAN Boost Kubernetes Operator](https://docs.starlingx.io/node_management/kubernetes/hardware_acceleration_devices/configure-sriov-fec-operator-to-enable-hw-accelerators-for-hosted-vran-containarized-workloads.html) in StarilngX documentation.
+Please refer to the detailed [procedure for how to deploy and validate Intel vRAN Boost Kubernetes Operator](https://docs.starlingx.io/node_management/kubernetes/hardware_acceleration_devices/configure-sriov-fec-operator-to-enable-hw-accelerators-for-hosted-vran-containarized-workloads.html) in the StarlingX documentation.
 
 ### Conclusion
 
