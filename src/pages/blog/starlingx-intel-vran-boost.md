@@ -37,7 +37,7 @@ Please refer to the detailed [procedure for how to deploy and validate Intel vRA
 
 ### Conclusion
 
-The integration of Intel vRAN Boost Kubernetes Operator in StarlingX provides a ready-made solution for vRAN deployments based on StarlingX Cloud Platform and 4<sup>th</sup> Gen Intel Xeon Scalable processors with Intel vRAN Boost. System administrators can manage the configurability of Intel vRAN Boost accelerator through Kubernetes native CRD APIs and can manage the accelerator’s resource allocation to the vRAN DU application workloads in container platform.
+The integration of Intel vRAN Boost Kubernetes Operator in StarlingX provides a ready-made solution for vRAN deployments based on the StarlingX distributed cloud platform and 4<sup>th</sup> Gen Intel Xeon Scalable processors with Intel vRAN Boost. System administrators can manage the configurability of Intel vRAN Boost accelerator through Kubernetes native CRD APIs and can also manage the accelerator’s resource allocation to the vRAN DU application workloads.
 
 For the complete list of updates and new features in StarlingX 9.0, check out the [release notes](https://docs.starlingx.io/releasenotes/index.html#release-notes) and the [project documentation](https://docs.starlingx.io/).
 
