@@ -21,7 +21,7 @@ Intel vRAN Boost Kubernetes Operator provides the ability to orchestrate, config
 - Configuring the accelerators as per vRAN deployment requirements.
 - Creating the Virtual Functions (VFs) from accelerator. 
 - Maintaining VFs as Kubernetes resources and manage the resource allocations to vRAN applications.
--	Provides user/admin interface access to the accelerator through Kubernetes Custom Resource (CRs) APIs.
+- Providing user/admin interface access to the accelerator through Kubernetes Custom Resource (CRs) APIs.
 - Operator is capable of managing the Accelerator resource in Secure boot environments as well.
 
 
