@@ -15,7 +15,7 @@ Intel vRAN Boost is an integrated vRAN Accelerator in [4th Gen Intel Xeon Scalab
 
 ### Intel vRAN Boost Kubernetes Operator 
 
-Intel vRAN Boost Kubernetes Operator provides the ability to orchestrate, configure and manage the Intel vRAN Boost integrated accelerator in latest 4th Generation Intel Xeon Scalable processors when deployed on a Kubernetes cluster(s). The Operator is backward compatible, it includes support for previous generations of Intel vRAN Accelerator ACC100 Adapter cards as well. The Operator is a state machine which configures the resources, monitors them, and acts autonomously based on the user interaction. Operators perform the functionality of
+Intel vRAN Boost Kubernetes Operator provides the ability to orchestrate, configure and manage the Intel vRAN Boost integrated accelerator in latest 4th Generation Intel Xeon Scalable processors when deployed on a Kubernetes cluster(s). The Operator is backward compatible, it includes support for previous generations of Intel vRAN Accelerator ACC100 Adapter cards as well. The Operator is a state machine which configures the resources, monitors them, and acts autonomously based on the user interaction. The Operator can perform the functionality of
 
 - Detecting and labeling the worker nodes which has accelerators within the Kubernetes cluster.
 - Configuring the accelerators as per vRAN deployment requirements.
