@@ -27,7 +27,7 @@ Intel vRAN Boost Kubernetes Operator provides the ability to orchestrate, config
 
  ### Intel vRAN Boost Kubernetes Operator integrated with StarlingX 9.0
 
-The Intel vRAN Boost Kubernetes Operator is integrated in StarlingX as a system application. With the [StarlingX Application Package Manager](https://docs.starlingx.io/system_configuration/kubernetes/system-configuration-starlingx-application-package-manager.html), the Intel vRAN Boost Kubernetes Operator application’s lifecycle can be managed, including managing over-rides to the helm charts for controlling the operator behavior. The latest version of the Operator supported in StarlingX 9.0 is v2.9.0.
+The Intel vRAN Boost Kubernetes Operator is integrated in StarlingX as a system application. With the [StarlingX Application Package Manager](https://docs.starlingx.io/system_configuration/kubernetes/system-configuration-starlingx-application-package-manager.html), the Intel vRAN Boost Kubernetes Operator application’s lifecycle can be managed, including managing overrides to the helm charts for controlling the operator behavior. The latest version of the Operator supported in StarlingX 9.0 is v2.9.0.
 
 A StarlingX application package is a compressed tarball containing a metadata.yaml file, a manifest.yaml, FluxCD manifest files, and a charts directory containing helm charts and a checksum.md5 file. The metadata.yaml file contains references to the application name, version, as well as references to StarlingX maintained docker images for Intel vRAN Boost Kubernetes Operator.
 
