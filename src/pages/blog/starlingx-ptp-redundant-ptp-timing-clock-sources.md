@@ -9,7 +9,7 @@ category:
 ---
 In the rapidly evolving telecommunications landscape, 5G stands as a beacon of innovation, promising unparalleled connectivity and transformative capabilities. With its potential to revolutionize industries ranging from healthcare to manufacturing, the rollout of 5G networks has accumulated immense attention and anticipation. Beneath the surface of this technology lies an indispensable element, the Precision Time Protocol (PTP).
 
-And as part of the constant effort to meet the evolving needs of telecommunications industry and to provide a more robust Precision Time Protocol (PTP) deployment, StarlingX 9.0 introduces the High Availability (HA) feature, providing a way to sync multiple Physical Hardware Clock (PHC) in a N+1 redundancy configuration.
+And as part of the constant effort to meet the evolving needs of the telecommunications industry and to provide a more robust PTP deployment, StarlingX 9.0 introduces the High Availability (HA) feature, providing a way to sync multiple Physical Hardware Clock (PHC) in a N+1 redundancy configuration.
 
 The feature allows, in a t-GM [Grandmaster](https://web.archive.org/web/20100527161310/http://ieee1588.nist.gov/terms.htm) application, multiple GPS clock sources connected, and in a t-BC [Boundary Clock](https://web.archive.org/web/20100527161310/http://ieee1588.nist.gov/terms.htm) application, multiple PTP sources connected to redundant NICs, providing protection against failures.
 
@@ -35,7 +35,7 @@ When the HA feature enabled, the real-time system clock is synchronized with the
 * Frequency traceable
 * Time traceable
 
-These parameters set the threshold for a source to be eligible for use in setting the system real-time clock. For example, in a t-GM application, configuring 6 in the maximum local class makes only locked sources eligible for selection.
+These parameters set the threshold for a source to be eligible for use in setting the system's real-time clock. The network administrator can set a single or a set of parameters according to the network topology, clock source, and scenario. For example, in a t-GM application in which the StarlingX system is directly connected to redundant GPS clock sources, only the sources locked to the GPS signal present clock class 6, the remaining sources that aren't locked present clock class higher than 6 depending on the failure state. Configuring 6 in the maximum local class threshold makes only locked sources eligible for selection.
 
 The operator can also configure a clock priority to indicate a precedence, which is usefull when the sources are not equal in reliability. The clock priority is a tiebreaker for sources of equal quality. The higher priority clock is selected active over the lower one when both meet the requirements.
 
