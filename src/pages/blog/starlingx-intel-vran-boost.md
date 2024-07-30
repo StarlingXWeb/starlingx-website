@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: 4th Gen Intel Xeon Scalable Processor with Intel vRAN Boost support in StarlingX
 author: Balendu Mouli Burla
+date: 2024-07-30T01:32:05.627Z
 category: 
   - label: Features & Updates
 ---
