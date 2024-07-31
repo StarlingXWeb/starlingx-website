@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Redundant PTP timing clock sources
 author: Andre Mauricio Zelak
-date: 2024-07-22
+date: 2024-08-12T01:32:05.627Z
 category:
   - label: Features & Updates
     id: category-A7fnZYrE1
