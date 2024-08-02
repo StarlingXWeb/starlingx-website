@@ -13,30 +13,30 @@ The article is part of a [blog post series](https://www.starlingx.io/blog/starl
 - [FluxCD](https://fluxcd.io/); and finally
 - As a StarlingX Application, which benefits from tight integration with the [StarlingX system](https://docs.starlingx.io/system_configuration/kubernetes/system-configuration-starlingx-application-package-manager.html).
 
-In this example, I will be using StarlingX in a virtual All-In-One Simplex (AIO-SX) and the release 9.0.0 as my configuration.
+In this example, I will be using StarlingX **9.0** in a virtual All-In-One Simplex (AIO-SX) configuration.
 
-Deploying your application as a StarlingX application is the highest level of integration you can achieve with the platform. It is a "step up" from deploying an app via Helm or FluxCD. In this post, I will guide you through the process of deploying the [demo app](https://github.com/bmuniz-daitan/poc-starlingx-messages) used in the previous deployment posts, along with some basic management commands <!- more ->.
+Deploying your application as a StarlingX Application is the highest level of integration you can achieve with the platform. It is a "step up" from deploying an app via Helm or FluxCD. In this post, I will guide you through the process of deploying the [demo app](https://github.com/bmuniz-daitan/poc-starlingx-messages) used in the previous deployment posts, along with some basic management commands <!- more ->.
 
-It is worth noting that while deploying a containerized app as a StarlingX app has its advantages and is easy to do, transforming a containerized application into a StarlingX app might not be. Thus, the Helm and FluxCD options represent the standard approaches and are the typical choices for developers and users who do not intend to create an application officially bundled into the StarlingX project.
+It is worth noting that while deploying a containerized app as a StarlingX App has its advantages and is easy to do, transforming a containerized application into a StarlingX App might not be. Thus, the Helm and FluxCD options represent the standard approaches and are the typical choices for developers and users who do not intend to create an application officially bundled into the StarlingX project.
 
 ## Prerequisites
 
-This tutorial expects that your application will be containerized with helm-charts ready. If this is not your case, please consult the helm documentation.
+This tutorial expects that your application will be containerized with helm-charts already available. If this is not your case, please consult the helm documentation.
 
-## Integration with StarlingX System
+## Integration with the StarlingX System
 
 Some of the advantages of installing an app via StarlingX Application Package Manager are:
 
-* Once the application tar is built and validated, you can install and use the application with just two commands, without the need for previous Kubernetes knowledge
-* The FluxCD orchestrates the application of helm charts in a specified order, thus guaranteeing the pods are available before continuing to apply the next helm charts. If you did this without FluxCD (Integrated with the StarlingX Application Package Manager), you'd need to verify manually that each pod was correctly applied before proceeding.
+* Once the application tar is built and validated, you can install and use the application with just two commands, without the need for previous Kubernetes knowledge.
+* The FluxCD orchestrates the application of helm charts in a specified order, thus guaranteeing the pods are available before continuing to apply the next helm charts. If you did this without FluxCD (integrated with the StarlingX Application Package Manager), you'd need to verify manually that each pod was correctly applied before proceeding.
 * You can do 'helm-override' easily and the system will guarantee the availability of the images on other hosts (ie: controller, worker and storage), in case they also need to deploy pods of your application.
 * The Application Framework takes care of the needed validations to guarantee that an application is fully compatible with StarlingX.
 * An application can schedule specific Kubernetes commands to execute even before it is installed via the LifeCycle hooks.
-* My favorite advantage may be that you can upgrade a StarlingX application via system with an updated tar package of that application, and the system will distribute the new version to the other hosts it is associated with.
+* My favorite advantage may be that you can upgrade a StarlingX application with an updated tar package, and the system will distribute the new version to the other hosts it is associated with.
 
-## Building the app
+## Building the App
 
-For transforming the application from its Helm chart to a tar package that can be installed in a StarlingX cluster, I'll use the [app-gen-tool](https://opendev.org/starlingx/app-gen-tool) terminal application (now included in the StarlingX release 9.0.0).
+For transforming the application from its Helm chart to a tar package that can be installed in a StarlingX cluster, I'll use the [app-gen-tool](https://opendev.org/starlingx/app-gen-tool) terminal application (now included in the StarlingX 9.0).
 
 First, I'll create a python venv and install the app-gen-tool via pip
 
@@ -157,9 +157,9 @@ output
 
 As you can see, the Helm chart package was packed under the charts subdirectory. The next step is to configure the plugins and change the static overrides. Since configuring the plugins is very application-dependent, I will not go through those steps here. The community is still working on documenting the process in the official project documentation, you can find information in the below wiki pages in the meantime:
 
-* [how to add a new Armada app](https://wiki.openstack.org/wiki/StarlingX/Containers/Application/Archive/ConvertingArmadaAppsToFluxCD)
-* [Armada app code structure](https://wiki.openstack.org/wiki/StarlingX/Containers/Application/Archive/ArmadaAppCodeStructure) 
-* [converting from Armada apps to FluxCD](https://wiki.openstack.org/wiki/StarlingX/Containers/Application/Archive/ConvertingArmadaAppsToFluxCD)
+* [How to add a new Armada app](https://wiki.openstack.org/wiki/StarlingX/Containers/Application/Archive/ConvertingArmadaAppsToFluxCD)
+* [Armada app code structure](https://wiki.openstack.org/wiki/StarlingX/Containers/Application/Archive/ArmadaAppCodeStructure)
+* [Converting from Armada apps to FluxCD](https://wiki.openstack.org/wiki/StarlingX/Containers/Application/Archive/ConvertingArmadaAppsToFluxCD)
 
 It is important to configure the below files in `./output/poc-starlingx-app/plugins/k8sapp_poc_starlingx_app` correctly:
 
@@ -298,13 +298,13 @@ cat /var/log/sysinv.log | grep "application name"
 These commands can be helpful for find out more about the state of an application when it did not deploy correctly, as well as if you want to remove the application and try to install it again later:
 
 * ``system application-list ``
-  - this command shows the list of applications uploaded or applied to the cluster and some top-level informations. Particularly, status and progress are useful for debbuging.
+  - This command shows the list of applications uploaded or applied to the cluster and some top-level informations. Particularly, status and progress are useful for debbuging.
 * ``system application-show "application_name"``
-  - this command provides a most of the information provided in the _application-list_, but with extra rows: ["Active", "created_at", "name", "updated_at"].
+  - This command provides a most of the information provided in the _application-list_, but with extra rows: ["Active", "created_at", "name", "updated_at"].
 * ``system application-remove``
-  - this command removes an application from service. Removing an application will clean up related Kubernetes resources and delete all of its installed helm charts
+  - This command removes an application from service. Removing an application will clean up related Kubernetes resources and delete all of its installed helm charts
 * ``system application-delete``
-  - we can use the following command to completely delete an application from the system **after running the system application-remove**
+  - We can use the following command to completely delete an application from the system **after running the system application-remove**
 
 You can find more useful [system application commands](https://docs.starlingx.io/system_configuration/kubernetes/application-commands-and-helm-overrides.html) in the StarlingX documentation.
 
