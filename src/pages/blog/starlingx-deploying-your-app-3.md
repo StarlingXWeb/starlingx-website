@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+ttemplateKey: blog-post
 title: Deploying your application as a StarlingX Application
 author: Tomás N. P. Barros
 date: 
@@ -15,13 +15,13 @@ The article is part of a [blog post series](https://www.starlingx.io/blog/starl
 
 In this example, I will be using StarlingX **9.0** in a virtual All-In-One Simplex (AIO-SX) configuration.
 
-Deploying your application as a StarlingX Application is the highest level of integration you can achieve with the platform. It is a "step up" from deploying an app via Helm or FluxCD. In this post, I will guide you through the process of deploying the [demo app](https://github.com/bmuniz-daitan/poc-starlingx-messages) used in the previous deployment posts, along with some basic management commands <!- more ->.
+Deploying your application as a StarlingX Application is the highest level of integration you can achieve with the platform. It is a "step up" from deploying an app via Helm or FluxCD. In this post, I will guide you through the process of deploying the [demo app](https://github.com/bmuniz-daitan/poc-starlingx-messages) used in the previous deployment posts, along with some basic management commands.
 
 It is worth noting that while deploying a containerized app as a StarlingX App has its advantages and is easy to do, transforming a containerized application into a StarlingX App might not be. Thus, the Helm and FluxCD options represent the standard approaches and are the typical choices for developers and users who do not intend to create an application officially bundled into the StarlingX project.
 
 ## Prerequisites
 
-This tutorial expects that your application will be containerized with helm-charts already available. If this is not your case, please consult the helm documentation.
+This tutorial expects that your application will be containerized with helm-charts already available. If this is not your case, please consult the [helm documentation](https://helm.sh/docs/ "helm documentation").
 
 ## Integration with the StarlingX System
 
@@ -29,7 +29,7 @@ Some of the advantages of installing an app via StarlingX Application Package Ma
 
 * Once the application tar is built and validated, you can install and use the application with just two commands, without the need for previous Kubernetes knowledge.
 * The FluxCD orchestrates the application of helm charts in a specified order, thus guaranteeing the pods are available before continuing to apply the next helm charts. If you did this without FluxCD (integrated with the StarlingX Application Package Manager), you'd need to verify manually that each pod was correctly applied before proceeding.
-* You can do 'helm-override' easily and the system will guarantee the availability of the images on other hosts (ie: controller, worker and storage), in case they also need to deploy pods of your application.
+* You can do 'helm-override' easily and the system will guarantee the availability of the images on other hosts (ie: controller, worker and storage), in case you also need to deploy pods of your application on those machines.
 * The Application Framework takes care of the needed validations to guarantee that an application is fully compatible with StarlingX.
 * An application can schedule specific Kubernetes commands to execute even before it is installed via the LifeCycle hooks.
 * My favorite advantage may be that you can upgrade a StarlingX application with an updated tar package, and the system will distribute the new version to the other hosts it is associated with.
@@ -46,7 +46,7 @@ source ./venv/bin/activate
 pip install git+https://opendev.org/starlingx/app-gen-tool.git#subdirectory=./stx-app-generator/stx-app-generator
 ```
 
-Next. I'll copy the "helm-chart" folder from the poc-starlingx repository(alias to the application that we are building) to the directory I'm currently working on and create an empty file called `app_manifest.yaml`. Here's the folder structure as of now:
+Next. I'll copy the "helm-chart" folder from the poc-starlingx repository(alias to the application that I am building) to the directory I'm currently working on and create an empty file called `app_manifest.yaml`. Here's the folder structure as of now:
 
 ```
 .
@@ -167,7 +167,7 @@ It is important to configure the below files in `./output/poc-starlingx-app/plug
 * **kustomize/kustomize_poc_starlingx_app.py**: this file is responsible for updating the top-level kustomization resource list.
 * **lifecycle/lifecycle_poc_starlingx_app.py**: this file configures how StarlingX will perform the lifecycle actions for the application operator.
 
-After the plugin files are configured, I'll run the app-gen-tool command again, but now with the --package-only parameter.
+After the plugin files are configured, I'll run the app-gen-tool command again, but now with the `--package-only` parameter.
 
 ```sh
 (venv)~$: stx-app-generator -i app_manifest.yaml -o ./output --package-only
@@ -178,11 +178,11 @@ Checksum generated!
 FluxCD App tarball generated at /home/tomas-barros/blog-post-3/output/poc-starlingx-app/poc-starlingx-app-1.0.0.tgz
 ```
 
-Alright! We can see the `poc-starlingx-app-1.0.0.tgz`. Now we only have to send this .tgz to a StarlingX cluster to install it.
+Alright! You can see the `poc-starlingx-app-1.0.0.tgz`. Now you only have to send this .tgz to a StarlingX cluster to install it.
 
 ## Installing the App
 
-After copying your app package to your StarlingX cluster, we can now proceed to install it. But before installing it, please make sure that your platform-integ-apps application is installed.
+After copying the app package to your StarlingX cluster, you can now proceed to install it. But before installing it, please make sure that the platform-integ-apps application is installed.
 
 ```
 source /etc/platform/openrc
@@ -246,7 +246,7 @@ Now, let's apply the app:
 [sysadmin@controller-0 ~(keystone_admin)]$ system application-apply poc-starlingx-app
 ```
 
-If you never installed a StarlingX app before, please note that it normally takes a few minutes before finishing the applying command. We can check that the application was successfully applied:
+If you've never installed a StarlingX app before, please note that it normally takes a few minutes before finishing the applying command. You can check that the application was successfully applied:
 
 ```
 [sysadmin@controller-0 ~(keystone_admin)]$ system application-show poc-starlingx-app | grep applied
@@ -272,7 +272,7 @@ And here's a look at what the command should show without the grep:
 
 ```
 
-If you followed me until here, and your application was successfully applied, then we're done! In case you run into any problems, please check the troubleshooting section.
+If you followed me until here, and your application was successfully applied, then you're done! In case you run into any problems, please check the troubleshooting section.
 
 ## Troubleshooting
 
@@ -300,11 +300,11 @@ These commands can be helpful for find out more about the state of an applicatio
 * ``system application-list ``
   - This command shows the list of applications uploaded or applied to the cluster and some top-level informations. Particularly, status and progress are useful for debbuging.
 * ``system application-show "application_name"``
-  - This command provides a most of the information provided in the _application-list_, but with extra rows: ["Active", "created_at", "name", "updated_at"].
+  - This command provides the most of the information provided in the _application-list_, but with extra rows: ["Active", "created_at", "name", "updated_at"].
 * ``system application-remove``
   - This command removes an application from service. Removing an application will clean up related Kubernetes resources and delete all of its installed helm charts
 * ``system application-delete``
-  - We can use the following command to completely delete an application from the system **after running the system application-remove**
+  - You can use the following command to completely delete an application from the system **after running the system application-remove**
 
 You can find more useful [system application commands](https://docs.starlingx.io/system_configuration/kubernetes/application-commands-and-helm-overrides.html) in the StarlingX documentation.
 
@@ -318,7 +318,7 @@ In some cases, you'll find in the sysinv.log that the application of a pod was c
 kubectl logs podname -n namespace
 ```
 
-Also note that the information like the prefix of the pod and the namespace where It will be created and running are written in the helm chart of the application.
+Also note that the information, like the prefix of the pod and the namespace where it will be created and running, are written in the helm chart of the application.
 
 **Please note** that the above, brief troubleshooting guide only lists common installation problems but it is not comprehensive, the overall process can become more complicated.
 
