@@ -1,8 +1,8 @@
 ---
-ttemplateKey: blog-post
+templateKey: blog-post
 title: Deploying your application as a StarlingX Application
 author: Tomás N. P. Barros
-date: 
+date: 2024-08-27T01:32:05.627Z
 category:
   - label: Features & Updates
 ---
@@ -21,7 +21,7 @@ It is worth noting that while deploying a containerized app as a StarlingX App h
 
 ## Prerequisites
 
-This tutorial expects that your application will be containerized with helm-charts already available. If this is not your case, please consult the [helm documentation](https://helm.sh/docs/ "helm documentation").
+This tutorial expects that your application will be containerized with helm-charts already available. If this is not your case, please consult the [helm documentation](https://helm.sh/docs/).
 
 ## Integration with the StarlingX System
 
