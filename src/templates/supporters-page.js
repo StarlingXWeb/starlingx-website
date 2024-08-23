@@ -138,6 +138,12 @@ export const SupportersPageTemplate = ({
                   organizations. Join us as we build the future of
                   high-performance, distributed cloud infrastructure.
                 </p>
+                <p>
+                  If you are using and supporting StarlingX, we strongly encourage you
+                  to share news and information about that online with your ecosystem. We
+                  have a messaging guide you can rely on to increase the presence of the
+                  StarlingX project, along with your related products and activities.
+                </p>
                 {buttons.map((b, index) => {
                   return (
                     <a
