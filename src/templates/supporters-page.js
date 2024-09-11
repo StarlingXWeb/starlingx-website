@@ -19,6 +19,7 @@ export const SupportersPageTemplate = ({
   subTitle,
   content,
   buttons,
+  buttonGuide,
   contributors,
   donors,
   supporting,
@@ -136,19 +137,13 @@ export const SupportersPageTemplate = ({
                   <a href="https://www.openinfra.dev">OpenInfra Foundation</a>{" "}
                   and a growing, global community of operators, developers and
                   organizations. Join us as we build the future of
-                  high-performance, distributed cloud infrastructure.
-                </p>
-                <p>
-                  If you are using and supporting StarlingX, we strongly encourage you
-                  to share news and information about that online with your ecosystem. We
-                  have a messaging guide you can rely on to increase the presence of the
-                  StarlingX project, along with your related products and activities.
+                  high-performance, distributed cloud infrastructure. <a href="#messaging-guide">Interested in sharing news and information about StarlingX?</a>
                 </p>
                 {buttons.map((b, index) => {
                   return (
                     <a
                       href={b.link}
-                      className="button is-primary-dark is-rounded"
+                      className="button is-primary-dark is-rounded no-underline"
                       key={index}
                     >
                       <span>{b.text}</span>
@@ -206,6 +201,28 @@ export const SupportersPageTemplate = ({
                     );
                   })}
                 {/* <<PageContent className="content" content={content} /> */}
+                <p>
+                  If you are using and supporting StarlingX, we strongly encourage you
+                  to share news and information about that online with your ecosystem. We
+                  have a messaging guide you can rely on to increase the presence of the
+                  StarlingX project, along with your related products and activities.
+                </p>
+                {buttonGuide.map((b, index) => {
+                  return (
+                    <a
+                      href={b.link}
+                      className="button is-primary-dark is-rounded no-underline"
+                      key={index}
+                    >
+                      <span>{b.text}</span>
+                      <span className="ico">
+                        <img src={leftArrow} alt="Learn More" />
+                      </span>
+                    </a>
+                  );
+                })}
+                <br />
+                <br />
                 <p className="foundation-tagline">
                   The StarlingX project and community are supported by the
                   OpenInfra Foundation.
@@ -239,6 +256,7 @@ SupportersPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   buttons: PropTypes.object,
+  buttonGuide: PropTypes.object,
   supporting: PropTypes.object,
   contributors: PropTypes.object,
   donors: PropTypes.object,
@@ -257,6 +275,7 @@ const SupportersPage = ({ data }) => {
         title={post.frontmatter.title}
         subTitle={post.frontmatter.subTitle}
         buttons={post.frontmatter.buttons}
+        buttonGuide={post.frontmatter.buttonGuide}
         supporting={post.frontmatter.supporting}
         contributors={post.frontmatter.contributors}
         donors={post.frontmatter.donors}
@@ -294,6 +313,10 @@ export const supportersPageQuery = graphql`
         title
         subTitle
         buttons {
+          text
+          link
+        }
+        buttonGuide {
           text
           link
         }
