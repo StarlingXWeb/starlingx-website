@@ -201,12 +201,13 @@ export const SupportersPageTemplate = ({
                     );
                   })}
                 {/* <<PageContent className="content" content={content} /> */}
-                <p>
+                <p id="messaging-guide">
                   If you are using and supporting StarlingX, we strongly encourage you
                   to share news and information about that online with your ecosystem. We
                   have a messaging guide you can rely on to increase the presence of the
                   StarlingX project, along with your related products and activities.
                 </p>
+                <p style={{ marginBottom: "4rem" }}>
                 {buttonGuide.map((b, index) => {
                   return (
                     <a
@@ -221,8 +222,7 @@ export const SupportersPageTemplate = ({
                     </a>
                   );
                 })}
-                <br />
-                <br />
+                </p>
                 <p className="foundation-tagline">
                   The StarlingX project and community are supported by the
                   OpenInfra Foundation.
