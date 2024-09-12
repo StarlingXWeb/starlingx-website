@@ -137,7 +137,7 @@ export const SupportersPageTemplate = ({
                   <a href="https://www.openinfra.dev">OpenInfra Foundation</a>{" "}
                   and a growing, global community of operators, developers and
                   organizations. Join us as we build the future of
-                  high-performance, distributed cloud infrastructure. <a href="#messaging-guide">Interested in sharing news and information about StarlingX?</a>
+                  high-performance, distributed cloud infrastructure, and help us sharing news and information about StarlingX!
                 </p>
                 {buttons.map((b, index) => {
                   return (
