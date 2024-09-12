@@ -114,6 +114,9 @@
   a {
     text-decoration: underline;
     color: #313131;
+    &.button {
+      text-decoration: none;
+    }
 
     &:hover {
       text-decoration: none;
