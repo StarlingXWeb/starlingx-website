@@ -19,6 +19,7 @@ export const SupportersPageTemplate = ({
   subTitle,
   content,
   buttons,
+  buttonGuide,
   contributors,
   donors,
   supporting,
@@ -136,13 +137,14 @@ export const SupportersPageTemplate = ({
                   <a href="https://www.openinfra.dev">OpenInfra Foundation</a>{" "}
                   and a growing, global community of operators, developers and
                   organizations. Join us as we build the future of
-                  high-performance, distributed cloud infrastructure.
+                  high-performance, distributed cloud infrastructure, and help us sharing news and information about StarlingX!
                 </p>
+                <p style={{ marginBottom: "4rem" }}>
                 {buttons.map((b, index) => {
                   return (
                     <a
                       href={b.link}
-                      className="button is-primary-dark is-rounded"
+                      className="button is-primary-dark is-rounded no-underline"
                       key={index}
                     >
                       <span>{b.text}</span>
@@ -152,8 +154,21 @@ export const SupportersPageTemplate = ({
                     </a>
                   );
                 })}
-                <br />
-                <br />
+                {buttonGuide.map((b, index) => {
+                  return (
+                    <a
+                      href={b.link}
+                      className="button is-primary-dark is-rounded no-underline"
+                      key={index}
+                    >
+                      <span>{b.text}</span>
+                      <span className="ico">
+                        <img src={leftArrow} alt="Learn More" />
+                      </span>
+                    </a>
+                  );
+                })}
+                </p>
                 {subProject.sponsorship_types
                   .sort((a, b) => a.order - b.order)
                   .map((t, tierIndex) => {
@@ -233,6 +248,7 @@ SupportersPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   buttons: PropTypes.object,
+  buttonGuide: PropTypes.object,
   supporting: PropTypes.object,
   contributors: PropTypes.object,
   donors: PropTypes.object,
@@ -251,6 +267,7 @@ const SupportersPage = ({ data }) => {
         title={post.frontmatter.title}
         subTitle={post.frontmatter.subTitle}
         buttons={post.frontmatter.buttons}
+        buttonGuide={post.frontmatter.buttonGuide}
         supporting={post.frontmatter.supporting}
         contributors={post.frontmatter.contributors}
         donors={post.frontmatter.donors}
@@ -288,6 +305,10 @@ export const supportersPageQuery = graphql`
         title
         subTitle
         buttons {
+          text
+          link
+        }
+        buttonGuide {
           text
           link
         }
