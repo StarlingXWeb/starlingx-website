@@ -13,6 +13,9 @@ subTitle: Advancing StarlingX and growing the community
 buttons:
   - link: 'mailto:info@starlingx.io'
     text: support starlingx
+buttonGuide:
+  - link: '/messaging-guide/'
+    text: starlingx messaging guide
 supporting:
   list:
     - alt: 99 Cloud
