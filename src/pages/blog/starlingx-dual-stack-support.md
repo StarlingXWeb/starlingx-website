@@ -173,7 +173,7 @@ DEL=$(system network-addrpool-list | awk '$6 == "cluster-pod-ipv4" { print $2 }'
 DEL=$(system network-addrpool-list | awk '$6 == "cluster-service-ipv4" { print $2 }') && system network-addrpool-remove $DEL
 DEL=$(system network-addrpool-list | awk '$6 == "cluster-host-ipv4" { print $2 }') && system network-addrpool-remove $DEL
 ```
-It also envolves a quick restart of kube-API-server and kube-controller-manager and the existing user pods need to be restarted.
+It also involves a quick restart of kube-API-server and kube-controller-manager and the existing user pods need to be restarted.
 
 ## Kubernetes deployment example
 
