@@ -223,7 +223,7 @@ Verify the helm chart by opening https://harbor.yourdomain.com:30003 in browser 
 
 1. __Start a scan__: Go to "integration services" and click on "vulnerability" tab and start a scan.
 
-![Screenshot of Harbor interface to start image scanning](/img/harbor-trivy-start.jpg.jpg)
+![Screenshot of Harbor interface to start image scanning](/img/harbor-trivy-start.jpg)
 
 2. __Check the scan result__: Once scan is done you can check the result in the GUI.
 
