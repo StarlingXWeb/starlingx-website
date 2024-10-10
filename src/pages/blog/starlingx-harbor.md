@@ -13,7 +13,7 @@ Learn about using Harbor as a container registry in StarlingX 10.0. Harbor enhan
 # About Harbor
 [Harbor](https://goharbor.io/ ) is an open-source container registry that enhances security by implementing policies and role-based access control. It ensures images are vulnerability-free through scanning and provides image signing for trust verification.
 
-With the 2.0 release, Harbor becomes the first OCI (Open Container Initiative)-compliant open-source registry capable of storing a wide range of cloud-native artifacts, including container images, Helm charts, OPAs, and Singularity, among others. Helm charts can now be pushed directly to Harbor using Helm3, eliminating the need for separate hosting in ChartMuseum. Instead, they are stored alongside container images under artifacts. As shown in the figure below, container images, Helm charts, and Cloud Native Application Bundles (CNAB) are hosted within the same project.
+With the 2.0 release, Harbor becomes the first OCI (Open Container Initiative)-compliant open-source registry capable of storing a wide range of cloud-native artifacts, including container images, Helm charts, OPAs, and Singularity, among others. Helm charts can now be pushed directly to Harbor using Helm3, eliminating the need for separate hosting in ChartMuseum. Instead, they are stored alongside container images under artifacts.
 
 Check out the StarlingX [documentation](https://docs.starlingx.io/admintasks/kubernetes/harbor-as-system-app-1d1e3ec59823.html) for further details on Harbor as a system application in the platform.
 
