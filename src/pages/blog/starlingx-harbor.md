@@ -15,7 +15,8 @@ Learn about using Harbor as a container registry in StarlingX 10.0. Harbor enhan
 
 With the 2.0 release, Harbor becomes the first OCI (Open Container Initiative)-compliant open-source registry capable of storing a wide range of cloud-native artifacts, including container images, Helm charts, OPAs, and Singularity, among others. Helm charts can now be pushed directly to Harbor using Helm3, eliminating the need for separate hosting in ChartMuseum. Instead, they are stored alongside container images under artifacts. As shown in the figure below, container images, Helm charts, and Cloud Native Application Bundles (CNAB) are hosted within the same project.
 
-Further details can be found [here](https://docs.starlingx.io/admintasks/kubernetes/harbor-as-system-app-1d1e3ec59823.html)
+Check out the StarlingX [documentation](https://docs.starlingx.io/admintasks/kubernetes/harbor-as-system-app-1d1e3ec59823.html) for further details on Harbor as a system application in the platform.
+
 
 
 # What can you do with Harbor
@@ -23,7 +24,8 @@ Further details can be found [here](https://docs.starlingx.io/admintasks/kuberne
 As an administrator, use Harbor if you want to streamline your artifact management, enhance security, and maintain compliance in your cloud-native environment. Here’s how Harbor can help you achieve these goals:
 
 * __Store a Wide Range of Artifacts:__
-With Harbor 2.0, you can store not just container images, but also other OCI (Open Container Initiative)-compliant artifacts like Helm charts, OPAs, and Singularity images. This unified storage simplifies the management of multiple artifact types, allowing users to access and manage all their artifacts in one place. Helm charts, previously hosted separately via ChartMuseum, can now be pushed directly into Harbor using Helm3.
+This unified storage simplifies the management of multiple artifact types, allowing users to access and manage all their artifacts in one place.
+
 
 * __Enhance Security with Vulnerability Scanning:__
 Automate vulnerability scanning to ensure the integrity of your artifacts. You can configure Harbor to scan images for vulnerabilities and ensure only trusted and verified images are used in production. This is vital for maintaining security in dynamic, cloud-native environments.
@@ -47,20 +49,30 @@ This combination of features makes Harbor an ideal solution for organizations ad
 
 # How can you utilize Harbor Container Registry in StarlingX
 
-Deploying Harbor within StarlingX provides you with an integrated, secure container registry that simplifies artifact storage, retrieval, and security operations. Harbor is packaged as a system application and included in the StarlingX installation ISO. In order to enable Harbor container registry, you can upload and apply the harbor system application.
-This blog post will use All-in-one Simplex (AIO-SX) deployment. You are going to deploy harbor system application and expose it using nodePort, push an image and a helm chart to the registry, scan the image using default trivy scanner and pull an image.
+Harbor is packaged as a system application and included in the StarlingX installation ISO. In order to enable Harbor container registry, you can upload and apply the Harbor system application.
+
+This blog post will use All-in-one Simplex (AIO-SX) deployment. You are going to perform the following steps:
+1. Deploy the Harbor system application
+2. Expose the application using nodePort
+3. Push an image and a Helm chart to the registry
+4. Scan the image using default Trivy scanner
+5. Pull an image
+
 
 ## Deploy harbor system application
 
-In this blog post, harbor should be exposed using nodePort. 
+In this blog post, Harbor should be exposed using nodePort. 
+
 1. Create harbor namespace.
 
    ```
    ~(keystone_admin)]$ kubectl create namespace harbor
    ```
 
-2. Generate certificates and create secret. You can obtained oam floating IP address by running 'system oam-show' command.
-Please make sure to replace URL harbor.yourdomain.com with the harbor url and make sure it has been configured in the DNS server owning the dns as the OAM FLOATING IP Address of StarlingX.
+2. Generate certificates and create a secret. You can obtain an OAM floating IP address by running 'system oam-show' command.
+
+Please make sure to replace the 'harbor.yourdomain.com' URL with the harbor URL and make sure it has been configured in the DNS server owning the DNS as the OAM FLOATING IP address of StarlingX.
+
    ```
    ~(keystone_admin)]$ cat <<EOF > harbor-certificate.yaml
    ---
@@ -91,7 +103,8 @@ Please make sure to replace URL harbor.yourdomain.com with the harbor url and ma
    ~(keystone_admin)]$ kubectl apply -f harbor-certificate.yaml
    ```
 
-3. Verify if the certificate’s Ready status is True.
+3. Verify if the certificate’s 'Ready' status is 'True'.
+
 
    ```
    ~(keystone_admin)]$ kubectl get certificate harbor-certificate -n harbor
@@ -107,7 +120,8 @@ Please make sure to replace URL harbor.yourdomain.com with the harbor url and ma
     harbor-24.09-16.tgz
     ~(keystone_admin)]$ system application-upload /usr/local/share/applications/helm/harbor-24.09-16.tgz
     ```
-5. Configure the Helm overrides for Harbor and apply harbor system application. Below example uses NodePorts 30002, 30003, and 30004. If these ports are unavailable, please choose and configure alternative ports that are not in use.
+5. Configure the Helm overrides for Harbor and apply the Harbor system application. The below example uses nodePorts 30002, 30003, and 30004. If these ports are unavailable, please choose and configure alternative ports that are not in use.
+
 
     ```
     ~(keystone_admin)]$ cat <<EOF > values.yaml
@@ -152,10 +166,12 @@ Please make sure to replace URL harbor.yourdomain.com with the harbor url and ma
     ```
     ~(keystone_admin)]$ system application-show harbor
     ```
-    At this point harbor is installed and exposed on nodeport 30003. You can now use it to store artifacts.
+    At this point Harbor is installed and exposed on nodePort 30003. You can now use it to store artifacts.
+
 
 ## Push a container image to the registry
-Default configuration contains a public repository 'library', we will used this to store the images. Depending on your docker setup, you may be required to run all of the following commands with ‘sudo’. The default admin username is ‘admin’, and the password is ‘Harbor12345’. You should change the password soon after installing the harbor. You may change it by changing the harborAdminPassword value in step 5 above.
+Default configuration contains a public repository 'library', we will use this to store the images. Depending on your Docker setup, you may be required to run all of the following commands with ‘sudo’. The default admin username is ‘admin’, and the password is ‘Harbor12345’. You should change the password soon after installing Harbor. You may change it by changing the 'harborAdminPassword' value in step 5 above.
+
 ```
 
 ~(keystone_admin)]$ sudo docker login https://harbor.yourdomain.com:30003 -u admin
@@ -195,11 +211,13 @@ a71dbd37c9b5: Pushed
 latest: digest: sha256:2f4b8bcfa2f4c8dcfafa4925c7d416f70692254617911f6e4f3ceaedf63313d9 size: 1986
 
 ```
-Verify in GUI if the image is pushed to the 'library' registry. Open https://harbor.yourdomain.com:30003 in browser and login using 'admin' and password.
+Verify on the GUI if the image is pushed to the 'library' registry. Open https://harbor.yourdomain.com:30003 in your browser and log in using 'admin' and password.
+
 
 ![alt text](/img/harbor-redis-image.jpg)
 
-## Push a helm chart to the registry
+## Push a Helm chart to the registry
+
 
 ```
  ~(keystone_admin)]$ helm create my-test-app
@@ -214,14 +232,17 @@ Pushed: harbor.yourdomain.com:30003/library/my-test-app:0.1.0
 Digest: sha256:50f76c90e281789cb1da0364a78dfec6744c49db1541b611d6a2965a3b6fd8ba
 
 ```
-Verify the helm chart by opening https://harbor.yourdomain.com:30003 in browser and login using 'admin' and password.
+Verify the Helm chart by opening https://harbor.yourdomain.com:30003 in browser and login using 'admin' and password.
+
 
 ![Screenshot of Harbor interface with the Redis image uploaded](/img/harbor-redis-image.jpg)
 
-## Scan the image using trivy scanner
+## Scan the image using Trivy scanner
+
 [Trivy](https://github.com/aquasecurity/trivy) scanner is the default image scanner. With Trivy, StarlingX users can ensure that all deployed images are thoroughly scanned for vulnerabilities before reaching production. Trivy offers extensive coverage for scanning various operating systems and application package managers, making it easy to integrate into CI/CD pipelines. It performs thorough scans, detecting vulnerabilities across widely used distributions such as CentOS, Photon OS, Debian, and Ubuntu, among others.
 
-1. __Start a scan__: Go to "integration services" and click on "vulnerability" tab and start a scan.
+1. __Start a scan__: Go to "integration services" and click on the "vulnerability" tab and start a scan.
+
 
 ![Screenshot of Harbor interface to start image scanning](/img/harbor-trivy-start.jpg)
 
@@ -229,8 +250,10 @@ Verify the helm chart by opening https://harbor.yourdomain.com:30003 in browser 
 
 ![Screenshot of Harbor interface with scanning results](/img/harbor-scan-result.png)
 
-## Pull a container image and helm chart from  the registry
-You can pull the images and helm charts using 'docker pull' and helm pull' commands respectively.
+## Pull a container image and Helm chart from the registry
+
+You can pull the images and Helm charts using 'docker pull' and 'helm pull' commands respectively.
+
 ```
 $ sudo docker pull  harbor.yourdomain.com:30003/library/redis:latest
 latest: Pulling from library/redis
