@@ -1,14 +1,17 @@
 ---
 templateKey: blog-post
-title: Enhancing StarlingX through Harbor as a Secure Container Registry Solution
+title: Enhancing StarlingX through Harbor as a Secure Container Registry solution
+
 author: Jagatguru Mishra
-date: 2024-09-30T01:32:05.627Z
+date: 2024-12-16T01:32:05.627Z
+
 
 category: 
   - label: Features & Updates
     id: category-A7fnZYrE1
 ---
-Learn about using Harbor as a container registry in StarlingX 10.0. Harbor enhances StarlingX’s capabilities by offering robust, secure management of container images and cloud-native artifacts. <!-- more -->
+Harbor enhances StarlingX’s capabilities by offering robust, secure management of container images and cloud-native artifacts. In this blog post you will learn about how to use Harbor as a container registry in StarlingX 10.0. <!-- more -->
+
 
 # About Harbor
 [Harbor](https://goharbor.io/ ) is an open-source container registry that enhances security by implementing policies and role-based access control. It ensures images are vulnerability-free through scanning and provides image signing for trust verification.
@@ -59,7 +62,8 @@ This blog post will use All-in-one Simplex (AIO-SX) deployment. You are going to
 5. Pull an image
 
 
-## Deploy harbor system application
+## Deploy the Harbor system application
+
 
 In this blog post, Harbor should be exposed using nodePort. 
 
@@ -246,7 +250,8 @@ Verify the Helm chart by opening https://harbor.yourdomain.com:30003 in browser 
 
 ![Screenshot of Harbor interface to start image scanning](/img/harbor-trivy-start.jpg)
 
-2. __Check the scan result__: Once scan is done you can check the result in the GUI.
+2. __Check the scan result__: Once the scan is done you can check the result in the GUI.
+
 
 ![Screenshot of Harbor interface with scanning results](/img/harbor-scan-result.png)
 
