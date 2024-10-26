@@ -89,7 +89,7 @@ In addition, this recent release cycle focused on some maintenance work that was
 
 Plans for the next release cycle include integrating a newer version of OpenStack. Taking advantage of the new SLURP release model that OpenStack implemented, the next integrated version will be Caracal. Further work items include re-adding OVS-DPDK support, in a containerized format, and adding external storage support, for instance NetApp, to provide further options beyond using CEPH.
 
-# Release
+## Release
 
 This team is helping the community to plan the release cycle, which includes milestones, roadmap and overall timeline. Members of this team also track the community's progress with the planned additions, changes and fixes, to coordinate the steps throughout the release.
 
