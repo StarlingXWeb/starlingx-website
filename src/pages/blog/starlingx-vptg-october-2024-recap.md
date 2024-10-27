@@ -143,7 +143,7 @@ During this conversation, it also came up that due to the complexity of the plat
 Contributors were also brainstorming about ways to improve the coordination process, which the release team has been relying on to be able to keep track of progress and adjust the release timeline, if needed. The release team is currently relying more on the people who propose and implement features, but Project and Technical Leads also play an important role to ensure that the process works as expected.
 
 
-The above items are only a few highlights of the full roadmap of the StarlingX project. For further notes of the discussions at the PTG please refer to the session [etherpad](https://etherpad.opendev.org/p/r.741debb7f95668789620419ad86a1fb6) or check out the of the discussions, which are also linked from the etherpad.
+The above items are only a few highlights of the full roadmap of the StarlingX project. For further notes of the discussions at the PTG please refer to the session [etherpad](https://etherpad.opendev.org/p/r.741debb7f95668789620419ad86a1fb6) or check out the recordings of the discussions, which are also linked from the etherpad.
 
 # About StarlingX
 
