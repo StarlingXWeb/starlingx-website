@@ -13,7 +13,7 @@ subTitle: Frequently Asked Questions about StarlingX
 
 * A fully open source solution that is ready to deploy
 * Flexibility to run on containers, VMs, and/or Bare Metal
-* Optimize cloud services for edge solutions
+* Distributed cloud platform that is easy to deploy, operate and maintain
 * Security, ultra-low latency, extremely high service uptime, small-footprint deployments and streamlined operations
 * Suitable for a wide range of edge applications
 
@@ -31,7 +31,7 @@ StarlingX integrates a number of upstream projects: CentOS, OvS-DPDK, Ceph, Kube
 
 #### What is the operating system
 
-StarlingX is integrating and tested with CentOS and the team is already working on multiOS support. Contributions are welcome!
+As of StarlingX release 8.0, StarlingX uses a Debian OS distribution as base operating system and the team is looking into multiOS support. Contributions are welcome!
 
 #### How do I get started testing StarlingX?
 
@@ -39,7 +39,7 @@ The [StarlingX wiki](https://wiki.openstack.org/wiki/StarlingX) contains documen
 
 #### What's the license for StarlingX?
 
-StarlingX is open source and licensed under the Apache 2.0 license, which means it is free to use, free to distribute,and does not require modifications to be contributed back to the project. [Read more about Apache2.0](https://www.apache.org/licenses/LICENSE-2.0).
+StarlingX is open source and licensed under the Apache 2.0 license, which means it is free to use, free to distribute, and does not require modifications to be contributed back to the project. [Read more about Apache2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 #### Where is the code?
 
@@ -47,7 +47,7 @@ StarlingX is free and open source software. Start here: [opendev.org/starlingx](
 
 #### Can I contribute to it? How?
 
-The [StarlingX wiki](https://wiki.openstack.org/wiki/StarlingX) contains documentation for how to download the sourcecode and build it in the "Documentation" section. Code contributions can be made through our [gerrit](https://opendev.org/starlingx) site.
+The [StarlingX wiki](https://wiki.openstack.org/wiki/StarlingX) contains documentation for how to download the source code and build it in the "Documentation" section. Code contributions can be made through our [gerrit](https://opendev.org/starlingx) site.
 
 #### How is StarlingX governed?
 
@@ -67,12 +67,12 @@ StarlingX is a top-level Open Infrastructure project supported by the Open Infra
 
 #### How does the StarlingX community collaborate with other open source projects?
 
-The StarlingX team is actively working with a number of other projects and communities, both within and outside of the Open Infrastructure Foundation projects. The community is contributing to the Nova, Horizon, Keystone and Neutron projects within OpenStack. Our teams are also involved in the OSF Edge Computing Group as well as the Akraino community and the EdgeXFoundry project.
+The StarlingX team is actively working with a number of other projects and communities, both within and outside of the Open Infrastructure Foundation projects. The community have been contributing to the Nova, Horizon, Keystone and Neutron projects within OpenStack, and contributors are also involved in the OpenInfra Edge Computing Group as well as the O-RAN Software Community (SC) and more.
 
 #### What is the release cadence for StarlingX?
 
-The initial (beta) StarlingX release was released in October 2018. In 2019 and moving forward, StarlingX releases will align with OpenStack releases. StarlingX will have two releases a year, following a cycle-trailing model relative to the OpenStack release cycle.
+StarlingX releases one to two major releases per year. For more information on StarlingX release cycles, including planned content and timeframe, see [Release Plan wiki page](https://wiki.openstack.org/wiki/StarlingX/Releases and https://wiki.openstack.org/wiki/StarlingX/Release_Plan).
 
 #### Are there any commercial distributions of StarlingX?
 
-Wind River Titanium Cloud is currently based on StarlingX, and we are actively building a broad commercial ecosystem. Please contact <mailto:info@starlingx.io> if you are interested in getting involved from a commercial perspective.
+Wind River Cloud Platform is currently based on StarlingX, and we are actively building a broad commercial ecosystem. Please contact <mailto:info@starlingx.io> if you are interested in getting involved from a commercial perspective.
