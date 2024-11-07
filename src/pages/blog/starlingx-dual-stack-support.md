@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Dual-Stack (IPv4/IPv6) Support in Starlingx
+title: A Tutorial to Configure Dual-Stack (IPv4/IPv6) Support in StarlingX 10.0
 author: Andre Kantek
 date: 2024-08-12T01:32:05.627Z
 category:
@@ -8,9 +8,7 @@ category:
     id: category-A7fnZYrE1
 ---
 
-StarlingX, a cloud platform designed for edge computing, now supports dual-stack functionality on its platform networks (OAM, management, cluster-host, cluster-pod, cluster-service, admin, storage, and multicast), enabling it to operate with both IPv4 and IPv6 L3 protocols. This enhanced capability offers greater flexibility and scalability for network deployments. Each platform network can be associated to two pools (one IPv4 and another IPv6). The order it is done defines the primary and secondary pool for that network.
-
-The Kubernetes network can also receive dual-stack properties, allowing the pods to use IPv4 and/or IPv6 on its operations. It becomes available when the OAM, cluster-host, cluster-pod, and cluster-service networks are configured as dual-stack.
+StarlingX, a cloud platform designed for edge computing, now supports dual-stack functionality on its platform networks (OAM, management, cluster-host, cluster-pod, cluster-service, admin, storage, and multicast), enabling it to operate with both IPv4 and IPv6 L3 protocols. This enhanced capability offers greater flexibility and scalability for network deployments by allowing the user's kubernetes applications to operate simulteaneoulsy on both address families if needed.
 
 # Key Features and Considerations
 
@@ -67,6 +65,10 @@ The Kubernetes network can also receive dual-stack properties, allowing the pods
 This section will show an example on how to use pods that have access to both address families. For more information:
 - https://kubernetes.io/docs/concepts/services-networking/dual-stack/
 - https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/dual-stack-support/
+
+Each platform network can be associated to two pools (one IPv4 and another IPv6). The order it is done defines the primary and secondary pool for that network.
+
+The Kubernetes network can also receive dual-stack properties, allowing the pods to use IPv4 and/or IPv6 on its operations. It becomes available when the OAM, cluster-host, cluster-pod, and cluster-service networks are configured as dual-stack.
 
 ## Bootstrap
 The dual-stack service requires that OAM, cluster-host, cluster-pod, and cluster-service networks be configured with both address families separated by a comma in the bootstrap's localhost file:
@@ -264,4 +266,12 @@ dualstackpod-svc   ClusterIP   fd04::4627   <none>        5201/UDP,5201/TCP   9m
 
 # Conclusion
 
-StarlingX's dual-stack support provides enhanced flexibility and scalability for network deployments. By understanding the key features, configuration steps, and considerations outlined in this guide, you can effectively leverage dual-stack capabilities in your StarlingX environment
+StarlingX's dual-stack support provides enhanced flexibility and scalability for network deployments. By understanding the key features, configuration steps, and considerations outlined in this guide, you can effectively leverage dual-stack capabilities in your StarlingX environment.
+
+For more information: https://docs.starlingx.io/system_configuration/kubernetes/dual-stack-support-318550fd91b5.html
+
+# About StarlingX
+
+For the complete list of updates and new features in StarlingX 10.0, check out the [release notes](https://docs.starlingx.io/releasenotes) and the [project documentation](https://docs.starlingx.io).
+
+If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io) for more information or [download the code](https://opendev.org/starlingx) and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
