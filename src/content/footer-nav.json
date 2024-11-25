@@ -29,6 +29,10 @@
           "link": "http://lists.starlingx.io"
         },
         {
+          "text": "Bluesky",
+          "link": "https://bsky.app/profile/starlingx.io"
+        },
+        {
           "text": "Twitter",
           "link": "https://twitter.com/starlingx"
         },
