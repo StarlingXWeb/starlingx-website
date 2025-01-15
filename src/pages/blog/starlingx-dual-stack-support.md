@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: A Tutorial to Configure Dual-Stack (IPv4/IPv6) Support in StarlingX 10.0
 author: Andre Kantek
-date: 2024-08-12T01:32:05.627Z
+date: 2025-01-14T01:32:05.627Z
 category:
   - label: Features & Updates
     id: category-A7fnZYrE1
@@ -12,56 +12,34 @@ StarlingX, a cloud platform designed for edge computing, now supports dual-stack
 
 # Key Features and Considerations
 
+In this section you can find some highlights about what and how you can configure to use dual-stack mode, or switch between single and dual-stack, along with some limitations to this feature. For further information about the feature and its usage, please refer to the [dual-stack feature documentation](https://docs.starlingx.io/system_configuration/kubernetes/dual-stack-support-318550fd91b5.html).
+
 ## Address Pool Management
 
-- Two address pools are required for dual-stack operation, with the first one linked to the network at creation.
-- The primary pool cannot be removed, while the secondary pool can be added or removed to transition between single-stack and dual-stack modes.
-- The pxeboot network currently only supports IPv4.
-- The primary address pool is used for internal management communication, as encryption is currently available only for the primary pool on the management network.
-- The primary address pool family of a network cannot be modified after network creation, requiring a system reinstall to change.
-
-## API/CLI Interactions
-
-- The `network-addrpool-assign`, `network-addrpool-remove`, `network-addrpool-list`, and `network-addrpool-show` APIs handle network to address pool associations.
-- The `system network-add` command creates the first association.
-- The `system addrpool-modify` command allows for editing all address pool parameters.
+As the feature’s name suggests, two address pools are required for dual-stack operation, with the first one linked to the network at creation. This also means that the primary pool cannot be removed later, while removing the second pool can transform the system into a single-stack mode. As the dual-stack support is still new in the platform, there are some additional limitations to this oncfiguration options, for example, the pxeboot network currently only supports IPv4.
 
 ## Installation Bootstrap
 
-- Dual-stack installations require specifying secondary subnets in bootstrap variables using comma-separated values. E.g.:
-  - `external_oam_subnet: fd00::/64,10.20.2.0/24`, the order of network listing determines primary and secondary address pools. In the example fd00::/64 is the primary
-- All primary subnets must use the same address family.
+Dual-stack installations require specifying secondary subnets in bootstrap variables using comma-separated values. The order of network listing determines primary and secondary address pools, for instance, in `external_oam_subnet: fd00::/64,10.20.2.0/24`,  'fd00::/64' is the primary. You will also need to remember that all primary subnets must use the same address family.
 
-## DNS Server Configuration
-- Optionally, name servers can be configured with both IPv4 and IPv6 addresses using the `system dns-modify` command, still limited to 2 server addresses.
+## Distributed Cloud Operations
 
-## DC Operations
-- Subclouds can be installed in dual-stack mode if their version supports it.
-- All operational communication between the system controller and subclouds uses the primary address pool.
-- The system-controller and subclouds can operate in different network modes but must share the same primary address family in the OAM and management networks (for subclouds this can be OAM and admin networks).
-- Geo redundancy uses the primary pools to communicate.
+The Distributed Cloud architecture is what differentiates StarloingX from most other cloud platforms, and therefore it has been crucial that it supports the dual-stack configuration option as well. Subclouds can be installed in dual-stack mode if their version is new enough to supports it. When this setuip is used, all operational communication between the system controller and subclouds uses the primary address pool.
 
-## Public Endpoints
-- Public OAM endpoints can be accessed via the secondary address using the same L4 port. HAProxy maps external requests to internal endpoints.
+It is also important to note, that the System Controller and subclouds can operate in different network modes, however, they must share the same primary address family in the OAM and management networks (for subclouds this can be OAM and admin networks). The Geo redundancy feature also uses the primary pools to communicate.
 
-## Network Address Modification at Runtime
-- Only the OAM, Admin, and Management networks can be modified using the `addrpool-modify` command during runtime. 
-- Other network’s address pool modifications require reinstallation.
+## Kubernetes Configuration
 
-## External OAM API and CLI
-- The external-OAM API, although deprecated, can still be used to modify the OAM network primary pool. 
-- Corresponding CLIs are `system oam-modify` and `system oam-show`.
+When dual-stack mode is used with Kubernetes, the OAM, cluster-host, cluster-service, and cluster-pod networks must be configured for dual-stack support. And be mindful that runtime changes trigger quick restarts for the kube-API-server and kube-controller-manager pods.
 
-## Kubernetes in Dual-Stack
-- The OAM, cluster-host, cluster-service, and cluster-pod networks must be configured for dual-stack support in Kubernetes. 
-- Runtime changes trigger quick restarts for the kube-API-server and kube-controller-manager pods. 
-- New pods will automatically receive both primary and secondary addresses when created in dual-stack mode. Existing pods may retain their current primary addresses and require restarts to acquire secondary addresses. 
+Once the system is deployed and configured, new pods will automatically receive both primary and secondary addresses. At the same time, existing pods may retain their current primary addresses and require restarts to acquire secondary addresses. 
 
 ## Runtime Configuration
-- To add dual-stack to a running system, follow the steps outlined in the guide, which include adding address pools and associating them with networks.
-- Reverting to single-stack involves removing the network association with the address pool.
+
+You can also update a running system to use dual-stack, follow the steps outlined in the guide, which include adding address pools and associating them with networks. In the scenario of reverting to single-stack configuration, you will need to remove the network association with the address pool.
 
 # Configuring a Kubernetes network with dual-stack
+
 This section will show an example on how to use pods that have access to both address families. For more information:
 - https://kubernetes.io/docs/concepts/services-networking/dual-stack/
 - https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/dual-stack-support/
@@ -71,6 +49,7 @@ Each platform network can be associated to two pools (one IPv4 and another IPv6)
 The Kubernetes network can also receive dual-stack properties, allowing the pods to use IPv4 and/or IPv6 on its operations. It becomes available when the OAM, cluster-host, cluster-pod, and cluster-service networks are configured as dual-stack.
 
 ## Bootstrap
+
 The dual-stack service requires that OAM, cluster-host, cluster-pod, and cluster-service networks be configured with both address families separated by a comma in the bootstrap's localhost file:
 ```
 pxeboot_subnet: 192.168.202.0/24 
@@ -268,7 +247,7 @@ dualstackpod-svc   ClusterIP   fd04::4627   <none>        5201/UDP,5201/TCP   9m
 
 StarlingX's dual-stack support provides enhanced flexibility and scalability for network deployments. By understanding the key features, configuration steps, and considerations outlined in this guide, you can effectively leverage dual-stack capabilities in your StarlingX environment.
 
-For more information: https://docs.starlingx.io/system_configuration/kubernetes/dual-stack-support-318550fd91b5.html
+For more information please check out the [dual-stack feature section](https://docs.starlingx.io/system_configuration/kubernetes/dual-stack-support-318550fd91b5.html) in the StarlingX project documentation.
 
 # About StarlingX
 
