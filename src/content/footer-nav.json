@@ -56,6 +56,10 @@
         {
           "text": "Documentation",
           "link": "https://docs.starlingx.io/"
+        },
+        {
+          "text": "Security vulnerabilities",
+          "link": "https://wiki.openstack.org/wiki/StarlingX/Security#How_to_report_security_issues_to_StarlingX"
         }
       ]
     }
