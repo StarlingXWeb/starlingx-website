@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX R10.0 is here!
 author: Ildiko Vancsa
-date: 2024-12-11T01:32:05.627Z
+date: 2025-02-20T01:32:05.627Z
 category: 
   - label: News & Announcements
     id: category-A7fnZYrE1
@@ -30,7 +30,7 @@ The new StarlingX release replaces the v5.10 kernel with v6.6. This is the lates
 
 As StarlingX integrates a wide range of open source projects beyond the Linux kernel, contributors have been integrating newer versions of these components in the 10.0 release cycle to have access to newer features and bug fixes alike. With the current StarlingX release users have access to Kubernetes up to v1.29, and many components of the system got newer versions integrated to work smoothly with these two main building blocks and also to deliver new functionality, bug fixes and enhancements.
 
-Last, but not least, as the platform is gaining new system applications, which are integrated to provide a wide range of functionality to users, there is now a [centralized page](ADD LINK) in the documentation where these services, and information about them, are listed.
+Last, but not least, as the platform is gaining new system applications, which are integrated to provide a wide range of functionality to users, there is now a [centralized page](https://docs.starlingx.io/application-ref/application-reference-8916dfe370cd.html) in the documentation where these services, and information about them, are listed.
 
 For the complete list of updates and new features in StarlingX 10.0, check out the [release notes](https://docs.starlingx.io/releasenotes/index.html#release-notes) and the [project documentation](https://docs.starlingx.io/).
 
