@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX R10.0 is here!
 author: Ildiko Vancsa
-date: 2025-02-20T01:32:05.627Z
+date: 2025-02-26T01:32:05.627Z
 category: 
   - label: News & Announcements
     id: category-A7fnZYrE1
