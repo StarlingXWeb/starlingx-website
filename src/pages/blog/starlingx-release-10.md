@@ -18,7 +18,7 @@ Networking is a key function, especially in a distributed system. The StarlingX 
 
 As a distributed cloud platform, security is always an important focus area as the community is working on newer versions of the project. In the 10.0 release cycle, contributors added support to use Harbor as a container registry in StarlingX. Harbor can be deployed as a StarlingX system application. Once configured, users can utilize this service to securely manage artifacts in the cloud-native landscape, such as container images, Helm charts, OPAs, and Singularity, and more. Harbor is an OCI-compliant service, which also allows vulnerability scanning of artifacts, provides role-based access control and the ability to sign container images and artifacts, among other features.
 
-Contributors also added support to enable IPSec on L2 platform networks, to encrypt the traffic between multi-node system, and configured cert-manager as the default certificate manager.  TLS certificate handling was further improved for OpenStack, now users can upload their own certificates that OpenStack will be able to discover and use.
+Contributors also added support to enable IPSec on L2 platform networks, to encrypt the traffic between multi-node system, and configured cert-manager as the default certificate manager. TLS certificate handling was further improved for OpenStack, now users can upload their own certificates that OpenStack will be able to discover and use.
 
 Beyond security, scalability is also an important aspect to keep improving, which the community has been actively working on. Their current goal is to reach the ability to manage 10,000 sites from a system controller, and the 10.0 delivers the milestone of managing up to 5,000.
 
