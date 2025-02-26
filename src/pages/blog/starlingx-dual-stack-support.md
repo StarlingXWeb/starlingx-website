@@ -8,7 +8,7 @@ category:
     id: category-A7fnZYrE1
 ---
 
-StarlingX, a cloud platform designed for edge computing, now supports dual-stack functionality on its platform networks (OAM, management, cluster-host, cluster-pod, cluster-service, admin, storage, and multicast), enabling it to operate with both IPv4 and IPv6 L3 protocols. This enhanced capability offers greater flexibility and scalability for network deployments by allowing the user's kubernetes applications to operate simulteaneoulsy on both address families if needed.
+StarlingX, an open source distributed cloud platform, now supports dual-stack functionality on its platform networks (OAM, management, cluster-host, cluster-pod, cluster-service, admin, storage, and multicast), enabling it to operate with both IPv4 and IPv6 L3 protocols. This enhanced capability offers greater flexibility and scalability for network deployments by allowing the user's Kubernetes applications to operate simultaneously on both address families if needed.
 
 # Key Features and Considerations
 
@@ -24,19 +24,19 @@ Dual-stack installations require specifying secondary subnets in bootstrap varia
 
 ## Distributed Cloud Operations
 
-The Distributed Cloud architecture is what differentiates StarloingX from most other cloud platforms, and therefore it has been crucial that it supports the dual-stack configuration option as well. Subclouds can be installed in dual-stack mode if their version is new enough to supports it. When this setuip is used, all operational communication between the system controller and subclouds uses the primary address pool.
+The Distributed Cloud architecture is what differentiates StarlingX from most other cloud platforms, and therefore it has been crucial that it supports the dual-stack configuration option as well. Subclouds can be installed in dual-stack mode if their version is new enough to supports it. When this setup is used, all operational communication between the system controller and subclouds uses the primary address pool.
 
-It is also important to note, that the System Controller and subclouds can operate in different network modes, however, they must share the same primary address family in the OAM and management networks (for subclouds this can be OAM and admin networks). The Geo redundancy feature also uses the primary pools to communicate.
+It is also important to note, that the System Controller and subclouds can operate in different network modes, however, they must share the same primary address family in the OAM and management networks (for subclouds this can be OAM and admin networks). The geo-redundancy feature also uses the primary pools to communicate.
 
 ## Kubernetes Configuration
 
-When dual-stack mode is used with Kubernetes, the OAM, cluster-host, cluster-service, and cluster-pod networks must be configured for dual-stack support. And be mindful that runtime changes trigger quick restarts for the kube-API-server and kube-controller-manager pods.
+When dual-stack mode is used with Kubernetes, the OAM, cluster-host, cluster-service, and cluster-pod networks must be configured for dual-stack support. And be mindful that runtime changes trigger quick restarts for the kube-apiserver and kube-controller-manager pods.
 
 Once the system is deployed and configured, new pods will automatically receive both primary and secondary addresses. At the same time, existing pods may retain their current primary addresses and require restarts to acquire secondary addresses. 
 
 ## Runtime Configuration
 
-You can also update a running system to use dual-stack, follow the steps outlined in the guide, which include adding address pools and associating them with networks. In the scenario of reverting to single-stack configuration, you will need to remove the network association with the address pool.
+You can also update a running system to use dual-stack, follow the steps outlined in the [documentation](https://docs.starlingx.io/system_configuration/kubernetes/dual-stack-support-318550fd91b5.html), which include adding address pools and associating them with networks. In the scenario of reverting to single-stack configuration, you will need to remove the network association with the address pool.
 
 # Configuring a Kubernetes network with dual-stack
 
@@ -135,7 +135,7 @@ system host-swact controller-1
 ```
 For AIO-SX systems the step above isn't necessary, as OAM reconfiguration is done at runtime.
 
-The next step is to add the cluster pools and associate them with its networks:
+The next step is to add the cluster pools and associate them with their networks:
 ```
 system addrpool-add cluster-pod-ipv4 172.16.0.0 16 --order random --ranges 172.16.0.1-172.16.254.254 
 system addrpool-add cluster-service-ipv4 10.96.0.0 12 --order random --ranges 10.96.0.1-10.96.254.254
@@ -146,7 +146,7 @@ system network-addrpool-assign cluster-service cluster-service-ipv4
 system network-addrpool-assign cluster-pod cluster-pod-ipv4 
 system network-addrpool-assign cluster-host cluster-host-ipv4  
 ```
-It will trigger a runtime Kubernetes and Calico configuration to make dual-stack available. This involves a quick restart of the kube-API-server and kube-controller-manager pods on both controllers. Pods that need to use the new cluster-pod network and already exist prior to this configuration will require a restart to gain the new addresses.
+This operation will trigger a runtime Kubernetes and Calico configuration update to make dual-stack available. This involves a quick restart of the kube-apiserver and kube-controller-manager pods on both controllers. Pods that need to use the new cluster-pod network and already exist prior to this configuration change, will require a restart to gain the new addresses.
 
 To revert back to single-stack, it is necessary to remove the secondary pool from all cluster networks (host, pod, and service).
 ```
@@ -154,11 +154,11 @@ DEL=$(system network-addrpool-list | awk '$6 == "cluster-pod-ipv4" { print $2 }'
 DEL=$(system network-addrpool-list | awk '$6 == "cluster-service-ipv4" { print $2 }') && system network-addrpool-remove $DEL
 DEL=$(system network-addrpool-list | awk '$6 == "cluster-host-ipv4" { print $2 }') && system network-addrpool-remove $DEL
 ```
-It also involves a quick restart of kube-API-server and kube-controller-manager and the existing user pods need to be restarted.
+It also involves a quick restart of kube-apiserver and kube-controller-manager and the existing user pods need to be restarted.
 
 ## Kubernetes deployment example
 
-A small sample to create a deployment to use the dual-stack configuration, there are no special parameters
+Below you can see a small sample to create a deployment to use the dual-stack configuration, there are no special parameters:
 
 ```yaml
 apiVersion: apps/v1
@@ -199,7 +199,7 @@ eth0@if24        UP             172.16.166.129/32 fd03::a4ce:fec1:5423:e311/128 
 lo               UNKNOWN        127.0.0.1/8 ::1/128 
 eth0@if18        UP             172.16.192.65/32 fd03::8e22:765f:6121:eb61/128 fe80::c024:64ff:fe41:fd3a/64 
 ```
-The service requires the dual-stack information:
+The service requires the dual-stack information, like the example here:
 ```yaml
 apiVersion: v1
 kind: Service
