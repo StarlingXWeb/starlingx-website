@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: A Tutorial to Configure Dual-Stack (IPv4/IPv6) Support in StarlingX 10.0
 author: Andre Kantek
-date: 2025-01-14T01:32:05.627Z
+date: 2025-05-06T01:32:05.627Z
 category:
   - label: Features & Updates
     id: category-A7fnZYrE1
@@ -16,7 +16,7 @@ In this section you can find some highlights about what and how you can configur
 
 ## Address Pool Management
 
-As the feature’s name suggests, two address pools are required for dual-stack operation, with the first one linked to the network at creation. This also means that the primary pool cannot be removed later, while removing the second pool can transform the system into a single-stack mode. As the dual-stack support is still new in the platform, there are some additional limitations to this oncfiguration options, for example, the pxeboot network currently only supports IPv4.
+As the feature’s name suggests, two address pools are required for dual-stack operation, with the first one linked to the network at creation. This also means that the primary pool cannot be removed later, while removing the second pool can transform the system into a single-stack mode. As the dual-stack support is still new in the platform, there are some additional limitations to this configuration options, for example, the pxeboot network currently only supports IPv4.
 
 ## Installation Bootstrap
 
@@ -24,7 +24,7 @@ Dual-stack installations require specifying secondary subnets in bootstrap varia
 
 ## Distributed Cloud Operations
 
-The Distributed Cloud architecture is what differentiates StarlingX from most other cloud platforms, and therefore it has been crucial that it supports the dual-stack configuration option as well. Subclouds can be installed in dual-stack mode if their version is new enough to supports it. When this setup is used, all operational communication between the system controller and subclouds uses the primary address pool.
+The Distributed Cloud architecture is what differentiates StarlingX from most other cloud platforms, and therefore it has been crucial that it supports the dual-stack configuration option as well. Subclouds can be installed in dual-stack mode if their version is new enough to support it. When this setup is used, all operational communication between the system controller and subclouds uses the primary address pool.
 
 It is also important to note, that the System Controller and subclouds can operate in different network modes, however, they must share the same primary address family in the OAM and management networks (for subclouds this can be OAM and admin networks). The geo-redundancy feature also uses the primary pools to communicate.
 
@@ -70,7 +70,7 @@ cluster_service_subnet: aefd:aaa::/112,10.96.0.0/12
 
 This example is considering an AIO-DX installed as IPv6 single-stack.
 
-The list of created networks show the primary pool ID:
+The list of created networks shows the primary pool ID:
 
 ```
 # system network-list 
@@ -86,7 +86,7 @@ The list of created networks show the primary pool ID:
 | 6  | f6349...b | cluster-pod     | cluster-pod     | False   | c311c1d6-8...a | IPv6                |
 +----+------...--+-----------------+-----------------+---------+-----------...--+---------------------+
 ```
-The relationship between address pool and network is also show with `network-addrpool-list`:
+The relationship between address pool and network is also shown with `network-addrpool-list`:
 ```
 # system network-addrpool-list 
 +--------------------------------------+-----------------+-----------------------------+
@@ -116,7 +116,7 @@ The actual addresses that will be used by the system can be seen with `addrpool-
 | 765cc...7 | pxeboot                     | 169.254.202.0 | 24     | random | ['169.254.202.1-169.254.202.254']     | 16... |
 +------...--+-----------------------------+---------------+--------+--------+---------------------------------------+---...-+
 ```
-The first step is to add the secondary OAM address pool and associate to the network
+The first step is to add the secondary OAM address pool and associate it to the network
 ```
 system addrpool-add oam-ipv4 10.10.204.0 24 --order random --ranges 10.10.204.1-10.10.204.253 \
  --floating-address 10.10.204.1 --controller0-address 10.10.204.2 --controller1-address 10.10.204.3 \
