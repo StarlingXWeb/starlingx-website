@@ -1,11 +1,8 @@
 ---
 templateKey: blog-post
 title: Enhancing StarlingX through Harbor as a Secure Container Registry solution
-
 author: Jagatguru Mishra
-date: 2024-12-16T01:32:05.627Z
-
-
+date: 2025-03-18T01:32:05.627Z
 category: 
   - label: Features & Updates
     id: category-A7fnZYrE1
