@@ -46,7 +46,7 @@ This section will show an example on how to use pods that have access to both ad
 
 Each platform network can be associated to two pools (one IPv4 and another IPv6). The order it is done defines the primary and secondary pool for that network.
 
-The Kubernetes network can also receive dual-stack properties, allowing the pods to use IPv4 and/or IPv6 on its operations. It becomes available when the OAM, cluster-host, cluster-pod, and cluster-service networks are configured as dual-stack.
+The Kubernetes network can also receive dual-stack properties, allowing the pods to use IPv4 and/or IPv6 on their operations. It becomes available when the OAM, cluster-host, cluster-pod, and cluster-service networks are configured as dual-stack.
 
 ## Bootstrap
 
