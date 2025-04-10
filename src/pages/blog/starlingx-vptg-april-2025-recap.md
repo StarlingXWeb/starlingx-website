@@ -10,7 +10,7 @@ category:
 
 Get the highlights of StarlingX discussions and project updates at the April, 2025 virtual [OpenInfra Project Teams Gathering (PTG)](https://openinfra.org/ptg/) event.
 
-The StarlingX community had sessions on two consecutive days at the event to discuss use cases, go through project team updates, talk about the 11.0 release and further roadmap, and more. This two-article mini series provides a highlight of the conversations the community had at the event.
+The StarlingX community held one session at the event to discuss use cases, go through project team updates, talk about the 11.0 release and further roadmap, and more. This two-article mini series provides a highlight of the conversations the community had at the event.
 
 # Project Team Updates
 
