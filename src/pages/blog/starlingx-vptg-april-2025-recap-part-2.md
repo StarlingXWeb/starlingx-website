@@ -10,7 +10,7 @@ category:
 
 Get the highlights of StarlingX discussions and project updates at the April, 2025 virtual [OpenInfra Project Teams Gathering (PTG)](https://openinfra.org/ptg/) event.
 
-The StarlingX community had sessions on two consecutive days at the event to discuss use cases, go through project team updates, talk about the 11.0 release and further roadmap, and more. This article is the second of a mini-series to provide a highlight of the conversations the community had at the event.
+The StarlingX community had sessions on two consecutive days at the event to discuss use cases, go through project team updates, talk about the 11.0 release and further roadmap, and more. This article is the second piece of a mini-series to provide a highlight of the conversations the community had at the event.
 
 # Project Team Updates
 
@@ -20,21 +20,21 @@ The main topic area for this PTG session was to go through project team updates,
 
 The Distributed Cloud team is responsible for all aspects of central management and orchestration of a geographically distributed network of StarlingX clouds.
 
-As use cases are becoming more wide-scale, the team has been focusing on further improving scalability and manageability of the platform. Contributors added 6 new features during the 10.0 release cycle, where their main focus was on the new USM framework and enabling it in a distributed cloud environment. Starting this release, users can now pre-stage sub-clouds and then enroll them into an existing StarlingX system. Another milestone that the team has achieved was to improve scalability of the platform by 5x, which in practice means that one system controller can now manage up to 5,000 sub-clouds. Further more they also added enhancements to the O-RAN related features.
+As use cases are becoming more wide-scale, the team has been focusing on further increasing scalability and manageability of the platform. Contributors added 6 new features during the 10.0 release cycle, where their main focus was on the new USM framework and enabling it in a distributed cloud environment. Starting this release, users can now pre-stage sub-clouds and then enroll them into an existing StarlingX system. The scalability of the platform got also grew 5x, which in practice means that one system controller can now manage up to 5,000 sub-clouds, and the O-RAN related features got some improvements as well.
 
-Contributors set the main focus on scalability again for the 11.0 cycle, where their current plan is to bump the number of sub-clouds per system controller up to 10,000. Further enhancements are also planned to the O-RAN application as well as the new functionality to enroll sub-clouds into the system more flexibly.
+Contributors set the main focus on scalability again for the 11.0 cycle, where their current plan is to bump the number of sub-clouds per system controller up to 10,000. Further enhancements are also planned to the O-RAN application as well as to the new functionality to enroll sub-clouds into the system even more flexibly.
 
-The team is also planning to start working on a rather architectural change to increase the StarlingX platform’s flexibility. The idea is to extract the components of the currently tightly integrated distributed cloud management and orchestration system into a containerized application, which will make it easier to manage its dependencies and will also allow for installing distributed cloud on remote sites. This development will likely span multiple release cycles, stay tuned for updates!
+To take a look a bit further ahead, the team is planning to start working on a rather architectural change to increase the StarlingX platform’s flexibility. The idea is to extract the components of the currently tightly integrated distributed cloud management and orchestration system into a containerized application, which will make it easier to manage its dependencies and will also allow for installing distributed cloud on remote sites. This development will likely span multiple release cycles, stay tuned for updates!
 
 ## Build
 
 This team works on the build system, which turns the source code into a deployable ISO image. The contributors are collaborating closely with the Distro team to ensure a stable and efficient build system and process.
 
-During the 10.0 release cycle the team has been experimenting with using RAM disks to improve the build performance, however, the results they got were below expectations. Some of the reasons included the change of hardware in the build lab, as well as challenges with fine tuning the sizes of the RAM disks. The latter challenge can be attributed to the complexity of the StarlingX platform along with using Helm that all make it harder to have good visibility into how the build process utilizes the RAM disks.
+During the 10.0 release cycle the team was experimenting with using RAM disks to improve the build performance, however, the results they got were below expectations. Some of the reasons included the change of hardware in the build lab, as well as challenges with fine tuning the size of the RAM disks. The latter issue can likely be attributed to the complexity of the StarlingX platform along with using Helm, which alltogether make it harder to have good visibility into how the build process utilizes the RAM disks.
 
-For the 11.0 release cycle, the team is planning to update the Secure Boot Certificates, which requires an update in the build system to be able to configure multiple keys. Contributors are also looking into a few more improvement ideas, which includes reviving the layered-build process, but with more fine grained layering this time. Reusing the artifacts that were generated by previous builds is another idea the team will explore to improve the build efficiency and performance.
+For the 11.0 release cycle, the team is planning to update the Secure Boot Certificates, which requires an update in the build system to be able to configure multiple keys. Contributors are also looking into a few more improvement ideas, which include reviving the layered-build process, but with more fine grained layering this time. Reusing the artifacts that were generated by previous builds is another idea contributors will explore to improve the build efficiency and performance.
 
-The team is also working with other project teams on the features and enhancements that will span multiple release cycles. The Debian upgrade and portable Distributed Cloud feature got their own feature branches for now, which requires the build team to create weekly builds for these as well. The team will also look into create some tools to help merging the feature branches back into the main branch.
+The team is actively working with other project teams on the features and enhancements that will span multiple release cycles. The Debian upgrade and portable Distributed Cloud feature got their own feature branches for now, which require the build team to create weekly builds for these as well. In addition, the team will explore to create some tools to help merging the feature branches back into the main branch.
 
 ## Test
 
@@ -50,15 +50,15 @@ Some statistics from the 10.0 release cycle:
   - 441 Tests executed in automation on AIO-SX -100% pass
   - 386 Tests executed in automation on AIO-DX -100% pass
 
-For the 11.0 cycle the team will keep the same cadence for sanity and regression testing as for previous cycles. For these methods they will use a new test framework, which they have been working on up until now, you can find some details about that in this article below.
+For the 11.0 cycle the team will keep the same cadence for sanity and regression testing as for previous cycles. However, for these methods they will use a new test framework, which they have been working on up until now, you can find some details about that in this article below.
 
 ## Docs
 
 The documentation team is working on maintaining and improving the structure and format of the documentation to ensure that users and newcomers have a cohesive experience, and the large amount of documentation that the project has is easy to navigate.
 
-During the 10.0 release cycle the team made a lot of enhancements to the project’s documentation, including the Distributed Cloud Guide, Security Guide and REST API Reference Guide. They have also been working with the test team to test more of the documentation along with the code to make sure the content is updated and accurate.
+During the 10.0 release cycle the team made a lot of enhancements to the project’s documentation, including the Distributed Cloud Guide, Security Guide and REST API Reference Guide. They were working with the test team to test more of the documentation along with the code and make sure the content is updated, accurate and easy to follow.
 
-During the current release cycle, contributors will be working on enhancing the documentation build process as well as to explore the possibility to generate the documentation for CLI commands in a more automated way. The team is also looking into restructuring the documentation a bit to make it easier to follow for users in various industry segments.
+During the current release cycle, contributors will be working on enhancing the documentation build process as well as to explore the possibility of generating the documentation for CLI commands in a more automated way. The team is also looking into restructuring the documentation a bit to make it easier to follow for users in different industry segments.
 
 ## Release
 
@@ -74,7 +74,7 @@ The 11.0 release cycle is currently ongoing, the community is still finalizing t
 
 The test team has been working on a new test framework to make it easier and simpler to execute sanity and regression test suites through a higher degree of automation. Beyond making the test team’s work a bit easier, the framework is also available in the StarlingX [Test repository](https://opendev.org/starlingx/test). Users have access to the framework and can deploy and use it in their local environments, which will allow them to better test the platform locally in their own labs with any specific hardware and configuration options that their use case might require.
 
-The team showed a demo during the PTG session to show to configure the new framework. Users can specify their lab and lab configuration, which starts with adding the floating IP, admin credentials and ssh port to the framework’s configuration. Some of the StarlingX features also depend on the underlying infrastructure, which you can specify as lab capabilities in the framework. This allows for skipping tests that would otherwise fail due to an unmet requirement. While this can be configured manually, the framework s also equipped with a discovery function through a series of API requests against the lab.
+The team walked attendees through a demo during the PTG session to show how to configure and use the new framework. Among other functionality, the demo showed how users can specify their lab and lab configuration, which starts with adding the floating IP, admin credentials and ssh port to the framework’s configuration. As some of the StarlingX features depend on the underlying infrastructure, the framework allows users to specify those as lab capabilities in the framework. This enables to skip tests that would otherwise fail due to an unmet requirement. While this can be configured manually, the framework is also equipped with a discovery function that is executed through a series of API requests against the lab.
 
 The new framework is built on the principles of stability and readability, which was demonstrated during the PTG session. Check out the [session recording](https://etherpad.opendev.org/p/r.88723cc8246d5717733a438b65ced845#L18) to find out more, the demo starts at 1:23:00! Also look out for a blog post that the team is working on to further introduce the new StarlingX test framework.
 
