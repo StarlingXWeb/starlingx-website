@@ -10,7 +10,7 @@ category:
 
 Get the highlights of StarlingX discussions and project updates at the April, 2025 virtual [OpenInfra Project Teams Gathering (PTG)](https://openinfra.org/ptg/) event.
 
-The StarlingX community had sessions on two consecutive days at the event to discuss use cases, go through project team updates, talk about the 11.0 release and further roadmap, and more. This article is the second piece of a mini-series to provide a highlight of the conversations the community had at the event.
+The StarlingX community held one session during the event to discuss use cases, go through project team updates, talk about the 11.0 release and further roadmap, and more. This article is the second piece of a mini-series to provide a highlight of the conversations the community had at the event.
 
 # Project Team Updates
 
@@ -20,11 +20,11 @@ The main topic area for this PTG session was to go through project team updates,
 
 The Distributed Cloud team is responsible for all aspects of central management and orchestration of a geographically distributed network of StarlingX clouds.
 
-As use cases are becoming more wide-scale, the team has been focusing on further increasing scalability and manageability of the platform. Contributors added 6 new features during the 10.0 release cycle, where their main focus was on the new USM framework and enabling it in a distributed cloud environment. Starting this release, users can now pre-stage sub-clouds and then enroll them into an existing StarlingX system. The scalability of the platform got also grew 5x, which in practice means that one system controller can now manage up to 5,000 sub-clouds, and the O-RAN related features got some improvements as well.
+As use cases are becoming more wide-scale, the team has been focusing on further increasing scalability and manageability of the platform. Contributors added 6 new features during the 10.0 release cycle, where their main focus was on the new USM framework and enabling it in a distributed cloud environment. Starting this release, users can now pre-stage sub-clouds and then enroll them into an existing StarlingX system. The scalability of the platform increased by 5x, which in practice means that one system controller can now manage up to 5,000 sub-clouds, and the O-RAN related features got some improvements as well.
 
 Contributors set the main focus on scalability again for the 11.0 cycle, where their current plan is to bump the number of sub-clouds per system controller up to 10,000. Further enhancements are also planned to the O-RAN application as well as to the new functionality to enroll sub-clouds into the system even more flexibly.
 
-To take a look a bit further ahead, the team is planning to start working on a rather architectural change to increase the StarlingX platform’s flexibility. The idea is to extract the components of the currently tightly integrated distributed cloud management and orchestration system into a containerized application, which will make it easier to manage its dependencies and will also allow for installing distributed cloud on remote sites. This development will likely span multiple release cycles, stay tuned for updates!
+To take a look a bit further ahead, the team is planning to start working on a rather architectural change to increase the StarlingX platform’s flexibility. The idea is to extract the components of the StarlingX central/SystemController that manages and orchestrates the remote sub-clouds, into a containerized application, such that it is portable and could optionally run in a public cloud, rather than requiring a central private cloud for this function. This development will likely span multiple release cycles, stay tuned for updates!
 
 ## Build
 
