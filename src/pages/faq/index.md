@@ -75,4 +75,4 @@ StarlingX releases one to two major releases per year. For more information on S
 
 #### Are there any commercial distributions of StarlingX?
 
-Wind River Cloud Platform is currently based on StarlingX, and we are actively building a broad commercial ecosystem. Please contact <mailto:info@starlingx.io> if you are interested in getting involved from a commercial perspective.
+[Wind River Cloud Platform](https://www.windriver.com/studio/edge-cloud/distributed-edge-cloud) is currently based on StarlingX, and we are actively building a broad commercial ecosystem. Please contact <mailto:info@starlingx.io> if you are interested in getting involved from a commercial perspective.
