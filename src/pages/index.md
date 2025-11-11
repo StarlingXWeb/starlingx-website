@@ -12,7 +12,7 @@ header:
   buttons:
     - link: /software/
       text: Get Started
-    - link: https://mirror.starlingx.windriver.com/mirror/starlingx/release/
+    - link: https://mirror.starlingx.windriver.com/mirror/starlingx/release/11.0.0/debian/bullseye/amd64/monolithic/outputs/iso/
       text: Download ISO
     - link: /community/
       text: Get Help
@@ -94,7 +94,7 @@ tables:
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://www.starlingx.io/blog/starlingx-release-11.html'
+      link: 'https://www.starlingx.io/blog/starlingx-release-11/‘
       text: Read the Blog Post
     text: >
       StarlingX Release 11.0 is now available. The open source edge computing and
