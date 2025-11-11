@@ -94,7 +94,7 @@ tables:
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://www.starlingx.io/blog/starlingx-release-11/‘
+      link: 'https://www.starlingx.io/blog/starlingx-release-11/'
       text: Read the Blog Post
     text: >
       StarlingX Release 11.0 is now available. The open source edge computing and
