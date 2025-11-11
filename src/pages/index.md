@@ -94,14 +94,14 @@ tables:
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://www.starlingx.io/blog/starlingx-release-10.html'
+      link: 'https://www.starlingx.io/blog/starlingx-release-11.html'
       text: Read the Blog Post
     text: >
-      StarlingX Release 10.0 is now available. The open source edge computing and
+      StarlingX Release 11.0 is now available. The open source edge computing and
       IoT cloud platform optimized for low latency and high performance
       applications is creating a fusion between OpenStack and Kubernetes and
       integrating further open source building blocks to host edge and cloud
       native applications.
-    title: StarlingX 10.0 Available Now
+    title: StarlingX 11.0 Available Now
 ---
 
