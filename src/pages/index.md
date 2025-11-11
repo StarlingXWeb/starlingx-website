@@ -85,7 +85,7 @@ tables:
         title: Join us on the mailing list
       - text: >
           <p>Updates from the community on a weekly basis.</p>  <a
-          href="https://wiki.openstack.org/wiki/Starlingx/Meetings">wiki.openstack.org/wiki/StarlingX/Meetings</a>
+          href="https://zoom-lfx.platform.linuxfoundation.org/meetings/starlingx">https://zoom-lfx.platform.linuxfoundation.org/meetings/starlingx</a>
         title: Weekly calls
       - text: >
           <p>Chat with the project team and others using StarlingX.</p> <a
