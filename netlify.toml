@@ -42,3 +42,7 @@
   GATSBY_SPONSORED_PROJECT_ID = "6"  
   GATSBY_HOME_SUBPROJECT_ID = "12"
   GATSBY_MEMBERS_SUBPROJECT_ID = "12"
+[[headers]]
+  for = "/*"
+  [headers.values]
+  Referrer-Policy = "strict-origin-when-cross-origin"
