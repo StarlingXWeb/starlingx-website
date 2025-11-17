@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: StarlingX at the virtual Project Teams Gathering in October, 2025
 author: Ildiko Vancsa
-date: 2025-11-18T01:32:05.627Z
+date: 2025-11-17T01:32:05.627Z
 category:
   - label: Features & Updates
     value: category-A7fnZYrE1
