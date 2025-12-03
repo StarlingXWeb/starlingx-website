@@ -67,6 +67,8 @@ The team has big plans for the 12.0 release cycle as well. PTP will get Partial 
 
 For further notes of the discussions at the event please refer to the session [etherpad](https://etherpad.opendev.org/p/r.140f090fb9ac95e8507e6e02c0f9b3df) which also contains the link to the recording of the session.
 
+Check out [Part 2](https://www.starlingx.io/blog/starlingx-vptg-october-2025-recap-part-2/) for the remaining project updates.
+
 # About StarlingX
 
 If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io) for more information or [download the code](https://opendev.org/starlingx) and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
