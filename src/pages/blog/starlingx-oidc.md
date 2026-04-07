@@ -82,7 +82,7 @@ A key advantage of this consolidation is the flexibility of the IDP backend. DEX
 - remote LDAP or Microsoft AD (Active Directory) domains (for example, Microsoft's AD)
 - OIDC providers such as Keycloak, or other cloud IDPs that support OIDC
 
-This gives operators freedom to choose the backend that meets their organizational requirements while keeping a consistent authentication surface across the platform.
+This gives anyone operating a StarlingX environment freedom to choose the backend that meets their organizational requirements, while keeping a consistent authentication surface across the platform.
 
 **User experience improvements**
 
