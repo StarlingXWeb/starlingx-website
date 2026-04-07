@@ -105,3 +105,7 @@ A few concrete UX wins from this consolidation:
 - **Stronger security (MFA):** Delegation to MFA-capable remote OIDC IDPs raises the bar for authentication without reworking individual services.
 - **Better CLI usability:** The oidc-login (kubelogin) flow gives a pleasant browser-backed experience for CLI users, including MFA, and works well even in headless scenarios with redirect URLs.
 - **IDP flexibility through DEX:** DEX supports many backend types (LDAP, AD, OIDC providers like Keycloak) so you can choose the backend that fits your environment while keeping a consistent auth surface.
+
+# About StarlingX
+
+If you would like to learn more about the project and get involved check the [website](https://www.starlingx.io) for more information or [download the code](https://opendev.org/starlingx) and start to experiment with the platform. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/starlingx_user_survey) and help the community improve the project based on your feedback.
