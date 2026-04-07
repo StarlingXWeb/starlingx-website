@@ -17,7 +17,7 @@ The advantages of that solution relying on DEX is that it can federate multiple 
 
 # Reaching the consolidation goal - single OIDC IDP for everything
 
-The upcoming releases will standardize authentication so a single DEX-backed OIDC flow becomes the canonical authentication method for StarlingX-managed endpoints. That means administrators will be able to manage users and groups in one place (the configured backend for DEX) while still choosing the backend type that fits their environment.
+In starlingX 12.0 authentication standardizes on a single DEX-backed OIDC flow, which becomes the canonical authentication method for StarlingX-managed endpoints. With that improvement administrators are now able to manage users and groups in one place (the configured backend for DEX) while still choosing the backend type that fits their environment.
 
 OIDC authentication will be supported for:
 
