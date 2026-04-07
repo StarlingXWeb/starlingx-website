@@ -36,7 +36,7 @@ STX 12.0 enables administrators to start using OIDC out of the box:
 - **Automatic DEX installation and configuration at install time.** DEX is deployed and pointed to the StarlingX Local LDAP backend by default so that OIDC tokens work for Local LDAP users immediately.
 - **Kubernetes automatically configured to use OIDC.** Your cluster is now prewired to accept tokens issued by the DEX proxy so kubectl-based workflows can use OIDC immediately after install.
 - **APIs / CLIs optionally OIDC-capable.** StarlingX command-line clients and REST APIs (system, software, fm, sw-manager, dcmanager, etc.) keep Keystone as the default auth method but gain optional OIDC support. Clients can select OIDC using an environment variable or argument (for example: STX_AUTH_TYPE=oidc).
-  - StarlingX API/CLI clients will use the OIDC Token from the K8S KUBECONFIG file when generating the StarlingX request
+  - StarlingX API/CLI clients now use the OIDC Token from the K8S KUBECONFIG file when generating the StarlingX request
     - where the OIDC Token in the KUBECONFIG is populated by the user using the 'oidc-auth' CLI tool to OIDC authenticate with StarlingX's DEX OIDC IDP
   - StarlingX API/CLI servers will consult the Kubernetes OIDC configuration to find the configured OIDC IDP details (i.e. for StarlingX's DEX OIDC IDP) which the server's will use for OIDC Token validation.
 - **Role bindings and mappings.** StarlingX role bindings of roles (i.e., admin, configurator, operator, reader) to OIDC users/groups will be configurable via a new system service-parameter.
