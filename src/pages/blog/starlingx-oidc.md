@@ -93,7 +93,7 @@ What you gain from this improvement as a user:
 - **Better CLI/browser interoperability.** The oidc-login/kubelogin plugin provides a smooth browser-based flow for CLI users - it handles the redirect, token acquisition, and KUBECONFIG update automatically, including MFA steps.
 - **Reduced configuration drift.** With one canonical OIDC proxy and a single source of IDP configuration, fewer ad-hoc auth integrations are required and auditing is simpler.
 
-**Practical notes for administrators**
+## Practical notes for administrators
 
 - When you install StarlingX 12.0, you should expect the DEX proxy and Kubernetes OIDC wiring to be present and configured for Local LDAP users by default.
 - If you rely on API/CLI automation that uses Keystone tokens today, those workflows will remain functional; OIDC is opt-in for StarlingX APIs/CLIs initially (STX_AUTH_TYPE=oidc when you want OIDC).
