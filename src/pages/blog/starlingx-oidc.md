@@ -88,7 +88,7 @@ This gives anyone operating a StarlingX environment freedom to choose the backen
 
 What you gain from this improvement as a user:
 
-- **Single place to manage users & groups.** Admins can centralize identity management in the chosen DEX backend (LDAP/AD/Keycloak/etc.) and have those identities honored across kubectl, StarlingX REST APIs / CLIs, Horizon, SSH, and registry access.
+- **Single place to manage users & groups.** You can now centralize identity management in the chosen DEX backend (LDAP/AD/Keycloak/etc.) and have those identities honored across kubectl, StarlingX REST APIs / CLIs, Horizon, SSH, and registry access.
 - **MFA-capable flows for stronger security.** Because DEX can delegate to remote OIDC providers with MFA, the platform can adopt stronger authentication without re-engineering every component.
 - **Better CLI/browser interoperability.** The oidc-login/kubelogin plugin provides a smooth browser-based flow for CLI users - it handles the redirect, token acquisition, and KUBECONFIG update automatically, including MFA steps.
 - **Reduced configuration drift.** With one canonical OIDC proxy and a single source of IDP configuration, fewer ad-hoc auth integrations are required and auditing is simpler.
