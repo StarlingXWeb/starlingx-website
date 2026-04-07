@@ -55,7 +55,7 @@ STX 12.0 enables administrators to start using OIDC out of the box:
   - nodeinfo-c776b9474-vl5s6 1/1 Running 0 12h
   - nodeinfo-c776b9474-zb7bs 1/1 Running 0 12h
 
-**What's planned for STX 13.0 (polish and broader endpoints)**
+# Sneak peek into the plans beyond StarlingX 12.0
 
 STX 13.0 will continue the consolidation and widen OIDC coverage:
 
