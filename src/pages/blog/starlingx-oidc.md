@@ -42,7 +42,7 @@ STX 12.0 enables administrators to start using OIDC out of the box:
 - **Role bindings and mappings.** StarlingX role bindings of roles (i.e., admin, configurator, operator, reader) to OIDC users/groups are configurable via a new system service-parameter.
 - **Validated remote OIDC IDP backends (with MFA).** Relying on a remote OIDC IDP backend for DEX is now a documented and validated configuration in StarlingX- including MFA-capable OIDC IDPs. As an example, StarlingX validated Keycloak as an OIDC backend and walked through browser-based login with MFA for the admin flows.
 - **Support for the kubectl OIDC helper.** OIDC Authentication is fundamentally a browser-based authentication flow. The oidc-login (kubelogin) plugin for kubectl provides improved integration between kubectl CLI flows and the OIDC Authentication Browser flows. This is absolutely required in the case of remote OIDC IDP backends supporting MFA. This plugin launches the browser/OIDC flow, populate KUBECONFIG with the token, and then execute the requested kubectl command.  
-   The user experience would look like:
+  ### Configuring OIDC in your environment
   - KUBECONFIG=oidc-login-kubeconfig.yml
   - kubectl get pods
   - Please visit the following URL in your browser: &lt;URL&gt;
