@@ -95,7 +95,7 @@ A few concrete UX wins from this consolidation:
 
 **Practical notes for administrators**
 
-- During STX 12.0 install, expect the DEX proxy and Kubernetes OIDC wiring to be present and configured for Local LDAP users by default.
+- When you install StarlingX 12.0, you should expect the DEX proxy and Kubernetes OIDC wiring to be present and configured for Local LDAP users by default.
 - If you rely on API/CLI automation that uses Keystone tokens today, those workflows will remain functional; OIDC is opt-in for StarlingX APIs/CLIs initially (STX_AUTH_TYPE=oidc when you want OIDC).
 - If you need MFA, plan to use a remote OIDC backend that enforces MFA (for example Keycloak or an enterprise IdP) and configure DEX to delegate to it.
 
