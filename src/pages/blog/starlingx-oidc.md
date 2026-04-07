@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Consolidating StarlingX Authentication on OIDC
 author: Greg Waines
-date: 2025-03-18T01:32:05.627Z
+date: 2026-05-18T01:32:05.627Z
 category: 
   - label: Features & Updates
     id: category-A7fnZYrE1
