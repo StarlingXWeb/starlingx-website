@@ -99,7 +99,7 @@ A few concrete UX wins from this consolidation:
 - If you rely on API/CLI automation that uses Keystone tokens today, those workflows will remain functional; OIDC is opt-in for StarlingX APIs/CLIs initially (STX_AUTH_TYPE=oidc when you want OIDC).
 - If you need MFA, plan to use a remote OIDC backend that enforces MFA (for example Keycloak or an enterprise IdP) and configure DEX to delegate to it.
 
-**Short summary - why this matters**
+# Short summary - why this matters
 
 - **Easier user & group management:** Consolidating on OIDC (via a single DEX proxy) lets admins manage identities in one place and have those identities honored across all authenticated StarlingX endpoints.
 - **Stronger security (MFA):** Delegation to MFA-capable remote OIDC IDPs raises the bar for authentication without reworking individual services.
