@@ -7,7 +7,7 @@ category:
   - label: Features & Updates
     id: category-A7fnZYrE1
 ---
-The StarlingX platform is consolidating _all_ authenticated endpoints to rely on a single OIDC identity provider (IDP) proxy - improving operational simplicity, security, and the end-user experience. <!-- more -->
+One of the biggest improvements the StarlingX platform brings you in the 12.0 release is consolidating _all_ authenticated endpoints to rely on a single OIDC identity provider (IDP) proxy - improving operational simplicity, security, and the end-user experience.
 
 **Background: current OIDC support (STX 11.0)**
 
