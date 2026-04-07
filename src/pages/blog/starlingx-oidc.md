@@ -29,7 +29,7 @@ OIDC authentication is supported for:
 
 This reduces duplicated identity configuration, eliminates many special-case auth integrations, and centralizes audit and policy where it makes sense.
 
-**What STX 12.0 brings (concrete changes)**
+## What this means in practice
 
 STX 12.0 ships with a few practical pieces that make OIDC useful out of the box:
 
