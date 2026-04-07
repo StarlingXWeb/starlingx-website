@@ -11,7 +11,9 @@ One of the biggest improvements the StarlingX platform brings you in the 12.0 re
 
 # Background
 
-Today StarlingX ships a lightweight OIDC proxy based on DEX to provide OIDC support where needed. DEX can federate multiple backends - commonly the StarlingX local LDAP (openldap/slapd) and one or more remote directory services (for example Microsoft Active Directory or other LDAPs). Kubernetes can be configured to accept OIDC tokens from that proxy, making kubectl-based access possible with OIDC if the cluster admin enables it.
+Up until 12.0, StarlingX shipped a lightweight OIDC proxy based on DEX to provide OIDC support where needed.
+
+The advantages of that solution relying on DEX is that it can federate multiple backends - commonly the StarlingX local LDAP (OpenLDAP/slapd) and one or more remote directory services (for example Microsoft Active Directory or other LDAPs). Furthermore, Kubernetes can be configured to accept OIDC tokens from that proxy, making kubectl-based access possible with OIDC if the cluster admin enables it.
 
 **The consolidation goal: single OIDC IDP for everything**
 
