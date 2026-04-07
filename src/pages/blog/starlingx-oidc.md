@@ -74,7 +74,7 @@ The SSH PAM solution would default to the OIDC IDP configuration used by Kuberne
 
 - **registry.local token flow to accept OIDC tokens.** Registry access will still support Keystone tokens, but optional OIDC authentication will be introduced. A common approach used in industry to extend existing simple Registry Token Servers to support OIDC, is to let users provide an OIDC token as the "password" for a special-case 'oidc' username. This is the planned approach in short term for StarlingX. Again, the Registry Token Service will default to use DEX OIDC IDP configuration specified in K8S configuration.
 
-**IDP flexibility: DEX as the federation point**
+### IDP flexibility: DEX as the federation point
 
 A key advantage of this consolidation is the flexibility of the IDP backend. DEX acts as a proxy/federation layer and can connect to a variety of backends:
 
