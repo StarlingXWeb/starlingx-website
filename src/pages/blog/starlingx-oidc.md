@@ -84,7 +84,7 @@ A key advantage of this consolidation is the flexibility of the IDP backend. DEX
 
 This gives anyone operating a StarlingX environment freedom to choose the backend that meets their organizational requirements, while keeping a consistent authentication surface across the platform.
 
-**User experience improvements**
+### Improved user experience
 
 A few concrete UX wins from this consolidation:
 
