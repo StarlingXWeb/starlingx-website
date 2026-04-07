@@ -86,7 +86,7 @@ This gives anyone operating a StarlingX environment freedom to choose the backen
 
 ### Improved user experience
 
-A few concrete UX wins from this consolidation:
+What you gain from this improvement as a user:
 
 - **Single place to manage users & groups.** Admins can centralize identity management in the chosen DEX backend (LDAP/AD/Keycloak/etc.) and have those identities honored across kubectl, StarlingX REST APIs / CLIs, Horizon, SSH, and registry access.
 - **MFA-capable flows for stronger security.** Because DEX can delegate to remote OIDC providers with MFA, the platform can adopt stronger authentication without re-engineering every component.
