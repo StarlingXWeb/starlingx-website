@@ -19,7 +19,7 @@ The advantages of that solution relying on DEX is that it can federate multiple 
 
 In starlingX 12.0 authentication standardizes on a single DEX-backed OIDC flow, which becomes the canonical authentication method for StarlingX-managed endpoints. With that improvement administrators are now able to manage users and groups in one place (the configured backend for DEX) while still choosing the backend type that fits their environment.
 
-OIDC authentication will be supported for:
+OIDC authentication is supported for:
 
 - Kubernetes APIs / kubectl
 - StarlingX REST APIs and CLIs
