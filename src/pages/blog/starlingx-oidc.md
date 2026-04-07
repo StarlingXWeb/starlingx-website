@@ -101,7 +101,7 @@ A few concrete UX wins from this consolidation:
 
 # Short summary - why this matters
 
-- **Easier user & group management:** Consolidating on OIDC (via a single DEX proxy) lets admins manage identities in one place and have those identities honored across all authenticated StarlingX endpoints.
+- **Easier user & group management:** Consolidating on OIDC (via a single DEX proxy) lets you manage identities in one place and have those identities honored across all authenticated StarlingX endpoints.
 - **Stronger security (MFA):** Delegation to MFA-capable remote OIDC IDPs raises the bar for authentication without reworking individual services.
 - **Better CLI usability:** The oidc-login (kubelogin) flow gives a pleasant browser-backed experience for CLI users, including MFA, and works well even in headless scenarios with redirect URLs.
 - **IDP flexibility through DEX:** DEX supports many backend types (LDAP, AD, OIDC providers like Keycloak) so you can choose the backend that fits your environment while keeping a consistent auth surface.
