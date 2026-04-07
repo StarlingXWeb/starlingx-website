@@ -31,7 +31,7 @@ This reduces duplicated identity configuration, eliminates many special-case aut
 
 ## What this means in practice
 
-STX 12.0 ships with a few practical pieces that make OIDC useful out of the box:
+STX 12.0 enables administrators to start using OIDC out of the box:
 
 - **Automatic DEX installation and configuration at install time.** DEX will be deployed and pointed to the StarlingX Local LDAP backend by default so that OIDC tokens work for Local LDAP users immediately.
 - **Kubernetes automatically configured to use OIDC.** Your cluster will be prewired to accept tokens issued by the DEX proxy so kubectl-based workflows can use OIDC immediately after install.
