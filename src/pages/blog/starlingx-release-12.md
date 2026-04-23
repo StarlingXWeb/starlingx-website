@@ -2,51 +2,37 @@
 templateKey: blog-post
 title: StarlingX R12.0 is here!
 author: Ildiko Vancsa
-date: 2026-04-22T01:32:05.627Z
+date: 2026-04-29T01:32:05.627Z
 category: 
   - label: News & Announcements
     id: category-A7fnZYrE1
 ---
 
-The StarlingX community is proud to announce the StarlingX 12.0 release. This milestone represents more than just a version increment; it is the culmination of years of rigorous field-testing in the world’s most demanding environments. While StarlingX has its roots in the high-stakes world of telecommunications, version 12.0 solidifies its position as a general-use distributed cloud platform capable of supporting any enterprise looking to master the complexities of edge computing.
+The StarlingX community is proud to announce the StarlingX 12.0 release. This milestone represents more than just a version increment; it is the culmination of years of rigorous field-testing in the world’s most demanding environments. While StarlingX has its roots in the high-stakes world of telecommunications, version 12.0 solidifies its position as a general-use distributed cloud platform capable of supporting any enterprise looking to master the deployment and operations of their cloud infrastructure.
 
 # Hardened by Telecom, Built for Everyone
-For years, StarlingX has been the backbone of 5G rollouts and ultra-low latency telecommunications infrastructure. In these environments, "downtime" isn't just an inconvenience—it’s a system failure. By meeting the strict requirements of major telecom providers—including sub-microsecond latency, 99.9999% availability, and automated zero-touch provisioning—StarlingX has undergone a "trial by fire."
+For years, StarlingX has been performing as the backbone of 5G rollouts and ultra-low latency telecommunications infrastructure around the globe. In these environments, "downtime" isn't just an inconvenience—it’s a system failure. By meeting the strict requirements of major telecom providers—including sub-microsecond latency, 99.999% availability (translating to no more than 5 minutes of downtime per year), and automated zero-touch provisioning—StarlingX has undergone a thorough field test and passed.
 
-Release 12.0 takes this battle-tested foundation and makes it more accessible for a broader range of industries. Whether you are managing industrial IoT across a factory floor, orchestrating retail systems in thousands of locations, or running high-bandwidth video delivery networks, StarlingX 12.0 provides the stability of a carrier-grade system with the flexibility of a modern, open-source cloud stack.
+Release 12.0 delivers further hardening and management capabilities to the platform, further reinforcing its position as a multi-purpose cloud platform. Whether you are managing industrial IoT applications across a factory floor, orchestrating retail systems in thousands of locations, or in need of a cloud platform to deploy and manage your large datacenter, StarlingX 12.0 provides the stability of a carrier-grade system with the flexibility of a modern, open-source cloud stack.
 
-# Security at Scale: OIDC and Beyond
-In a distributed cloud environment, security is the primary concern. Managing thousands of remote sites means that identity and access management must be both robust and seamless.
+# Highlights from the 12.0 Release
 
-One of the headline features of StarlingX 12.0 is the integration of OpenID Connect (OIDC) authentication across all StarlingX API CLIs. As Kubernetes continues to move toward OIDC as its primary authentication method, this update ensures that StarlingX remains perfectly aligned with the broader cloud-native ecosystem.
+## Authentication Goes to the Next Level
+Authentication is an important layer of security, and implementing a strong system is exponentially harder in a complex and often geographically distributed platform. Up until now the platform had a fragmented solution, which is now consolidated by relying on a single OpenID Connect (OIDC) proxy, which now serves all authenticated endpoints.
 
-Key security enhancements in 12.0 include:
-- Multi-Factor Authentication (MFA): We have introduced MFA support within the OIDC DEX identity provider, adding a critical layer of protection for administrative access.
-- Keystone Guardrails: User management in Keystone has been improved to prevent the accidental deletion of privileged users and introduces more granular roles like 'operator' and 'configurator.'
-- Critical Action Confirmations: To prevent operational errors at scale, the CLI now supports confirmation prompts for commands that perform high-impact or critical actions.
-- Pod-to-Pod IPSec: Building on previous releases, 12.0 offers refined IPSec support for pod-to-pod network traffic, allowing users to configure security policies via Custom Resource Definitions (CRDs).
+This task required participation from the entire community, as it touched many parts of the platform, and therefore it is a true testament to open collaboration. And through that, the community has delivered a platform that is more secure, easier to operate and provides a better user experience.
 
-# Modern Performance: Kernel and Hardware Support
-The "Distro" team has been hard at work ensuring that StarlingX 12.0 runs on the most modern and stable foundation possible. This release features a refreshed Linux kernel, continuing the transition to the 6.12+ series. This update isn't just about version numbers; it’s about hardware enablement.
+## Networking Excellence: PTP Partial Timing Support (PTS)
 
-Release 12.0 includes expanded driver support for the latest Nvidia and Broadcom devices, which are essential for edge AI and high-speed networking workloads. By pulling in these drivers and performing extensive stress tests, the community ensures that your system can leverage specialized hardware acceleration without compromising stability.
+Precision Time Protocol (PTP) is an essential piece that the telecommunications sector relies on, but it’s applicable in use cases such as industrial automation, power grid management, high-frequency trading and more. It has always been a priority to the community to maintain and enhance support for further capabilities of the protocol.
 
-# Networking Excellence: PTP Partial Timing Support (PTS)
+The 12.0 release introduces PTS, which allows the use of PTP in a system with components that don’t have PTP capabilities. This allows users to introduce PTP in environments that aren’t fully upgraded yet to have the capability in every node, which adds additional flexibility to the StarlingX platform to be applied in heterogenous environments for various scenarios.
 
+## Marching Forward: Updating Dependencies
+The new version of StarlingX is now running on the v6.12.57 kernel, which has been stress tested by the community to ensure stability and robustness for the base layer of the platform. Similarly to previous releases, various components and building blocks were updated to a newer version. StarlingX 12.0 now supports Kubernetes up to v1.34, delivers you OpenStack Epoxy, and contains updates to Intel, Nvidia and Broadcom plugins for continued hardware support, and now offers NetApp support as either a standalone storage backend, or combined with Ceph.
 
-# A Complete Cloud-Native Stack: Updated Apps and Plugin Infrastructure
-
-
-In this release, 
-
-# Join the Community
-The 12.0 release is a testament to the power of open collaboration. We want to thank the developers, testers, and users from the OpenInfra Foundation and the O-RAN Software Community who contributed to this milestone.
-
-StarlingX is ready for your most demanding distributed cloud use cases. We invite you to download the 12.0 ISO, explore the updated documentation, and join our community meetings to help shape the future of the edge.
-
-Ready to get started?
-Visit our Project Website to download the latest release and join the conversation on the StarlingX mailing lists and Matrix channel.
-
+## Striving for Improved Performance and Stability
+In any large system, especially in geographically distributed deployments it can be life changing to be able to efficiently operate the entire system through a single pane of glass, which is what the StarlingX System Controller offers its users. With the Unified Software Management (USM) framework, which was introduced in a previous release, user got access to a simpler way to manages updates and upgrades throughout the system. This component got enhancements during the 12.0 release cycle to make this process faster and more reliable. Furthermore, teams have worked on fine tuning the deployment process, along with how you enroll new sub-clouds under a system controller. To make the process more robust, the backup and restore functionality got some touch ups to introduce more automation, and requiring less steps, like avoiding restarts or full reinstalls, for better performance.
 
 For the complete list of updates and new features in StarlingX 12.0, check out the [release notes](https://docs.starlingx.io/releasenotes/index.html#release-notes) and the [project documentation](https://docs.starlingx.io/).
 
