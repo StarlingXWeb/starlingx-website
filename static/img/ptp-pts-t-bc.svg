@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" font-family="'Segoe UI', Arial, sans-serif" font-size="13">
+  <!-- Background -->
+  <rect width="720" height="520" fill="#f8fafc" rx="8"/>
+
+  <!-- Title -->
+  <text x="360" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a202c">T-BC Partial Timing Support Deployment</text>
+
+  <!-- Remote GM -->
+  <rect x="260" y="50" width="200" height="44" rx="6" fill="#2d3748" stroke="#1a202c" stroke-width="1.5"/>
+  <text x="360" y="70" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">Remote Grandmaster</text>
+  <text x="360" y="86" text-anchor="middle" fill="#a0aec0" font-size="11">(fc00:31:31:31::1)</text>
+
+  <!-- Arrow: GM to Node -->
+  <line x1="360" y1="94" x2="360" y2="148" stroke="#4a5568" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="352,142 360,155 368,142" fill="#4a5568"/>
+  <rect x="280" y="108" width="160" height="22" rx="4" fill="#ebf4ff"/>
+  <text x="360" y="123" text-anchor="middle" fill="#2b6cb0" font-size="11" font-weight="600">unicast IPv6 (G.8275.2)</text>
+
+  <!-- StarlingX Node Box -->
+  <rect x="100" y="155" width="520" height="240" rx="10" fill="#fff" stroke="#2b6cb0" stroke-width="2"/>
+  <text x="360" y="178" text-anchor="middle" font-size="13" font-weight="bold" fill="#2b6cb0">StarlingX Node</text>
+
+  <!-- NIC 1 Section -->
+  <rect x="120" y="190" width="230" height="130" rx="6" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+  <text x="235" y="210" text-anchor="middle" font-weight="bold" fill="#2c5282" font-size="12">NIC 1 (upstream)</text>
+
+  <!-- NIC 1 components -->
+  <rect x="135" y="220" width="200" height="28" rx="4" fill="#bee3f8"/>
+  <text x="235" y="239" text-anchor="middle" fill="#2a4365" font-size="11">ptp4l — unicast client</text>
+
+  <rect x="135" y="258" width="200" height="28" rx="4" fill="#bee3f8"/>
+  <text x="235" y="277" text-anchor="middle" fill="#2a4365" font-size="11">clock: SDP0 output (1PPS)</text>
+
+  <rect x="135" y="296" width="200" height="16" rx="3" fill="#c6f6d5"/>
+  <text x="235" y="308" text-anchor="middle" fill="#276749" font-size="10">phc2sys → system clock</text>
+
+  <!-- NIC 2 Section -->
+  <rect x="370" y="190" width="230" height="130" rx="6" fill="#fefcbf" stroke="#ecc94b" stroke-width="1"/>
+  <text x="485" y="210" text-anchor="middle" font-weight="bold" fill="#744210" font-size="12">NIC 2 (downstream)</text>
+
+  <!-- NIC 2 components -->
+  <rect x="385" y="220" width="200" height="28" rx="4" fill="#fefcbf"/>
+  <text x="485" y="239" text-anchor="middle" fill="#744210" font-size="11">ptp4l — L2 grandmaster</text>
+
+  <rect x="385" y="258" width="200" height="28" rx="4" fill="#fefcbf"/>
+  <text x="485" y="277" text-anchor="middle" fill="#744210" font-size="11">clock: SDP1 input</text>
+
+  <rect x="385" y="296" width="200" height="16" rx="3" fill="#fefcbf"/>
+  <text x="485" y="308" text-anchor="middle" fill="#744210" font-size="10">ts2phc: sync PHC from 1PPS</text>
+
+  <!-- 1PPS arrow between NICs -->
+  <line x1="338" y1="272" x2="380" y2="272" stroke="#e53e3e" stroke-width="2"/>
+  <polygon points="375,266 388,272 375,278" fill="#e53e3e"/>
+  <text x="360" y="262" text-anchor="middle" fill="#e53e3e" font-size="10" font-weight="bold">1PPS</text>
+
+  <!-- Monitoring bar -->
+  <rect x="130" y="340" width="460" height="32" rx="5" fill="#f0fff4" stroke="#68d391" stroke-width="1"/>
+  <text x="360" y="360" text-anchor="middle" fill="#276749" font-size="11">collectd monitoring + O-RAN PTP notifications</text>
+
+  <!-- Arrow: Node to Downstream -->
+  <line x1="360" y1="395" x2="360" y2="448" stroke="#4a5568" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="352,442 360,455 368,442" fill="#4a5568"/>
+  <rect x="295" y="407" width="130" height="22" rx="4" fill="#f0fff4"/>
+  <text x="360" y="422" text-anchor="middle" fill="#276749" font-size="11" font-weight="600">L2 (G.8275.1)</text>
+
+  <!-- Downstream nodes -->
+  <rect x="200" y="455" width="320" height="44" rx="6" fill="#edf2f7" stroke="#a0aec0" stroke-width="1.5"/>
+  <text x="360" y="482" text-anchor="middle" fill="#4a5568" font-size="12" font-weight="600">Downstream Edge Nodes</text>
+</svg>
