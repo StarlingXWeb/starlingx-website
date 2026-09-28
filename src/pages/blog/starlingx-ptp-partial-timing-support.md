@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Partial Timing Support - Unicast PTP in StarlingX
 author: Cole Walker
-date: 2026-06-24
+date: 2026-09-29
 category:
   - label: Features & Updates
     id: category-A7fnZYrE1
