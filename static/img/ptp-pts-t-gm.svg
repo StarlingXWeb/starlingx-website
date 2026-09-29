@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" font-family="'Segoe UI', Arial, sans-serif" font-size="13">
+  <!-- Background -->
+  <rect width="720" height="460" fill="#f8fafc" rx="8"/>
+
+  <!-- Title -->
+  <text x="360" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a202c">T-GM Partial Timing Support Deployment</text>
+
+  <!-- GNSS Antenna -->
+  <rect x="270" y="50" width="180" height="44" rx="6" fill="#553c9a" stroke="#44337a" stroke-width="1.5"/>
+  <text x="360" y="70" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">GNSS Antenna</text>
+  <text x="360" y="86" text-anchor="middle" fill="#d6bcfa" font-size="11">1PPS + NMEA</text>
+
+  <!-- Arrow: GNSS to Node -->
+  <line x1="360" y1="94" x2="360" y2="143" stroke="#4a5568" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="352,137 360,150 368,137" fill="#4a5568"/>
+
+  <!-- StarlingX Node Box -->
+  <rect x="130" y="150" width="460" height="200" rx="10" fill="#fff" stroke="#2b6cb0" stroke-width="2"/>
+  <text x="360" y="173" text-anchor="middle" font-size="13" font-weight="bold" fill="#2b6cb0">StarlingX T-GM Node</text>
+
+  <!-- NIC Section -->
+  <rect x="160" y="185" width="400" height="140" rx="6" fill="#ebf8ff" stroke="#90cdf4" stroke-width="1"/>
+  <text x="360" y="205" text-anchor="middle" font-weight="bold" fill="#2c5282" font-size="12">NIC 1</text>
+
+  <!-- Components -->
+  <rect x="180" y="215" width="170" height="32" rx="5" fill="#e9d8fd" stroke="#b794f4" stroke-width="1"/>
+  <text x="265" y="235" text-anchor="middle" fill="#44337a" font-size="11" font-weight="600">ts2phc: GNSS → PHC</text>
+
+  <rect x="370" y="215" width="170" height="32" rx="5" fill="#bee3f8" stroke="#63b3ed" stroke-width="1"/>
+  <text x="455" y="235" text-anchor="middle" fill="#2a4365" font-size="11" font-weight="600">ptp4l: unicast GM</text>
+
+  <rect x="180" y="260" width="170" height="32" rx="5" fill="#c6f6d5" stroke="#68d391" stroke-width="1"/>
+  <text x="265" y="280" text-anchor="middle" fill="#276749" font-size="11" font-weight="600">phc2sys: PHC → sys clock</text>
+
+  <rect x="370" y="260" width="170" height="32" rx="5" fill="#fefcbf" stroke="#ecc94b" stroke-width="1"/>
+  <text x="455" y="280" text-anchor="middle" fill="#744210" font-size="11" font-weight="600">UDPv6 transport</text>
+
+  <!-- Monitoring bar -->
+  <rect x="180" y="300" width="360" height="18" rx="3" fill="#f0fff4" stroke="#68d391" stroke-width="0.5"/>
+  <text x="360" y="313" text-anchor="middle" fill="#276749" font-size="10">collectd monitoring + O-RAN PTP notifications</text>
+
+  <!-- Arrow: Node to Remote Clients -->
+  <line x1="360" y1="350" x2="360" y2="393" stroke="#4a5568" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="352,387 360,400 368,387" fill="#4a5568"/>
+  <rect x="280" y="360" width="160" height="22" rx="4" fill="#ebf4ff"/>
+  <text x="360" y="375" text-anchor="middle" fill="#2b6cb0" font-size="11" font-weight="600">unicast IPv6 (G.8275.2)</text>
+
+  <!-- Remote PTS Clients -->
+  <rect x="180" y="400" width="360" height="44" rx="6" fill="#edf2f7" stroke="#a0aec0" stroke-width="1.5"/>
+  <text x="360" y="427" text-anchor="middle" fill="#4a5568" font-size="12" font-weight="600">Remote PTS Clients</text>
+</svg>
