@@ -12,7 +12,7 @@ header:
   buttons:
     - link: /software/
       text: Get Started
-    - link: https://mirror.starlingx.windriver.com/mirror/starlingx/release/11.0.0/debian/bullseye/amd64/monolithic/outputs/iso/
+    - link: https://mirror.starlingx.windriver.com/mirror/starlingx/release/13.0.0/debian/trixie/amd64/monolithic/outputs/
       text: Download ISO
     - link: /community/
       text: Get Help
@@ -94,14 +94,14 @@ tables:
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://www.starlingx.io/blog/starlingx-release-11/'
+      link: 'https://www.starlingx.io/blog/starlingx-release-13/‘
       text: Read the Blog Post
     text: >
-      StarlingX Release 11.0 is now available. The open source edge computing and
+      StarlingX Release 13.0 is now available. The open source dstributed computing and
       IoT cloud platform optimized for low latency and high performance
       applications is creating a fusion between OpenStack and Kubernetes and
       integrating further open source building blocks to host edge and cloud
       native applications.
-    title: StarlingX 11.0 Available Now
+    title: StarlingX 13.0 Available Now
 ---
 
